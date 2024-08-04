@@ -1,0 +1,25 @@
+name: Check repository
+
+on:
+  workflow_dispatch:
+    inputs:
+      repository:
+        type: string
+        required: true
+
+jobs:
+  check-repository:
+    name: check repository
+    if: |
+      github.repository == 'iobroker-bot-orga/check-tasks'
+      
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - run: npm i
+      - run: node checks/checkRepository/checkRepository.js ${{ github.event.inputs.repository }}
+        env:
+          IOBBOT_GITHUB_TOKEN: ${{ secrets.IOBBOT_GITHUB_TOKEN }}
