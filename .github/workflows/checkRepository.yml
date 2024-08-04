@@ -1,6 +1,9 @@
 name: Check repository
 
 on:
+  repository_dispatch:
+    types: [check-repository]
+
   workflow_dispatch:
     inputs:
       repository:
@@ -20,6 +23,6 @@ jobs:
         with:
           node-version: 20
       - run: npm i
-      - run: node checks/checkRepository/checkRepository.js ${{ github.event.inputs.repository }}
+      - run: node checks/checkRepository/checkRepository.js ${{ github.event.inputs.repository }} ${{ github.event.client_payload.url }}
         env:
           IOBBOT_GITHUB_TOKEN: ${{ secrets.IOBBOT_GITHUB_TOKEN }}
