@@ -122,24 +122,23 @@ function executeOneAdapterCheck(repoUrl) {
                     context.errors = context.errors.sort();
                     context.warnings = context.warnings.sort();
 
-                    if (opts.debug) {
-                        if (context.errors.length) {
-                            console.log('\n\nErrors:');
-                            context.errors.forEach(err => {
-                                console.log(err);
-                            });
-                        } else {
-                            console.log('\n\nNO errors encountered.');
-                        }
-                        if (context.warnings.length) {
-                            console.log('\nWarnings:');
-                            context.warnings.forEach(warn => {
-                                console.log(warn);
-                            });
-                        } else {
-                            console.log('\n\nNO warnings encountered.');
-                        }
+                    if (context.errors.length) {
+                        console.log('\n\nErrors:');
+                        context.errors.forEach(err => {
+                            console.log(err);
+                        });
+                    } else {
+                        console.log('\n\nNO errors encountered.');
                     }
+                    if (context.warnings.length) {
+                        console.log('\nWarnings:');
+                        context.warnings.forEach(warn => {
+                            console.log(warn);
+                        });
+                    } else {
+                        console.log('\n\nNO warnings encountered.');
+                    }
+                    console.log('');
 
                     resolve({repoUrl, context});
                 }
@@ -375,39 +374,24 @@ async function main() {
     opts.debug = values['debug'];
     opts.force = values['force'];
 
-    if (!positionals.length) {
-        console.log ('[ERROR] Please specify a repository');
-        exit (1);
+    if (positionals.length != 1) {
+        console.log ('[ERROR] Please specify exactly one repository');
+        process.exit (1);
     }
 
-    const repoUrl = positionals[0];                         // ############
-    const owner = 'mcm1957'; //iobroker.getOwner(repoUrl);
+    let repoUrl = positionals[0];
+    if (!repoUrl.toLowerCase().includes('github.com')) {
+        repoUrl =  `https://github.com/${repoUrl}`
+    }
+    const owner = iobroker.getOwner(repoUrl);
     const adapter = iobroker.getAdapterName(repoUrl);
-    const repo = 'ioBroker.weblate-test';// `ioBroker.${adapter}`;           // ############
+    const repo = `ioBroker.${adapter}`;           
 
+    console.log(`[INFO] processing ${repoUrl}`);
 
     const data = await executeOneAdapterCheck(repoUrl);
 
-    /* 
-    - check if issue exists
-    - check if any error or warning is active
-      - no, then close issue and all is done    
-      - yes, go on
-    - extract old list of issues
-    - check if list of issues has changed
-      -  if no
-        - get age of issue
-          if older then 3 months, remeber to close it
-      - if yes
-          remeber to close it
-    - create new issue eventually with link to old issue
-    - if remembered old issue
-      - add comment with link to new issue
-      - close old issue
-    - done
-    */
-
-    // check if issues exists
+    // check if older issues exists
     let issues = await getOldIssues(owner, repo);
     issues = issues.filter(i => i.state === 'open' && i.title.includes(ISSUE_TITLE));
     const oldIssueId = issues[0]?.number || 0;
@@ -422,9 +406,9 @@ async function main() {
     }
 
     // check if list of issues has been changed
-    let newIssueRequired = opts.force;
     const newErrors = await getNewErrors(owner, repo, data);
     const fatalError = newErrors.includes('E000') || newErrors.includes('E999');
+    let newIssueRequired = !fatalError && ((newErrors.length && !oldIssueId) || opts.force) ;
 
     if (oldIssueId && !fatalError) {
         const oldErrors = await getOldErrors(owner, repo, oldIssueId);
@@ -437,7 +421,7 @@ async function main() {
                 }
             }
         }
-    };
+    }
 
     // create new issue if required
     let newIssueId = 0;
@@ -446,6 +430,8 @@ async function main() {
     } else if (newIssueRequired) {
         newIssueId = await createNewIssue( owner, repo, data, oldIssueId);
         console.log(`[INFO] new issue ${newIssueId} created`);
+    } else if (!newErrors.length) {
+        console.log(`[INFO] no error or warning detected - no issue created`);
     } else {
         console.log(`[INFO] existing issue ${oldIssueId} still valid`);
     }
