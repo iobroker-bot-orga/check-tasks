@@ -402,7 +402,7 @@ async function main() {
 
     // if no errors or warning exists close old Issue
     if (!data.context.errors.length && !data.context.warnings.length && oldIssueId) {
-        closeIssue(owner, repo, id, 'All issues reported earlier seem to be fixed now. \nTHANKS for your support.');
+        closeIssue(owner, repo, oldIssueId, 'All issues reported earlier seem to be fixed now. \nTHANKS for your support.');
     }
 
     // check if list of issues has been changed
