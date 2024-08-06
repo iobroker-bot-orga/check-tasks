@@ -410,7 +410,7 @@ async function main() {
     const fatalError = newErrors.includes('E000') || newErrors.includes('E999');
     let newIssueRequired = !fatalError && ((newErrors.length && !oldIssueId) || opts.force) ;
 
-    if (oldIssueId && !fatalError) {
+    if (newErrors.length && oldIssueId && !fatalError) {
         const oldErrors = await getOldErrors(owner, repo, oldIssueId);
         if (oldErrors.length != newErrors.length) {
             newIssueRequired = true;
