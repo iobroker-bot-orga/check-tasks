@@ -23,6 +23,6 @@ jobs:
         with:
           node-version: 20
       - run: npm i
-      - run: node checks/checkLatestRepositoríes/checkLatestRepositories.js
+      - run: node checks/checkLatestRepositories/checkLatestRepositories.js
         env:
           IOBBOT_GITHUB_TOKEN: ${{ secrets.IOBBOT_GITHUB_TOKEN }}
