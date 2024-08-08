@@ -64,19 +64,21 @@ async function main() {
     //}
 
     const latestRepo = await iobroker.getLatestRepoLive();
-
+    const total = Object.keys(latestRepo).length;
+    let curr = 0;
     for (const adapter in latestRepo) {
+        curr = curr + 1;
         if (adapter.startsWith('_')) continue;
         
 	    debug (`processing ${latestRepo[adapter].meta}`);
 
         const parts = latestRepo[adapter].meta.split('/');
         const owner = parts[3];
-        console.log(`[INFO] processing ${owner}/ioBroker.${adapter}`);
+        console.log(`[INFO] processing ${owner}/ioBroker.${adapter} (${curr}/${total})`);
 
         triggerRepoCheck( owner, adapter);
-        console.log('sleeping (60s) ...')
-        await common.sleep(60000);
+        console.log('sleeping (25s) ...')
+        await common.sleep(25000);
 }
 }
 
