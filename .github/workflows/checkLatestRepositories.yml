@@ -1,0 +1,28 @@
+name: Check LATEST repository
+
+on:
+  #repository_dispatch:
+  #  types: [check-latest-repositories]
+
+  workflow_dispatch:
+    inputs:
+      repository:
+        type: string
+        required: true
+
+jobs:
+  check-latest-repository:
+    name: check latest repository
+    if: |
+      github.repository == 'iobroker-bot-orga/check-tasks'
+      
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - run: npm i
+      - run: node checks/checkLatestRepositoríes/checkLatestRepositoryies.js
+        env:
+          IOBBOT_GITHUB_TOKEN: ${{ secrets.IOBBOT_GITHUB_TOKEN }}
