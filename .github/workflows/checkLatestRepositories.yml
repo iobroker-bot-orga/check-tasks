@@ -5,10 +5,10 @@ on:
   #  types: [check-latest-repositories]
 
   workflow_dispatch:
-    inputs:
-      repository:
-        type: string
-        required: true
+  #  inputs:
+  #    repository:
+  #      type: string
+  #      required: true
 
 jobs:
   check-latest-repository:
