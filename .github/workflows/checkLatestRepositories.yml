@@ -1,4 +1,4 @@
-name: Check LATEST repository
+name: Check LATEST repositories
 
 on:
   #repository_dispatch:
