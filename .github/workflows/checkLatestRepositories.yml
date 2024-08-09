@@ -10,6 +10,11 @@ on:
   #      type: string
   #      required: true
 
+  schedule:
+    # * is a special character in YAML, so you have to quote this string
+    # every friday at 1:00
+    - cron:  '0 1 * * 5'
+
 jobs:
   check-latest-repository:
     name: check latest repository
