@@ -18,11 +18,24 @@ jobs:
       
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
+      - name: checkout
+        uses: actions/checkout@v4
+
+      - name: setup node
+        uses: actions/setup-node@v4
         with:
-          node-version: 20
-      - run: npm i
-      - run: node checks/checkRepository/checkRepository.js ${{ github.event.inputs.repository }} ${{ github.event.client_payload.url }}
+          node-version: '20.x'
+
+      - name: cache
+        uses: actions/cache@v4
+        with:
+          path: node_modules
+          key: ${{ runner.os }}-js-${{ hashFiles('package-lock.json') }}
+
+      - name: Install dependencies
+        run: npm install --omit=dev
+
+      - name: check repository
+        run: node checks/checkRepository/checkRepository.js ${{ github.event.inputs.repository }} ${{ github.event.client_payload.url }}
         env:
           IOBBOT_GITHUB_TOKEN: ${{ secrets.IOBBOT_GITHUB_TOKEN }}
