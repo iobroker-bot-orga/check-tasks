@@ -13,7 +13,7 @@ on:
   schedule:
     # * is a special character in YAML, so you have to quote this string
     # every friday at 1:00
-    - cron:  '0 1 * * 5'
+    - cron:  '15 0 * * 5'
 
 jobs:
   check-latest-repository:
