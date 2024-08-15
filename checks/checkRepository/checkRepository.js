@@ -233,6 +233,12 @@ async function prepareIssue(data, oldIssueId) {
     }
 
     lines.push({text:``, noDecorate: true});
+    lines.push({text:`You may start a new check at any time by adding the following comment to this issue:`, noDecorate: true});
+    lines.push({text:``, noDecorate: true});
+    lines.push({text:`\`@iobroker-bot recheck\``, noDecorate: true});
+    lines.push({text:``, noDecorate: true});
+    lines.push({text:`Please note that I (and the server at GitHub) have always plenty of work to do. So it may last up to 30 minutes until you see a reaction. I will drop a comment here as soon as I start processing.`, noDecorate: true});
+    lines.push({text:``, noDecorate: true});
     lines.push({text:`Feel free to contact me (@iobroker-bot) if you have any questions or feel that an issue is incorrectly flagged.`, noDecorate: true});
     lines.push({text:``, noDecorate: true});
     lines.push({text:`And **THANKS A LOT** for maintaining this adapter from me and all users.`, noDecorate: true});
