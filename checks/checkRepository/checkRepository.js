@@ -131,12 +131,12 @@ function executeOneAdapterCheck(repoUrl) {
                         console.log('\n\nNO errors encountered.');
                     }
                     if (context.warnings.length) {
-                        console.log('\nWarnings:');
+                        console.log('\nSuggestions and Warnings:');
                         context.warnings.forEach(warn => {
                             console.log(warn);
                         });
                     } else {
-                        console.log('\n\nNO warnings encountered.');
+                        console.log('\n\nNO suggestions or warnings encountered.');
                     }
                     console.log('');
 
