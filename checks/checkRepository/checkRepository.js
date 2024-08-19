@@ -208,11 +208,11 @@ async function prepareIssue(data, oldIssueId) {
         lines.push({text: '', noDecorate: true});
 
         if (data.context.warnings && data.context.warnings.length) {
-            lines.push({text: '**WARNINGS:**', noDecorate: true});
+            lines.push({text: '**SUGGESTIONS and WARNINGS:**', noDecorate: true});
             warningsFound = true;
             data.context.warnings.forEach(warn => lines.push({text: `- [ ] :eyes: ${warn}`, link, owner, adapter}));
         } else {
-            lines.push({text: ':thumbsup: No warnings found', noDecorate: true});
+            lines.push({text: ':thumbsup: No suggestions or warnings found', noDecorate: true});
         }
     }
 
