@@ -414,7 +414,7 @@ async function main() {
     // check if list of issues has been changed
     const newErrors = await getNewErrors(owner, repo, data);
     const fatalError = newErrors.includes('E000') || newErrors.includes('E999');
-    let newIssueRequired = !fatalError && ((newErrors.length && !oldIssueId || opts.force)) ;
+    let newIssueRequired = !fatalError && ((newErrors.length && (!oldIssueId || opts.force))) ;
 
     if (newErrors.length && oldIssueId && !fatalError) {
         const oldErrors = await getOldErrors(owner, repo, oldIssueId);
