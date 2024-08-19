@@ -120,7 +120,8 @@ function executeOneAdapterCheck(repoUrl) {
                     const context = JSON.parse(data.body);
 
                     context.errors = context.errors.sort();
-                    context.warnings = context.warnings.sort();
+                    context.suggestions = context.warnings.sort().filter(msg=>msg.startsWith('[S'));
+                    context.warnings = context.warnings.sort().filter(msg=>!msg.startsWith('[S'));
 
                     if (context.errors.length) {
                         console.log('\n\nErrors:');
@@ -131,12 +132,20 @@ function executeOneAdapterCheck(repoUrl) {
                         console.log('\n\nNO errors encountered.');
                     }
                     if (context.warnings.length) {
-                        console.log('\nSuggestions and Warnings:');
+                        console.log('\nWarnings:');
                         context.warnings.forEach(warn => {
                             console.log(warn);
                         });
                     } else {
-                        console.log('\n\nNO suggestions or warnings encountered.');
+                        console.log('\n\nNO warnings encountered.');
+                    }
+                    if (context.suggestions.length) {
+                        console.log('\nSuggestions:');
+                        context.warnings.forEach(suggestion => {
+                            console.log(suggestion);
+                        });
+                    } else {
+                        console.log('\n\nNO suggestions encountered.');
                     }
                     console.log('');
 
@@ -151,6 +160,7 @@ async function prepareIssue(data, oldIssueId) {
 
     let errorsFound = false;
     let warningsFound = false;
+    let suggestionsFound = false;
     
     const parts = data.repoUrl.split('/');
     const adapter = parts.pop().replace('iobroker.', 'ioBroker.');
@@ -208,11 +218,21 @@ async function prepareIssue(data, oldIssueId) {
         lines.push({text: '', noDecorate: true});
 
         if (data.context.warnings && data.context.warnings.length) {
-            lines.push({text: '**SUGGESTIONS and WARNINGS:**', noDecorate: true});
+            lines.push({text: '**WARNINGS:**', noDecorate: true});
             warningsFound = true;
             data.context.warnings.forEach(warn => lines.push({text: `- [ ] :eyes: ${warn}`, link, owner, adapter}));
         } else {
-            lines.push({text: ':thumbsup: No suggestions or warnings found', noDecorate: true});
+            lines.push({text: ':thumbsup: No warnings found', noDecorate: true});
+        }
+
+        lines.push({text: '', noDecorate: true});
+
+        if (data.context.suggestions && data.context.suggestions.length) {
+            lines.push({text: '**SUGGESTIONS:**', noDecorate: true});
+            suggestionsFound = true;
+            data.context.suggestions.forEach(suggestion => lines.push({text: `- [ ] :pushpin: ${suggestion}`, link, owner, adapter}));
+        //} else {
+        //    lines.push({text: ':thumbsup: No suggestions found', noDecorate: true});
         }
     }
 
@@ -228,8 +248,14 @@ async function prepareIssue(data, oldIssueId) {
     if (warningsFound) {
         lines.push({text:``, noDecorate: true});
         lines.push({text:`**Warnings** reported by repository checker should be reviewed. `+ 
-            `While some warnings can be considered as a suggestion and be ignored due to good reasons or a dedicated decision of the developer, `+
+            `While some warnings can be ignored due to good reasons or a dedicated decision of the developer, `+
             `most warnings should be fixed as soon as appropiate.`, noDecorate: true});
+    }
+    if (suggestionsFound) {
+        lines.push({text:``, noDecorate: true});
+        lines.push({text:`**Suggestions** reported by repository checker should be reviewed. `+ 
+            `Suggestions can be ignored due to a decision of the developer but they are reported as a hint to use a configuration ` +
+            `which might get required in future or at least is used be most adapters. Suggestions are always optional to follow.`, noDecorate: true});
     }
 
     lines.push({text:``, noDecorate: true});
@@ -282,11 +308,19 @@ async function closeIssue (owner, repo, id, reason) {
             `your  \n` +
             `_ioBroker Check and Service Bot_\n`;
 
-        await github.addComment(owner, repo, id, comment);
+        if (!opts.dry) {
+            await github.addComment(owner, repo, id, comment);
+        } else {
+            console.log (`[DRY] would add comment "${comment}"`)
+        }
     };
 
-    await github.closeIssue(owner, repo, id);
-    debug(`issue ${id} has been closed`);
+    if (!opts.dry) {
+        await github.closeIssue(owner, repo, id);
+        debug(`issue ${id} has been closed`);
+    } else {
+        console.log (`[DRY] would close issue #${id}`)
+    }
 }
 
 async function cleanupOldIssues( owner, repo, issues ) {
@@ -305,6 +339,12 @@ async function createNewIssue(owner, repo, data, oldIssueId ) {
 
     const body = await prepareIssue(data, oldIssueId);
 
+    if (opts.dry) {
+        console.log (`[DRY] would create new issue`)
+        console.log (body);
+        return 0;
+    };
+
     const response = await github.createIssue( owner, repo, { 
         title: ISSUE_TITLE,
         body: body});
@@ -314,15 +354,15 @@ async function createNewIssue(owner, repo, data, oldIssueId ) {
     return id;
 }
 
-async function getOldErrors(owner, repo, id) {
-    debug(`getOldErrors('${owner}', '${repo}', ${id})`);
+async function getOldMsgs(owner, repo, id) {
+    debug(`getOldMsgs('${owner}', '${repo}', ${id})`);
 
     const issue = await github.getIssue(owner, repo, id);
 
     const lines = issue.body.split('\n');
     let remarks = [];
     lines.forEach(line => {
-        let m = line.match(/\[([EW]\d\d\d)\]/);
+        let m = line.match(/\[([EWS]\d\d\d)\]/);
         if (m) {
             remarks.push(m[1]);
         };
@@ -333,7 +373,7 @@ async function getOldErrors(owner, repo, id) {
     return remarks;
 }
 
-async function getNewErrors(owner, repo, data) {
+async function getNewMsgs(owner, repo, data) {
     debug(`getNewErrors('${owner}', '${repo}', 'data'')`);
 
     let remarks = [];
@@ -345,6 +385,10 @@ async function getNewErrors(owner, repo, data) {
 
         if (data.context.warnings && data.context.warnings.length) {
             data.context.warnings.forEach(warn => remarks.push(warn.substring(1,5)));
+        }
+
+        if (data.context.suggestions && data.context.suggestions.length) {
+            data.context.suggestions.forEach(suggestion => remarks.push(suggestion.substring(1,5)));
         }
     }
     remarks = remarks.sort();
@@ -363,6 +407,9 @@ async function main() {
             type: 'boolean',
             short: 'd',
         },
+        'dry': {
+            type: 'boolean',
+        },
         'force': {
             type: 'boolean',
             short: 'f',
@@ -378,6 +425,7 @@ async function main() {
 
     opts.createIssue = values['create-issue'];
     opts.debug = values['debug'];
+    opts.dry = values['dry'];
     opts.force = values['force'];
 
     if (positionals.length != 1) {
@@ -407,23 +455,23 @@ async function main() {
     await cleanupOldIssues( owner, repo, issues);
 
     // if no errors or warning exists close old Issue
-    if (!data.context.errors.length && !data.context.warnings.length && oldIssueId) {
+    if (!data.context.errors.length && !data.context.warnings.length && !data.context.suggestions.length && oldIssueId) {
         closeIssue(owner, repo, oldIssueId, 'All issues reported earlier seem to be fixed now. \nTHANKS for your support.');
         console.log(`[INFO] old issue ${oldIssueId} closed`);
     }
 
     // check if list of issues has been changed
-    const newErrors = await getNewErrors(owner, repo, data);
-    const fatalError = newErrors.includes('E000') || newErrors.includes('E999');
-    let newIssueRequired = !fatalError && ((newErrors.length && (!oldIssueId || opts.force))) ;
+    const newMsgs = await getNewMsgs(owner, repo, data);
+    const fatalError = newMsgs.includes('E000') || newMsgs.includes('E999');
+    let newIssueRequired = !fatalError && ((newMsgs.length && (!oldIssueId || opts.force))) ;
 
-    if (newErrors.length && oldIssueId && !fatalError) {
-        const oldErrors = await getOldErrors(owner, repo, oldIssueId);
-        if (oldErrors.length != newErrors.length) {
+    if (newMsgs.length && oldIssueId && !fatalError) {
+        const oldMsgs = await getOldMsgs(owner, repo, oldIssueId);
+        if (oldMsgs.length != newMsgs.length) {
             newIssueRequired = true;
         } else {
-            for (let ii = 0; ii < oldErrors.length; ii++) {
-                if (oldErrors[ii] !== newErrors[ii]) {
+            for (let ii = 0; ii < oldMsgs.length; ii++) {
+                if (oldMsgs[ii] !== newMsgs[ii]) {
                     newIssueRequired = true;
                 }
             }
@@ -437,7 +485,7 @@ async function main() {
     } else if (newIssueRequired) {
         newIssueId = await createNewIssue( owner, repo, data, oldIssueId);
         console.log(`[INFO] new issue ${newIssueId} created`);
-    } else if (!newErrors.length) {
+    } else if (!newMsgs.length) {
         console.log(`[INFO] no error or warning detected - no issue created`);
     } else {
         console.log(`[INFO] existing issue ${oldIssueId} still valid`);
