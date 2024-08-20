@@ -204,7 +204,10 @@ async function prepareIssue(data, oldIssueId) {
     badges += ` - [![Test and Release](https://github.com/${owner}/${adapter}/actions/workflows/test-and-release.yml/badge.svg)](https://github.com/${owner}/${adapter}/actions/workflows/test-and-release.yml)`;
 
     lines.push({text: badges, noDecorate: true});
-    lines.push({text: `[![NPM](https://nodei.co/npm/${adapter.toLowerCase()}.png?downloads=true)](https://nodei.co/npm/${adapter.toLowerCase()}/)\n`, noDecorate: true});
+    // lines.push({text: `[![NPM](https://nodei.co/npm/${adapter.toLowerCase()}.png?downloads=true)](https://nodei.co/npm/${adapter.toLowerCase()}/)\n`, noDecorate: true});
+    lines.push({text: '', noDecorate: true});
+    lines.push({text: '**This check is based the current head revisions (master / main  branch) of the adapter repository**', noDecorate: true});
+    lines.push({text: '', noDecorate: true});
 
     if (data.context) {
         if (data.context.errors && data.context.errors.length) {
