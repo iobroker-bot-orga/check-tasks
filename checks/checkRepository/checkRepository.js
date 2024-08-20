@@ -183,13 +183,15 @@ async function prepareIssue(data, oldIssueId) {
         console.error(`Cannot get stable badge for ${adapter}: ${e}`);
     }
 
-    const lines = [{text: '### Notification from ioBroker Check and Service Bot', noDecorate:true}];
+    const lines = [{text: '## Notification from ioBroker Check and Service Bot', noDecorate:true}];
     lines.push({text:`Dear adapter developer,`, noDecorate: true});
     lines.push({text:``, noDecorate: true});
     lines.push({text:`I\'m the ioBroker Check and Service Bot. I\'m an automated tool processing routine tasks for the ioBroker infrastructure. ` +
         `I have recently checked the repository for your adapter _**${adapterName}**_ for common errors and appropiate suggestions to keep this adapter up to date.`, noDecorate: true});
     lines.push({text:``, noDecorate: true});
-    lines.push({text:`Please see the result of the check below.`, noDecorate: true});
+    lines.push({text: '### This check is based the current head revisions (master / main  branch) of the adapter repository', noDecorate: true});
+    lines.push({text: '', noDecorate: true});
+   lines.push({text:`Please see the result of the check below.`, noDecorate: true});
 
     lines.push({text: `\n### [${adapter}](${link})`, link, owner, adapter, noDecorate: true});
 
@@ -206,9 +208,7 @@ async function prepareIssue(data, oldIssueId) {
     lines.push({text: badges, noDecorate: true});
     // lines.push({text: `[![NPM](https://nodei.co/npm/${adapter.toLowerCase()}.png?downloads=true)](https://nodei.co/npm/${adapter.toLowerCase()}/)\n`, noDecorate: true});
     lines.push({text: '', noDecorate: true});
-    lines.push({text: '**This check is based the current head revisions (master / main  branch) of the adapter repository**', noDecorate: true});
-    lines.push({text: '', noDecorate: true});
-
+ 
     if (data.context) {
         if (data.context.errors && data.context.errors.length) {
             lines.push({text: '**ERRORS:**', noDecorate: true});
