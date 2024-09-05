@@ -334,8 +334,8 @@ async function prepareIssue(data, issueTable, oldIssueId) {
     return (bodyText);
 }
 
-async function prepareIssueComment(data, issueTable, oldIssueId) {
-    debug( `prepareIssueComment(data, 'issueTable', ${oldIssueId})`);
+async function prepareIssueComment(data, issueTable) {
+    debug( `prepareIssueComment(data, 'issueTable')`);
 
     const lines = ['### This issue has been updated by ioBroker Check and Service Bot'];
 
@@ -654,7 +654,7 @@ async function main() {
     }
 
     // prepare issue body
-    const issueBody = await prepareIssue(data, issueTable, /*oldIssueId*/ 0);
+    const issueBody = await prepareIssue(data, issueTable, opts.recreate?oldIssueId:0);
     const issueComment = await prepareIssueComment(data, issueTable);
 
     // if no issue exists, create a new one, else update old one
@@ -687,7 +687,7 @@ async function main() {
     }
 
     // if no errors, warnings or suggestions exist close old Issue
-    if ( !(haveErrors || haveWarnings || haveSuggestions) ) {
+    if ( !(haveErrors || haveWarnings || haveSuggestions) && oldIssueId) {
         closeIssue(owner, repo, oldIssueId, 'All issues reported earlier seem to be fixed now. \nTHANKS for your support.');
         console.log(`[INFO] old issue ${oldIssueId} closed`);
     }
