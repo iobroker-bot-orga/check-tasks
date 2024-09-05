@@ -323,7 +323,7 @@ async function prepareIssue(data, issueTable, oldIssueId) {
 
     lines.push(``);
     const now = new Date(Date.now());
-    lines.push(`Last update at ${now.toLocaleDateString()} ${now.toLocaleTimeString()}`);
+    lines.push(`Last update at ${now.toUTCString()}`);
 
     let bodyText = lines.join('\n');
 
