@@ -22,84 +22,108 @@ function debug (text){
     }
 }
 
-function decorateLine(line) {
-    if (line.noDecorate) {
-        return line.text;
-    }
-    let m = line.text.match(/"npm owner add bluefox iobroker\.([-_a-z\d]+)"/);
+function decorateText(text, link, owner, adapter) {
+    debug(`decorateText('${text}', ${link}', '*${owner}','${adapter}')`);
+
+    let m = text.match(/"npm owner add bluefox iobroker\.([-_a-z\d]+)"/);
     if (m) {
-        line.text = line.text.replace(`"npm owner add bluefox iobroker.${m[1]}"`, '`npm owner add bluefox iobroker.' + m[1] + '`');
+        text = text.replace(`"npm owner add bluefox iobroker.${m[1]}"`, '`npm owner add bluefox iobroker.' + m[1] + '`');
     }
 
-    m = line.text.match(/"Manage topics"/);
+    m = text.match(/"Manage topics"/);
     if (m) {
-        line.text = line.text.replace(`"Manage topics"`, '`Manage topics`');
+        text = text.replace(`"Manage topics"`, '`Manage topics`');
     }
 
-    m = line.text.match(/"## License"/);
+    m = text.match(/"## License"/);
     if (m) {
-        line.text = line.text.replace(`"## License"`, '`## License`');
+        text = text.replace(`"## License"`, '`## License`');
     }
 
-    m = line.text.match(/travis/);
+    m = text.match(/travis/);
     if (m) {
-        line.text = line.text.replace(/travis/g, `[travis](https://travis-ci.com/)`);
+        text = text.replace(/travis/g, `[travis](https://travis-ci.com/)`);
     }
 
-    m = line.text.match(/Travis-ci\.org/);
+    m = text.match(/Travis-ci\.org/);
     if (m) {
-        line.text = line.text.replace(`Travis-ci.org`, `[Travis-ci.com](https://travis-ci.com/${line.owner}/${line.adapter})`);
+        text = text.replace(`Travis-ci.org`, `[Travis-ci.com](https://travis-ci.com/${owner}/${adapter})`);
     }
 
-    m = line.text.match(/ README.md/);
+    m = text.match(/ README.md/);
     if (m) {
-        line.text = line.text.replace(/ README.md/g, ` [README.md](${line.link}/blob/master/README.md)`);
+        text = text.replace(/ README.md/g, ` [README.md](${line.link}/blob/master/README.md)`);
     }
 
-    m = line.text.match(/ io-package\.json/);
+    m = text.match(/ io-package\.json/);
     if (m) {
-        line.text = line.text.replace(/ io-package.json/g, ` [io-package.json](${line.link}/blob/master/io-package.json)`);
+        text = text.replace(/ io-package.json/g, ` [io-package.json](${link}/blob/master/io-package.json)`);
     }
 
-    m = line.text.match(/ package\.json/);
+    m = text.match(/ package\.json/);
     if (m) {
-        line.text = line.text.replace(/ package.json/g, ` [package.json](${line.link}/blob/master/package.json)`);
+        text = text.replace(/ package.json/g, ` [package.json](${link}/blob/master/package.json)`);
     }
 
-    m = line.text.match(/ node_modules/);
+    m = text.match(/ node_modules/);
     if (m) {
-        line.text = line.text.replace(/ node_modules/g, ` [node_modules](${line.link}/tree/master/node_modules)`);
+        text = text.replace(/ node_modules/g, ` [node_modules](${link}/tree/master/node_modules)`);
     }
 
-    m = line.text.match(/ NPM/);
+    m = text.match(/ NPM/);
     if (m) {
-        line.text = line.text.replace(/ NPM/g, ` [NPM](https://www.npmjs.com/package/${line.adapter.toLowerCase()})`);
+        text = text.replace(/ NPM/g, ` [NPM](https://www.npmjs.com/package/${adapter.toLowerCase()})`);
     }
 
-    m = line.text.match(/"iob_npm.done"/);
+    m = text.match(/"iob_npm.done"/);
     if (m) {
-        line.text = line.text.replace(`"iob_npm.done"`, `"[iob_npm.done](${line.link}/blob/master/iob_npm.done)"`);
+        text = text.replace(`"iob_npm.done"`, `"[iob_npm.done](${link}/blob/master/iob_npm.done)"`);
     }
 
-    m = line.text.match(/ admin\/words\.js/);
+    m = text.match(/ admin\/words\.js/);
     if (m) {
-        line.text = line.text.replace(` admin/words.js`, ` [admin/words.js](${line.link}/blob/master/admin/words.js)`);
+        text = text.replace(` admin/words.js`, ` [admin/words.js](${link}/blob/master/admin/words.js)`);
     }
 
-    m = line.text.match(/ main\.js/);
+    m = text.match(/ main\.js/);
     if (m) {
-        line.text = line.text.replace(` main.js`, ` [main.js](${line.link}/blob/master/main.js)`);
+        text = text.replace(` main.js`, ` [main.js](${link}/blob/master/main.js)`);
     }
 
-    // line.adapter = 'ioBroker.adapter'
-    if (line.adapter) {
-        const shortName = line.adapter.replace('ioBroker.', '');
-        if (line.text.includes(` ${shortName}.js`)) {
-            line.text = line.text.replace(` ${shortName}.js`, ` [${shortName}.js](${line.link}/blob/master/${shortName}.js)`);
+//    // line.adapter = 'ioBroker.adapter'
+//    if (line.adapter) {
+//        const shortName = line.adapter.replace('ioBroker.', '');
+//        if (text.includes(` ${shortName}.js`)) {
+//            text = text.replace(` ${shortName}.js`, ` [${shortName}.js](${link}/blob/master/${shortName}.js)`);
+//        }
+//    }
+
+    return text;
+}
+
+function decorateData(data) {
+    debug(`decorateData('data')`);
+
+    const parts = data.repoUrl.split('/');
+    const adapter = parts.pop().replace('iobroker.', 'ioBroker.');
+    const adapterName = adapter.split('.')[1];
+    const owner = parts.pop();
+    const link = `https://github.com/${owner}/${adapter}`;
+
+    if (data.context) {
+        for ( let ii=0; data.context.errors && (ii < data.context.errors.length); ii++) {
+            data.context.errors[ii] = decorateText(data.context.errors[ii], link, owner, adapter);
         }
-    }
 
-    return line.text;
+        for ( let ii=0; data.context.warnings && (ii < data.context.warnings.length); ii++) {
+            console.log ('juhu 2');
+            data.context.warnings[ii] = decorateText(data.context.warnings[ii], link, owner, adapter);
+        };
+
+        for ( let ii=0; data.context.suggestions && (ii < data.context.suggestions.length); ii++) {
+            data.context.suggestions[ii] = decorateText(data.context.suggestions[ii], link, owner, adapter);
+        };
+    }
 }
 
 function executeOneAdapterCheck(repoUrl) {
@@ -155,8 +179,8 @@ function executeOneAdapterCheck(repoUrl) {
     });
 }
 
-async function prepareIssue(data, oldIssueId) {
-    debug( `prepareIssue('data',${oldIssueId})`);
+async function prepareIssue(data, issueTable, oldIssueId) {
+    debug( `prepareIssue('issueTable',${oldIssueId})`);
 
     let errorsFound = false;
     let warningsFound = false;
@@ -183,17 +207,17 @@ async function prepareIssue(data, oldIssueId) {
         console.error(`Cannot get stable badge for ${adapter}: ${e}`);
     }
 
-    const lines = [{text: '## Notification from ioBroker Check and Service Bot', noDecorate:true}];
-    lines.push({text:`Dear adapter developer,`, noDecorate: true});
-    lines.push({text:``, noDecorate: true});
-    lines.push({text:`I\'m the ioBroker Check and Service Bot. I\'m an automated tool processing routine tasks for the ioBroker infrastructure. ` +
-        `I have recently checked the repository for your adapter _**${adapterName}**_ for common errors and appropiate suggestions to keep this adapter up to date.`, noDecorate: true});
-    lines.push({text:``, noDecorate: true});
-    lines.push({text: '### This check is based the current head revisions (master / main  branch) of the adapter repository', noDecorate: true});
-    lines.push({text: '', noDecorate: true});
-   lines.push({text:`Please see the result of the check below.`, noDecorate: true});
+    const lines = ['## Notification from ioBroker Check and Service Bot'];
+    lines.push(`Dear adapter developer,`);
+    lines.push(``);
+    lines.push(`I\'m the ioBroker Check and Service Bot. I\'m an automated tool processing routine tasks for the ioBroker infrastructure. ` +
+        `I have recently checked the repository for your adapter _**${adapterName}**_ for common errors and appropiate suggestions to keep this adapter up to date.`);
+    lines.push(``);
+    lines.push('### This check is based the current head revisions (master / main  branch) of the adapter repository');
+    lines.push('');
+    lines.push(`Please see the result of the check below.`);
 
-    lines.push({text: `\n### [${adapter}](${link})`, link, owner, adapter, noDecorate: true});
+    lines.push( `\n### [${adapter}](${link})`);
 
     let badges = `[![Downloads](https://img.shields.io/npm/dm/${adapter.toLowerCase()}.svg)](https://www.npmjs.com/package/${adapter.toLowerCase()}) `;
     if (data.badgeLatest) {
@@ -205,87 +229,179 @@ async function prepareIssue(data, oldIssueId) {
 
     badges += ` - [![Test and Release](https://github.com/${owner}/${adapter}/actions/workflows/test-and-release.yml/badge.svg)](https://github.com/${owner}/${adapter}/actions/workflows/test-and-release.yml)`;
 
-    lines.push({text: badges, noDecorate: true});
-    // lines.push({text: `[![NPM](https://nodei.co/npm/${adapter.toLowerCase()}.png?downloads=true)](https://nodei.co/npm/${adapter.toLowerCase()}/)\n`, noDecorate: true});
-    lines.push({text: '', noDecorate: true});
+    lines.push(badges);
+    // lines.push( `[![NPM](https://nodei.co/npm/${adapter.toLowerCase()}.png?downloads=true)](https://nodei.co/npm/${adapter.toLowerCase()}/)\n`);
+    lines.push('');
  
-    if (data.context) {
-        if (data.context.errors && data.context.errors.length) {
-            lines.push({text: '**ERRORS:**', noDecorate: true});
-            errorsFound = true;
-            data.context.errors.forEach(err => lines.push({text: `- [ ] :heavy_exclamation_mark: ${err}`, link, owner, adapter}));
-        } else {
-            lines.push({text: ':thumbsup: No errors found', noDecorate: true});
-        }
-
-        lines.push({text: '', noDecorate: true});
-
-        if (data.context.warnings && data.context.warnings.length) {
-            lines.push({text: '**WARNINGS:**', noDecorate: true});
-            warningsFound = true;
-            data.context.warnings.forEach(warn => lines.push({text: `- [ ] :eyes: ${warn}`, link, owner, adapter}));
-        } else {
-            lines.push({text: ':thumbsup: No warnings found', noDecorate: true});
-        }
-
-        lines.push({text: '', noDecorate: true});
-
-        if (data.context.suggestions && data.context.suggestions.length) {
-            lines.push({text: '**SUGGESTIONS:**', noDecorate: true});
-            suggestionsFound = true;
-            data.context.suggestions.forEach(suggestion => lines.push({text: `- [ ] :pushpin: ${suggestion}`, link, owner, adapter}));
-        //} else {
-        //    lines.push({text: ':thumbsup: No suggestions found', noDecorate: true});
+    for ( let issue in issueTable) {
+        if (issue.match(/\[(E\d\d\d)\]/)) {
+            if (!errorsFound) {
+                lines.push('**ERRORS:**');
+                errorsFound = true;
+            }            
+            const flag = (issueTable[issue].state === '?' || issueTable[issue].state === 'D') ?'X':' ';         
+            lines.push(`- [${flag}] :heavy_exclamation_mark: ${issue}`);
         }
     }
+    if (!errorsFound) {
+        lines.push(':thumbsup: No errors found');
+    }
+    lines.push('');
 
-    lines.push({text:``, noDecorate: true});
-    lines.push({text:`Please review issues reported and consider fixing them as soon as appropiate.`, noDecorate: true});
+    for ( let issue in issueTable) {
+        if (issue.match(/\[(W\d\d\d)\]/)) {
+            if (!warningsFound) {
+                lines.push('**WARNINGS:**');
+                warningsFound = true;
+            }
+            const flag = (issueTable[issue].state === '?' || issueTable[issue].state === 'D') ?'X':' ';         
+            lines.push(`- [${flag}] :eyes: ${issue}`);
+        }
+    }
+    if (!warningsFound) {
+        lines.push(':thumbsup: No warnings found');
+    }
+    lines.push('');
+    
+    for ( let issue in issueTable) {
+        if (issue.match(/\[(S\d\d\d)\]/)) {
+            if (!suggestionsFound) {
+                lines.push('**SUGGESTIONS:**');
+                suggestionsFound = true;
+            } 
+            const flag = (issueTable[issue].state === '?' || issueTable[issue].state === 'D') ?'X':' ';         
+            lines.push(`- [${flag}] :pushpin: ${issue}`);
+        }
+    }
+    if (!suggestionsFound) {
+        lines.push(':thumbsup: No suggestions found');
+    }
+    lines.push('');
+    
+    lines.push(``);
+    lines.push(`Please review issues reported and consider fixing them as soon as appropiate.`);
 
     if (errorsFound) {
-        lines.push({text:``, noDecorate: true});
-        lines.push({text:`**Errors** reported by repository checker should be fixed as soon as possible. `+ 
+        lines.push(``);
+        lines.push(`**Errors** reported by repository checker should be fixed as soon as possible. `+ 
             `Some of them require a new release to be considered as fixed. `+
-            `**Please note that errors reported by checker might be considered as blocking point for future updates at stable repository.**`, noDecorate: true});
+            `**Please note that errors reported by checker might be considered as blocking point for future updates at stable repository.**`);
     }
     if (warningsFound) {
-        lines.push({text:``, noDecorate: true});
-        lines.push({text:`**Warnings** reported by repository checker should be reviewed. `+ 
+        lines.push(``);
+        lines.push(`**Warnings** reported by repository checker should be reviewed. `+ 
             `While some warnings can be ignored due to good reasons or a dedicated decision of the developer, `+
-            `most warnings should be fixed as soon as appropiate.`, noDecorate: true});
+            `most warnings should be fixed as soon as appropiate.`);
     }
     if (suggestionsFound) {
-        lines.push({text:``, noDecorate: true});
-        lines.push({text:`**Suggestions** reported by repository checker should be reviewed. `+ 
+        lines.push(``);
+        lines.push(`**Suggestions** reported by repository checker should be reviewed. `+ 
             `Suggestions can be ignored due to a decision of the developer but they are reported as a hint to use a configuration ` +
-            `which might get required in future or at least is used be most adapters. Suggestions are always optional to follow.`, noDecorate: true});
+            `which might get required in future or at least is used be most adapters. Suggestions are always optional to follow.`);
     }
 
-    lines.push({text:``, noDecorate: true});
-    lines.push({text:`You may start a new check at any time by adding the following comment to this issue:`, noDecorate: true});
-    lines.push({text:``, noDecorate: true});
-    lines.push({text:`\`@iobroker-bot recheck\``, noDecorate: true});
-    lines.push({text:``, noDecorate: true});
-    lines.push({text:`Please note that I (and the server at GitHub) have always plenty of work to do. So it may last up to 30 minutes until you see a reaction. I will drop a comment here as soon as I start processing.`, noDecorate: true});
-    lines.push({text:``, noDecorate: true});
-    lines.push({text:`Feel free to contact me (@iobroker-bot) if you have any questions or feel that an issue is incorrectly flagged.`, noDecorate: true});
-    lines.push({text:``, noDecorate: true});
-    lines.push({text:`And **THANKS A LOT** for maintaining this adapter from me and all users.`, noDecorate: true});
-    lines.push({text:`_Let's work together for the best user experience._`, noDecorate: true});
-    lines.push({text:``, noDecorate: true});
-    lines.push({text:`your`, noDecorate: true});
-    lines.push({text:`_ioBroker Check and Service Bot_`, noDecorate: true});
+    lines.push(``);
+    lines.push(`You may start a new check at any time by adding the following comment to this issue:`);
+    lines.push(``);
+    lines.push(`\`@iobroker-bot recheck\``);
+    lines.push(``);
+    lines.push(`Please note that I (and the server at GitHub) have always plenty of work to do. So it may last up to 30 minutes until you see a reaction. I will drop a comment here as soon as I start processing.`);
+    lines.push(``);
+    lines.push(`Feel free to contact me (@iobroker-bot) if you have any questions or feel that an issue is incorrectly flagged.`);
+    lines.push(``);
+    lines.push(`And **THANKS A LOT** for maintaining this adapter from me and all users.`);
+    lines.push(`_Let's work together for the best user experience._`);
+    lines.push(``);
+    lines.push(`your`);
+    lines.push(`_ioBroker Check and Service Bot_`);
     if (oldIssueId) {
-        lines.push({text:``, noDecorate: true});
-        lines.push({text:`Note: This issue replaces issue #${oldIssueId}`, noDecorate: true});
+        lines.push(``);
+        lines.push(`Note: This issue replaces issue #${oldIssueId}`);
     }
-    lines.push({text:``, noDecorate: true});
-    lines.push({text:`@mcm1957 for evidence`, noDecorate: true});
+    lines.push(``);
+    lines.push(`@mcm1957 for evidence`);
 
-    // decorate
-    let bodyText = lines.map(line => decorateLine(line)).join('\n');
+    lines.push(``);
+    const now = new Date(Date.now());
+    lines.push(`Last update at ${now.toLocaleDateString()} ${now.toLocaleTimeString()}`);
+
+    let bodyText = lines.join('\n');
 
     debug('');
+    debug('Issue Body');
+    debug(bodyText);
+
+    return (bodyText);
+}
+
+async function prepareIssueComment(data, issueTable, oldIssueId) {
+    debug( `prepareIssueComment(data, 'issueTable', ${oldIssueId})`);
+
+    const lines = ['### This issue has been updated by ioBroker Check and Service Bot'];
+
+    let changes = false;
+    let flag = false;
+    for ( const issue in issueTable) {
+        if (issueTable[issue].state === '?') {
+            if (!flag) {
+                lines.push('**The following isses have been fixed**');
+                flag = true;
+                changes = true;
+            }
+            lines.push(`${issue}`);
+        };
+    }
+    if (flag) {
+        lines.push('');
+        lines.push(':thumbsup:Thanks for fixing the issues.');
+        lines.push('');
+    }
+
+    flag = false;
+    for ( const issue in issueTable) {
+        if (issueTable[issue].state === 'R') {
+            if (!flag) {
+                lines.push('**The following issues are not fixed and have been reopened**');
+                flag = true;
+                changes = true;
+            }
+            lines.push(`${issue}`)
+        }        
+    }
+    if (flag) {
+        lines.push('');
+    }
+
+    flag = false;
+    for ( const issue in issueTable) {
+        if (issueTable[issue].state === 'N') {
+            if (!flag) {
+                lines.push('**The following issues are new and have been added**');
+                flag = true;
+                changes = true;
+            }
+            lines.push(`${issue}`)
+        }
+    }
+    if (flag) {
+        lines.push('');
+    }
+
+    if (opts.recheck) {
+        lines.push('RECHECK has been performed as requested.');
+        if (!changes) {
+            lines.push('No changes detected.');
+        }
+    }
+
+    let bodyText = lines.join('\n');
+
+    if (!changes && !opts.recheck) {
+        bodyText='';
+    }
+
+    debug('');
+    debug('Issue Comment');
     debug(bodyText);
 
     return (bodyText);
@@ -337,10 +453,8 @@ async function cleanupOldIssues( owner, repo, issues ) {
     }
 }
 
-async function createNewIssue(owner, repo, data, oldIssueId ) {
-    debug(`createNewIssues('${owner}', '${repo}', 'data', ${oldIssueId})`);
-
-    const body = await prepareIssue(data, oldIssueId);
+async function createNewIssue(owner, repo, body ) {
+    debug(`createNewIssues('${owner}', '${repo}', 'body')`);
 
     if (opts.dry) {
         console.log (`[DRY] would create new issue`)
@@ -357,47 +471,88 @@ async function createNewIssue(owner, repo, data, oldIssueId ) {
     return id;
 }
 
-async function getOldMsgs(owner, repo, id) {
-    debug(`getOldMsgs('${owner}', '${repo}', ${id})`);
+async function parseOldIssues(issueTable, owner, repo, id) {
+    debug(`parseOldIssue('issuetable', '${owner}', '${repo}', ${id})`);
 
     const issue = await github.getIssue(owner, repo, id);
 
-    const lines = issue.body.split('\n');
-    let remarks = [];
+    const lines = issue.body.replace(/(\r)/gm,'').split('\n');
     lines.forEach(line => {
-        let m = line.match(/\[([EWS]\d\d\d)\]/);
+        let m = line.match(/^\-\s\[(.)\].+(\[[EWS]\d\d\d\].*)$/);
         if (m) {
-            remarks.push(m[1]);
-        };
+            issueTable[m[2]]={};
+            issueTable[m[2]].state=m[1]===' '?'?':'D';
+        } else {
+            debug(`ignored: '${line}'`)
+        }
     });
-    remarks = remarks.sort();
-    //console.log (remarks.join(', '));
-
-    return remarks;
-}
-
-async function getNewMsgs(owner, repo, data) {
-    debug(`getNewErrors('${owner}', '${repo}', 'data'')`);
-
-    let remarks = [];
-    
-    if (data.context) {
-        if (data.context.errors && data.context.errors.length) {
-            data.context.errors.forEach(err => remarks.push(err.substring(1,5)));
-        }
-
-        if (data.context.warnings && data.context.warnings.length) {
-            data.context.warnings.forEach(warn => remarks.push(warn.substring(1,5)));
-        }
-
-        if (data.context.suggestions && data.context.suggestions.length) {
-            data.context.suggestions.forEach(suggestion => remarks.push(suggestion.substring(1,5)));
+    if (opts.debug) {
+        for ( const issue in issueTable ) {
+            console.log (`    ${issueTable[issue].state} ${issue}`); 
         }
     }
-    remarks = remarks.sort();
-    //console.log (remarks.join(', '));
 
-    return remarks;
+    return;
+}
+
+async function mergeNewIssues(issueTable, data) {
+    debug(`mergeNewIssues('issueTable, 'data')`);
+
+    if (data.context) {
+        if (data.context.errors && data.context.errors.length) {
+            data.context.errors.forEach(err => {
+                if (!issueTable[err] ) {
+                    issueTable[err] = {};
+                    issueTable[err].state = 'N';
+                } else {
+                    if (issueTable[err].state === 'D') {
+                        issueTable[err].state = 'R'
+                    } else {
+                        issueTable[err].state = 'O'
+                    }
+                }
+            });
+        };
+
+        if (data.context.warnings && data.context.warnings.length) {
+            data.context.warnings.forEach(warn => {
+                if (!issueTable[warn] ) {
+                    issueTable[warn] = {};
+                    issueTable[warn].state = 'N';
+                } else {
+                    if (issueTable[warn].state === 'D') {
+                        issueTable[warn].state = 'R'
+                    } else {
+                        issueTable[warn].state = 'O'
+                    }
+                }
+            });
+        };
+
+        if (data.context.suggestions && data.context.suggestions.length) {
+            data.context.suggestions.forEach(suggestion => {
+                if (!issueTable[suggestion] ) {
+                    issueTable[suggestion] = {};
+                    issueTable[suggestion].state = 'N';
+                } else {
+                    if (issueTable[suggestion].state === 'D') {
+                        issueTable[suggestion].state = 'R'
+                    } else {
+                        issueTable[suggestion].state = 'O'
+                    }
+                }
+            });
+        };
+    }
+    
+
+    if (opts.debug) {
+        for ( const issue in issueTable ) {
+            console.log (`    ${issueTable[issue].state} ${issue}`); 
+        }
+    }
+
+    return;
 }
 
 async function main() {
@@ -413,7 +568,23 @@ async function main() {
         'dry': {
             type: 'boolean',
         },
-        'force': {
+        'erroronly': {
+            type: 'boolean',
+            short: 'f',
+        },
+        // 'force': {
+        //     type: 'boolean',
+        //     short: 'f',
+        // },
+        'recheck': {
+            type: 'boolean',
+            short: 'f',
+        },
+        'recreate': {
+            type: 'boolean',
+            short: 'f',
+        },
+        'suggestions': {
             type: 'boolean',
             short: 'f',
         },
@@ -429,10 +600,18 @@ async function main() {
     opts.createIssue = values['create-issue'];
     opts.debug = values['debug'];
     opts.dry = values['dry'];
-    opts.force = values['force'];
+    //opts.force = values['force'];
+    opts.erroronly = values['erroronly'];
+    opts.recheck = values['recheck'];
+    opts.recreate = values['recreate'];
+    opts.suggestions = values['suggestions'];
 
     if (positionals.length != 1) {
         console.log ('[ERROR] Please specify exactly one repository');
+        process.exit (1);
+    }
+    if (opts.recheck && opts.recreate) {
+        console.log ('[ERROR] --recheck and --recreate must not be used together');
         process.exit (1);
     }
 
@@ -447,57 +626,70 @@ async function main() {
     console.log(`[INFO] processing ${repoUrl}`);
 
     const data = await executeOneAdapterCheck(repoUrl);
+    decorateData(data);
 
     // check if older issues exists
     let issues = await getOldIssues(owner, repo);
-    issues = issues.filter(i => i.state === 'open' && i.title.includes(ISSUE_TITLE));
     const oldIssueId = issues[0]?.number || 0;
     debug(`detected existing issue ${oldIssueId}`);
 
     // if more than one issue exists close older ones
     await cleanupOldIssues( owner, repo, issues);
 
-    // if no errors or warning exists close old Issue
-    if (!data.context.errors.length && !data.context.warnings.length && !data.context.suggestions.length && oldIssueId) {
+    // parse existing issues and merge new ones
+    const issueTable = {};
+    if (!opts.recreate && oldIssueId) {
+        await parseOldIssues(issueTable, owner, repo, oldIssueId);
+    }
+    await mergeNewIssues(issueTable, data);
+    
+    const haveErrors = data.context.errors && data.context.errors.length;
+    const haveWarnings = data.context.warnings && data.context.warnings.length;
+    const haveSuggestions = data.context.suggestions && data.context.suggestions.length;
+    const fatalError = data.context.errors && (data.context.errors.includes('E000') || data.context.errors.includes('E999'));
+
+    if (fatalError) {
+        console.log(`[ERROR] some serious error occured during checking - no issue processing possible`);
+        process.exit (1);
+    }
+
+    // prepare issue body
+    const issueBody = await prepareIssue(data, issueTable, /*oldIssueId*/ 0);
+    const issueComment = await prepareIssueComment(data, issueTable);
+
+    // if no issue exists, create a new one, else update old one
+    if (!oldIssueId) {
+        if ( haveErrors || (haveWarnings && !opts.erroronly) || opts.suggestions ) { 
+            await createNewIssue(owner, repo, issueBody);
+        } else {
+            console.log(`[INFO] no issues detected`);
+        }
+    } else if ( opts.recreate) {
+        const newIssueId = await createNewIssue(owner, repo, issueBody);
+        closeIssue(owner, repo, oldIssueId, `Issue closed due to RECREATE request. Folloow up issue #${newIssueId} has been created.`);
+        console.log(`[INFO] old issue ${oldIssueId} closed due to --recreate request`);
+    } else {
+        if (opts.dry) {
+            console.log (`[DRY] would add update issue "${oldIssueId}"`)
+        } else {
+            // update issue
+            debug (`update issue ${oldIssueId}`);
+            await github.updateIssue( owner, repo, oldIssueId, { 
+                title: ISSUE_TITLE,
+                body: issueBody});
+            }
+
+            // add comment
+            if (issueComment !== '') {
+                debug (`add comment to issue ${oldIssueId}`);
+                await github.addComment(owner, repo, oldIssueId, issueComment);
+            }
+    }
+
+    // if no errors, warnings or suggestions exist close old Issue
+    if ( !(haveErrors || haveWarnings || haveSuggestions) ) {
         closeIssue(owner, repo, oldIssueId, 'All issues reported earlier seem to be fixed now. \nTHANKS for your support.');
         console.log(`[INFO] old issue ${oldIssueId} closed`);
-    }
-
-    // check if list of issues has been changed
-    const newMsgs = await getNewMsgs(owner, repo, data);
-    const fatalError = newMsgs.includes('E000') || newMsgs.includes('E999');
-    let newIssueRequired = !fatalError && ((newMsgs.length && (!oldIssueId || opts.force))) ;
-
-    if (newMsgs.length && oldIssueId && !fatalError) {
-        const oldMsgs = await getOldMsgs(owner, repo, oldIssueId);
-        if (oldMsgs.length != newMsgs.length) {
-            newIssueRequired = true;
-        } else {
-            for (let ii = 0; ii < oldMsgs.length; ii++) {
-                if (oldMsgs[ii] !== newMsgs[ii]) {
-                    newIssueRequired = true;
-                }
-            }
-        }
-    }
-
-    // create new issue if required
-    let newIssueId = 0;
-    if (fatalError) {
-        console.log(`[ERROR] some serious error occured during checking - no issue created`);
-    } else if (newIssueRequired) {
-        newIssueId = await createNewIssue( owner, repo, data, oldIssueId);
-        console.log(`[INFO] new issue ${newIssueId} created`);
-    } else if (!newMsgs.length) {
-        console.log(`[INFO] no error or warning detected - no issue created`);
-    } else {
-        console.log(`[INFO] existing issue ${oldIssueId} still valid`);
-    }
-
-    // close old issueId if new issue has been created
-    if (newIssueId && oldIssueId ) {
-        await closeIssue(owner, repo, oldIssueId, `This issue has been replaced by new isse #${newIssueId}`);
-        console.log(`[INFO] outdated issue ${oldIssueId} closed`);
     }
 
 }
