@@ -78,8 +78,8 @@ async function main() {
         console.log(`[INFO] processing ${owner}/ioBroker.${adapter} (${curr}/${total})`);
 
         triggerRepoCheck( owner, adapter);
-        console.log('sleeping (25s) ...')
-        await common.sleep(25000);
+        console.log('sleeping (30s) ...')
+        await common.sleep(30000);
 }
 }
 
