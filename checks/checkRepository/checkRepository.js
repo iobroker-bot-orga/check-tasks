@@ -555,6 +555,21 @@ async function mergeNewIssues(issueTable, data) {
     return;
 }
 
+function checkFatalError(data) {
+    debug(`checkFatalError('data')`);
+
+    let flag = false;
+    if (data.context && data.context.errors && data.context.errors.length) {
+        data.context.errors.forEach(err => {
+            debug(`checking ${err}`);
+            if ( err.startsWith('[E000]')) flag = true;
+            if ( err.startsWith('[E999]')) flag = true;
+        });
+    }
+    debug(`${(flag?'':'no ')}fatal error detected`);
+    return flag;
+}
+
 async function main() {
     const options = {
         'create-issue': {
@@ -626,6 +641,11 @@ async function main() {
     console.log(`[INFO] processing ${repoUrl}`);
 
     const data = await executeOneAdapterCheck(repoUrl);
+    const fatalError = checkFatalError(data);
+    if (fatalError) {
+        console.log(`[ERROR] some serious error occured during checking - no issue processing possible`);
+        process.exit (1);
+    }
     decorateData(data);
 
     // check if older issues exists
@@ -646,12 +666,6 @@ async function main() {
     const haveErrors = data.context.errors && data.context.errors.length;
     const haveWarnings = data.context.warnings && data.context.warnings.length;
     const haveSuggestions = data.context.suggestions && data.context.suggestions.length;
-    const fatalError = data.context.errors && (data.context.errors.includes('E000') || data.context.errors.includes('E999'));
-
-    if (fatalError) {
-        console.log(`[ERROR] some serious error occured during checking - no issue processing possible`);
-        process.exit (1);
-    }
 
     // prepare issue body
     const issueBody = await prepareIssue(data, issueTable, opts.recreate?oldIssueId:0);
