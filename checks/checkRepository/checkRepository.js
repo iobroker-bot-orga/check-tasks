@@ -52,7 +52,7 @@ function decorateText(text, link, owner, adapter) {
 
     m = text.match(/ README.md/);
     if (m) {
-        text = text.replace(/ README.md/g, ` [README.md](${line.link}/blob/master/README.md)`);
+        text = text.replace(/ README.md/g, ` [README.md](${link}/blob/master/README.md)`);
     }
 
     m = text.match(/ io-package\.json/);
