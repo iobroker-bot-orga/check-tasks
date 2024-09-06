@@ -116,7 +116,6 @@ function decorateData(data) {
         }
 
         for ( let ii=0; data.context.warnings && (ii < data.context.warnings.length); ii++) {
-            console.log ('juhu 2');
             data.context.warnings[ii] = decorateText(data.context.warnings[ii], link, owner, adapter);
         };
 
