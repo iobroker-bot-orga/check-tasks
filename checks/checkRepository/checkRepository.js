@@ -300,9 +300,10 @@ async function prepareIssue(data, issueTable, oldIssueId) {
     }
 
     lines.push(``);
-    lines.push(`You may start a new check at any time by adding the following comment to this issue:`);
+    lines.push(`You may start a new check or force the creation of a new issue at any time by adding the following comment to this issue:`);
     lines.push(``);
     lines.push(`\`@iobroker-bot recheck\``);
+    lines.push(`\`@iobroker-bot recreate\``);
     lines.push(``);
     lines.push(`Please note that I (and the server at GitHub) have always plenty of work to do. So it may last up to 30 minutes until you see a reaction. I will drop a comment here as soon as I start processing.`);
     lines.push(``);
