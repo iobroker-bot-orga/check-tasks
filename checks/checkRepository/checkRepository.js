@@ -677,7 +677,7 @@ async function main() {
         } else {
             console.log(`[INFO] no issues detected`);
         }
-    } else if ( opts.recreate) {
+    } else if (opts.recreate) {
         const newIssueId = await createNewIssue(owner, repo, issueBody);
         closeIssue(owner, repo, oldIssueId, `Issue closed due to RECREATE request. Folloow up issue #${newIssueId} has been created.`);
         console.log(`[INFO] old issue ${oldIssueId} closed due to --recreate request`);
@@ -686,7 +686,7 @@ async function main() {
             console.log (`[DRY] would add update issue "${oldIssueId}"`)
         } else {
             // update issue
-            debug (`update issue ${oldIssueId}`);
+            console.log (`[INFO] update issue ${oldIssueId}`);
             await github.updateIssue( owner, repo, oldIssueId, { 
                 title: ISSUE_TITLE,
                 body: issueBody});
@@ -694,7 +694,7 @@ async function main() {
 
             // add comment
             if (issueComment !== '') {
-                debug (`add comment to issue ${oldIssueId}`);
+                console.log (`[INFO] add comment to issue ${oldIssueId}`);
                 await github.addComment(owner, repo, oldIssueId, issueComment);
             }
     }
@@ -704,7 +704,7 @@ async function main() {
         closeIssue(owner, repo, oldIssueId, 'All issues reported earlier seem to be fixed now. \nTHANKS for your support.');
         console.log(`[INFO] old issue ${oldIssueId} closed`);
     }
-
+    console.log('[INFO] processing completed');
 }
 
 process.env.OWN_GITHUB_TOKEN = process.env.IOBBOT_GITHUB_TOKEN;
