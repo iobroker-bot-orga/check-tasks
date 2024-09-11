@@ -23,7 +23,7 @@ function debug (text){
 }
 
 function triggerRepoCheck(owner, adapter) {
-    const url = `${owner}/ioBroker.${adapter}`;
+    let url = `${owner}/ioBroker.${adapter}`;
 
     if (opts.dry) url = url + ' --dry';
     if (opts.debug) url = url + ' --debug';
