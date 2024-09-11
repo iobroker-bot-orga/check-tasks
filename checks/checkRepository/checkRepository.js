@@ -232,7 +232,7 @@ async function prepareIssue(data, issueTable, oldIssueId) {
     // lines.push( `[![NPM](https://nodei.co/npm/${adapter.toLowerCase()}.png?downloads=true)](https://nodei.co/npm/${adapter.toLowerCase()}/)\n`);
     lines.push('');
  
-    for ( let issue in issueTable) {
+    for ( let issue of Object.keys(issueTable).sort()) {
         if (issue.match(/\[(E\d\d\d)\]/)) {
             if (!errorsFound) {
                 lines.push('**ERRORS:**');
@@ -247,7 +247,7 @@ async function prepareIssue(data, issueTable, oldIssueId) {
     }
     lines.push('');
 
-    for ( let issue in issueTable) {
+    for ( let issue of Object.keys(issueTable).sort()) {
         if (issue.match(/\[(W\d\d\d)\]/)) {
             if (!warningsFound) {
                 lines.push('**WARNINGS:**');
@@ -262,7 +262,7 @@ async function prepareIssue(data, issueTable, oldIssueId) {
     }
     lines.push('');
     
-    for ( let issue in issueTable) {
+    for ( let issue of Object.keys(issueTable).sort()) {
         if (issue.match(/\[(S\d\d\d)\]/)) {
             if (!suggestionsFound) {
                 lines.push('**SUGGESTIONS:**');
