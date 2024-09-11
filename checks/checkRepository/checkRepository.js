@@ -424,7 +424,7 @@ async function closeIssue (owner, repo, id, reason) {
     let exists = oldComments && oldComments.find(comment => comment.body.includes('This issue can be closed.'));
     if (!exists) {
         const comment = `${reason}  \n` +
-            `This issue can be closed.  \n  \n` +
+            `This issue will be closed.  \n  \n` +
             `your  \n` +
             `_ioBroker Check and Service Bot_\n`;
 
@@ -681,7 +681,7 @@ async function main() {
         }
     } else if (opts.recreate) {
         const newIssueId = await createNewIssue(owner, repo, issueBody);
-        closeIssue(owner, repo, oldIssueId, `Issue closed due to RECREATE request. Folloow up issue #${newIssueId} has been created.`);
+        closeIssue(owner, repo, oldIssueId, `Issue outdated due to RECREATE request. Follow up issue #${newIssueId} has been created.`);
         console.log(`[INFO] old issue ${oldIssueId} closed due to --recreate request`);
     } else {
         if (opts.dry) {
