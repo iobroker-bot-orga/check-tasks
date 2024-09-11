@@ -5,10 +5,10 @@ on:
   #  types: [check-latest-repositories]
 
   workflow_dispatch:
-  #  inputs:
-  #    repository:
-  #      type: string
-  #      required: true
+    inputs:
+      flags:
+        type: string
+        required: true
 
   schedule:
     # * is a special character in YAML, so you have to quote this string
@@ -28,6 +28,6 @@ jobs:
         with:
           node-version: 20
       - run: npm i
-      - run: node checks/checkLatestRepositories/checkLatestRepositories.js
+      - run: node checks/checkLatestRepositories/checkLatestRepositories.js ${{ github.event.inputs.flags }} 
         env:
           IOBBOT_GITHUB_TOKEN: ${{ secrets.IOBBOT_GITHUB_TOKEN }}
