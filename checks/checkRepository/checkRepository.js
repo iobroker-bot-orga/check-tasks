@@ -323,7 +323,8 @@ async function prepareIssue(data, issueTable, oldIssueId) {
 
     lines.push(``);
     const now = new Date(Date.now());
-    lines.push(`Last update at ${now.toUTCString()}`);
+    lines.push(`Last update at ${now.toUTCString()} based on commit ${data.context.lastCommitSha}`);
+    lines.push(`ioBroker.repochecker ${data.context.version}`);
 
     let bodyText = lines.join('\n');
 
