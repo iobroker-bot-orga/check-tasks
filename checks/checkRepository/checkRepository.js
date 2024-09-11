@@ -345,7 +345,7 @@ async function prepareIssueComment(data, issueTable) {
     for ( const issue in issueTable) {
         if (issueTable[issue].state === '?') {
             if (!flag) {
-                lines.push('**The following isses have been fixed**');
+                lines.push('**The following issues have been fixed**');
                 flag = true;
                 changes = true;
             }
