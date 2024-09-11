@@ -13,7 +13,7 @@ const opts = {
     debug: false,
     erroronly: false,
     recheck: false,
-    recreat: flase,
+    recreat: false,
 }
 
 function debug (text){
