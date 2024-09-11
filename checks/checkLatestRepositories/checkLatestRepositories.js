@@ -12,6 +12,7 @@ const opts = {
     dry: false,
     debug: false,
     erroronly: false,
+    from: '',
     recheck: false,
     recreat: false,
 }
@@ -58,6 +59,9 @@ async function main() {
         'erroronly': {
             type: 'boolean',
         },
+        'from': {
+            type: 'string',
+        },
         'recheck': {
             type: 'boolean',
         },
@@ -75,6 +79,7 @@ async function main() {
 
     opts.dry = values['dry'];
     opts.debug = values['debug'];
+    opts.from = values['from'];
     opts.erroronly = values['erroronly'];
     opts.recheck = values['recheck'];
     opts.recreate = values['recreate'];
@@ -87,11 +92,17 @@ async function main() {
     const latestRepo = await iobroker.getLatestRepoLive();
     const total = Object.keys(latestRepo).length;
     let curr = 0;
+    let skip = opts.from !== '';
     for (const adapter in latestRepo) {
         curr = curr + 1;
         if (adapter.startsWith('_')) continue;
-        
-	    debug (`processing ${latestRepo[adapter].meta}`);
+	if (adapter === opts.from) skip = false;
+	if (skip) {
+	    console.log (`skipping ${adapter}`);
+	    continue;
+	}
+	    	    
+	debug (`processing ${latestRepo[adapter].meta}`);
 
         const parts = latestRepo[adapter].meta.split('/');
         const owner = parts[3];
