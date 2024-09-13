@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 'use strict';
 
+const fs = require('node:fs');
 const {parseArgs} = require('node:util');
 
 const common = require('../../lib/commonTools.js');
@@ -178,6 +179,41 @@ function executeOneAdapterCheck(repoUrl) {
     });
 }
 
+async function createStatistics(data, issueTable) {
+    debug( `createStatistics('data', 'issueTable')`);
+
+    const parts = data.repoUrl.split('/');
+    const adapter = parts.pop().replace('iobroker.', 'ioBroker.');
+    const adapterName = adapter.split('.')[1];
+    const owner = parts.pop();
+    const link = `https://github.com/${owner}/${adapter}`;
+ 
+    const statistics = {};
+    for ( let issue of Object.keys(issueTable).sort()) {
+        const m = issue.match(/\[[EWS](\d\d\d)\]/);
+        if (m) {
+            debug(`register issue ${m[1]}`);
+            const num = m[1];
+            statistics[num]={};
+            statistics[num].issue=issue;
+            statistics[num].adapter=`${owner}/${adapter}`; 
+            const now = new Date(Date.now());           
+            statistics[num].timestamp=`${now.toUTCString()}`;            
+        } else {
+            console.log (`could not parse issue ${issue}`);
+        }
+    }
+
+    const filename = `statistics/${adapter}.json`;
+    console.log(`[INFO] saving statistics to ${filename}`);
+    fs.writeFile(filename, JSON.stringify(statistics), err => {
+        if (err) {
+            console.error(err);
+        }
+    });
+
+    return;
+}
 async function prepareIssue(data, issueTable, oldIssueId) {
     debug( `prepareIssue('issueTable',${oldIssueId})`);
 
@@ -706,6 +742,8 @@ async function main() {
                 await github.addComment(owner, repo, oldIssueId, issueComment);
             }
     }
+
+    await createStatistics(data, issueTable);
 
     // if no errors, warnings or suggestions exist close old Issue
     if ( !(haveErrors || haveWarnings || haveSuggestions) && oldIssueId) {

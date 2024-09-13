@@ -39,3 +39,9 @@ jobs:
         run: node checks/checkRepository/checkRepository.js ${{ github.event.inputs.repository }} ${{ github.event.client_payload.url }}
         env:
           IOBBOT_GITHUB_TOKEN: ${{ secrets.IOBBOT_GITHUB_TOKEN }}
+
+      - name: Push new (statistic) files
+        uses: mikeal/publish-to-github-action@master
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          BRANCH_NAME: 'main'
