@@ -1,0 +1,1 @@
+{"513":{"issue":"[W513] \"gulpfile.js\" found in repo! Think about migrating to @iobroker/adapter-dev package","adapter":"TA2k/ioBroker.intex","timestamp":"Fri, 13 Sep 2024 21:10:04 GMT"},"522":{"issue":"[S522] Please consider migrating to admin 5 UI (jsonConfig).","adapter":"TA2k/ioBroker.intex","timestamp":"Fri, 13 Sep 2024 21:10:04 GMT"}}
