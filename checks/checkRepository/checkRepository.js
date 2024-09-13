@@ -233,6 +233,7 @@ async function prepareIssue(data, issueTable, oldIssueId) {
     lines.push('');
  
     for ( let issue of Object.keys(issueTable).sort()) {
+        if (opts.cleanup && (issueTable[issue].state === '?' || issueTable[issue].state === 'D')) continue;         
         if (issue.match(/\[(E\d\d\d)\]/)) {
             if (!errorsFound) {
                 lines.push('**ERRORS:**');
@@ -248,6 +249,7 @@ async function prepareIssue(data, issueTable, oldIssueId) {
     lines.push('');
 
     for ( let issue of Object.keys(issueTable).sort()) {
+        if (opts.cleanup && (issueTable[issue].state === '?' || issueTable[issue].state === 'D')) continue;         
         if (issue.match(/\[(W\d\d\d)\]/)) {
             if (!warningsFound) {
                 lines.push('**WARNINGS:**');
@@ -263,6 +265,7 @@ async function prepareIssue(data, issueTable, oldIssueId) {
     lines.push('');
     
     for ( let issue of Object.keys(issueTable).sort()) {
+        if (opts.cleanup && (issueTable[issue].state === '?' || issueTable[issue].state === 'D')) continue;         
         if (issue.match(/\[(S\d\d\d)\]/)) {
             if (!suggestionsFound) {
                 lines.push('**SUGGESTIONS:**');
@@ -573,9 +576,11 @@ function checkFatalError(data) {
 
 async function main() {
     const options = {
+        'cleanup': {
+            type: 'boolean',
+        },
         'create-issue': {
             type: 'boolean',
-            short: 'c',
         },
         'debug': {
             type: 'boolean',
@@ -613,6 +618,7 @@ async function main() {
 
     //console.log(values, positionals);
 
+    opts.cleanup = values['cleanup'];
     opts.createIssue = values['create-issue'];
     opts.debug = values['debug'];
     opts.dry = values['dry'];
