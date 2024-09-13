@@ -99,17 +99,17 @@ async function main() {
     const total = Object.keys(latestRepo).length;
     let curr = 0;
     let skip = opts.from !== '';
-    if (skip) console.log {`--from set to "${opts.from}" - serching for first adapter to process ...`};
+    if (skip) console.log (`--from set to "${opts.from}" - serching for first adapter to process ...`);
     for (const adapter in latestRepo) {
         curr = curr + 1;
         if (adapter.startsWith('_')) continue;
-	if (adapter === opts.from) skip = false;
-	if (skip) {
-	    console.log (`skipping ${adapter}`);
-	    continue;
-	}
+        if (adapter === opts.from) skip = false;
+        if (skip) {
+            console.log (`skipping ${adapter}`);
+            continue;
+        }
 	    	    
-	debug (`processing ${latestRepo[adapter].meta}`);
+    	debug (`processing ${latestRepo[adapter].meta}`);
 
         const parts = latestRepo[adapter].meta.split('/');
         const owner = parts[3];
