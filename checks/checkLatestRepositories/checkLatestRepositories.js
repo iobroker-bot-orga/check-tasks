@@ -98,7 +98,7 @@ async function main() {
     const latestRepo = await iobroker.getLatestRepoLive();
     const total = Object.keys(latestRepo).length;
     let curr = 0;
-    let skip = opts.from !== '';
+    let skip = opts.from && (opts.from !== '');
     if (skip) console.log (`--from set to "${opts.from}" - serching for first adapter to process ...`);
     for (const adapter in latestRepo) {
         curr = curr + 1;
