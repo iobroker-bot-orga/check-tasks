@@ -9,12 +9,13 @@ const common = require('../../lib/commonTools.js');
 const iobroker = require('../../lib/iobrokerTools.js');
 
 const opts = {
+    cleanup: false,
     dry: false,
     debug: false,
     erroronly: false,
     from: '',
     recheck: false,
-    recreat: false,
+    recreate: false,
 }
 
 function debug (text){
@@ -26,6 +27,7 @@ function debug (text){
 function triggerRepoCheck(owner, adapter) {
     let url = `${owner}/ioBroker.${adapter}`;
 
+    if (opts.cleanup) url = url + ' --cleanup';
     if (opts.dry) url = url + ' --dry';
     if (opts.debug) url = url + ' --debug';
     if (opts.erroronly) url = url + ' --erroronly';
@@ -49,6 +51,9 @@ function triggerRepoCheck(owner, adapter) {
 
 async function main() {
     const options = {
+        'cleanup': {
+            type: 'boolean',
+        },
         'dry': {
             type: 'boolean',
         },
@@ -77,6 +82,7 @@ async function main() {
 
     //console.log(values, positionals);
 
+    opts.cleanup = values['cleanup'];
     opts.dry = values['dry'];
     opts.debug = values['debug'];
     opts.from = values['from'];
