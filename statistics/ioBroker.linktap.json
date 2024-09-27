@@ -1,1 +1,1 @@
-{"521":{"issue":"[W521] \"gulp\" found at devDependencies at [package.json](https://github.com/Smart-Gang/ioBroker.linktap/blob/master/package.json) but no \"gulpfile.js\" found. Is this dependency really required?","adapter":"Smart-Gang/ioBroker.linktap","timestamp":"Fri, 20 Sep 2024 04:00:11 GMT"},"953":{"issue":"[W953] .npmignore found - consider using [package.json](https://github.com/Smart-Gang/ioBroker.linktap/blob/master/package.json) object \"files\" instead.","adapter":"Smart-Gang/ioBroker.linktap","timestamp":"Fri, 20 Sep 2024 04:00:11 GMT"}}
+{}
