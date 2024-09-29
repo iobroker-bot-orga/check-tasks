@@ -8,7 +8,7 @@ on:
     inputs:
       flags:
         type: string
-        required: true
+        required: false
 
   schedule:
     # * is a special character in YAML, so you have to quote this string
