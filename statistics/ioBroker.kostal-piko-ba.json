@@ -1,1 +1,1 @@
-{}
+{"132":{"issue":"[W132] Many \"common.news\" found in [io-package.json](https://github.com/hombach/ioBroker.kostal-piko-ba/blob/master/io-package.json). Repository builder will truncate at 7 news. Please remove old news.","adapter":"hombach/ioBroker.kostal-piko-ba","timestamp":"Fri, 04 Oct 2024 03:55:08 GMT"}}
