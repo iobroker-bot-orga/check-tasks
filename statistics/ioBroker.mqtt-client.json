@@ -1,1 +1,1 @@
-{"505":{"issue":"[W505] setTimeout found in \"main.js\", but no clearTimeout detected","adapter":"iobroker-community-adapters/ioBroker.mqtt-client","timestamp":"Sun, 29 Sep 2024 19:27:36 GMT"}}
+{"505":{"issue":"[W505] setTimeout found in \"main.js\", but no clearTimeout detected","adapter":"iobroker-community-adapters/ioBroker.mqtt-client","timestamp":"Fri, 04 Oct 2024 04:29:14 GMT"}}
