@@ -1,1 +1,1 @@
-{"048":{"issue":"[W048] devDependency should not require a specific version. Use \"~1.2.3\" or \"^1.2.3\" syntax. Please update \"@iobroker/dev-server:*\"","adapter":"iobroker-community-adapters/ioBroker.acme","timestamp":"Sun, 29 Sep 2024 16:52:25 GMT"}}
+{"048":{"issue":"[W048] devDependency should not require a specific version. Use \"~1.2.3\" or \"^1.2.3\" syntax. Please update \"@iobroker/dev-server:*\"","adapter":"iobroker-community-adapters/ioBroker.acme","timestamp":"Fri, 04 Oct 2024 01:54:10 GMT"}}
