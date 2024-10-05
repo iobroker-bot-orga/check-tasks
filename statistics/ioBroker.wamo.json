@@ -1,1 +1,1 @@
-{"048":{"issue":"[W048] devDependency should not require a specific version. Use \"~1.2.3\" or \"^1.2.3\" syntax. Please update \"prettier:3.3.3\"","adapter":"smarthausleben/ioBroker.wamo","timestamp":"Fri, 04 Oct 2024 06:45:02 GMT"}}
+{"048":{"issue":"[W048] devDependency should not require a specific version. Use \"~1.2.3\" or \"^1.2.3\" syntax. Please update \"prettier:3.3.3\"","adapter":"smarthausleben/ioBroker.wamo","timestamp":"Sat, 05 Oct 2024 05:02:56 GMT"}}
