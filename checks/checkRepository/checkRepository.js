@@ -717,15 +717,19 @@ async function main() {
 
     // if no issue exists, create a new one, else update old one
     if (!oldIssueId) {
-        if ( haveErrors || (haveWarnings && !opts.erroronly) || opts.suggestions ) { 
+        if (haveErrors || (haveWarnings && !opts.erroronly) || opts.suggestions ) { 
             await createNewIssue(owner, repo, issueBody);
         } else {
             console.log(`[INFO] no issues detected`);
         }
     } else if (opts.recreate) {
-        const newIssueId = await createNewIssue(owner, repo, issueBody);
-        closeIssue(owner, repo, oldIssueId, `Issue outdated due to RECREATE request. Follow up issue #${newIssueId} has been created.`);
-        console.log(`[INFO] old issue ${oldIssueId} closed due to --recreate request`);
+        if (haveErrors || haveWarnings || haveSuggestions) {
+            const newIssueId = await createNewIssue(owner, repo, issueBody);
+            closeIssue(owner, repo, oldIssueId, `Issue outdated due to RECREATE request. Follow up issue #${newIssueId} has been created.`);
+            console.log(`[INFO] old issue ${oldIssueId} closed due to --recreate request`);    
+        } else {
+            console.log(`[INFO] no issues detected`);
+        }
     } else {
         if (opts.dry) {
             console.log (`[DRY] would add update issue "${oldIssueId}"`)
