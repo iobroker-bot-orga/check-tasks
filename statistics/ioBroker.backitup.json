@@ -1,1 +1,1 @@
-{}
+{"048":{"issue":"[W048] devDependency should not require a specific version. Use \"~1.2.3\" or \"^1.2.3\" syntax. Please update \"@emotion/react: ^11.13.3\"","adapter":"simatec/ioBroker.backitup","timestamp":"Tue, 15 Oct 2024 13:10:25 GMT"}}
