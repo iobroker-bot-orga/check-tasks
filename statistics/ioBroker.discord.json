@@ -1,1 +1,1 @@
-{"505":{"issue":"[W505] setTimeout found in \"build/main.js\", but no clearTimeout detected","adapter":"crycode-de/ioBroker.discord","timestamp":"Wed, 16 Oct 2024 05:16:13 GMT"}}
+{"505":{"issue":"[W505] setTimeout found in \"build/main.js\", but no clearTimeout detected","adapter":"crycode-de/ioBroker.discord","timestamp":"Thu, 17 Oct 2024 05:17:29 GMT"}}
