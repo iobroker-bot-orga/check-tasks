@@ -1,1 +1,1 @@
-{}
+{"019":{"issue":"[E019] Invalid repository URL in [package.json](https://github.com/o0shojo0o/ioBroker.opendtu/blob/master/package.json): https://github.com/o0shojo0o/ioBroker.opendtu.git. Expected: git@github.com:iobroker-community-adapters/ioBroker.opendtu.git or https://github.com/iobroker-community-adapters/ioBroker.opendtu.git","adapter":"o0shojo0o/ioBroker.opendtu","timestamp":"Fri, 18 Oct 2024 04:50:27 GMT"}}
