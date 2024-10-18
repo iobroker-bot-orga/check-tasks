@@ -1,1 +1,1 @@
-{}
+{"172":{"issue":"[W172] \"common.localLink\" in [io-package.json](https://github.com/copystring/ioBroker.roborock/blob/master/io-package.json) is deprecated. Please define object \"common.localLinks\": { \"_default\": \"...\" }","adapter":"copystring/ioBroker.roborock","timestamp":"Fri, 18 Oct 2024 05:23:31 GMT"}}
