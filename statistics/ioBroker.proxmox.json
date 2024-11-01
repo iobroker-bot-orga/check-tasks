@@ -1,1 +1,1 @@
-{}
+{"034":{"issue":"[W034] @iobroker/adapter-core 3.1.6 specified. 3.2.2 is recommended. Please consider updating dependencies at [package.json](https://github.com/iobroker-community-adapters/ioBroker.proxmox/blob/master/package.json)","adapter":"iobroker-community-adapters/ioBroker.proxmox","timestamp":"Fri, 01 Nov 2024 15:26:45 GMT"}}
