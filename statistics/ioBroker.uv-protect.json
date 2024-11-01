@@ -1,1 +1,1 @@
-{}
+{"034":{"issue":"[W034] @iobroker/adapter-core 3.2.1 specified. 3.2.2 is recommended. Please consider updating dependencies at [package.json](https://github.com/simatec/ioBroker.uv-protect/blob/master/package.json)","adapter":"simatec/ioBroker.uv-protect","timestamp":"Fri, 01 Nov 2024 06:24:38 GMT"}}
