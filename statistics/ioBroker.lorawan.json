@@ -1,1 +1,1 @@
-{}
+{"507":{"issue":"[E507] missing size attributes [xs,sm,md,lg,xl] for staticText at admin/jsonConfig.json/items/mainTab/Serverinformation","adapter":"BenAhrdt/ioBroker.lorawan","timestamp":"Sun, 03 Nov 2024 22:59:26 GMT"},"510":{"issue":"[E510] responsive check: maximum issues reached, please fix reported ones and recheck","adapter":"BenAhrdt/ioBroker.lorawan","timestamp":"Sun, 03 Nov 2024 22:59:26 GMT"}}
