@@ -1,1 +1,1 @@
-{}
+{"507":{"issue":"[E507] missing size attributes [xs,xl] for staticText at admin/jsonConfig.json/items/_descriptionExtendedLogging","adapter":"boergegrunicke/ioBroker.govee-local","timestamp":"Sun, 03 Nov 2024 22:06:05 GMT"},"510":{"issue":"[E510] responsive check: maximum issues reached, please fix reported ones and recheck","adapter":"boergegrunicke/ioBroker.govee-local","timestamp":"Sun, 03 Nov 2024 22:06:05 GMT"}}
