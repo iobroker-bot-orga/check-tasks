@@ -1,1 +1,1 @@
-{"507":{"issue":"[E507] missing size attributes [xl] for text at admin/jsonConfig.json/items/mainTab/w1DevicesPath","adapter":"crycode-de/ioBroker.ds18b20","timestamp":"Sat, 16 Nov 2024 15:28:07 GMT"},"509":{"issue":"[E509] \"xl\" value (9) for staticText greater then value for smaller displays","adapter":"crycode-de/ioBroker.ds18b20","timestamp":"Sat, 16 Nov 2024 15:28:07 GMT"},"510":{"issue":"[E510] responsive check: maximum issues reached, please fix reported ones and recheck","adapter":"crycode-de/ioBroker.ds18b20","timestamp":"Sat, 16 Nov 2024 15:28:07 GMT"}}
+{}
