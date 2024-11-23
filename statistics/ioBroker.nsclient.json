@@ -1,1 +1,1 @@
-{"507":{"issue":"[E507] Cannot parse \"admin/jsonConfig.json\": SyntaxError: Expected property name or '}' in JSON at position 67","adapter":"mcm4iob/ioBroker.nsclient","timestamp":"Fri, 22 Nov 2024 04:48:38 GMT"}}
+{"507":{"issue":"[E507] Cannot parse \"admin/jsonConfig.json\": SyntaxError: Expected property name or '}' in JSON at position 67","adapter":"mcm4iob/ioBroker.nsclient","timestamp":"Sat, 23 Nov 2024 09:32:36 GMT"}}
