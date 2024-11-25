@@ -1,1 +1,1 @@
-{"507":{"issue":"[E507] missing size attributes [xs,sm,md,lg,xl] for checkbox at admin/jsonConfig.json/items/_AnalogTab/readanalogs","adapter":"hombach/ioBroker.kostal-piko-ba","timestamp":"Fri, 22 Nov 2024 04:01:29 GMT"},"522":{"issue":"[W522] Why did you decide not to use i18n support?","adapter":"hombach/ioBroker.kostal-piko-ba","timestamp":"Fri, 22 Nov 2024 04:01:29 GMT"}}
+{"522":{"issue":"[W522] Why did you decide not to use i18n support?","adapter":"hombach/ioBroker.kostal-piko-ba","timestamp":"Mon, 25 Nov 2024 18:27:22 GMT"}}
