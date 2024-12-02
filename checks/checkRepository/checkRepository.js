@@ -248,7 +248,7 @@ async function prepareIssue(data, issueTable, oldIssueId) {
     lines.push(`I\'m the ioBroker Check and Service Bot. I\'m an automated tool processing routine tasks for the ioBroker infrastructure. ` +
         `I have recently checked the repository for your adapter _**${adapterName}**_ for common errors and appropiate suggestions to keep this adapter up to date.`);
     lines.push(``);
-    lines.push('### This check is based the current head revisions (master / main  branch) of the adapter repository');
+    lines.push('### This check is based on the current head revisions (master / main  branch) of the adapter repository');
     lines.push('');
     lines.push(`Please see the result of the check below.`);
 
