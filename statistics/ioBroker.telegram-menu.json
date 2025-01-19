@@ -1,1 +1,1 @@
-{"055":{"issue":"[E055] malformed dependency detected \"@mui/lab\":^6.0.0-beta.23\". Please fix at [package.json](https://github.com/MiRo1310/ioBroker.telegram-menu/blob/master/package.json).","adapter":"MiRo1310/ioBroker.telegram-menu","timestamp":"Sun, 19 Jan 2025 16:17:19 GMT"}}
+{"055":{"issue":"[E055] malformed dependency detected \"@mui/lab\":^6.0.0-beta.23\". Please fix at [package.json](https://github.com/MiRo1310/ioBroker.telegram-menu/blob/master/package.json).","adapter":"MiRo1310/ioBroker.telegram-menu","timestamp":"Sun, 19 Jan 2025 17:03:48 GMT"}}
