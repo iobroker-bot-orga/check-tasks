@@ -1,1 +1,1 @@
-{"054":{"issue":"[E054] malformed dependency detected \"multer\":^1.4.5-lts.1\". Please fix at [package.json](https://github.com/simatec/ioBroker.backitup/blob/master/package.json).","adapter":"simatec/ioBroker.backitup","timestamp":"Sun, 19 Jan 2025 09:31:10 GMT"}}
+{"054":{"issue":"[E054] malformed dependency detected \"multer\":^1.4.5-lts.1\". Please fix at [package.json](https://github.com/simatec/ioBroker.backitup/blob/master/package.json).","adapter":"simatec/ioBroker.backitup","timestamp":"Sun, 19 Jan 2025 16:36:45 GMT"}}
