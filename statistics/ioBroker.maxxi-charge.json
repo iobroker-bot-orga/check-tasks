@@ -1,1 +1,1 @@
-{}
+{"402":{"issue":"[E402] Types of adapter in latest repository and in [io-package.json](https://github.com/blabond/ioBroker.maxxi-charge/blob/master/io-package.json) are different \"communication\" !== \"energy\"","adapter":"blabond/ioBroker.maxxi-charge","timestamp":"Fri, 24 Jan 2025 13:09:38 GMT"}}
