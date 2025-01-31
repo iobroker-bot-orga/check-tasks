@@ -1,1 +1,1 @@
-{"401":{"issue":"[W401] Cannot find \"vis-2-widgets-collection\" in latest repository","adapter":"Steiger04/ioBroker.vis-2-widgets-collection","timestamp":"Sat, 25 Jan 2025 08:43:39 GMT"}}
+{"523":{"issue":"[S523] \"package-lock.json\" not found in repo! Please consider to commit it to github repository.","adapter":"Steiger04/ioBroker.vis-2-widgets-collection","timestamp":"Fri, 31 Jan 2025 00:12:58 GMT"}}
