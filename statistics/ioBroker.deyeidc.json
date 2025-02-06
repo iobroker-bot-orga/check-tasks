@@ -1,1 +1,1 @@
-{}
+{"048":{"issue":"[W048] devDependency should not require a specific version. Use \"~1.2.3\" or \"^1.2.3\" syntax. Please update \"chai:4.5.0\"","adapter":"raschy/ioBroker.deyeidc","timestamp":"Thu, 06 Feb 2025 15:56:01 GMT"}}
