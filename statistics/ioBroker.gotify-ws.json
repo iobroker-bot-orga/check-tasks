@@ -1,1 +1,1 @@
-{"508":{"issue":"[W508] attribute \"xs\" for staticText should specify a value of \"12\" at admin/jsonConfig.json/items/gotifyDesc","adapter":"simatec/ioBroker.gotify-ws","timestamp":"Thu, 06 Feb 2025 20:58:34 GMT"}}
+{"508":{"issue":"[W508] attribute \"xs\" for staticText should specify a value of \"12\" at admin/jsonConfig.json/items/gotifyDesc","adapter":"simatec/ioBroker.gotify-ws","timestamp":"Tue, 11 Feb 2025 17:28:09 GMT"}}
