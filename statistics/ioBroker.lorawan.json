@@ -1,1 +1,1 @@
-{}
+{"036":{"issue":"[E036] @alcalzone/release-script 3.7.0 specified. 3.8.0 is required as minimum,  3.8.0 is recommended. Please update devDependencies at [package.json](https://github.com/BenAhrdt/ioBroker.lorawan/blob/master/package.json)","adapter":"BenAhrdt/ioBroker.lorawan","timestamp":"Tue, 11 Feb 2025 18:22:08 GMT"}}
