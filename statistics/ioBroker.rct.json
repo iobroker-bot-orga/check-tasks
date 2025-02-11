@@ -1,1 +1,1 @@
-{}
+{"050":{"issue":"[W050] Package 'axios' listed as devDependency at [package.json](https://github.com/aruttkamp/ioBroker.rct/blob/master/package.json) might be obsolete if using '@iobroker/adapter-dev'.","adapter":"aruttkamp/ioBroker.rct","timestamp":"Tue, 11 Feb 2025 19:34:13 GMT"}}
