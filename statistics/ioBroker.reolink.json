@@ -1,1 +1,1 @@
-{}
+{"036":{"issue":"[E036] @iobroker/adapter-dev 1.2.0 specified. 1.3.0 is required as minimum,  1.3.0 is recommended. Please update devDependencies at [package.json](https://github.com/aendue/ioBroker.reolink/blob/master/package.json)","adapter":"aendue/ioBroker.reolink","timestamp":"Tue, 11 Feb 2025 19:36:12 GMT"}}
