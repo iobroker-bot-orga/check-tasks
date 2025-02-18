@@ -1,1 +1,1 @@
-{}
+{"157":{"issue":"[E157] admin 6.13.16 listed as dependency but 6.17.14 is required as minimum, 7.4.10 is recommended. Please update globalDependency at [io-package.json](https://github.com/iobroker-community-adapters/ioBroker.wifilight/blob/master/io-package.json).","adapter":"iobroker-community-adapters/ioBroker.wifilight","timestamp":"Tue, 18 Feb 2025 10:41:30 GMT"}}
