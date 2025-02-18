@@ -1,1 +1,1 @@
-{}
+{"157":{"issue":"[E157] admin 5.1.13 listed as dependency but 6.17.14 is required as minimum, 7.4.10 is recommended. Please update globalDependency at [io-package.json](https://github.com/Marco15453/ioBroker.cloudflare/blob/master/io-package.json).","adapter":"Marco15453/ioBroker.cloudflare","timestamp":"Tue, 18 Feb 2025 10:42:10 GMT"}}
