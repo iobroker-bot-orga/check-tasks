@@ -1,1 +1,1 @@
-{}
+{"157":{"issue":"[E157] admin 6.13.15 listed as dependency but 6.17.14 is required as minimum, 7.4.10 is recommended. Please update globalDependency at [io-package.json](https://github.com/BenAhrdt/ioBroker.lorawan/blob/master/io-package.json).","adapter":"BenAhrdt/ioBroker.lorawan","timestamp":"Tue, 18 Feb 2025 13:30:09 GMT"}}
