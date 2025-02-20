@@ -1,1 +1,1 @@
-{}
+{"156":{"issue":"[W156] admin 7.0.23 listed as dependency but 7.4.10 is recommended. Please consider updating globalDependency at [io-package.json](https://github.com/Rintrium/ioBroker.selverf/blob/master/io-package.json).","adapter":"Rintrium/ioBroker.selverf","timestamp":"Thu, 20 Feb 2025 23:20:56 GMT"}}
