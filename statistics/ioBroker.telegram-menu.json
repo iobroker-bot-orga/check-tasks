@@ -1,1 +1,1 @@
-{}
+{"157":{"issue":"[E157] admin 5.0.0 listed as dependency but 6.0.0 is required as minimum, 7.4.10 is recommended. Please update globalDependency at [io-package.json](https://github.com/MiRo1310/ioBroker.telegram-menu/blob/master/io-package.json).","adapter":"MiRo1310/ioBroker.telegram-menu","timestamp":"Thu, 20 Feb 2025 23:52:15 GMT"}}
