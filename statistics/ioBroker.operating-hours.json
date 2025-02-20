@@ -1,1 +1,1 @@
-{}
+{"157":{"issue":"[E157] admin 6.2.17 listed as dependency but 6.17.14 is required as minimum, 7.4.10 is recommended. Please update globalDependency at [io-package.json](https://github.com/BenAhrdt/ioBroker.operating-hours/blob/master/io-package.json).","adapter":"BenAhrdt/ioBroker.operating-hours","timestamp":"Thu, 20 Feb 2025 22:41:16 GMT"}}
