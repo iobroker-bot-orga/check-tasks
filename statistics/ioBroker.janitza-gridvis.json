@@ -1,1 +1,1 @@
-{}
+{"156":{"issue":"[W156] admin 7.1.5 listed as dependency but 7.4.10 is recommended. Please consider updating globalDependency at [io-package.json](https://github.com/BenAhrdt/ioBroker.janitza-gridvis/blob/master/io-package.json).","adapter":"BenAhrdt/ioBroker.janitza-gridvis","timestamp":"Thu, 20 Feb 2025 21:35:39 GMT"}}
