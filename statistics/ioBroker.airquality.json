@@ -1,1 +1,1 @@
-{"156":{"issue":"[W156] admin 6.17.14 listed as dependency but 7.4.10 is recommended. Please consider updating globalDependency at [io-package.json](https://github.com/raschy/ioBroker.airquality/blob/master/io-package.json).","adapter":"raschy/ioBroker.airquality","timestamp":"Wed, 19 Feb 2025 03:51:48 GMT"}}
+{}
