@@ -1,1 +1,1 @@
-{"156":{"issue":"[W156] admin 7.0.23 listed as dependency but 7.4.10 is recommended. Please consider updating globalDependency at [io-package.json](https://github.com/schmupu/ioBroker.contactid/blob/master/io-package.json).","adapter":"schmupu/ioBroker.contactid","timestamp":"Fri, 21 Feb 2025 05:36:11 GMT"}}
+{}
