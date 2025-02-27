@@ -1,1 +1,1 @@
-{"156":{"issue":"[W156] admin 6.17.14 listed as dependency but 7.4.10 is recommended. Please consider updating globalDependency at [io-package.json](https://github.com/blabond/ioBroker.maxxi-charge/blob/master/io-package.json).","adapter":"blabond/ioBroker.maxxi-charge","timestamp":"Fri, 21 Feb 2025 02:55:48 GMT"}}
+{}
