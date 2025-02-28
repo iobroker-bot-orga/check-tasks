@@ -1,1 +1,1 @@
-{"195":{"issue":"[W195] Protected or encrypted element \"apiKey\" should be listed at \"native\" in [io-package.json](https://github.com/simatec/ioBroker.uv-protect/blob/master/io-package.json)","adapter":"simatec/ioBroker.uv-protect","timestamp":"Sat, 22 Feb 2025 20:58:32 GMT"}}
+{"195":{"issue":"[W195] Protected or encrypted element \"apiKey\" should be listed at \"native\" in [io-package.json](https://github.com/simatec/ioBroker.uv-protect/blob/master/io-package.json)","adapter":"simatec/ioBroker.uv-protect","timestamp":"Fri, 28 Feb 2025 00:08:33 GMT"}}
