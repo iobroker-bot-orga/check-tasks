@@ -5,7 +5,7 @@
     "@iobroker/repochecker": "^3.5.4",
     "axios": "^1.7.9",
     "compare-versions": "^6.1.1",
-    "image-size": "^1.2.0",
+    "image-size": "^2.0.0",
     "json5": "^2.2.3",
     "unzipper": "^0.12.3"
   },
