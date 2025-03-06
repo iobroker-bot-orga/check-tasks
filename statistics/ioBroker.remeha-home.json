@@ -1,1 +1,1 @@
-{"508":{"issue":"[W508] attribute \"xs\" for staticText should specify a value of \"12\" at admin/jsonConfig.json5/items/remehaHomeDesc","adapter":"simatec/ioBroker.remeha-home","timestamp":"Sat, 01 Mar 2025 23:22:22 GMT"}}
+{"508":{"issue":"[W508] attribute \"xs\" for staticText should specify a value of \"12\" at admin/jsonConfig.json5/items/remehaHomeDesc","adapter":"simatec/ioBroker.remeha-home","timestamp":"Thu, 06 Mar 2025 23:06:35 GMT"}}
