@@ -1,1 +1,1 @@
-{"522":{"issue":"[S522] Please consider migrating to admin 5 UI (jsonConfig).","adapter":"simatec/ioBroker.shuttercontrol","timestamp":"Thu, 13 Mar 2025 23:25:39 GMT"}}
+{"433":{"issue":"[E433] Dependency 'admin':'>=7.6.2' not available at stable repository","adapter":"simatec/ioBroker.shuttercontrol","timestamp":"Thu, 20 Mar 2025 23:25:58 GMT"},"522":{"issue":"[S522] Please consider migrating to admin 5 UI (jsonConfig).","adapter":"simatec/ioBroker.shuttercontrol","timestamp":"Thu, 20 Mar 2025 23:25:58 GMT"}}
