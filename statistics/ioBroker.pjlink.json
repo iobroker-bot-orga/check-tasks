@@ -1,1 +1,1 @@
-{"047":{"issue":"[S047] dependency should not require a specific version. Use \"~1.2.3\" or \"^1.2.3\" syntax. Please update \"pjlink:Bannsaenger/node-pjlink\"","adapter":"Bannsaenger/ioBroker.pjlink","timestamp":"Sun, 30 Mar 2025 04:45:42 GMT"}}
+{"047":{"issue":"[S047] dependency should not require a specific version. Use \"~1.2.3\" or \"^1.2.3\" syntax. Please update \"pjlink:Bannsaenger/node-pjlink\"","adapter":"Bannsaenger/ioBroker.pjlink","timestamp":"Mon, 31 Mar 2025 12:04:27 GMT"}}
