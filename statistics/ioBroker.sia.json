@@ -1,1 +1,1 @@
-{"195":{"issue":"[W195] Protected or encrypted element \"keys.password\" should be listed at \"native\" in [io-package.json](https://github.com/schmupu/ioBroker.sia/blob/master/io-package.json)","adapter":"schmupu/ioBroker.sia","timestamp":"Thu, 03 Apr 2025 23:27:33 GMT"}}
+{"195":{"issue":"[W195] Protected or encrypted element \"keys.password\" should be listed at \"native\" in [io-package.json](https://github.com/schmupu/ioBroker.sia/blob/master/io-package.json)","adapter":"schmupu/ioBroker.sia","timestamp":"Thu, 10 Apr 2025 23:28:52 GMT"}}
