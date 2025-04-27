@@ -1,1 +1,1 @@
-{"048":{"issue":"[W048] devDependency should not require a specific version. Use \"~1.2.3\" or \"^1.2.3\" syntax. Please update \"@iobroker/eslint-config:2.0.1\"","adapter":"Grizzelbee/ioBroker.mielecloudservice","timestamp":"Sat, 26 Apr 2025 05:58:17 GMT"}}
+{"048":{"issue":"[W048] devDependency should not require a specific version. Use \"~1.2.3\" or \"^1.2.3\" syntax. Please update \"@iobroker/eslint-config:2.0.1\"","adapter":"Grizzelbee/ioBroker.mielecloudservice","timestamp":"Sun, 27 Apr 2025 05:58:12 GMT"}}
