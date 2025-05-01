@@ -1,1 +1,1 @@
-{}
+{"028":{"issue":"[W028] Minimum node.js version 20 recommended. Please adapt \"{'engines' : { 'node' >= '18.18' } }\" at [package.json](https://github.com/hombach/ioBroker.kostal-piko-ba/blob/master/package.json).","adapter":"hombach/ioBroker.kostal-piko-ba","timestamp":"Thu, 01 May 2025 21:44:33 GMT"}}
