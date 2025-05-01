@@ -1,1 +1,1 @@
-{"028":{"issue":"[W028] Minimum node.js version 20 recommended. Please adapt \"{'engines' : { 'node' >= '18.0.0' } }\" at [package.json](https://github.com/simatec/ioBroker.solax/blob/master/package.json).","adapter":"simatec/ioBroker.solax","timestamp":"Wed, 30 Apr 2025 06:15:17 GMT"}}
+{}
