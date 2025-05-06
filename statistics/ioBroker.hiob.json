@@ -1,1 +1,1 @@
-{"028":{"issue":"[W028] Minimum node.js version 20 recommended. Please adapt \"{'engines' : { 'node' >= '18' } }\" at [package.json](https://github.com/moba15/ioBroker.hiob/blob/master/package.json).","adapter":"moba15/ioBroker.hiob","timestamp":"Mon, 05 May 2025 05:49:41 GMT"}}
+{"028":{"issue":"[W028] Minimum node.js version 20 recommended. Please adapt \"{'engines' : { 'node' >= '18' } }\" at [package.json](https://github.com/moba15/ioBroker.hiob/blob/master/package.json).","adapter":"moba15/ioBroker.hiob","timestamp":"Tue, 06 May 2025 05:43:22 GMT"}}
