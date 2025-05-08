@@ -1,1 +1,1 @@
-{"028":{"issue":"[W028] Minimum node.js version 20 recommended. Please adapt \"{'engines' : { 'node' >= '18' } }\" at [package.json](https://github.com/XHunter74/ioBroker.apcups/blob/master/package.json).","adapter":"XHunter74/ioBroker.apcups","timestamp":"Thu, 01 May 2025 20:31:19 GMT"}}
+{}
