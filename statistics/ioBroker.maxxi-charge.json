@@ -1,1 +1,1 @@
-{"028":{"issue":"[W028] Minimum node.js version 20 recommended. Please adapt \"{'engines' : { 'node' >= '18' } }\" at [package.json](https://github.com/blabond/ioBroker.maxxi-charge/blob/master/package.json).","adapter":"blabond/ioBroker.maxxi-charge","timestamp":"Sun, 04 May 2025 10:13:55 GMT"}}
+{}
