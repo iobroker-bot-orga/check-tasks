@@ -1,1 +1,1 @@
-{"028":{"issue":"[W028] Minimum node.js version 20 recommended. Please adapt \"{'engines' : { 'node' >= '18' } }\" at [package.json](https://github.com/BenAhrdt/ioBroker.bidirectional-counter/blob/master/package.json).","adapter":"BenAhrdt/ioBroker.bidirectional-counter","timestamp":"Fri, 02 May 2025 06:33:36 GMT"}}
+{}
