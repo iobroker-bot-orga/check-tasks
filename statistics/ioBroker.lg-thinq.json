@@ -1,1 +1,1 @@
-{"028":{"issue":"[W028] Minimum node.js version 20 recommended. Please adapt \"{'engines' : { 'node' >= '18' } }\" at [package.json](https://github.com/TA2k/ioBroker.lg-thinq/blob/master/package.json).","adapter":"TA2k/ioBroker.lg-thinq","timestamp":"Fri, 02 May 2025 21:28:40 GMT"}}
+{}
