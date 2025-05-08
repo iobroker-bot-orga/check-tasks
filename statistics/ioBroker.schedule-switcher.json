@@ -1,1 +1,1 @@
-{"028":{"issue":"[W028] Minimum node.js version 20 recommended. Please adapt \"{'engines' : { 'node' >= '18' } }\" at [package.json](https://github.com/Lucky-ESA/ioBroker.schedule-switcher/blob/master/package.json).","adapter":"Lucky-ESA/ioBroker.schedule-switcher","timestamp":"Sat, 03 May 2025 18:54:46 GMT"}}
+{}
