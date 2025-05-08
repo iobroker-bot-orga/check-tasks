@@ -1,1 +1,1 @@
-{"028":{"issue":"[W028] Minimum node.js version 20 recommended. Please adapt \"{'engines' : { 'node' >= '18' } }\" at [package.json](https://github.com/BenAhrdt/ioBroker.paperless-ngx/blob/master/package.json).","adapter":"BenAhrdt/ioBroker.paperless-ngx","timestamp":"Fri, 02 May 2025 06:33:35 GMT"}}
+{}
