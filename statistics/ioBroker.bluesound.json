@@ -1,1 +1,1 @@
-{"028":{"issue":"[W028] Minimum node.js version 20 recommended. Please adapt \"{'engines' : { 'node' >= '18' } }\" at [package.json](https://github.com/Uwe1958/ioBroker.bluesound/blob/master/package.json).","adapter":"Uwe1958/ioBroker.bluesound","timestamp":"Thu, 08 May 2025 20:00:22 GMT"}}
+{}
