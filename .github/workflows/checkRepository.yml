@@ -38,6 +38,7 @@ jobs:
       - name: check repository
         run: node checks/checkRepository/checkRepository.js ${{ github.event.inputs.repository }} ${{ github.event.client_payload.url }}
         env:
+          OWN_GITHUB_TOKEN: ${{ secrets.IOBBOT_GITHUB_TOKEN }}
           IOBBOT_GITHUB_TOKEN: ${{ secrets.IOBBOT_GITHUB_TOKEN }}
 
       - name: Push new (statistic) files
