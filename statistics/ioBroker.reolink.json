@@ -1,1 +1,1 @@
-{"028":{"issue":"[W028] Minimum node.js version 20 recommended. Please adapt \"{'engines' : { 'node' >= '18.0.0' } }\" at [package.json](https://github.com/aendue/ioBroker.reolink/blob/master/package.json).","adapter":"aendue/ioBroker.reolink","timestamp":"Mon, 19 May 2025 06:21:21 GMT"}}
+{"028":{"issue":"[W028] Minimum node.js version 20 recommended. Please adapt \"{'engines' : { 'node' >= '18.0.0' } }\" at [package.json](https://github.com/aendue/ioBroker.reolink/blob/master/package.json).","adapter":"aendue/ioBroker.reolink","timestamp":"Tue, 20 May 2025 06:19:00 GMT"}}
