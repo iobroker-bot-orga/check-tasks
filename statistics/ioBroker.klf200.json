@@ -1,1 +1,1 @@
-{"519":{"issue":"[E519] \"./build/main.js\" found in [package.json](https://github.com/MiSchroe/ioBroker.klf200/blob/master/package.json), but not found as file","adapter":"MiSchroe/ioBroker.klf200","timestamp":"Wed, 21 May 2025 02:27:25 GMT"},"058":{"issue":"[E058] Attribute \"exports\" at [package.json](https://github.com/MiSchroe/ioBroker.klf200/blob/master/package.json) is not supported. Please remove.","adapter":"MiSchroe/ioBroker.klf200","timestamp":"Wed, 21 May 2025 02:27:25 GMT"}}
+{}
