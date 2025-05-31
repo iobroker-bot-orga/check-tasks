@@ -1,1 +1,1 @@
-{"028":{"issue":"[W028] Minimum node.js version 20 recommended. Please adapt \"{'engines' : { 'node' >= '18' } }\" at [package.json](https://github.com/iobroker-community-adapters/ioBroker.kecontact/blob/master/package.json).","adapter":"iobroker-community-adapters/ioBroker.kecontact","timestamp":"Mon, 26 May 2025 18:53:46 GMT"}}
+{}
