@@ -1,1 +1,1 @@
-{"028":{"issue":"[W028] Minimum node.js version 20 recommended. Please adapt \"{'engines' : { 'node' >= '18' } }\" at [package.json](https://github.com/obakuhl/ioBroker.egigeozone2/blob/master/package.json).","adapter":"obakuhl/ioBroker.egigeozone2","timestamp":"Sat, 31 May 2025 16:36:12 GMT"}}
+{}
