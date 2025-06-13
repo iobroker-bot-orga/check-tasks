@@ -1,1 +1,1 @@
-{"028":{"issue":"[W028] Minimum node.js version 20 recommended. Please adapt \"{'engines' : { 'node' >= '18' } }\" at [package.json](https://github.com/hacki11/ioBroker.valloxmv/blob/master/package.json).","adapter":"hacki11/ioBroker.valloxmv","timestamp":"Fri, 06 Jun 2025 00:15:46 GMT"}}
+{"028":{"issue":"[W028] Minimum node.js version 20 recommended. Please adapt \"{'engines' : { 'node' >= '18' } }\" at [package.json](https://github.com/hacki11/ioBroker.valloxmv/blob/master/package.json).","adapter":"hacki11/ioBroker.valloxmv","timestamp":"Fri, 13 Jun 2025 10:36:54 GMT"}}
