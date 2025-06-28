@@ -1,1 +1,1 @@
-{"529":{"issue":"[W529] Plugin \"manual-review\" missing at .releaseconfig.json. Please add.","adapter":"stoffel7/ioBroker.enet","timestamp":"Sat, 28 Jun 2025 16:43:18 GMT"}}
+{"530":{"issue":"[E530] .releaseconfig.json is no valid json file - SyntaxError: Expected ',' or '}' after property value in JSON at position 58.","adapter":"stoffel7/ioBroker.enet","timestamp":"Sat, 28 Jun 2025 18:12:13 GMT"}}
