@@ -1,1 +1,1 @@
-{"401":{"issue":"[W401] Cannot find \"weathersense\" in latest repository","adapter":"ltspicer/ioBroker.weathersense","timestamp":"Thu, 03 Jul 2025 11:40:40 GMT"},"505":{"issue":"[W505] setTimeout found in \"main.js\", but no clearTimeout detected","adapter":"ltspicer/ioBroker.weathersense","timestamp":"Thu, 03 Jul 2025 11:40:40 GMT"}}
+{"401":{"issue":"[W401] Cannot find \"weathersense\" in latest repository","adapter":"ltspicer/ioBroker.weathersense","timestamp":"Thu, 03 Jul 2025 11:43:12 GMT"}}
