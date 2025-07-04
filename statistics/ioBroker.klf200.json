@@ -1,1 +1,1 @@
-{"520":{"issue":"[W520] \"gulpfile.js\" found in repo but \"gulp\" not found at devDependencies at [package.json](https://github.com/MiSchroe/ioBroker.klf200/blob/master/package.json). Check whether it can be removed.","adapter":"MiSchroe/ioBroker.klf200","timestamp":"Thu, 03 Jul 2025 21:45:05 GMT"}}
+{}
