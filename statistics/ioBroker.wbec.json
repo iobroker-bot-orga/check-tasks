@@ -1,1 +1,1 @@
-{"401":{"issue":"[W401] Cannot find \"wbec\" in latest repository","adapter":"jb-io/ioBroker.wbec","timestamp":"Wed, 04 Jun 2025 17:39:52 GMT"}}
+{"401":{"issue":"[W401] Cannot find \"wbec\" in latest repository","adapter":"jb-io/ioBroker.wbec","timestamp":"Sun, 03 Aug 2025 08:34:49 GMT"},"510":{"issue":"[W510] \"/admin/i18n/zh-cn/translations.json\" or \"admin/i18n/zh-cn.json\" not found, but admin support is declared. Please add.","adapter":"jb-io/ioBroker.wbec","timestamp":"Sun, 03 Aug 2025 08:34:49 GMT"}}
