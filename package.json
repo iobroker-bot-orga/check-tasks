@@ -2,7 +2,7 @@
   "version": "0.0.1",
   "name": "@iobroker-bot-orga/check-tasks",
   "dependencies": {
-    "@iobroker/repochecker": "^4.1.0-alpha.3",
+    "@iobroker/repochecker": "^4.1.0-alpha.4",
     "axios": "^1.11.0",
     "compare-versions": "^6.1.1",
     "image-size": "^1.2.0",
