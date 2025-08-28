@@ -1,1 +1,1 @@
-{}
+{"156":{"issue":"[W156] admin 7.4.10 listed as dependency but 7.6.17 is recommended. Please consider updating globalDependency at [io-package.json](https://github.com/mcm4iob/ioBroker.nsclient/blob/master/io-package.json).","adapter":"mcm4iob/ioBroker.nsclient","timestamp":"Thu, 28 Aug 2025 22:42:06 GMT"}}
