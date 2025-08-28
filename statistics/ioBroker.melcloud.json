@@ -1,1 +1,1 @@
-{"156":{"issue":"[W156] admin 7.4.10 listed as dependency but 7.6.17 is recommended. Please consider updating globalDependency at [io-package.json](https://github.com/Black-Thunder/ioBroker.melcloud/blob/master/io-package.json).","adapter":"Black-Thunder/ioBroker.melcloud","timestamp":"Thu, 28 Aug 2025 22:14:08 GMT"}}
+{}
