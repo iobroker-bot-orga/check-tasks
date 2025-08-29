@@ -1,1 +1,1 @@
-{}
+{"156":{"issue":"[W156] admin 7.4.10 listed as dependency but 7.6.17 is recommended. Please consider updating globalDependency at [io-package.json](https://github.com/hombach/ioBroker.tibberlink/blob/master/io-package.json).","adapter":"hombach/ioBroker.tibberlink","timestamp":"Fri, 29 Aug 2025 00:11:10 GMT"}}
