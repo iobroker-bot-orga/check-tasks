@@ -1,1 +1,1 @@
-{}
+{"156":{"issue":"[W156] js-controller 5.0.19 listed as dependency but 6.0.11 is recommended. Please consider updating dependency at [io-package.json](https://github.com/oweitman/ioBroker.vis-2-widgets-rssfeed/blob/master/io-package.json).","adapter":"oweitman/ioBroker.vis-2-widgets-rssfeed","timestamp":"Fri, 29 Aug 2025 00:34:06 GMT"}}
