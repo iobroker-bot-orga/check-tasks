@@ -1,0 +1,38 @@
+name: Create Statistics Report
+
+on:
+  workflow_dispatch:
+
+jobs:
+  create-statistics-report:
+    name: Create Statistics Report
+    if: |
+      github.repository == 'iobroker-bot-orga/check-tasks'
+      
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v5
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v5
+        with:
+          node-version: '20.x'
+
+      - name: Cache dependencies
+        uses: actions/cache@v4
+        with:
+          path: node_modules
+          key: ${{ runner.os }}-js-${{ hashFiles('package-lock.json') }}
+
+      - name: Install dependencies
+        run: npm install --omit=dev
+
+      - name: Create statistics report
+        run: node scripts/createStatisticsReport.js
+
+      - name: Commit and push statistics report
+        uses: mikeal/publish-to-github-action@master
+        env:
+          GITHUB_TOKEN: ${{ secrets.IOBBOT_GITHUB_TOKEN }}
+          BRANCH_NAME: 'main'
