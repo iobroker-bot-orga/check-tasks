@@ -1,1 +1,1 @@
-{}
+{"037":{"issue":"[W037] @iobroker/testing 5.0.4 specified. 5.1.0 is recommended. Please consider updating devDependencies at [package.json](https://github.com/ltspicer/ioBroker.weathersense/blob/master/package.json)","adapter":"ltspicer/ioBroker.weathersense","timestamp":"Fri, 12 Sep 2025 00:43:55 GMT"}}
