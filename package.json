@@ -1,17 +1,13 @@
 {
-  "version": "0.0.1",
+  "version": "0.0.0",
   "name": "@iobroker-bot-orga/check-tasks",
   "dependencies": {
     "@iobroker/repochecker": "^4.1.0",
     "axios": "^1.12.0",
-    "compare-versions": "^6.1.1",
-    "image-size": "^1.2.0",
-    "json5": "^2.2.3",
-    "unzipper": "^0.12.3"
+    "json5": "^2.2.3"
   },
   "devDependencies": {
-    "@alcalzone/release-script": "^3.8.0",
-    "eslint": "^8.57.0"
+    "@iobroker/eslint-config": "^2.1.0"
   },
   "files": [
     "index.js",
@@ -20,9 +16,7 @@
   "engines": {
     "node": ">=18"
   },
-  "main": "index.js",
   "scripts": {
-    "lint": "eslint",
-    "release": "release-script"
+    "lint": "eslint -c eslint.config.mjs ."
   }
 }
