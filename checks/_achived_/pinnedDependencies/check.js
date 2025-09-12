@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
-const github = require('../../lib/githubTools.js');
-const iobroker = require('../../lib/iobrokerTools.js');
+const github = require('../../../lib/githubTools.js');
+const iobroker = require('../../../lib/iobrokerTools.js');
 
 const context = {};
 
