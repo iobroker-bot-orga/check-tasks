@@ -1,1 +1,1 @@
-{}
+{"437":{"issue":"[E437] .vscode/settings.json file contains invalid JSON.","adapter":"ticaki/ioBroker.brightsky","timestamp":"Sun, 14 Sep 2025 11:22:31 GMT"},"906":{"issue":"[S906] .commitinfo file should be excluded by .gitignore, consider adding it to .gitignore","adapter":"ticaki/ioBroker.brightsky","timestamp":"Sun, 14 Sep 2025 11:22:31 GMT"}}
