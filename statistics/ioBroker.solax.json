@@ -1,1 +1,1 @@
-{}
+{"436":{"issue":"[S436] Consider adding .vscode/settings.json file with JSON schema definitions for better development experience with Visual Studio Code.","adapter":"simatec/ioBroker.solax","timestamp":"Sun, 14 Sep 2025 15:00:46 GMT"},"906":{"issue":"[S906] .commitinfo file should be excluded by .gitignore, consider adding it to .gitignore","adapter":"simatec/ioBroker.solax","timestamp":"Sun, 14 Sep 2025 15:00:46 GMT"}}
