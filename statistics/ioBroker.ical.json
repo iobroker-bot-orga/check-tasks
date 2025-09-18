@@ -1,1 +1,1 @@
-{"047":{"issue":"[S047] dependency should not require a specific version. Use \"~1.2.3\" or \"^1.2.3\" syntax. Please update \"rrule:2.8.1\"","adapter":"iobroker-community-adapters/ioBroker.ical","timestamp":"Tue, 16 Sep 2025 17:53:41 GMT"}}
+{"047":{"issue":"[S047] dependency should not require a specific version. Use \"~1.2.3\" or \"^1.2.3\" syntax. Please update \"rrule:2.8.1\"","adapter":"iobroker-community-adapters/ioBroker.ical","timestamp":"Thu, 18 Sep 2025 21:22:24 GMT"}}
