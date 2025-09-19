@@ -24,9 +24,8 @@ jobs:
       - uses: actions/setup-node@v5
         with:
           node-version: 22
-      - run: echo $GITHUB_WORKSPACE
       - run: npm i
-      - run: node ./checks/checkReadyForStable/checkReadForStable.js ${{ github.event.inputs.flags }} 
+      - run: node checks/checkReadyForStable/checkReadyForStable.js ${{ github.event.inputs.flags }} 
         env:
           OWN_GITHUB_TOKEN: ${{ secrets.OWN_GITHUB_TOKEN }}
           IOBBOT_GITHUB_TOKEN: ${{ secrets.IOBBOT_GITHUB_TOKEN }}
