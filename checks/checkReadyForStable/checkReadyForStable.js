@@ -1,8 +1,8 @@
 'use strict';
 const { parseArgs } = require('node:util');
 
-const { createIssue, sleep } = require('../../lib/commonTools');
-const { getAllIssues, getAllLabels, addComment, closeIssue } = require('../../lib/githubTools');
+const {  sleep } = require('../../lib/commonTools');
+const { getAllIssues, getAllLabels, addComment, createIssue, closeIssue } = require('../../lib/githubTools');
 const { getLatestRepoLive, getStableRepoFile, getStableRepoLive, getStatistics } = require('../../lib/iobrokerTools');
 //const { exit } = require('node:process');
 
