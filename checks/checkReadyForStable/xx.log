@@ -1,0 +1,1495 @@
+[INFO] processing started
+retrieving "http://repo.iobroker.live/sources-dist-latest.json"
+retrieving "http://repo.iobroker.live/sources-dist.json"
+retrieving "https://www.iobroker.net/data/statistics.json"
+
+[INFO]evaluate releases...
+checking for adapters to ADD to stable repository ...
+
+checking ioBroker.ai-assistant [ https://github.com/ToGe3688/ioBroker.ai-assistant ] ...
+    Adapter not yet listed at stable repository
+    Version:  stable=0.0.0 (0 days old) => latest=0.1.4 (136 days old)
+    Installs: stable=0 (0%), latest=49 (72.06%), total=68
+  + should be published
+
+checking ioBroker.ai-toolbox [ https://github.com/ToGe3688/ioBroker.ai-toolbox ] ...
+    Adapter not yet listed at stable repository
+    Version:  stable=0.0.0 (0 days old) => latest=0.1.3 (232 days old)
+    Installs: stable=0 (0%), latest=72 (88.89%), total=81
+  + should be published
+
+checking ioBroker.bambulab [ https://github.com/DrozmotiX/ioBroker.bambulab ] ...
+    Adapter not yet listed at stable repository
+    Version:  stable=0.0.0 (0 days old) => latest=0.4.3 (2 days old)
+    Installs: stable=0 (0%), latest=39 (6.25%), total=624
+  - too young for publishing
+
+checking ioBroker.bascloud [ https://github.com/bascloud/ioBroker.bascloud ] ...
+    Adapter not yet listed at stable repository
+    Version:  stable=0.0.0 (0 days old) => latest=0.4.0 (431 days old)
+    Installs: stable=0 (0%), latest=2 (66.67%), total=3
+  + should be published
+
+checking ioBroker.bmw [ https://github.com/TA2k/ioBroker.bmw ] ...
+    Adapter not yet listed at stable repository
+    Version:  stable=0.0.0 (0 days old) => latest=3.0.0 (101 days old)
+    Installs: stable=0 (0%), latest=305 (25.31%), total=1205
+  + should be published
+
+checking ioBroker.bosch-ebike [ https://github.com/TA2k/ioBroker.bosch-ebike ] ...
+    Adapter not yet listed at stable repository
+    Version:  stable=0.0.0 (0 days old) => latest=0.1.12 (180 days old)
+    Installs: stable=0 (0%), latest=165 (31.79%), total=519
+  + should be published
+
+checking ioBroker.calendar [ https://github.com/WLAN-Kabel/ioBroker.calendar ] ...
+    Adapter not yet listed at stable repository
+    Version:  stable=0.0.0 (0 days old) => latest=1.2.0 (1986 days old)
+    Installs: stable=0 (0%), latest=228 (98.7%), total=231
+  + should be published
+
+checking ioBroker.chargemaster [ https://github.com/hombach/ioBroker.chargemaster ] ...
+    Adapter not yet listed at stable repository
+    Version:  stable=0.0.0 (0 days old) => latest=0.14.2 (22 days old)
+    Installs: stable=0 (0%), latest=4 (22.22%), total=18
+  - too young for publishing
+
+checking ioBroker.cloudless-homeconnect [ https://github.com/eifel-tech/ioBroker.cloudless-homeconnect ] ...
+    Adapter not yet listed at stable repository
+    Version:  stable=0.0.0 (0 days old) => latest=1.6.3 (4 days old)
+    Installs: stable=0 (0%), latest=35 (30.17%), total=116
+  - too young for publishing
+
+checking ioBroker.comfoairq [ https://github.com/klein0r/ioBroker.comfoairq ] ...
+    Adapter not yet listed at stable repository
+    Version:  stable=0.0.0 (0 days old) => latest=0.5.1 (157 days old)
+    Installs: stable=0 (0%), latest=27 (27.84%), total=97
+  + should be published
+
+checking ioBroker.consumption [ https://github.com/ioBroker/ioBroker.consumption ] ...
+    Adapter not yet listed at stable repository
+    Version:  stable=0.0.0 (0 days old) => latest=1.0.2 (548 days old)
+    Installs: stable=0 (0%), latest=52 (70.27%), total=74
+  + should be published
+
+checking ioBroker.contact [ https://github.com/WLAN-Kabel/ioBroker.contact ] ...
+    Adapter not yet listed at stable repository
+    Version:  stable=0.0.0 (0 days old) => latest=1.1.3 (2065 days old)
+    Installs: stable=0 (0%), latest=16 (100%), total=16
+  + should be published
+
+checking ioBroker.corrently [ https://github.com/ioBroker/ioBroker.corrently ] ...
+    Adapter not yet listed at stable repository
+    Version:  stable=0.0.0 (0 days old) => latest=0.1.1 (922 days old)
+    Installs: stable=0 (0%), latest=12 (92.31%), total=13
+  + should be published
+
+checking ioBroker.dreame [ https://github.com/TA2k/ioBroker.dreame ] ...
+    Adapter not yet listed at stable repository
+    Version:  stable=0.0.0 (0 days old) => latest=0.2.2 (237 days old)
+    Installs: stable=0 (0%), latest=253 (75.07%), total=337
+  + should be published
+
+checking ioBroker.ecoflow [ https://github.com/Newan/ioBroker.ecoflow ] ...
+    Adapter not yet listed at stable repository
+    Version:  stable=0.0.0 (0 days old) => latest=0.0.4 (1070 days old)
+    Installs: stable=0 (0%), latest=107 (65.64%), total=163
+  + should be published
+
+checking ioBroker.enocean [ https://github.com/Jey-Cee/ioBroker.enocean ] ...
+    Adapter not yet listed at stable repository
+    Version:  stable=0.0.0 (0 days old) => latest=0.9.4 (230 days old)
+    Installs: stable=0 (0%), latest=100 (30.03%), total=333
+  + should be published
+
+checking ioBroker.esphome [ https://github.com/DrozmotiX/ioBroker.esphome ] ...
+    Adapter not yet listed at stable repository
+    Version:  stable=0.0.0 (0 days old) => latest=0.6.3 (3 days old)
+    Installs: stable=0 (0%), latest=82 (6.81%), total=1204
+  - too young for publishing
+
+checking ioBroker.googleauth [ https://github.com/Vertumnus/ioBroker.googleauth ] ...
+    Adapter not yet listed at stable repository
+    Version:  stable=0.0.0 (0 days old) => latest=0.3.4 (1538 days old)
+    Installs: stable=0 (0%), latest=5 (100%), total=5
+  + should be published
+
+checking ioBroker.hass-mqtt [ https://github.com/smarthomefans/ioBroker.hass-mqtt ] ...
+    Adapter not yet listed at stable repository
+    Version:  stable=0.0.0 (0 days old) => latest=0.0.7 (2286 days old)
+    Installs: stable=0 (0%), latest=109 (100%), total=109
+  + should be published
+
+checking ioBroker.hdg-bavaria [ https://github.com/stemaker/ioBroker.hdg-bavaria ] ...
+    Adapter not yet listed at stable repository
+    Version:  stable=0.0.0 (0 days old) => latest=0.4.0 (1257 days old)
+    Installs: stable=0 (0%), latest=20 (100%), total=20
+  + should be published
+
+checking ioBroker.hombot [ https://github.com/AlGu1/ioBroker.hombot ] ...
+    Adapter not yet listed at stable repository
+    Version:  stable=0.0.0 (0 days old) => latest=0.1.3 (2381 days old)
+    Installs: stable=0 (0%), latest=7 (100%), total=7
+  + should be published
+
+checking ioBroker.hoover [ https://github.com/TA2k/ioBroker.hoover ] ...
+    Adapter not yet listed at stable repository
+    Version:  stable=0.0.0 (0 days old) => latest=0.1.4 (222 days old)
+    Installs: stable=0 (0%), latest=71 (32.72%), total=217
+  + should be published
+
+checking ioBroker.hoymiles-ms [ https://github.com/mcm4iob/ioBroker.hoymiles-ms ] ...
+    Adapter not yet listed at stable repository
+    Version:  stable=0.0.0 (0 days old) => latest=0.2.0 (26 days old)
+    Installs: stable=0 (0%), latest=18 (72%), total=25
+  - too young for publishing
+
+checking ioBroker.hue-sync-box [ https://github.com/xXBJXx/ioBroker.hue-sync-box ] ...
+    Adapter not yet listed at stable repository
+    Version:  stable=0.0.0 (0 days old) => latest=0.3.5 (956 days old)
+    Installs: stable=0 (0%), latest=62 (96.88%), total=64
+  + should be published
+
+checking ioBroker.hyperion_ng [ https://github.com/felixganzer/ioBroker.hyperion_ng ] ...
+    Adapter not yet listed at stable repository
+    Version:  stable=0.0.0 (0 days old) => latest=0.1.23 (1348 days old)
+    Installs: stable=0 (0%), latest=120 (84.51%), total=142
+  + should be published
+
+checking ioBroker.imow [ https://github.com/TA2k/ioBroker.imow ] ...
+    Adapter not yet listed at stable repository
+    Version:  stable=0.0.0 (0 days old) => latest=0.1.2 (527 days old)
+    Installs: stable=0 (0%), latest=26 (53.06%), total=49
+  + should be published
+
+checking ioBroker.intesishome [ https://github.com/maxtox/ioBroker.intesishome ] ...
+    Adapter not yet listed at stable repository
+    Version:  stable=0.0.0 (0 days old) => latest=0.1.2 (2663 days old)
+    Installs: stable=0 (0%), latest=4 (50%), total=8
+  + should be published
+
+checking ioBroker.libre [ https://github.com/TA2k/ioBroker.libre ] ...
+    Adapter not yet listed at stable repository
+    Version:  stable=0.0.0 (0 days old) => latest=0.1.3 (307 days old)
+    Installs: stable=0 (0%), latest=56 (60.87%), total=92
+  + should be published
+
+checking ioBroker.luxtronik2 [ https://github.com/UncleSamSwiss/ioBroker.luxtronik2 ] ...
+    Adapter not yet listed at stable repository
+    Version:  stable=0.0.0 (0 days old) => latest=0.4.2 (1332 days old)
+    Installs: stable=0 (0%), latest=330 (94.29%), total=350
+  + should be published
+
+checking ioBroker.mempool-space [ https://github.com/Hans-Wurst-21/ioBroker.mempool-space ] ...
+    Adapter not yet listed at stable repository
+    Version:  stable=0.0.0 (0 days old) => latest=0.0.4 (295 days old)
+    Installs: stable=0 (0%), latest=8 (100%), total=8
+  + should be published
+
+checking ioBroker.mercedesme [ https://github.com/TA2k/ioBroker.mercedesme ] ...
+    Adapter not yet listed at stable repository
+    Version:  stable=0.0.0 (0 days old) => latest=0.3.8 (69 days old)
+    Installs: stable=0 (0%), latest=322 (36.14%), total=891
+  + should be published
+
+WARNING: Adapter message-queue not yet provides statistics
+
+checking ioBroker.mihome-airpurifier [ https://github.com/JoJ123/ioBroker.mihome-airpurifier ] ...
+    Adapter not yet listed at stable repository
+    Version:  stable=0.0.0 (0 days old) => latest=0.1.8 (1958 days old)
+    Installs: stable=0 (0%), latest=85 (94.44%), total=90
+  + should be published
+
+checking ioBroker.miio [ https://github.com/smarthomefans/ioBroker.miio ] ...
+    Adapter not yet listed at stable repository
+    Version:  stable=0.0.0 (0 days old) => latest=0.0.13 (2192 days old)
+    Installs: stable=0 (0%), latest=113 (89.68%), total=126
+  + should be published
+
+checking ioBroker.multicast [ https://github.com/DrozmotiX/ioBroker.multicast ] ...
+    Adapter not yet listed at stable repository
+    Version:  stable=0.0.0 (0 days old) => latest=0.1.6 (1641 days old)
+    Installs: stable=0 (0%), latest=21 (75%), total=28
+  + should be published
+
+checking ioBroker.myq [ https://github.com/StrathCole/ioBroker.myq ] ...
+    Adapter not yet listed at stable repository
+    Version:  stable=0.0.0 (0 days old) => latest=0.3.1 (976 days old)
+    Installs: stable=0 (0%), latest=11 (28.21%), total=39
+  + should be published
+
+checking ioBroker.mystrom [ https://github.com/TA2k/ioBroker.mystrom ] ...
+    Adapter not yet listed at stable repository
+    Version:  stable=0.0.0 (0 days old) => latest=0.1.0 (515 days old)
+    Installs: stable=0 (0%), latest=96 (27.75%), total=346
+  + should be published
+
+checking ioBroker.n8n [ https://github.com/ioBroker/ioBroker.n8n ] ...
+    Adapter not yet listed at stable repository
+    Version:  stable=0.0.0 (0 days old) => latest=0.3.0 (12 days old)
+    Installs: stable=0 (0%), latest=46 (92%), total=50
+  - too young for publishing
+
+checking ioBroker.netro [ https://github.com/realhawker/ioBroker.netro ] ...
+    Adapter not yet listed at stable repository
+    Version:  stable=0.0.0 (0 days old) => latest=0.0.7 (1345 days old)
+    Installs: stable=0 (0%), latest=2 (100%), total=2
+  + should be published
+
+checking ioBroker.nextcloudtalk [ https://github.com/Rello/ioBroker.nextcloudtalk ] ...
+    Adapter not yet listed at stable repository
+    Version:  stable=0.0.0 (0 days old) => latest=1.0.2 (40 days old)
+    Installs: stable=0 (0%), latest=2 (100%), total=2
+  + should be published
+
+checking ioBroker.nmea [ https://github.com/ioBroker/ioBroker.nmea ] ...
+    Adapter not yet listed at stable repository
+    Version:  stable=0.0.0 (0 days old) => latest=0.3.0 (33 days old)
+    Installs: stable=0 (0%), latest=2 (18.18%), total=11
+  + should be published
+
+checking ioBroker.noolitef [ https://github.com/paveltsytovich/ioBroker.noolitef ] ...
+    Adapter not yet listed at stable repository
+    Version:  stable=0.0.0 (0 days old) => latest=0.0.4 (1587 days old)
+    Installs: stable=0 (0%), latest=2 (100%), total=2
+  + should be published
+
+checking ioBroker.notificationforandroidtv [ https://github.com/DNAngelX/ioBroker.notificationforandroidtv ] ...
+    Adapter not yet listed at stable repository
+    Version:  stable=0.0.0 (0 days old) => latest=3.0.4 (512 days old)
+    Installs: stable=0 (0%), latest=94 (92.16%), total=102
+  + should be published
+
+checking ioBroker.omron-fins [ https://github.com/TheBam1990/ioBroker.omron-fins ] ...
+    Adapter not yet listed at stable repository
+    Version:  stable=0.0.0 (0 days old) => latest=0.0.2 (1658 days old)
+    Installs: stable=0 (0%), latest=4 (100%), total=4
+  + should be published
+
+checking ioBroker.opensmartcity [ https://github.com/ioBroker/ioBroker.opensmartcity ] ...
+    Adapter not yet listed at stable repository
+    Version:  stable=0.0.0 (0 days old) => latest=0.2.2 (556 days old)
+    Installs: stable=0 (0%), latest=6 (75%), total=8
+  + should be published
+
+checking ioBroker.opentherm [ https://github.com/DrozmotiX/ioBroker.opentherm ] ...
+    Adapter not yet listed at stable repository
+    Version:  stable=0.0.0 (0 days old) => latest=0.2.5 (1153 days old)
+    Installs: stable=0 (0%), latest=15 (88.24%), total=17
+  + should be published
+
+checking ioBroker.p2pool [ https://github.com/oelison/ioBroker.p2pool ] ...
+    Adapter not yet listed at stable repository
+    Version:  stable=0.0.0 (0 days old) => latest=1.1.0 (15 days old)
+    Installs: stable=0 (0%), latest=1 (50%), total=2
+  - too young for publishing
+
+checking ioBroker.palazzetti [ https://github.com/inapsis/ioBroker.palazzetti ] ...
+    Adapter not yet listed at stable repository
+    Version:  stable=0.0.0 (0 days old) => latest=0.0.6 (1685 days old)
+    Installs: stable=0 (0%), latest=8 (61.54%), total=13
+  + should be published
+
+checking ioBroker.parcel [ https://github.com/TA2k/ioBroker.parcel ] ...
+    Adapter not yet listed at stable repository
+    Version:  stable=0.0.0 (0 days old) => latest=0.2.10 (246 days old)
+    Installs: stable=0 (0%), latest=231 (32.26%), total=716
+  + should be published
+
+checking ioBroker.pjlink [ https://github.com/Bannsaenger/ioBroker.pjlink ] ...
+    Adapter not yet listed at stable repository
+    Version:  stable=0.0.0 (0 days old) => latest=0.1.1 (969 days old)
+    Installs: stable=0 (0%), latest=21 (52.5%), total=40
+  + should be published
+
+checking ioBroker.playstation [ https://github.com/Lucky-ESA/ioBroker.playstation ] ...
+    Adapter not yet listed at stable repository
+    Version:  stable=0.0.0 (0 days old) => latest=0.0.3 (216 days old)
+    Installs: stable=0 (0%), latest=24 (100%), total=24
+  + should be published
+
+checking ioBroker.renault [ https://github.com/TA2k/ioBroker.renault ] ...
+    Adapter not yet listed at stable repository
+    Version:  stable=0.0.0 (0 days old) => latest=0.0.22 (639 days old)
+    Installs: stable=0 (0%), latest=328 (62.96%), total=521
+  + should be published
+
+checking ioBroker.rfxcom [ https://github.com/ioBroker/ioBroker.rfxcom ] ...
+    Adapter not yet listed at stable repository
+    Version:  stable=0.0.0 (0 days old) => latest=2.0.2 (1408 days old)
+    Installs: stable=0 (0%), latest=22 (73.33%), total=30
+  + should be published
+
+checking ioBroker.sensebox [ https://github.com/AlCalzone/ioBroker.sensebox ] ...
+    Adapter not yet listed at stable repository
+    Version:  stable=0.0.0 (0 days old) => latest=0.0.2 (1124 days old)
+    Installs: stable=0 (0%), latest=20 (95.24%), total=21
+  + should be published
+
+checking ioBroker.slideshow [ https://github.com/gaudes/ioBroker.slideshow ] ...
+    Adapter not yet listed at stable repository
+    Version:  stable=0.0.0 (0 days old) => latest=0.2.1 (304 days old)
+    Installs: stable=0 (0%), latest=72 (33.96%), total=212
+  + should be published
+
+checking ioBroker.smart-eq [ https://github.com/TA2k/ioBroker.smart-eq ] ...
+    Adapter not yet listed at stable repository
+    Version:  stable=0.0.0 (0 days old) => latest=0.1.1 (458 days old)
+    Installs: stable=0 (0%), latest=67 (37.43%), total=179
+  + should be published
+
+checking ioBroker.smartloadmanager [ https://github.com/quorle/ioBroker.smartloadmanager ] ...
+    Adapter not yet listed at stable repository
+    Version:  stable=0.0.0 (0 days old) => latest=0.0.7 (10 days old)
+    Installs: stable=0 (0%), latest=6 (42.86%), total=14
+  - too young for publishing
+
+checking ioBroker.smartthings [ https://github.com/TA2k/ioBroker.smartthings ] ...
+    Adapter not yet listed at stable repository
+    Version:  stable=0.0.0 (0 days old) => latest=0.2.2 (219 days old)
+    Installs: stable=0 (0%), latest=522 (24.16%), total=2161
+  + should be published
+
+checking ioBroker.sofarcloud [ https://github.com/ltspicer/ioBroker.sofarcloud ] ...
+    Adapter not yet listed at stable repository
+    Version:  stable=0.0.0 (0 days old) => latest=3.2.1 (2 days old)
+    Installs: stable=0 (0%), latest=2 (66.67%), total=3
+  - too young for publishing
+
+checking ioBroker.sonnen-charger [ https://github.com/ChrisWbb/ioBroker.sonnen-charger ] ...
+    Adapter not yet listed at stable repository
+    Version:  stable=0.0.0 (0 days old) => latest=1.2.1 (476 days old)
+    Installs: stable=0 (0%), latest=11 (68.75%), total=16
+  + should be published
+
+checking ioBroker.sonus [ https://github.com/ioBroker/ioBroker.sonus ] ...
+    Adapter not yet listed at stable repository
+    Version:  stable=0.0.0 (0 days old) => latest=0.1.1 (2309 days old)
+    Installs: stable=0 (0%), latest=1 (50%), total=2
+  + should be published
+
+checking ioBroker.sourceanalytix [ https://github.com/DrozmotiX/ioBroker.sourceanalytix ] ...
+    Adapter not yet listed at stable repository
+    Version:  stable=0.0.0 (0 days old) => latest=0.4.14 (1303 days old)
+    Installs: stable=0 (0%), latest=3216 (71.56%), total=4494
+  + should be published
+
+checking ioBroker.speedport [ https://github.com/hacki11/ioBroker.speedport ] ...
+    Adapter not yet listed at stable repository
+    Version:  stable=0.0.0 (0 days old) => latest=0.0.3 (1642 days old)
+    Installs: stable=0 (0%), latest=34 (97.14%), total=35
+  + should be published
+
+checking ioBroker.steam [ https://github.com/bloop16/ioBroker.steam ] ...
+    Adapter not yet listed at stable repository
+    Version:  stable=0.0.0 (0 days old) => latest=0.5.6 (83 days old)
+    Installs: stable=0 (0%), latest=2 (50%), total=4
+  + should be published
+
+checking ioBroker.stockmarket [ https://github.com/waoler/ioBroker.stockmarket ] ...
+    Adapter not yet listed at stable repository
+    Version:  stable=0.0.0 (0 days old) => latest=0.0.2 (2131 days old)
+    Installs: stable=0 (0%), latest=71 (100%), total=71
+  + should be published
+
+checking ioBroker.tapo [ https://github.com/TA2k/ioBroker.tapo ] ...
+    Adapter not yet listed at stable repository
+    Version:  stable=0.0.0 (0 days old) => latest=0.4.8 (227 days old)
+    Installs: stable=0 (0%), latest=400 (29.15%), total=1372
+  + should be published
+
+checking ioBroker.tesla-wallconnector3 [ https://github.com/nobl/ioBroker.tesla-wallconnector3 ] ...
+    Adapter not yet listed at stable repository
+    Version:  stable=0.0.0 (0 days old) => latest=1.0.6 (292 days old)
+    Installs: stable=0 (0%), latest=28 (49.12%), total=57
+  + should be published
+
+checking ioBroker.tileboard [ https://github.com/ioBroker/ioBroker.tileboard ] ...
+    Adapter not yet listed at stable repository
+    Version:  stable=0.0.0 (0 days old) => latest=0.3.1 (1853 days old)
+    Installs: stable=0 (0%), latest=49 (90.74%), total=54
+  + should be published
+
+checking ioBroker.time-switch [ https://github.com/walli545/ioBroker.time-switch ] ...
+    Adapter not yet listed at stable repository
+    Version:  stable=0.0.0 (0 days old) => latest=2.2.2 (1594 days old)
+    Installs: stable=0 (0%), latest=892 (93.99%), total=949
+  + should be published
+
+checking ioBroker.tino [ https://github.com/bowao/ioBroker.tino ] ...
+    Adapter not yet listed at stable repository
+    Version:  stable=0.0.0 (0 days old) => latest=1.1.1 (1472 days old)
+    Installs: stable=0 (0%), latest=5 (100%), total=5
+  + should be published
+
+WARNING: Adapter tinyrx4 not yet provides statistics
+
+checking ioBroker.todoist2 [ https://github.com/rde-master/ioBroker.todoist2 ] ...
+    Adapter not yet listed at stable repository
+    Version:  stable=0.0.0 (0 days old) => latest=0.9.1 (1014 days old)
+    Installs: stable=0 (0%), latest=72 (94.74%), total=76
+  + should be published
+
+checking ioBroker.toyota [ https://github.com/TA2k/ioBroker.toyota ] ...
+    Adapter not yet listed at stable repository
+    Version:  stable=0.0.0 (0 days old) => latest=0.2.6 (608 days old)
+    Installs: stable=0 (0%), latest=59 (73.75%), total=80
+  + should be published
+
+checking ioBroker.tronity [ https://github.com/tronity/ioBroker.tronity ] ...
+    Adapter not yet listed at stable repository
+    Version:  stable=0.0.0 (0 days old) => latest=1.2.1 (164 days old)
+    Installs: stable=0 (0%), latest=46 (9%), total=511
+  + should be published
+
+checking ioBroker.vaillant [ https://github.com/TA2k/ioBroker.vaillant ] ...
+    Adapter not yet listed at stable repository
+    Version:  stable=0.0.0 (0 days old) => latest=0.7.5 (72 days old)
+    Installs: stable=0 (0%), latest=127 (17.47%), total=727
+  + should be published
+
+checking ioBroker.vedirect [ https://github.com/DrozmotiX/ioBroker.vedirect ] ...
+    Adapter not yet listed at stable repository
+    Version:  stable=0.0.0 (0 days old) => latest=0.3.0 (773 days old)
+    Installs: stable=0 (0%), latest=94 (56.29%), total=167
+  + should be published
+
+checking ioBroker.vesync [ https://github.com/TA2k/ioBroker.vesync ] ...
+    Adapter not yet listed at stable repository
+    Version:  stable=0.0.0 (0 days old) => latest=0.0.9 (271 days old)
+    Installs: stable=0 (0%), latest=160 (51.61%), total=310
+  + should be published
+
+checking ioBroker.vis-2-widgets-sweethome3d [ https://github.com/ioBroker/ioBroker.vis-2-widgets-sweethome3d ] ...
+    Adapter not yet listed at stable repository
+    Version:  stable=0.0.0 (0 days old) => latest=0.2.0 (434 days old)
+    Installs: stable=0 (0%), latest=329 (83.5%), total=394
+  + should be published
+
+checking ioBroker.vis-3dmodel [ https://github.com/Excodibur/ioBroker.vis-3dmodel ] ...
+    Adapter not yet listed at stable repository
+    Version:  stable=0.0.0 (0 days old) => latest=0.0.10 (1618 days old)
+    Installs: stable=0 (0%), latest=118 (100%), total=118
+  + should be published
+
+checking ioBroker.vis-jsontemplate [ https://github.com/oweitman/ioBroker.vis-jsontemplate ] ...
+    Adapter not yet listed at stable repository
+    Version:  stable=0.0.0 (0 days old) => latest=4.1.2 (5 days old)
+    Installs: stable=0 (0%), latest=9 (100%), total=9
+  - too young for publishing
+
+checking ioBroker.vis-material-webfont [ https://github.com/om2804/ioBroker.vis-material-webfont ] ...
+    Adapter not yet listed at stable repository
+    Version:  stable=0.0.0 (0 days old) => latest=0.0.3 (2119 days old)
+    Installs: stable=0 (0%), latest=873 (97.22%), total=898
+  + should be published
+
+checking ioBroker.vofo-speedtest [ https://github.com/iobroker-community-adapters/ioBroker.vofo-speedtest ] ...
+    Adapter not yet listed at stable repository
+    Version:  stable=0.0.0 (0 days old) => latest=2.0.1 (508 days old)
+    Installs: stable=0 (0%), latest=72 (62.61%), total=115
+  + should be published
+
+checking ioBroker.vw-connect [ https://github.com/TA2k/ioBroker.vw-connect ] ...
+    Adapter not yet listed at stable repository
+    Version:  stable=0.0.0 (0 days old) => latest=0.7.12 (135 days old)
+    Installs: stable=0 (0%), latest=882 (27.34%), total=3226
+  + should be published
+
+checking ioBroker.wamo [ https://github.com/smarthausleben/ioBroker.wamo ] ...
+    Adapter not yet listed at stable repository
+    Version:  stable=0.0.0 (0 days old) => latest=0.4.1 (773 days old)
+    Installs: stable=0 (0%), latest=24 (82.76%), total=29
+  + should be published
+
+checking ioBroker.waterkotte-easycon [ https://github.com/theknut/ioBroker.waterkotte-easycon ] ...
+    Adapter not yet listed at stable repository
+    Version:  stable=0.0.0 (0 days old) => latest=0.0.3 (525 days old)
+    Installs: stable=0 (0%), latest=19 (90.48%), total=21
+  + should be published
+
+checking ioBroker.weathersense [ https://github.com/ltspicer/ioBroker.weathersense ] ...
+    Adapter not yet listed at stable repository
+    Version:  stable=0.0.0 (0 days old) => latest=3.0.3 (4 days old)
+    Installs: stable=0 (0%), latest=2 (66.67%), total=3
+  - too young for publishing
+
+checking ioBroker.web-speedy [ https://github.com/DrozmotiX/ioBroker.web-speedy ] ...
+    Adapter not yet listed at stable repository
+    Version:  stable=0.0.0 (0 days old) => latest=0.2.0 (2040 days old)
+    Installs: stable=0 (0%), latest=323 (99.38%), total=325
+  + should be published
+
+checking ioBroker.weblogin [ https://github.com/Vertumnus/ioBroker.weblogin ] ...
+    Adapter not yet listed at stable repository
+    Version:  stable=0.0.0 (0 days old) => latest=0.1.1 (1642 days old)
+    Installs: stable=0 (0%), latest=18 (100%), total=18
+  + should be published
+
+checking ioBroker.xiaomi-gateway3 [ https://github.com/lasthead0/ioBroker.xiaomi-gateway3 ] ...
+    Adapter not yet listed at stable repository
+    Version:  stable=0.0.0 (0 days old) => latest=0.3.6 (1192 days old)
+    Installs: stable=0 (0%), latest=37 (86.05%), total=43
+  + should be published
+
+checking ioBroker.xsense [ https://github.com/arteck/ioBroker.xsense ] ...
+    Adapter not yet listed at stable repository
+    Version:  stable=0.0.0 (0 days old) => latest=0.0.18 (13 days old)
+    Installs: stable=0 (0%), latest=19 (38.78%), total=49
+  - too young for publishing
+
+checking ioBroker.zoe2 [ https://github.com/fungus75/ioBroker.zoe2 ] ...
+    Adapter not yet listed at stable repository
+    Version:  stable=0.0.0 (0 days old) => latest=0.2.10 (313 days old)
+    Installs: stable=0 (0%), latest=13 (13%), total=100
+  + should be published
+
+checking ioBroker.zoneminder [ https://github.com/iobroker-community-adapters/ioBroker.zoneminder ] ...
+    Adapter not yet listed at stable repository
+    Version:  stable=0.0.0 (0 days old) => latest=0.3.3 (2138 days old)
+    Installs: stable=0 (0%), latest=49 (96.08%), total=51
+  + should be published
+checking for adapters to UPDATE at stable repository ...
+
+checking ioBroker.adguard [ https://github.com/iobroker-community-adapters/ioBroker.adguard ] ...
+    Version:  stable=1.0.1 (327 days old) => latest=1.1.0 (11 days old)
+    Installs: stable=462 (71.96%), latest=48 (7.48%), total=642
+  - too young for update
+
+checking ioBroker.alexa-shoppinglist [ https://github.com/MiRo1310/ioBroker.alexa-shoppinglist ] ...
+    Version:  stable=1.1.0 (66 days old) => latest=1.1.1 (37 days old)
+    Installs: stable=208 (51.61%), latest=24 (5.96%), total=403
+  + should be updated
+
+checking ioBroker.alexa-timer-vis [ https://github.com/MiRo1310/ioBroker.alexa-timer-vis ] ...
+    Version:  stable=2.1.1 (143 days old) => latest=2.1.2 (37 days old)
+    Installs: stable=395 (62.7%), latest=65 (10.32%), total=630
+  + should be updated
+
+checking ioBroker.anelhut [ https://github.com/dan1-de/ioBroker.anelhut ] ...
+    Version:  stable=1.0.15 (768 days old) => latest=1.0.16 (27 days old)
+    Installs: stable=30 (85.71%), latest=3 (8.57%), total=35
+  + should be updated
+
+checking ioBroker.backitup [ https://github.com/simatec/ioBroker.backitup ] ...
+    Version:  stable=3.3.5 (75 days old) => latest=3.3.6 (18 days old)
+    Installs: stable=24517 (40.7%), latest=1717 (2.85%), total=60234
+  - too few users (percent limit missed)
+
+checking ioBroker.bayernluft [ https://github.com/iobroker-community-adapters/ioBroker.bayernluft ] ...
+    Version:  stable=3.0.0 (206 days old) => latest=3.1.0 (11 days old)
+    Installs: stable=9 (75%), latest=2 (16.67%), total=12
+  - too young for update
+
+checking ioBroker.bestway [ https://github.com/TA2k/ioBroker.bestway ] ...
+    Version:  stable=0.0.4 (887 days old) => latest=0.0.5 (338 days old)
+    Installs: stable=123 (72.35%), latest=41 (24.12%), total=170
+  + should be updated
+
+checking ioBroker.ble [ https://github.com/AlCalzone/ioBroker.ble ] ...
+    Version:  stable=0.14.0 (647 days old) => latest=0.14.1 (222 days old)
+    Installs: stable=1872 (72.81%), latest=290 (11.28%), total=2571
+  + should be updated
+
+checking ioBroker.blebox [ https://github.com/ka-vaNu/ioBroker.blebox ] ...
+    Version:  stable=2.1.0 (706 days old) => latest=2.2.3 (217 days old)
+    Installs: stable=88 (77.88%), latest=13 (11.5%), total=113
+  + should be updated
+
+checking ioBroker.bluelink [ https://github.com/Newan/ioBroker.bluelink ] ...
+    Version:  stable=3.1.3 (136 days old) => latest=3.1.20 (36 days old)
+    Installs: stable=501 (60.14%), latest=78 (9.36%), total=833
+  + should be updated
+
+checking ioBroker.botslab360 [ https://github.com/TA2k/ioBroker.botslab360 ] ...
+    Version:  stable=0.0.2 (1019 days old) => latest=0.1.0 (702 days old)
+    Installs: stable=42 (68.85%), latest=19 (31.15%), total=61
+  + should be updated
+
+checking ioBroker.brightsky [ https://github.com/ticaki/ioBroker.brightsky ] ...
+    Version:  stable=0.2.4 (21 days old) => latest=0.3.2 (1 days old)
+    Installs: stable=29 (50.88%), latest=19 (33.33%), total=57
+  - too young for update
+
+checking ioBroker.bring [ https://github.com/foxriver76/ioBroker.bring ] ...
+    Version:  stable=1.8.4 (725 days old) => latest=1.9.1 (240 days old)
+    Installs: stable=1202 (75.17%), latest=195 (12.2%), total=1599
+  + should be updated
+
+checking ioBroker.bshb [ https://github.com/holomekc/ioBroker.bshb ] ...
+    Version:  stable=0.5.0 (224 days old) => latest=0.5.2 (82 days old)
+    Installs: stable=850 (51.92%), latest=78 (4.76%), total=1637
+  + should be updated
+
+checking ioBroker.bwt [ https://github.com/TA2k/ioBroker.bwt ] ...
+    Version:  stable=0.0.5 (884 days old) => latest=0.1.1 (599 days old)
+    Installs: stable=120 (71.01%), latest=40 (23.67%), total=169
+  + should be updated
+
+checking ioBroker.bydhvs [ https://github.com/christianH17/ioBroker.bydhvs ] ...
+    Version:  stable=1.5.0 (684 days old) => latest=1.5.4 (46 days old)
+    Installs: stable=1243 (84.9%), latest=92 (6.28%), total=1464
+  + should be updated
+
+checking ioBroker.device-watcher [ https://github.com/iobroker-community-adapters/ioBroker.device-watcher ] ...
+    Version:  stable=2.12.6 (41 days old) => latest=2.13.1 (13 days old)
+    Installs: stable=898 (48.15%), latest=210 (11.26%), total=1865
+  - too young for update
+
+checking ioBroker.devices [ https://github.com/ioBroker/ioBroker.devices ] ...
+    Version:  stable=1.2.8 (60 days old) => latest=1.2.9 (10 days old)
+    Installs: stable=2697 (31%), latest=516 (5.93%), total=8700
+  - too young for update
+
+checking ioBroker.deyeidc [ https://github.com/raschy/ioBroker.deyeidc ] ...
+    Version:  stable=0.2.0 (224 days old) => latest=0.3.0 (20 days old)
+    Installs: stable=1048 (72.18%), latest=80 (5.51%), total=1452
+  + should be updated
+
+checking ioBroker.dnscope [ https://github.com/simatec/ioBroker.dnscope ] ...
+    Version:  stable=0.2.4 (85 days old) => latest=0.2.5 (18 days old)
+    Installs: stable=11 (68.75%), latest=3 (18.75%), total=16
+  + should be updated
+
+checking ioBroker.e3oncan [ https://github.com/MyHomeMyData/ioBroker.e3oncan ] ...
+    Version:  stable=0.10.10 (43 days old) => latest=0.10.12 (4 days old)
+    Installs: stable=42 (47.73%), latest=5 (5.68%), total=88
+  - too young for update
+
+checking ioBroker.echarts [ https://github.com/ioBroker/ioBroker.echarts ] ...
+    Version:  stable=1.9.2 (374 days old) => latest=2.0.10 (17 days old)
+    Installs: stable=6933 (74.27%), latest=443 (4.75%), total=9335
+  - too few users (percent limit missed)
+
+checking ioBroker.ecoflow-mqtt [ https://github.com/foxthefox/ioBroker.ecoflow-mqtt ] ...
+    Version:  stable=1.3.2 (163 days old) => latest=1.4.6 (1 days old)
+    Installs: stable=580 (69.96%), latest=10 (1.21%), total=829
+  - too young for update
+
+checking ioBroker.emporia [ https://github.com/Chris-656/ioBroker.emporia ] ...
+    Version:  stable=0.0.12 (687 days old) => latest=0.1.0 (206 days old)
+    Installs: stable=38 (70.37%), latest=8 (14.81%), total=54
+  + should be updated
+
+checking ioBroker.energiefluss-erweitert [ https://github.com/SKB-CGN/ioBroker.energiefluss-erweitert ] ...
+    Version:  stable=0.7.7 (99 days old) => latest=0.7.8 (93 days old)
+    Installs: stable=2946 (64.96%), latest=589 (12.99%), total=4535
+  + should be updated
+
+checking ioBroker.eventlist [ https://github.com/ioBroker/ioBroker.eventlist ] ...
+    Version:  stable=2.0.1 (586 days old) => latest=2.1.0 (121 days old)
+    Installs: stable=445 (75.04%), latest=100 (16.86%), total=593
+  + should be updated
+
+checking ioBroker.fenecon [ https://github.com/sg-app/ioBroker.fenecon ] ...
+    Version:  stable=0.5.0 (412 days old) => latest=0.6.2 (219 days old)
+    Installs: stable=85 (76.58%), latest=26 (23.42%), total=111
+  + should be updated
+
+checking ioBroker.fiat [ https://github.com/TA2k/ioBroker.fiat ] ...
+    Version:  stable=0.0.8 (959 days old) => latest=0.0.10 (466 days old)
+    Installs: stable=184 (63.01%), latest=80 (27.4%), total=292
+  + should be updated
+
+checking ioBroker.flexcharts [ https://github.com/MyHomeMyData/ioBroker.flexcharts ] ...
+    Version:  stable=0.4.1 (120 days old) => latest=0.5.0 (1 days old)
+    Installs: stable=305 (78.81%), latest=24 (6.2%), total=387
+  - too young for update
+
+checking ioBroker.froeling [ https://github.com/TA2k/ioBroker.froeling ] ...
+    Version:  stable=0.0.8 (959 days old) => latest=0.0.9 (338 days old)
+    Installs: stable=283 (88.16%), latest=31 (9.66%), total=321
+  + should be updated
+
+checking ioBroker.fronius-solarweb [ https://github.com/TA2k/ioBroker.fronius-solarweb ] ...
+    Version:  stable=0.0.3 (1105 days old) => latest=0.1.1 (191 days old)
+    Installs: stable=1254 (71.25%), latest=245 (13.92%), total=1760
+  + should be updated
+
+checking ioBroker.fyta [ https://github.com/muffin142/ioBroker.fyta ] ...
+    Version:  stable=0.1.5 (179 days old) => latest=0.2.0 (144 days old)
+    Installs: stable=16 (72.73%), latest=6 (27.27%), total=22
+  + should be updated
+
+checking ioBroker.garmin [ https://github.com/TA2k/ioBroker.garmin ] ...
+    Version:  stable=0.0.3 (1019 days old) => latest=0.2.1 (200 days old)
+    Installs: stable=176 (59.06%), latest=59 (19.8%), total=298
+  + should be updated
+
+checking ioBroker.gira-iot [ https://github.com/klein0r/ioBroker.gira-iot ] ...
+    Version:  stable=0.5.0 (540 days old) => latest=0.6.1 (140 days old)
+    Installs: stable=175 (77.43%), latest=21 (9.29%), total=226
+  + should be updated
+
+checking ioBroker.go-e [ https://github.com/MK-2001/ioBroker.go-e ] ...
+    Version:  stable=1.0.41 (326 days old) => latest=1.0.42 (140 days old)
+    Installs: stable=1381 (71.26%), latest=206 (10.63%), total=1938
+  + should be updated
+
+checking ioBroker.gotify-ws [ https://github.com/simatec/ioBroker.gotify-ws ] ...
+    Version:  stable=0.2.2 (60 days old) => latest=0.2.3 (18 days old)
+    Installs: stable=22 (52.38%), latest=6 (14.29%), total=42
+  + should be updated
+
+checking ioBroker.gruenbeck [ https://github.com/TA2k/ioBroker.gruenbeck ] ...
+    Version:  stable=0.0.43 (501 days old) => latest=0.0.46 (370 days old)
+    Installs: stable=719 (66.08%), latest=146 (13.42%), total=1088
+  + should be updated
+
+checking ioBroker.heizoel24-mex [ https://github.com/ltspicer/ioBroker.heizoel24-mex ] ...
+    Version:  stable=1.4.4 (90 days old) => latest=1.4.6 (4 days old)
+    Installs: stable=39 (49.37%), latest=6 (7.59%), total=79
+  - too young for update
+
+checking ioBroker.heizungssteuerung [ https://github.com/jbeenenga/ioBroker.heizungssteuerung ] ...
+    Version:  stable=1.7.0 (988 days old) => latest=2.1.1 (16 days old)
+    Installs: stable=112 (84.21%), latest=13 (9.77%), total=133
+  + should be updated
+
+checking ioBroker.heos [ https://github.com/withstu/ioBroker.heos ] ...
+    Version:  stable=2.2.1 (613 days old) => latest=2.2.4 (323 days old)
+    Installs: stable=630 (76.83%), latest=94 (11.46%), total=820
+  + should be updated
+
+checking ioBroker.homeconnect [ https://github.com/iobroker-community-adapters/ioBroker.homeconnect ] ...
+    Version:  stable=1.4.3 (304 days old) => latest=1.5.0 (16 days old)
+    Installs: stable=4022 (76.25%), latest=357 (6.77%), total=5275
+  + should be updated
+
+checking ioBroker.ical [ https://github.com/iobroker-community-adapters/ioBroker.ical ] ...
+    Version:  stable=1.16.2 (95 days old) => latest=1.17.0 (3 days old)
+    Installs: stable=8613 (58.36%), latest=478 (3.24%), total=14758
+  - too young for update
+
+checking ioBroker.iot [ https://github.com/ioBroker/ioBroker.iot ] ...
+    Version:  stable=3.3.0 (497 days old) => latest=4.0.3 (22 days old)
+    Installs: stable=11700 (74.3%), latest=813 (5.16%), total=15747
+  + should be updated
+
+checking ioBroker.janitza-gridvis [ https://github.com/BenAhrdt/ioBroker.janitza-gridvis ] ...
+    Version:  stable=3.5.3 (101 days old) => latest=3.5.4 (19 days old)
+    Installs: stable=31 (39.24%), latest=1 (1.27%), total=79
+  - too few users (percent limit missed)
+
+checking ioBroker.jarvis [ https://github.com/Zefau/ioBroker.jarvis ] ...
+    Version:  stable=3.1.8 (850 days old) => latest=3.2.0-rc.5 (369 days old)
+    Installs: stable=8671 (78.06%), latest=577 (5.19%), total=11108
+  + should be updated
+
+checking ioBroker.javascript [ https://github.com/ioBroker/ioBroker.javascript ] ...
+    Version:  stable=8.9.2 (144 days old) => latest=9.0.11 (51 days old)
+    Installs: stable=25490 (50.32%), latest=2266 (4.47%), total=50657
+  + should be updated
+
+checking ioBroker.jeelink [ https://github.com/foxthefox/ioBroker.jeelink ] ...
+    Version:  stable=1.2.5 (404 days old) => latest=1.2.7 (3 days old)
+    Installs: stable=253 (79.06%), latest=6 (1.88%), total=320
+  - too young for update
+
+checking ioBroker.kecontact [ https://github.com/iobroker-community-adapters/ioBroker.kecontact ] ...
+    Version:  stable=3.2.0 (67 days old) => latest=3.3.0 (1 days old)
+    Installs: stable=375 (49.41%), latest=undefined (NaN%), total=759
+  - too young for update
+
+checking ioBroker.knx [ https://github.com/ioBroker/ioBroker.knx ] ...
+    Version:  stable=2.0.30 (271 days old) => latest=2.0.33 (88 days old)
+    Installs: stable=1191 (44.93%), latest=98 (3.7%), total=2651
+  + should be updated
+
+checking ioBroker.kostal-piko-ba [ https://github.com/hombach/ioBroker.kostal-piko-ba ] ...
+    Version:  stable=6.0.0 (138 days old) => latest=6.0.2 (5 days old)
+    Installs: stable=116 (39.32%), latest=3 (1.02%), total=295
+  - too young for update
+
+checking ioBroker.lametric [ https://github.com/klein0r/ioBroker.lametric ] ...
+    Version:  stable=4.1.0 (72 days old) => latest=4.2.0 (35 days old)
+    Installs: stable=165 (51.08%), latest=26 (8.05%), total=323
+  + should be updated
+
+checking ioBroker.lifx [ https://github.com/foxthefox/ioBroker.lifx ] ...
+    Version:  stable=1.0.7 (394 days old) => latest=1.0.9 (3 days old)
+    Installs: stable=50 (76.92%), latest=2 (3.08%), total=65
+  - too young for update
+
+checking ioBroker.lightcontrol [ https://github.com/Schmakus/ioBroker.lightcontrol ] ...
+    Version:  stable=1.0.1 (382 days old) => latest=2.0.0 (197 days old)
+    Installs: stable=186 (65.49%), latest=51 (17.96%), total=284
+  + should be updated
+
+checking ioBroker.lorawan [ https://github.com/BenAhrdt/ioBroker.lorawan ] ...
+    Version:  stable=1.10.22 (54 days old) => latest=1.16.12 (0 days old)
+    Installs: stable=124 (52.99%), latest=1 (0.43%), total=234
+  - too young for update
+
+checking ioBroker.lovelace [ https://github.com/ioBroker/ioBroker.lovelace ] ...
+    Version:  stable=4.1.15 (192 days old) => latest=5.0.1 (10 days old)
+    Installs: stable=1866 (48.61%), latest=175 (4.56%), total=3839
+  - too young for update
+
+checking ioBroker.luftdaten [ https://github.com/klein0r/ioBroker.luftdaten ] ...
+    Version:  stable=4.0.0 (406 days old) => latest=5.0.0 (79 days old)
+    Installs: stable=873 (75.13%), latest=93 (8%), total=1162
+  + should be updated
+
+checking ioBroker.mielecloudservice [ https://github.com/Grizzelbee/ioBroker.mielecloudservice ] ...
+    Version:  stable=6.5.10 (169 days old) => latest=6.5.12 (18 days old)
+    Installs: stable=1164 (61.98%), latest=123 (6.55%), total=1878
+  + should be updated
+
+checking ioBroker.mihome-cloud [ https://github.com/TA2k/ioBroker.mihome-cloud ] ...
+    Version:  stable=0.1.0 (885 days old) => latest=0.1.1 (702 days old)
+    Installs: stable=428 (69.48%), latest=179 (29.06%), total=616
+  + should be updated
+
+checking ioBroker.mihome-vacuum [ https://github.com/iobroker-community-adapters/ioBroker.mihome-vacuum ] ...
+    Version:  stable=5.2.0 (239 days old) => latest=5.3.0 (56 days old)
+    Installs: stable=2787 (58.86%), latest=387 (8.17%), total=4735
+  + should be updated
+
+checking ioBroker.modbus [ https://github.com/ioBroker/ioBroker.modbus ] ...
+    Version:  stable=6.3.2 (386 days old) => latest=6.4.0 (300 days old)
+    Installs: stable=10298 (68.92%), latest=1380 (9.24%), total=14941
+  + should be updated
+
+checking ioBroker.mytime [ https://github.com/oweitman/ioBroker.mytime ] ...
+    Version:  stable=1.4.7 (55 days old) => latest=2.0.1 (10 days old)
+    Installs: stable=300 (49.92%), latest=65 (10.82%), total=601
+  - too young for update
+
+checking ioBroker.myuplink [ https://github.com/sebilm/ioBroker.myuplink ] ...
+    Version:  stable=0.8.4 (267 days old) => latest=0.8.5 (9 days old)
+    Installs: stable=224 (78.32%), latest=15 (5.24%), total=286
+  - too young for update
+
+checking ioBroker.nanoleaf-lightpanels [ https://github.com/daniel-2k/ioBroker.nanoleaf-lightpanels ] ...
+    Version:  stable=1.4.0 (795 days old) => latest=1.5.0 (515 days old)
+    Installs: stable=430 (74.01%), latest=97 (16.7%), total=581
+  + should be updated
+
+checking ioBroker.net-tools [ https://github.com/Jey-Cee/ioBroker.net-tools ] ...
+    Version:  stable=1.1.2 (151 days old) => latest=1.2.0 (99 days old)
+    Installs: stable=1857 (30.36%), latest=211 (3.45%), total=6117
+  + should be updated
+
+checking ioBroker.netatmo-energy [ https://github.com/Homemade-Disaster/ioBroker.netatmo-energy ] ...
+    Version:  stable=2.8.0 (230 days old) => latest=2.8.2 (111 days old)
+    Installs: stable=53 (53.54%), latest=9 (9.09%), total=99
+  + should be updated
+
+checking ioBroker.nina [ https://github.com/TA2k/ioBroker.nina ] ...
+    Version:  stable=0.0.25 (1565 days old) => latest=0.0.26 (673 days old)
+    Installs: stable=1875 (78.75%), latest=458 (19.24%), total=2381
+  + should be updated
+
+checking ioBroker.nissan [ https://github.com/TA2k/ioBroker.nissan ] ...
+    Version:  stable=0.1.4 (438 days old) => latest=0.1.16 (76 days old)
+    Installs: stable=44 (45.83%), latest=22 (22.92%), total=96
+  + should be updated
+
+checking ioBroker.node-red [ https://github.com/ioBroker/ioBroker.node-red ] ...
+    Version:  stable=5.2.1 (509 days old) => latest=6.0.7 (178 days old)
+    Installs: stable=8622 (69.93%), latest=899 (7.29%), total=12330
+  + should be updated
+
+checking ioBroker.octoprint [ https://github.com/klein0r/ioBroker.octoprint ] ...
+    Version:  stable=5.1.0 (694 days old) => latest=6.0.1 (25 days old)
+    Installs: stable=1492 (80.69%), latest=119 (6.44%), total=1849
+  + should be updated
+
+checking ioBroker.onlycat [ https://github.com/Sickboy78/ioBroker.onlycat ] ...
+    Version:  stable=0.4.0 (68 days old) => latest=0.5.1 (10 days old)
+    Installs: stable=2 (40%), latest=2 (40%), total=5
+  - too young for update
+
+checking ioBroker.opcua [ https://github.com/ioBroker/ioBroker.opcua ] ...
+    Version:  stable=1.1.0 (433 days old) => latest=1.2.1 (70 days old)
+    Installs: stable=100 (71.94%), latest=18 (12.95%), total=139
+  + should be updated
+
+checking ioBroker.openligadb [ https://github.com/oweitman/ioBroker.openligadb ] ...
+    Version:  stable=1.9.0 (46 days old) => latest=1.9.1 (24 days old)
+    Installs: stable=187 (46.52%), latest=39 (9.7%), total=402
+  - too young for update
+
+checking ioBroker.openweathermap [ https://github.com/ioBroker/ioBroker.openweathermap ] ...
+    Version:  stable=1.1.2 (438 days old) => latest=1.4.0 (46 days old)
+    Installs: stable=4646 (75.04%), latest=447 (7.22%), total=6191
+  + should be updated
+
+checking ioBroker.parser [ https://github.com/ioBroker/ioBroker.parser ] ...
+    Version:  stable=2.2.4 (389 days old) => latest=2.3.1 (178 days old)
+    Installs: stable=2155 (70.1%), latest=319 (10.38%), total=3074
+  + should be updated
+
+checking ioBroker.pegelalarm [ https://github.com/simatec/ioBroker.pegelalarm ] ...
+    Version:  stable=1.3.9 (82 days old) => latest=1.3.10 (18 days old)
+    Installs: stable=304 (52.05%), latest=43 (7.36%), total=584
+  + should be updated
+
+checking ioBroker.ping [ https://github.com/ioBroker/ioBroker.ping ] ...
+    Version:  stable=1.6.2 (793 days old) => latest=1.7.9 (353 days old)
+    Installs: stable=15181 (78.14%), latest=1718 (8.84%), total=19428
+  + should be updated
+
+checking ioBroker.pirate-weather [ https://github.com/ticaki/ioBroker.pirate-weather ] ...
+    Version:  stable=0.4.0 (22 days old) => latest=0.4.1 (7 days old)
+    Installs: stable=60 (61.22%), latest=37 (37.76%), total=98
+  - too young for update
+
+checking ioBroker.plenticore [ https://github.com/StrathCole/ioBroker.plenticore ] ...
+    Version:  stable=2.2.0 (1563 days old) => latest=2.3.1 (732 days old)
+    Installs: stable=1151 (77.09%), latest=268 (17.95%), total=1493
+  + should be updated
+
+checking ioBroker.porsche [ https://github.com/TA2k/ioBroker.porsche ] ...
+    Version:  stable=0.0.3 (1270 days old) => latest=0.2.0 (692 days old)
+    Installs: stable=26 (42.62%), latest=31 (50.82%), total=61
+  + should be updated
+
+checking ioBroker.rct [ https://github.com/aruttkamp/ioBroker.rct ] ...
+    Version:  stable=1.2.23 (30 days old) => latest=1.2.24 (17 days old)
+    Installs: stable=86 (36.75%), latest=13 (5.56%), total=234
+  - too young for update
+
+checking ioBroker.refoss [ https://github.com/Refoss/ioBroker.refoss ] ...
+    Version:  stable=1.1.3 (42 days old) => latest=1.2.2 (1 days old)
+    Installs: stable=20 (62.5%), latest=1 (3.13%), total=32
+  - too young for update
+
+checking ioBroker.remeha-home [ https://github.com/simatec/ioBroker.remeha-home ] ...
+    Version:  stable=1.0.7 (85 days old) => latest=1.0.8 (18 days old)
+    Installs: stable=17 (56.67%), latest=2 (6.67%), total=30
+  + should be updated
+
+checking ioBroker.rest-api [ https://github.com/ioBroker/ioBroker.rest-api ] ...
+    Version:  stable=2.0.3 (433 days old) => latest=3.0.1 (121 days old)
+    Installs: stable=1126 (76.81%), latest=154 (10.5%), total=1466
+  + should be updated
+
+checking ioBroker.roborock [ https://github.com/copystring/ioBroker.roborock ] ...
+    Version:  stable=0.6.18 (281 days old) => latest=0.6.19 (222 days old)
+    Installs: stable=1378 (62.44%), latest=377 (17.08%), total=2207
+  + should be updated
+
+checking ioBroker.s7 [ https://github.com/ioBroker/ioBroker.s7 ] ...
+    Version:  stable=1.4.3 (580 days old) => latest=1.5.0 (24 days old)
+    Installs: stable=1578 (73.81%), latest=83 (3.88%), total=2138
+  - too few users (percent limit missed)
+
+checking ioBroker.sainlogic [ https://github.com/phifogg/ioBroker.sainlogic ] ...
+    Version:  stable=0.11.6 (240 days old) => latest=0.12.1 (224 days old)
+    Installs: stable=902 (72.28%), latest=151 (12.1%), total=1248
+  + should be updated
+
+checking ioBroker.sayit [ https://github.com/ioBroker/ioBroker.sayit ] ...
+    Version:  stable=5.0.0 (429 days old) => latest=5.1.0 (2 days old)
+    Installs: stable=2619 (78.89%), latest=52 (1.57%), total=3320
+  - too young for update
+
+checking ioBroker.scenes [ https://github.com/ioBroker/ioBroker.scenes ] ...
+    Version:  stable=3.2.3 (389 days old) => latest=4.0.3 (60 days old)
+    Installs: stable=7151 (73.99%), latest=578 (5.98%), total=9665
+  + should be updated
+
+checking ioBroker.scheduler [ https://github.com/ioBroker/ioBroker.scheduler ] ...
+    Version:  stable=1.4.1 (421 days old) => latest=1.5.0 (120 days old)
+    Installs: stable=479 (71.49%), latest=102 (15.22%), total=670
+  + should be updated
+
+checking ioBroker.schoolfree [ https://github.com/simatec/ioBroker.schoolfree ] ...
+    Version:  stable=1.1.10 (81 days old) => latest=1.1.12 (18 days old)
+    Installs: stable=978 (57.97%), latest=135 (8%), total=1687
+  + should be updated
+
+checking ioBroker.shelly [ https://github.com/iobroker-community-adapters/ioBroker.shelly ] ...
+    Version:  stable=10.1.0 (80 days old) => latest=10.2.0 (10 days old)
+    Installs: stable=13126 (47.98%), latest=864 (3.16%), total=27356
+  - too young for update
+
+checking ioBroker.shuttercontrol [ https://github.com/simatec/ioBroker.shuttercontrol ] ...
+    Version:  stable=2.0.3 (58 days old) => latest=2.0.5 (15 days old)
+    Installs: stable=1395 (44.2%), latest=245 (7.76%), total=3156
+  + should be updated
+
+checking ioBroker.simple-api [ https://github.com/ioBroker/ioBroker.simple-api ] ...
+    Version:  stable=2.8.0 (483 days old) => latest=3.0.7 (94 days old)
+    Installs: stable=24233 (79.37%), latest=1862 (6.1%), total=30532
+  + should be updated
+
+checking ioBroker.socketio [ https://github.com/ioBroker/ioBroker.socketio ] ...
+    Version:  stable=6.7.1 (449 days old) => latest=7.0.8 (198 days old)
+    Installs: stable=27698 (77.75%), latest=3007 (8.44%), total=35625
+  + should be updated
+
+checking ioBroker.solax [ https://github.com/simatec/ioBroker.solax ] ...
+    Version:  stable=0.9.18 (83 days old) => latest=0.9.20 (18 days old)
+    Installs: stable=319 (45.06%), latest=32 (4.52%), total=708
+  - too few users (percent limit missed)
+
+checking ioBroker.spotify-premium [ https://github.com/iobroker-community-adapters/ioBroker.spotify-premium ] ...
+    Version:  stable=1.5.2 (276 days old) => latest=1.5.3 (156 days old)
+    Installs: stable=1337 (58.72%), latest=234 (10.28%), total=2277
+  + should be updated
+
+checking ioBroker.statistics [ https://github.com/iobroker-community-adapters/ioBroker.statistics ] ...
+    Version:  stable=2.4.0 (685 days old) => latest=4.0.0 (156 days old)
+    Installs: stable=2297 (76.87%), latest=313 (10.48%), total=2988
+  + should be updated
+
+checking ioBroker.tagesschau [ https://github.com/ticaki/ioBroker.tagesschau ] ...
+    Version:  stable=0.5.0 (234 days old) => latest=0.6.0 (0 days old)
+    Installs: stable=97 (100%), latest=undefined (NaN%), total=97
+  - too young for update
+
+checking ioBroker.tahoma [ https://github.com/Excodibur/ioBroker.tahoma ] ...
+    Version:  stable=0.10.4 (509 days old) => latest=0.11.0 (156 days old)
+    Installs: stable=921 (72.69%), latest=156 (12.31%), total=1267
+  + should be updated
+
+checking ioBroker.telegram-menu [ https://github.com/MiRo1310/ioBroker.telegram-menu ] ...
+    Version:  stable=2.4.4 (102 days old) => latest=3.1.1 (5 days old)
+    Installs: stable=568 (60.55%), latest=40 (4.26%), total=938
+  - too young for update
+
+checking ioBroker.tesla-motors [ https://github.com/iobroker-community-adapters/ioBroker.tesla-motors ] ...
+    Version:  stable=1.3.2 (1005 days old) => latest=1.4.5 (517 days old)
+    Installs: stable=951 (67.69%), latest=342 (24.34%), total=1405
+  + should be updated
+
+checking ioBroker.tibberlink [ https://github.com/hombach/ioBroker.tibberlink ] ...
+    Version:  stable=5.0.2 (13 days old) => latest=5.0.3 (1 days old)
+    Installs: stable=197 (8.18%), latest=26 (1.08%), total=2409
+  - too young for update
+
+checking ioBroker.tinker [ https://github.com/simatec/ioBroker.tinker ] ...
+    Version:  stable=1.3.8 (81 days old) => latest=1.3.9 (18 days old)
+    Installs: stable=15 (31.91%), latest=3 (6.38%), total=47
+  + should be updated
+
+checking ioBroker.trashschedule [ https://github.com/klein0r/ioBroker.trashschedule ] ...
+    Version:  stable=3.3.0 (509 days old) => latest=4.0.1 (77 days old)
+    Installs: stable=7235 (74.16%), latest=803 (8.23%), total=9756
+  + should be updated
+
+checking ioBroker.tuya [ https://github.com/Apollon77/ioBroker.tuya ] ...
+    Version:  stable=3.16.0 (400 days old) => latest=3.17.0 (253 days old)
+    Installs: stable=7499 (73.64%), latest=1188 (11.67%), total=10183
+  + should be updated
+
+checking ioBroker.uv-protect [ https://github.com/simatec/ioBroker.uv-protect ] ...
+    Version:  stable=0.6.7 (82 days old) => latest=0.6.8 (18 days old)
+    Installs: stable=195 (58.73%), latest=40 (12.05%), total=332
+  + should be updated
+
+checking ioBroker.vds2465-server [ https://github.com/Hirsch-DE/ioBroker.vds2465-server ] ...
+    Version:  stable=1.0.0 (383 days old) => latest=1.0.1 (215 days old)
+    Installs: stable=82 (77.36%), latest=9 (8.49%), total=106
+  + should be updated
+
+checking ioBroker.velux [ https://github.com/TA2k/ioBroker.velux ] ...
+    Version:  stable=0.0.8 (464 days old) => latest=0.0.10 (79 days old)
+    Installs: stable=287 (54.05%), latest=110 (20.72%), total=531
+  + should be updated
+
+checking ioBroker.viessmannapi [ https://github.com/TA2k/ioBroker.viessmannapi ] ...
+    Version:  stable=2.3.0 (696 days old) => latest=2.4.3 (39 days old)
+    Installs: stable=1553 (72%), latest=206 (9.55%), total=2157
+  + should be updated
+
+checking ioBroker.vis-2 [ https://github.com/ioBroker/ioBroker.vis-2 ] ...
+    Version:  stable=2.13.4 (14 days old) => latest=2.13.5 (2 days old)
+    Installs: stable=4526 (31.85%), latest=288 (2.03%), total=14211
+  - too young for update
+
+checking ioBroker.vis-2-widgets-gauges [ https://github.com/ioBroker/ioBroker.vis-2-widgets-gauges ] ...
+    Version:  stable=2.0.1 (79 days old) => latest=2.0.2 (23 days old)
+    Installs: stable=1983 (49.53%), latest=458 (11.44%), total=4004
+  + should be updated
+
+checking ioBroker.vis-2-widgets-icontwo [ https://github.com/inventwo/ioBroker.vis-2-widgets-icontwo ] ...
+    Version:  stable=0.28.0 (6 days old) => latest=1.3.0 (2 days old)
+    Installs: stable=71 (48.3%), latest=35 (23.81%), total=147
+  - too young for update
+
+checking ioBroker.vis-2-widgets-inventwo [ https://github.com/inventwo/ioBroker.vis-2-widgets-inventwo ] ...
+    Version:  stable=0.2.2 (117 days old) => latest=0.3.7 (8 days old)
+    Installs: stable=1916 (60.77%), latest=249 (7.9%), total=3153
+  - too young for update
+
+checking ioBroker.vis-2-widgets-jaeger-design [ https://github.com/ioBroker/ioBroker.vis-2-widgets-jaeger-design ] ...
+    Version:  stable=1.2.7 (429 days old) => latest=1.4.7 (80 days old)
+    Installs: stable=1531 (69.94%), latest=301 (13.75%), total=2189
+  + should be updated
+
+checking ioBroker.vis-2-widgets-material [ https://github.com/ioBroker/ioBroker.vis-2-widgets-material ] ...
+    Version:  stable=1.4.10 (406 days old) => latest=1.6.0 (15 days old)
+    Installs: stable=4580 (83.39%), latest=486 (8.85%), total=5492
+  + should be updated
+
+checking ioBroker.vis-2-widgets-ovarious [ https://github.com/oweitman/ioBroker.vis-2-widgets-ovarious ] ...
+    Version:  stable=0.1.9 (374 days old) => latest=1.0.0 (182 days old)
+    Installs: stable=370 (74.3%), latest=128 (25.7%), total=498
+  + should be updated
+
+checking ioBroker.vis-2-widgets-radar-trap [ https://github.com/Steiger04/ioBroker.vis-2-widgets-radar-trap ] ...
+    Version:  stable=2.3.0 (392 days old) => latest=2.3.3 (289 days old)
+    Installs: stable=348 (72.8%), latest=115 (24.06%), total=478
+  + should be updated
+
+checking ioBroker.web [ https://github.com/ioBroker/ioBroker.web ] ...
+    Version:  stable=7.0.8 (184 days old) => latest=7.0.9 (174 days old)
+    Installs: stable=25874 (53.3%), latest=3072 (6.33%), total=48548
+  + should be updated
+
+checking ioBroker.weishaupt-wem [ https://github.com/TA2k/ioBroker.weishaupt-wem ] ...
+    Version:  stable=0.0.15 (888 days old) => latest=0.0.17 (338 days old)
+    Installs: stable=195 (66.33%), latest=45 (15.31%), total=294
+  + should be updated
+
+checking ioBroker.wiegand-tcpip [ https://github.com/kBrausew/ioBroker.wiegand-tcpip ] ...
+    Version:  stable=0.4.6 (1281 days old) => latest=0.4.7 (318 days old)
+    Installs: stable=59 (77.63%), latest=17 (22.37%), total=76
+  + should be updated
+
+checking ioBroker.wireguard [ https://github.com/Grizzelbee/ioBroker.wireguard ] ...
+    Version:  stable=1.7.0 (353 days old) => latest=1.8.0 (216 days old)
+    Installs: stable=208 (77.32%), latest=23 (8.55%), total=269
+  + should be updated
+
+checking ioBroker.withings [ https://github.com/TA2k/ioBroker.withings ] ...
+    Version:  stable=0.0.13 (1103 days old) => latest=0.0.16 (266 days old)
+    Installs: stable=452 (78.75%), latest=104 (18.12%), total=574
+  + should be updated
+
+checking ioBroker.wled [ https://github.com/DrozmotiX/ioBroker.wled ] ...
+    Version:  stable=0.7.2 (688 days old) => latest=0.7.3 (327 days old)
+    Installs: stable=3600 (78.71%), latest=602 (13.16%), total=4574
+  + should be updated
+
+checking ioBroker.wmswebcontrol [ https://github.com/TA2k/ioBroker.wmswebcontrol ] ...
+    Version:  stable=0.1.0 (561 days old) => latest=0.1.4 (235 days old)
+    Installs: stable=30 (55.56%), latest=14 (25.93%), total=54
+  + should be updated
+
+checking ioBroker.ws [ https://github.com/ioBroker/ioBroker.ws ] ...
+    Version:  stable=2.6.2 (449 days old) => latest=3.0.19 (198 days old)
+    Installs: stable=27824 (80.79%), latest=3082 (8.95%), total=34439
+  + should be updated
+
+checking ioBroker.xbox [ https://github.com/foxriver76/ioBroker.xbox ] ...
+    Version:  stable=1.1.0 (746 days old) => latest=1.1.2 (225 days old)
+    Installs: stable=128 (76.65%), latest=22 (13.17%), total=167
+  + should be updated
+
+checking ioBroker.xs1 [ https://github.com/iobroker-community-adapters/ioBroker.xs1 ] ...
+    Version:  stable=1.0.2 (2965 days old) => latest=1.2.0 (508 days old)
+    Installs: stable=18 (35.29%), latest=12 (23.53%), total=51
+  + should be updated
+
+checking ioBroker.zehnder-cloud [ https://github.com/TA2k/ioBroker.zehnder-cloud ] ...
+    Version:  stable=0.0.7 (1076 days old) => latest=2.0.0 (683 days old)
+    Installs: stable=65 (69.15%), latest=21 (22.34%), total=94
+  + should be updated
+
+checking ioBroker.zendure-solarflow [ https://github.com/nograx/ioBroker.zendure-solarflow ] ...
+    Version:  stable=2.0.1 (59 days old) => latest=2.0.4 (7 days old)
+    Installs: stable=345 (40.93%), latest=49 (5.81%), total=843
+  - too young for update
+
+checking ioBroker.zigbee [ https://github.com/ioBroker/ioBroker.zigbee ] ...
+    Version:  stable=3.0.5 (22 days old) => latest=3.1.2 (3 days old)
+    Installs: stable=3014 (23.55%), latest=275 (2.15%), total=12799
+  - too young for update
+
+[INFO]checking issues...
+
+ai-assistant: [ https://www.github.com/ToGe3688/iobroker.ai-assistant ]
+    Update stable version in repo from 0.0.0 to 0.1.4 detected - issue still valid
+
+ai-toolbox: [ https://www.github.com/ToGe3688/iobroker.ai-toolbox ]
+    Update stable version in repo from 0.0.0 to 0.1.3 detected - issue still valid
+
+alexa-shoppinglist: [ https://www.github.com/MiRo1310/iobroker.alexa-shoppinglist ]
+    Update stable version in repo from 1.1.0 to 1.1.1 detected - issue still valid
+
+alexa-timer-vis: [ https://www.github.com/MiRo1310/iobroker.alexa-timer-vis ]
+    Update stable version in repo from 2.1.1 to 2.1.2 detected - issue still valid
+
+anelhut: [ https://www.github.com/dan1-de/iobroker.anelhut ]
+    Update stable version in repo from 1.0.15 to 1.0.16 detected - issue still valid
+
+bascloud: [ https://www.github.com/bascloud/iobroker.bascloud ]
+    Update stable version in repo from 0.0.0 to 0.4.0 detected - issue still valid
+
+bestway: [ https://www.github.com/TA2k/iobroker.bestway ]
+    Update stable version in repo from 0.0.4 to 0.0.5 detected - issue still valid
+
+ble: [ https://www.github.com/AlCalzone/iobroker.ble ]
+    Update stable version in repo from 0.14.0 to 0.14.1 detected - issue still valid
+
+blebox: [ https://www.github.com/ka-vaNu/iobroker.blebox ]
+    Update stable version in repo from 2.1.0 to 2.2.3 detected - issue still valid
+
+bluelink: [ https://www.github.com/Newan/iobroker.bluelink ]
+    Update stable version in repo from 3.1.3 to 3.1.20 detected - issue still valid
+
+bmw: [ https://www.github.com/TA2k/iobroker.bmw ]
+    Update stable version in repo from 0.0.0 to 3.0.0 detected - issue still valid
+
+bosch-ebike: [ https://www.github.com/TA2k/iobroker.bosch-ebike ]
+    Update stable version in repo from 0.0.0 to 0.1.12 detected - issue still valid
+
+botslab360: [ https://www.github.com/TA2k/iobroker.botslab360 ]
+    Update stable version in repo from 0.0.2 to 0.1.0 detected - issue still valid
+
+bring: [ https://www.github.com/foxriver76/iobroker.bring ]
+    Update stable version in repo from 1.8.4 to 1.9.1 detected - issue still valid
+
+bshb: [ https://www.github.com/holomekc/iobroker.bshb ]
+    Update stable version in repo from 0.5.0 to 0.5.2 detected - issue still valid
+
+bwt: [ https://www.github.com/TA2k/iobroker.bwt ]
+    Update stable version in repo from 0.0.5 to 0.1.1 detected - issue still valid
+
+bydhvs: [ https://www.github.com/christianH17/iobroker.bydhvs ]
+    Update stable version in repo from 1.5.0 to 1.5.4 detected - issue still valid
+
+calendar: [ https://www.github.com/WLAN-Kabel/iobroker.calendar ]
+    Update stable version in repo from 0.0.0 to 1.2.0 detected - issue still valid
+
+chargemaster: [ https://www.github.com/hombach/iobroker.chargemaster ]
+    Update stable version in repo from 0.0.0 to 0.14.1 detected
+    request to update to 0.14.1 no longer valid, current latest is 0.14.2
+[DRY] would add comment to 667
+[DRY] would close 667
+
+cloudless-homeconnect: [ https://www.github.com/eifel-tech/iobroker.cloudless-homeconnect ]
+    Update stable version in repo from 0.0.0 to 1.6.2 detected
+    request to update to 1.6.2 no longer valid, current latest is 1.6.3
+[DRY] would add comment to 287
+[DRY] would close 287
+
+comfoairq: [ https://www.github.com/klein0r/iobroker.comfoairq ]
+    Update stable version in repo from 0.0.0 to 0.5.1 detected - issue still valid
+
+consumption: [ https://www.github.com/ioBroker/iobroker.consumption ]
+    Update stable version in repo from 0.0.0 to 1.0.2 detected - issue still valid
+
+contact: [ https://www.github.com/WLAN-Kabel/iobroker.contact ]
+    Update stable version in repo from 0.0.0 to 1.1.3 detected - issue still valid
+
+corrently: [ https://www.github.com/ioBroker/iobroker.corrently ]
+    Update stable version in repo from 0.0.0 to 0.1.1 detected - issue still valid
+
+deyeidc: [ https://www.github.com/raschy/iobroker.deyeidc ]
+    Update stable version in repo from 0.2.0 to 0.3.0 detected - issue still valid
+
+dnscope: [ https://www.github.com/simatec/iobroker.dnscope ]
+    Update stable version in repo from 0.2.4 to 0.2.5 detected - issue still valid
+
+dreame: [ https://www.github.com/TA2k/iobroker.dreame ]
+    Update stable version in repo from 0.0.0 to 0.2.2 detected - issue still valid
+
+echarts: [ https://www.github.com/ioBroker/iobroker.echarts ]
+    Update stable version in repo from 1.9.2 to 2.0.6 detected
+    request to update to 2.0.6 no longer valid, current latest is 2.0.10
+[DRY] would add comment to 924
+[DRY] would close 924
+
+ecoflow: [ https://www.github.com/Newan/iobroker.ecoflow ]
+    Update stable version in repo from 0.0.0 to 0.0.4 detected - issue still valid
+
+emporia: [ https://www.github.com/Chris-656/iobroker.emporia ]
+    Update stable version in repo from 0.0.12 to 0.1.0 detected - issue still valid
+
+energiefluss-erweitert: [ https://www.github.com/SKB-CGN/iobroker.energiefluss-erweitert ]
+    Update stable version in repo from 0.7.7 to 0.7.8 detected - issue still valid
+
+enocean: [ https://www.github.com/Jey-Cee/iobroker.enocean ]
+    Update stable version in repo from 0.0.0 to 0.9.4 detected - issue still valid
+
+esphome: [ https://www.github.com/DrozmotiX/iobroker.esphome ]
+    Update stable version in repo from 0.0.0 to 0.6.2 detected
+    request to update to 0.6.2 no longer valid, current latest is 0.6.3
+[DRY] would add comment to 296
+[DRY] would close 296
+
+eventlist: [ https://www.github.com/ioBroker/iobroker.eventlist ]
+    Update stable version in repo from 2.0.1 to 2.1.0 detected - issue still valid
+
+fenecon: [ https://www.github.com/sg-app/iobroker.fenecon ]
+    Update stable version in repo from 0.5.0 to 0.6.2 detected - issue still valid
+
+fiat: [ https://www.github.com/TA2k/iobroker.fiat ]
+    Update stable version in repo from 0.0.8 to 0.0.10 detected - issue still valid
+
+ford: [ https://www.github.com/TA2k/iobroker.ford ]
+    Update stable version in repo from 1.0.4 to 1.0.5 detected
+    request to update to 1.0.5 no longer valid, current latest is 1.0.4
+[DRY] would add comment to 56
+[DRY] would close 56
+
+froeling: [ https://www.github.com/TA2k/iobroker.froeling ]
+    Update stable version in repo from 0.0.8 to 0.0.9 detected - issue still valid
+
+fronius-solarweb: [ https://www.github.com/TA2k/iobroker.fronius-solarweb ]
+    Update stable version in repo from 0.0.3 to 0.1.1 detected - issue still valid
+
+fyta: [ https://www.github.com/muffin142/iobroker.fyta ]
+    Update stable version in repo from 0.1.5 to 0.2.0 detected - issue still valid
+
+garmin: [ https://www.github.com/TA2k/iobroker.garmin ]
+    Update stable version in repo from 0.0.3 to 0.2.1 detected - issue still valid
+
+gira-iot: [ https://www.github.com/klein0r/iobroker.gira-iot ]
+    Update stable version in repo from 0.5.0 to 0.6.1 detected - issue still valid
+
+go-e: [ https://www.github.com/MK-2001/iobroker.go-e ]
+    Update stable version in repo from 1.0.41 to 1.0.42 detected - issue still valid
+
+googleauth: [ https://www.github.com/Vertumnus/iobroker.googleauth ]
+    Update stable version in repo from 0.0.0 to 0.3.4 detected - issue still valid
+
+gotify-ws: [ https://www.github.com/simatec/iobroker.gotify-ws ]
+    Update stable version in repo from 0.2.2 to 0.2.3 detected - issue still valid
+
+gruenbeck: [ https://www.github.com/TA2k/iobroker.gruenbeck ]
+    Update stable version in repo from 0.0.43 to 0.0.46 detected - issue still valid
+
+hass-mqtt: [ https://www.github.com/smarthomefans/iobroker.hass-mqtt ]
+    Update stable version in repo from 0.0.0 to 0.0.7 detected - issue still valid
+
+hdg-bavaria: [ https://www.github.com/stemaker/iobroker.hdg-bavaria ]
+    Update stable version in repo from 0.0.0 to 0.4.0 detected - issue still valid
+
+heizoel24-mex: [ https://www.github.com/ltspicer/iobroker.heizoel24-mex ]
+    Update stable version in repo from 1.4.4 to 1.4.5 detected
+    request to update to 1.4.5 no longer valid, current latest is 1.4.6
+[DRY] would add comment to 125
+[DRY] would close 125
+
+heizungssteuerung: [ https://www.github.com/jbeenenga/iobroker.heizungssteuerung ]
+    Update stable version in repo from 1.7.0 to 2.1.1 detected - issue still valid
+
+heos: [ https://www.github.com/withstu/iobroker.heos ]
+    Update stable version in repo from 2.2.1 to 2.2.4 detected - issue still valid
+
+hombot: [ https://www.github.com/AlGu1/iobroker.hombot ]
+    Update stable version in repo from 0.0.0 to 0.1.3 detected - issue still valid
+
+homeconnect: [ https://www.github.com/iobroker-community-adapters/iobroker.homeconnect ]
+    Update stable version in repo from 1.4.3 to 1.5.0 detected - issue still valid
+
+hoover: [ https://www.github.com/TA2k/iobroker.hoover ]
+    Update stable version in repo from 0.0.0 to 0.1.4 detected - issue still valid
+
+hue-sync-box: [ https://www.github.com/xXBJXx/iobroker.hue-sync-box ]
+    Update stable version in repo from 0.0.0 to 0.3.5 detected - issue still valid
+
+hyperion_ng: [ https://www.github.com/felixganzer/iobroker.hyperion_ng ]
+    Update stable version in repo from 0.0.0 to 0.1.23 detected - issue still valid
+
+icons-material-png: [ https://www.github.com/ioBroker/iobroker.icons-material-png ]
+    Update stable version in repo from 0.1.0 to 0.1.1 detected
+    request to update to 0.1.1 no longer valid, current latest is 0.1.0
+[DRY] would add comment to 14
+[DRY] would close 14
+
+icons-material-svg: [ https://www.github.com/ioBroker/iobroker.icons-material-svg ]
+    Update stable version in repo from 0.1.0 to 0.1.1 detected
+    request to update to 0.1.1 no longer valid, current latest is 0.1.0
+[DRY] would add comment to 12
+[DRY] would close 12
+
+imow: [ https://www.github.com/TA2k/iobroker.imow ]
+    Update stable version in repo from 0.0.2 to 0.1.2 detected
+    request to update to 0.1.2 no longer valid, current latest is 0.1.2
+[DRY] would add comment to 5
+[DRY] would close 5
+
+intesishome: [ https://www.github.com/maxtox/iobroker.intesishome ]
+    Update stable version in repo from 0.0.0 to 0.1.3 detected
+    request to update to 0.1.3 no longer valid, current latest is 0.1.2
+[DRY] would add comment to 22
+[DRY] would close 22
+
+iot: [ https://www.github.com/ioBroker/iobroker.iot ]
+    Update stable version in repo from 3.3.0 to 4.0.3 detected - issue still valid
+
+javascript: [ https://www.github.com/ioBroker/iobroker.javascript ]
+    Update stable version in repo from 8.9.2 to 9.0.11 detected - issue still valid
+
+js-controller: [ https://www.github.com/ioBroker/iobroker.js-controller ]
+    Update stable version in repo from 7.0.6 to 7.0.8 detected
+    request to update to 7.0.8 no longer valid, current latest is 7.0.7
+[DRY] would add comment to 3061
+[DRY] would close 3061
+
+knx: [ https://www.github.com/ioBroker/iobroker.knx ]
+    Update stable version in repo from 2.0.30 to 2.0.33 detected - issue still valid
+
+lametric: [ https://www.github.com/klein0r/iobroker.lametric ]
+    Update stable version in repo from 4.1.0 to 4.2.0 detected - issue still valid
+
+libre: [ https://www.github.com/TA2k/iobroker.libre ]
+    Update stable version in repo from 0.0.0 to 0.1.3 detected - issue still valid
+
+lightcontrol: [ https://www.github.com/Schmakus/iobroker.lightcontrol ]
+    Update stable version in repo from 1.0.1 to 2.0.0 detected - issue still valid
+
+linux-control: [ https://www.github.com/Scrounger/iobroker.linux-control ]
+    Update stable version in repo from 1.1.5 to 1.1.6 detected
+    request to update to 1.1.6 no longer valid, current latest is 1.1.5
+[DRY] would add comment to 74
+[DRY] would close 74
+
+lovelace: [ https://www.github.com/ioBroker/iobroker.lovelace ]
+    Update stable version in repo from 4.1.15 to 5.0.0 detected
+    request to update to 5.0.0 no longer valid, current latest is 5.0.1
+[DRY] would add comment to 596
+[DRY] would close 596
+
+luftdaten: [ https://www.github.com/klein0r/iobroker.luftdaten ]
+    Update stable version in repo from 4.0.0 to 5.0.0 detected - issue still valid
+
+luxtronik2: [ https://www.github.com/UncleSamSwiss/iobroker.luxtronik2 ]
+    Update stable version in repo from 0.0.0 to 0.4.2 detected - issue still valid
+
+megad: [ https://www.github.com/ioBroker/iobroker.megad ]
+    Update stable version in repo from 1.2.1 to 1.3.0 detected
+    request to update to 1.3.0 no longer valid, current latest is 1.2.1
+[DRY] would add comment to 28
+[DRY] would close 28
+
+mempool-space: [ https://www.github.com/Hans-Wurst-21/iobroker.mempool-space ]
+    Update stable version in repo from 0.0.0 to 0.0.4 detected - issue still valid
+
+mercedesme: [ https://www.github.com/TA2k/iobroker.mercedesme ]
+    Update stable version in repo from 0.0.0 to 0.3.8 detected - issue still valid
+
+message-queue: [ https://www.github.com/MK-2001/iobroker.message-queue ]
+    Update stable version in repo from 0.0.0 to 0.0.3 detected
+    request to update to 0.0.3 no longer valid, current latest is 0.0.3
+[DRY] would add comment to 99
+[DRY] would close 99
+
+midea: [ https://www.github.com/TA2k/iobroker.midea ]
+    Update stable version in repo from 0.0.7 to 0.1.0 detected
+    request to update to 0.1.0 no longer valid, current latest is 0.0.7
+[DRY] would add comment to 229
+[DRY] would close 229
+
+mielecloudservice: [ https://www.github.com/Grizzelbee/iobroker.mielecloudservice ]
+    Update stable version in repo from 6.5.10 to 6.5.12 detected - issue still valid
+
+mihome-airpurifier: [ https://www.github.com/JoJ123/iobroker.mihome-airpurifier ]
+    Update stable version in repo from 0.0.0 to 0.1.8 detected - issue still valid
+
+mihome-cloud: [ https://www.github.com/TA2k/iobroker.mihome-cloud ]
+    Update stable version in repo from 0.1.0 to 0.1.1 detected - issue still valid
+
+mihome-vacuum: [ https://www.github.com/iobroker-community-adapters/iobroker.mihome-vacuum ]
+    Update stable version in repo from 5.2.0 to 5.3.0 detected - issue still valid
+
+miio: [ https://www.github.com/smarthomefans/iobroker.miio ]
+    Update stable version in repo from 0.0.0 to 0.0.13 detected - issue still valid
