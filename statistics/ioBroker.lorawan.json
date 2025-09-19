@@ -1,1 +1,1 @@
-{"558":{"issue":"[W558] attribute \"xs\" for staticText should specify a value of \"12\" at admin/jsonConfig.json/items/_BridgePanel/_Sparepart","adapter":"BenAhrdt/ioBroker.lorawan","timestamp":"Thu, 18 Sep 2025 21:52:12 GMT"}}
+{"252":{"issue":"[W252] Version of [package.json](https://github.com/BenAhrdt/ioBroker.lorawan/blob/master/package.json) (1.17.1) doesn't match latest version on [NPM](https://www.npmjs.com/package/iobroker.lorawan) (1.17.0)","adapter":"BenAhrdt/ioBroker.lorawan","timestamp":"Fri, 19 Sep 2025 09:15:46 GMT"}}
