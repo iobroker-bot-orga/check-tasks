@@ -1,6 +1,6 @@
 # Statistics Report
 
-*Generated on: 2025-09-15T10:59:06.962Z*
+*Generated on: 2025-09-20T11:00:15.302Z*
 
 ## ERRORS
 
@@ -85,6 +85,9 @@
 ### [E019] Invalid repository URL in [package.json](https://github.com/PowerPan/ioBroker.tunnelbroker-endpoint-updater/blob/master/package.json): https://github.com/PowerPan/ioBroker.tunnelbroker-endpoint-updater. Expected: git@github.com:wattnpapa/ioBroker.tunnelbroker-endpoint-updater.git or https://github.com/wattnpapa/ioBroker.tunnelbroker-endpoint-updater.git
 - ioBroker.tunnelbroker-endpoint-updater [PowerPan/ioBroker.tunnelbroker-endpoint-updater](https://github.com/PowerPan/ioBroker.tunnelbroker-endpoint-updater)
 
+### [E019] Invalid repository URL in [package.json](https://github.com/oweitman/ioBroker.vis-mapwidgets/blob/master/package.json): https://github.com/oweitman/ioBroker.mapwidgets.git. Expected: git@github.com:oweitman/ioBroker.vis-mapwidgets.git or https://github.com/oweitman/ioBroker.vis-mapwidgets.git
+- ioBroker.vis-mapwidgets [oweitman/ioBroker.vis-mapwidgets](https://github.com/oweitman/ioBroker.vis-mapwidgets)
+
 ### [E019] Invalid repository URL in [package.json](https://github.com/Vertumnus/ioBroker.weblogin/blob/master/package.json): github:Vertumnus/ioBroker.weblogin. Expected: git@github.com:Vertumnus/ioBroker.weblogin.git or https://github.com/Vertumnus/ioBroker.weblogin.git
 - ioBroker.weblogin [Vertumnus/ioBroker.weblogin](https://github.com/Vertumnus/ioBroker.weblogin)
 
@@ -93,6 +96,9 @@
 
 ### [E020] Name of adapter in [package.json](https://github.com/spayrosam/ioBroker.alarmcontrol/blob/master/package.json) must be lowercase and be equal to "iobroker.". Now is "iobroker.alarmcontrol"
 - ioBroker.alarmcontrol [spayrosam/ioBroker.alarmcontrol](https://github.com/spayrosam/ioBroker.alarmcontrol)
+
+### [E020] Name of adapter in [package.json](https://github.com/oweitman/ioBroker.vis-mapwidgets/blob/master/package.json) must be lowercase and be equal to "iobroker.vis-mapwidgets". Now is "iobroker.mapwidgets"
+- ioBroker.vis-mapwidgets [oweitman/ioBroker.vis-mapwidgets](https://github.com/oweitman/ioBroker.vis-mapwidgets)
 
 ### [E026] "{'engines': {'node'>='18'}}" is required at [package.json](https://github.com/ioBroker/ioBroker.artnet/blob/master/package.json), "{'engines':{'node'>='20'}}" is recommended
 -  [ioBroker.artnet/](https://github.com/ioBroker.artnet/)
@@ -267,7 +273,6 @@
 - ioBroker.influxdb [ioBroker/ioBroker.influxdb](https://github.com/ioBroker/ioBroker.influxdb)
 - ioBroker.iopooleco [mule1972/ioBroker.iopooleco](https://github.com/mule1972/ioBroker.iopooleco)
 - ioBroker.mercedesme [TA2k/ioBroker.mercedesme](https://github.com/TA2k/ioBroker.mercedesme)
-- ioBroker.meross [Apollon77/ioBroker.meross](https://github.com/Apollon77/ioBroker.meross)
 - ioBroker.milight [foxthefox/ioBroker.milight](https://github.com/foxthefox/ioBroker.milight)
 - ioBroker.modbus [ioBroker/ioBroker.modbus](https://github.com/ioBroker/ioBroker.modbus)
 - ioBroker.opensmartcity [ioBroker/ioBroker.opensmartcity](https://github.com/ioBroker/ioBroker.opensmartcity)
@@ -577,7 +582,6 @@
 - ioBroker.bwt [TA2k/ioBroker.bwt](https://github.com/TA2k/ioBroker.bwt)
 - ioBroker.coronavirus-statistics [DrozmotiX/ioBroker.coronavirus-statistics](https://github.com/DrozmotiX/ioBroker.coronavirus-statistics)
 - ioBroker.device-reminder [xenon-s/ioBroker.device-reminder](https://github.com/xenon-s/ioBroker.device-reminder)
-- ioBroker.meross [Apollon77/ioBroker.meross](https://github.com/Apollon77/ioBroker.meross)
 - ioBroker.nina [TA2k/ioBroker.nina](https://github.com/TA2k/ioBroker.nina)
 - ioBroker.opensmartcity [ioBroker/ioBroker.opensmartcity](https://github.com/ioBroker/ioBroker.opensmartcity)
 - ioBroker.plenticore [StrathCole/ioBroker.plenticore](https://github.com/StrathCole/ioBroker.plenticore)
@@ -863,7 +867,6 @@
 - ioBroker.link2home [TA2k/ioBroker.link2home](https://github.com/TA2k/ioBroker.link2home)
 - ioBroker.loqed [foxriver76/ioBroker.loqed](https://github.com/foxriver76/ioBroker.loqed)
 - ioBroker.loxone [UncleSamSwiss/ioBroker.loxone](https://github.com/UncleSamSwiss/ioBroker.loxone)
-- ioBroker.meross [Apollon77/ioBroker.meross](https://github.com/Apollon77/ioBroker.meross)
 - ioBroker.micronova [TA2k/ioBroker.micronova](https://github.com/TA2k/ioBroker.micronova)
 - ioBroker.nanoleaf-lightpanels [daniel-2k/ioBroker.nanoleaf-lightpanels](https://github.com/daniel-2k/ioBroker.nanoleaf-lightpanels)
 - ioBroker.nina [TA2k/ioBroker.nina](https://github.com/TA2k/ioBroker.nina)
@@ -1253,14 +1256,13 @@
 - ioBroker.hp-ilo [SebastianSchultz/ioBroker.hp-ilo](https://github.com/SebastianSchultz/ioBroker.hp-ilo)
 - ioBroker.lgtv11 [SebastianSchultz/ioBroker.lgtv11](https://github.com/SebastianSchultz/ioBroker.lgtv11)
 
-### [E058] Attribute "readme" at [package.json](https://github.com/iobroker-community-adapters/ioBroker.ical/blob/master/package.json) is not supported. Please remove.
-- ioBroker.ical [iobroker-community-adapters/ioBroker.ical](https://github.com/iobroker-community-adapters/ioBroker.ical)
+### [E058] Attribute "depsComment" at [package.json](https://github.com/ioBroker/ioBroker.javascript/blob/master/package.json) is not supported. Please remove.
+- ioBroker.javascript [ioBroker/ioBroker.javascript](https://github.com/ioBroker/ioBroker.javascript)
+
+### [E058] Attribute "readme" at [package.json](https://github.com/ioBroker/ioBroker.maxcul/blob/master/package.json) is not supported. Please remove.
 - ioBroker.maxcul [ioBroker/ioBroker.maxcul](https://github.com/ioBroker/ioBroker.maxcul)
 - ioBroker.paw [bondrogeen/ioBroker.paw](https://github.com/bondrogeen/ioBroker.paw)
 - ioBroker.wiffi-wz [t4qjXH8N/ioBroker.wiffi-wz](https://github.com/t4qjXH8N/ioBroker.wiffi-wz)
-
-### [E058] Attribute "depsComment" at [package.json](https://github.com/ioBroker/ioBroker.javascript/blob/master/package.json) is not supported. Please remove.
-- ioBroker.javascript [ioBroker/ioBroker.javascript](https://github.com/ioBroker/ioBroker.javascript)
 
 ### [E058] Attribute "productName" at [package.json](https://github.com/Steiger04/ioBroker.milight-smart-light/blob/master/package.json) is not supported. Please remove.
 - ioBroker.milight-smart-light [Steiger04/ioBroker.milight-smart-light](https://github.com/Steiger04/ioBroker.milight-smart-light)
@@ -1300,6 +1302,9 @@
 
 ### [E103] "common.name" in [io-package.json](https://github.com/spayrosam/ioBroker.alarmcontrol/blob/master/io-package.json) must be equal to "'". Now is alarmcontrol
 - ioBroker.alarmcontrol [spayrosam/ioBroker.alarmcontrol](https://github.com/spayrosam/ioBroker.alarmcontrol)
+
+### [E103] "common.name" in [io-package.json](https://github.com/oweitman/ioBroker.vis-mapwidgets/blob/master/io-package.json) must be equal to "vis-mapwidgets'". Now is mapwidgets
+- ioBroker.vis-mapwidgets [oweitman/ioBroker.vis-mapwidgets](https://github.com/oweitman/ioBroker.vis-mapwidgets)
 
 ### [E104] No "common.titleLang" found in [io-package.json](https://github.com/ioBroker/ioBroker.artnet/blob/master/io-package.json)
 -  [ioBroker.artnet/](https://github.com/ioBroker.artnet/)
@@ -1352,8 +1357,7 @@
 - ioBroker.myhomecontrol_icons [rg-engineering/ioBroker.myhomecontrol_icons](https://github.com/rg-engineering/ioBroker.myhomecontrol_icons)
 - ioBroker.weblogin [Vertumnus/ioBroker.weblogin](https://github.com/Vertumnus/ioBroker.weblogin)
 
-### [E115] "common.licenseInformation" not found in [io-package.json](https://github.com/mcdhrts/ioBroker.asuswrt/blob/master/io-package.json)
-- ioBroker.asuswrt [mcdhrts/ioBroker.asuswrt](https://github.com/mcdhrts/ioBroker.asuswrt)
+### [E115] "common.licenseInformation" not found in [io-package.json](https://github.com/soef/ioBroker.lightify/blob/master/io-package.json)
 - ioBroker.lightify [soef/ioBroker.lightify](https://github.com/soef/ioBroker.lightify)
 
 ### [E116] No SPDX license found at "common.licenseInformation". Please use one of listed here: https://spdx.org/licenses/
@@ -1361,6 +1365,7 @@
 
 ### [E117] Licenses in [package.json](https://github.com/ioBroker/ioBroker.cloud/blob/master/package.json) and in [io-package.json](https://github.com/ioBroker/ioBroker.cloud/blob/master/io-package.json) are different
 - ioBroker.cloud [ioBroker/ioBroker.cloud](https://github.com/ioBroker/ioBroker.cloud)
+- ioBroker.docker-manager [ioBroker/ioBroker.docker-manager](https://github.com/ioBroker/ioBroker.docker-manager)
 - ioBroker.nutriu [TA2k/ioBroker.nutriu](https://github.com/TA2k/ioBroker.nutriu)
 - ioBroker.opensmartcity [ioBroker/ioBroker.opensmartcity](https://github.com/ioBroker/ioBroker.opensmartcity)
 - ioBroker.vis [ioBroker/ioBroker.vis](https://github.com/ioBroker/ioBroker.vis)
@@ -1377,7 +1382,6 @@
 - ioBroker.hoymiles-wifi [MicHi07i/ioBroker.hoymiles-wifi](https://github.com/MicHi07i/ioBroker.hoymiles-wifi)
 - ioBroker.plenticore [StrathCole/ioBroker.plenticore](https://github.com/StrathCole/ioBroker.plenticore)
 - ioBroker.vis-material-webfont [om2804/ioBroker.vis-material-webfont](https://github.com/om2804/ioBroker.vis-material-webfont)
-- ioBroker.zigbee [ioBroker/ioBroker.zigbee](https://github.com/ioBroker/ioBroker.zigbee)
 
 ### [E120] Unknown type found in [io-package.json](https://github.com/rg-engineering/ioBroker.myhomecontrol_icons/blob/master/io-package.json)
 - ioBroker.myhomecontrol_icons [rg-engineering/ioBroker.myhomecontrol_icons](https://github.com/rg-engineering/ioBroker.myhomecontrol_icons)
@@ -1409,7 +1413,6 @@
 - ioBroker.xbox [foxriver76/ioBroker.xbox](https://github.com/foxriver76/ioBroker.xbox)
 
 ### [E129] Admin support not specified. Please add "common.adminUI.config = json|materialize|html|none"
-- ioBroker.asuswrt [mcdhrts/ioBroker.asuswrt](https://github.com/mcdhrts/ioBroker.asuswrt)
 - ioBroker.b-control-em [ioBroker/ioBroker.b-control-em](https://github.com/ioBroker/ioBroker.b-control-em)
 - ioBroker.bosesoundtouch [iobroker-community-adapters/ioBroker.bosesoundtouch](https://github.com/iobroker-community-adapters/ioBroker.bosesoundtouch)
 - ioBroker.botvac [iobroker-community-adapters/ioBroker.botvac](https://github.com/iobroker-community-adapters/ioBroker.botvac)
@@ -1556,6 +1559,9 @@
 
 ### [E140] width and height of logo are not equal
 - ioBroker.huawei-charger [DNAngelX/ioBroker.huawei-charger](https://github.com/DNAngelX/ioBroker.huawei-charger)
+
+### [E141] logo (specified at "common.extIcon") is too small. It must be greater or equal than 32x32
+- ioBroker.vis-mapwidgets [oweitman/ioBroker.vis-mapwidgets](https://github.com/oweitman/ioBroker.vis-mapwidgets)
 
 ### [E142] logo (specified at "common.extIcon") is too big. It must be less or equal than 512x512
 - ioBroker.homekit-controller [Apollon77/ioBroker.homekit-controller](https://github.com/Apollon77/ioBroker.homekit-controller)
@@ -1714,9 +1720,6 @@
 - ioBroker.zoneminder [iobroker-community-adapters/ioBroker.zoneminder](https://github.com/iobroker-community-adapters/ioBroker.zoneminder)
 - ioBroker.zont [kirovilya/ioBroker.zont](https://github.com/kirovilya/ioBroker.zont)
 
-### [E153] "common.dataSource" type has an invalid value "cloud"
-- ioBroker.asuswrt [mcdhrts/ioBroker.asuswrt](https://github.com/mcdhrts/ioBroker.asuswrt)
-
 ### [E153] "common.dataSource" type has an invalid value "pull"
 - ioBroker.xs1 [iobroker-community-adapters/ioBroker.xs1](https://github.com/iobroker-community-adapters/ioBroker.xs1)
 
@@ -1745,7 +1748,6 @@
 - ioBroker.hid-community [iobroker-community-adapters/ioBroker.hid-community](https://github.com/iobroker-community-adapters/ioBroker.hid-community)
 - ioBroker.hikvision-alarmserver [iobroker-community-adapters/ioBroker.hikvision-alarmserver](https://github.com/iobroker-community-adapters/ioBroker.hikvision-alarmserver)
 - ioBroker.homepilot [iobroker-community-adapters/ioBroker.homepilot](https://github.com/iobroker-community-adapters/ioBroker.homepilot)
-- ioBroker.ical [iobroker-community-adapters/ioBroker.ical](https://github.com/iobroker-community-adapters/ioBroker.ical)
 - ioBroker.kodi [iobroker-community-adapters/ioBroker.kodi](https://github.com/iobroker-community-adapters/ioBroker.kodi)
 - ioBroker.lgtv-rs [iobroker-community-adapters/ioBroker.lgtv-rs](https://github.com/iobroker-community-adapters/ioBroker.lgtv-rs)
 - ioBroker.luxtronik1 [iobroker-community-adapters/ioBroker.luxtronik1](https://github.com/iobroker-community-adapters/ioBroker.luxtronik1)
@@ -2169,7 +2171,6 @@
 ### [E162] js-controller dependency missing. js-controller 5.0.19 is required as minimum, 6.0.11 is recommended. Please add to dependencies at [io-package.json](https://github.com/Eisbaeeer/ioBroker.alpha2/blob/master/io-package.json).
 - ioBroker.alpha2 [Eisbaeeer/ioBroker.alpha2](https://github.com/Eisbaeeer/ioBroker.alpha2)
 - ioBroker.amazon-dash [PArns/ioBroker.amazon-dash](https://github.com/PArns/ioBroker.amazon-dash)
-- ioBroker.asuswrt [mcdhrts/ioBroker.asuswrt](https://github.com/mcdhrts/ioBroker.asuswrt)
 - ioBroker.b-control-em [ioBroker/ioBroker.b-control-em](https://github.com/ioBroker/ioBroker.b-control-em)
 - ioBroker.consumption [ioBroker/ioBroker.consumption](https://github.com/ioBroker/ioBroker.consumption)
 - ioBroker.corrently [ioBroker/ioBroker.corrently](https://github.com/ioBroker/ioBroker.corrently)
@@ -2226,6 +2227,7 @@
 - ioBroker.vis-keyboard [ioBroker/ioBroker.vis-keyboard](https://github.com/ioBroker/ioBroker.vis-keyboard)
 - ioBroker.vis-lcars [ioBroker/ioBroker.vis-lcars](https://github.com/ioBroker/ioBroker.vis-lcars)
 - ioBroker.vis-map [ioBroker/ioBroker.vis-map](https://github.com/ioBroker/ioBroker.vis-map)
+- ioBroker.vis-mapwidgets [oweitman/ioBroker.vis-mapwidgets](https://github.com/oweitman/ioBroker.vis-mapwidgets)
 - ioBroker.vis-material-advanced [iobroker-community-adapters/ioBroker.vis-material-advanced](https://github.com/iobroker-community-adapters/ioBroker.vis-material-advanced)
 - ioBroker.vis-material-webfont [om2804/ioBroker.vis-material-webfont](https://github.com/om2804/ioBroker.vis-material-webfont)
 - ioBroker.vis-materialdesign [Scrounger/ioBroker.vis-materialdesign](https://github.com/Scrounger/ioBroker.vis-materialdesign)
@@ -2236,8 +2238,7 @@
 - ioBroker.vis-timeandweather [ioBroker/ioBroker.vis-timeandweather](https://github.com/ioBroker/ioBroker.vis-timeandweather)
 - ioBroker.weblogin [Vertumnus/ioBroker.weblogin](https://github.com/Vertumnus/ioBroker.weblogin)
 
-### [E165] "common.mode" not found in [io-package.json](https://github.com/mcdhrts/ioBroker.asuswrt/blob/master/io-package.json)
-- ioBroker.asuswrt [mcdhrts/ioBroker.asuswrt](https://github.com/mcdhrts/ioBroker.asuswrt)
+### [E165] "common.mode" not found in [io-package.json](https://github.com/ioBroker/ioBroker.material/blob/master/io-package.json)
 - ioBroker.material [ioBroker/ioBroker.material](https://github.com/ioBroker/ioBroker.material)
 - ioBroker.mobile [ioBroker/ioBroker.mobile](https://github.com/ioBroker/ioBroker.mobile)
 - ioBroker.tileboard [ioBroker/ioBroker.tileboard](https://github.com/ioBroker/ioBroker.tileboard)
@@ -2326,7 +2327,6 @@
 ### [E186] "common.globalDependencies" must be an array at [io-package.json](https://github.com/ioBroker/ioBroker.artnet/blob/master/io-package.json)
 -  [ioBroker.artnet/](https://github.com/ioBroker.artnet/)
 - ioBroker.alarmcontrol [spayrosam/ioBroker.alarmcontrol](https://github.com/spayrosam/ioBroker.alarmcontrol)
-- ioBroker.asuswrt [mcdhrts/ioBroker.asuswrt](https://github.com/mcdhrts/ioBroker.asuswrt)
 - ioBroker.google-smart-home-fulfillment [iobroker-community-adapters/ioBroker.google-smart-home-fulfillment](https://github.com/iobroker-community-adapters/ioBroker.google-smart-home-fulfillment)
 - ioBroker.homepilot20 [homecineplexx/ioBroker.homepilot20](https://github.com/homecineplexx/ioBroker.homepilot20)
 - ioBroker.megadd [ausHaus/ioBroker.megadd](https://github.com/ausHaus/ioBroker.megadd)
@@ -2379,6 +2379,7 @@
 - ioBroker.digitalstrom [ioBroker/ioBroker.digitalstrom](https://github.com/ioBroker/ioBroker.digitalstrom)
 - ioBroker.discovery [ioBroker/ioBroker.discovery](https://github.com/ioBroker/ioBroker.discovery)
 - ioBroker.divera247 [TKnpl/ioBroker.divera247](https://github.com/TKnpl/ioBroker.divera247)
+- ioBroker.docker-manager [ioBroker/ioBroker.docker-manager](https://github.com/ioBroker/ioBroker.docker-manager)
 - ioBroker.dwd [ioBroker/ioBroker.dwd](https://github.com/ioBroker/ioBroker.dwd)
 - ioBroker.easee [Newan/ioBroker.easee](https://github.com/Newan/ioBroker.easee)
 - ioBroker.echarts [ioBroker/ioBroker.echarts](https://github.com/ioBroker/ioBroker.echarts)
@@ -2569,6 +2570,7 @@
 - ioBroker.alarmcontrol [spayrosam/ioBroker.alarmcontrol](https://github.com/spayrosam/ioBroker.alarmcontrol)
 - ioBroker.apsystems-ecu [npeter/ioBroker.apsystems-ecu](https://github.com/npeter/ioBroker.apsystems-ecu)
 - ioBroker.cubinote [mweberit/ioBroker.cubinote](https://github.com/mweberit/ioBroker.cubinote)
+- ioBroker.docker-manager [ioBroker/ioBroker.docker-manager](https://github.com/ioBroker/ioBroker.docker-manager)
 - ioBroker.domiqbase [crosenbe/ioBroker.domiqbase](https://github.com/crosenbe/ioBroker.domiqbase)
 - ioBroker.ecoflow_catshape [CatShape/ioBroker.ecoflow_catshape](https://github.com/CatShape/ioBroker.ecoflow_catshape)
 - ioBroker.jarvis-extensions [mcuiobroker/ioBroker.jarvis-extensions](https://github.com/mcuiobroker/ioBroker.jarvis-extensions)
@@ -2580,6 +2582,7 @@
 - ioBroker.ollama [bloop16/ioBroker.ollama](https://github.com/bloop16/ioBroker.ollama)
 - ioBroker.security-alert [Homemade-Disaster/ioBroker.security-alert](https://github.com/Homemade-Disaster/ioBroker.security-alert)
 - ioBroker.syrconnectapp [TA2k/ioBroker.syrconnectapp](https://github.com/TA2k/ioBroker.syrconnectapp)
+- ioBroker.vis-mapwidgets [oweitman/ioBroker.vis-mapwidgets](https://github.com/oweitman/ioBroker.vis-mapwidgets)
 
 ### [E251] Bluefox was not found in the collaborators on [NPM](https://www.npmjs.com/package/iobroker.connector-local-control)!. Please execute in adapter directory: `npm owner add bluefox iobroker.connector-local-control`
 - ioBroker.connector-local-control [ConnectorGit/ioBroker.connector-local-control](https://github.com/ConnectorGit/ioBroker.connector-local-control)
@@ -2662,6 +2665,9 @@
 ### [E253] Version of [package.json](https://github.com/dan1-de/ioBroker.anelhut/blob/master/package.json) (1.0.15) lower than latest version on [NPM](https://www.npmjs.com/package/iobroker.anelhut) (1.0.16)
 - ioBroker.anelhut [dan1-de/ioBroker.anelhut](https://github.com/dan1-de/ioBroker.anelhut)
 
+### [E253] Version of [package.json](https://github.com/DrozmotiX/ioBroker.bambulab/blob/master/package.json) (0.4.2) lower than latest version on [NPM](https://www.npmjs.com/package/iobroker.bambulab) (0.4.3)
+- ioBroker.bambulab [DrozmotiX/ioBroker.bambulab](https://github.com/DrozmotiX/ioBroker.bambulab)
+
 ### [E253] Version of [package.json](https://github.com/TA2k/ioBroker.botslab360/blob/master/package.json) (0.0.2) lower than latest version on [NPM](https://www.npmjs.com/package/iobroker.botslab360) (0.1.0)
 - ioBroker.botslab360 [TA2k/ioBroker.botslab360](https://github.com/TA2k/ioBroker.botslab360)
 
@@ -2729,16 +2735,24 @@
 - ioBroker.tvspielfilm [iobroker-community-adapters/ioBroker.tvspielfilm](https://github.com/iobroker-community-adapters/ioBroker.tvspielfilm)
 - ioBroker.xs1 [iobroker-community-adapters/ioBroker.xs1](https://github.com/iobroker-community-adapters/ioBroker.xs1)
 
+### [E254] Version "0.4.2" listed at common.news at [io-package.json](https://github.com/DrozmotiX/ioBroker.bambulab/blob/master/io-package.json) does not exist at [NPM](https://www.npmjs.com/package/iobroker.bambulab). Please remove from news section.
+- ioBroker.bambulab [DrozmotiX/ioBroker.bambulab](https://github.com/DrozmotiX/ioBroker.bambulab)
+- ioBroker.rickshaw [ioBroker/ioBroker.rickshaw](https://github.com/ioBroker/ioBroker.rickshaw)
+
 ### [E254] Version "0.2.7" listed at common.news at [io-package.json](https://github.com/iobroker-community-adapters/ioBroker.benq/blob/master/io-package.json) does not exist at [NPM](https://www.npmjs.com/package/iobroker.benq). Please remove from news section.
 - ioBroker.benq [iobroker-community-adapters/ioBroker.benq](https://github.com/iobroker-community-adapters/ioBroker.benq)
 
 ### [E254] Version "3.1.18" listed at common.news at [io-package.json](https://github.com/Newan/ioBroker.bluelink/blob/master/io-package.json) does not exist at [NPM](https://www.npmjs.com/package/iobroker.bluelink). Please remove from news section.
 - ioBroker.bluelink [Newan/ioBroker.bluelink](https://github.com/Newan/ioBroker.bluelink)
 
+### [E254] Version "0.2.5" listed at common.news at [io-package.json](https://github.com/ticaki/ioBroker.brightsky/blob/master/io-package.json) does not exist at [NPM](https://www.npmjs.com/package/iobroker.brightsky). Please remove from news section.
+- ioBroker.brightsky [ticaki/ioBroker.brightsky](https://github.com/ticaki/ioBroker.brightsky)
+- ioBroker.vis-history [ioBroker/ioBroker.vis-history](https://github.com/ioBroker/ioBroker.vis-history)
+
 ### [E254] Versions "0.3.3, 0.2.1, 0.1.4, 0.1.3, 0.0.1" listed at common.news at [io-package.json](https://github.com/hacki11/ioBroker.bsblan/blob/master/io-package.json) do not exist at [NPM](https://www.npmjs.com/package/iobroker.bsblan). Please remove from news section.
 - ioBroker.bsblan [hacki11/ioBroker.bsblan](https://github.com/hacki11/ioBroker.bsblan)
 
-### [E254] Version "1.5.1" listed at common.news at [io-package.json](https://github.com/christianH17/ioBroker.bydhvs/blob/master/io-package.json) does not exist at [NPM](https://www.npmjs.com/package/iobroker.bydhvs). Please remove from news section.
+### [E254] Version "1.5.1" listed at common.news at [io-package.json](https://github.com/christianh17/ioBroker.bydhvs/blob/master/io-package.json) does not exist at [NPM](https://www.npmjs.com/package/iobroker.bydhvs). Please remove from news section.
 - ioBroker.bydhvs [christianH17/ioBroker.bydhvs](https://github.com/christianH17/ioBroker.bydhvs)
 
 ### [E254] Versions "1.4.0, 1.2.3" listed at common.news at [io-package.json](https://github.com/ioBroker/ioBroker.cameras/blob/master/io-package.json) do not exist at [NPM](https://www.npmjs.com/package/iobroker.cameras). Please remove from news section.
@@ -2767,6 +2781,9 @@
 
 ### [E254] Versions "0.1.3, 0.0.6" listed at common.news at [io-package.json](https://github.com/TKnpl/ioBroker.divera247/blob/master/io-package.json) do not exist at [NPM](https://www.npmjs.com/package/iobroker.divera247). Please remove from news section.
 - ioBroker.divera247 [TKnpl/ioBroker.divera247](https://github.com/TKnpl/ioBroker.divera247)
+
+### [E254] Versions "0.0.3, 0.0.2" listed at common.news at [io-package.json](https://github.com/ioBroker/ioBroker.docker-manager/blob/master/io-package.json) do not exist at [NPM](https://www.npmjs.com/package/iobroker.docker-manager). Please remove from news section.
+- ioBroker.docker-manager [ioBroker/ioBroker.docker-manager](https://github.com/ioBroker/ioBroker.docker-manager)
 
 ### [E254] Version "0.1.7" listed at common.news at [io-package.json](https://github.com/spayrosam/ioBroker.dreamehome/blob/master/io-package.json) does not exist at [NPM](https://www.npmjs.com/package/iobroker.dreamehome). Please remove from news section.
 - ioBroker.dreamehome [spayrosam/ioBroker.dreamehome](https://github.com/spayrosam/ioBroker.dreamehome)
@@ -2804,6 +2821,9 @@
 
 ### [E254] Version "1.0.5" listed at common.news at [io-package.json](https://github.com/TA2k/ioBroker.ford/blob/master/io-package.json) does not exist at [NPM](https://www.npmjs.com/package/iobroker.ford). Please remove from news section.
 - ioBroker.ford [TA2k/ioBroker.ford](https://github.com/TA2k/ioBroker.ford)
+
+### [E254] Version "2.6.3" listed at common.news at [io-package.json](https://github.com/foxthefox/ioBroker.fritzdect/blob/master/io-package.json) does not exist at [NPM](https://www.npmjs.com/package/iobroker.fritzdect). Please remove from news section.
+- ioBroker.fritzdect [foxthefox/ioBroker.fritzdect](https://github.com/foxthefox/ioBroker.fritzdect)
 
 ### [E254] Versions "0.0.2, 0.0.1" listed at common.news at [io-package.json](https://github.com/TA2k/ioBroker.fronius-solarweb/blob/master/io-package.json) do not exist at [NPM](https://www.npmjs.com/package/iobroker.fronius-solarweb). Please remove from news section.
 - ioBroker.fronius-solarweb [TA2k/ioBroker.fronius-solarweb](https://github.com/TA2k/ioBroker.fronius-solarweb)
@@ -3011,9 +3031,6 @@
 ### [E254] Versions "2.0.0, 0.2.0" listed at common.news at [io-package.json](https://github.com/ioBroker/ioBroker.rfxcom/blob/master/io-package.json) do not exist at [NPM](https://www.npmjs.com/package/iobroker.rfxcom). Please remove from news section.
 - ioBroker.rfxcom [ioBroker/ioBroker.rfxcom](https://github.com/ioBroker/ioBroker.rfxcom)
 
-### [E254] Version "0.4.2" listed at common.news at [io-package.json](https://github.com/ioBroker/ioBroker.rickshaw/blob/master/io-package.json) does not exist at [NPM](https://www.npmjs.com/package/iobroker.rickshaw). Please remove from news section.
-- ioBroker.rickshaw [ioBroker/ioBroker.rickshaw](https://github.com/ioBroker/ioBroker.rickshaw)
-
 ### [E254] Version "1.0.12" listed at common.news at [io-package.json](https://github.com/phifogg/ioBroker.sainlogic/blob/master/io-package.json) does not exist at [NPM](https://www.npmjs.com/package/iobroker.sainlogic). Please remove from news section.
 - ioBroker.sainlogic [phifogg/ioBroker.sainlogic](https://github.com/phifogg/ioBroker.sainlogic)
 
@@ -3099,9 +3116,6 @@
 ### [E254] Version "1.0.1" listed at common.news at [io-package.json](https://github.com/ioBroker/ioBroker.vis-google-fonts/blob/master/io-package.json) does not exist at [NPM](https://www.npmjs.com/package/iobroker.vis-google-fonts). Please remove from news section.
 - ioBroker.vis-google-fonts [ioBroker/ioBroker.vis-google-fonts](https://github.com/ioBroker/ioBroker.vis-google-fonts)
 
-### [E254] Version "0.2.5" listed at common.news at [io-package.json](https://github.com/ioBroker/ioBroker.vis-history/blob/master/io-package.json) does not exist at [NPM](https://www.npmjs.com/package/iobroker.vis-history). Please remove from news section.
-- ioBroker.vis-history [ioBroker/ioBroker.vis-history](https://github.com/ioBroker/ioBroker.vis-history)
-
 ### [E254] Versions "1.0.7, 1.0.6" listed at common.news at [io-package.json](https://github.com/ioBroker/ioBroker.vis-jqui-mfd/blob/master/io-package.json) do not exist at [NPM](https://www.npmjs.com/package/iobroker.vis-jqui-mfd). Please remove from news section.
 - ioBroker.vis-jqui-mfd [ioBroker/ioBroker.vis-jqui-mfd](https://github.com/ioBroker/ioBroker.vis-jqui-mfd)
 
@@ -3140,25 +3154,29 @@
 ### [E254] Version "0.4.1" listed at common.news at [io-package.json](https://github.com/iobroker-community-adapters/ioBroker.yamaha/blob/master/io-package.json) does not exist at [NPM](https://www.npmjs.com/package/iobroker.yamaha). Please remove from news section.
 - ioBroker.yamaha [iobroker-community-adapters/ioBroker.yamaha](https://github.com/iobroker-community-adapters/ioBroker.yamaha)
 
-### [E254] Versions "3.1.1, 3.1.0" listed at common.news at [io-package.json](https://github.com/ioBroker/ioBroker.zigbee/blob/master/io-package.json) do not exist at [NPM](https://www.npmjs.com/package/iobroker.zigbee). Please remove from news section.
-- ioBroker.zigbee [ioBroker/ioBroker.zigbee](https://github.com/ioBroker/ioBroker.zigbee)
-
 ### [E254] Versions "0.2.12, 0.2.11" listed at common.news at [io-package.json](https://github.com/fungus75/ioBroker.zoe2/blob/master/io-package.json) do not exist at [NPM](https://www.npmjs.com/package/iobroker.zoe2). Please remove from news section.
 - ioBroker.zoe2 [fungus75/ioBroker.zoe2](https://github.com/fungus75/ioBroker.zoe2)
 
 ### [E402] Types of adapter in latest repository and in [io-package.json](https://github.com/bondrogeen/ioBroker.hilink/blob/master/io-package.json) are different "hardware" !== "infrastructure"
 - ioBroker.hilink [bondrogeen/ioBroker.hilink](https://github.com/bondrogeen/ioBroker.hilink)
 
-### [E405] Icon must be in the following path: https://raw.githubusercontent.com/TA2k/ioBroker.dreame/main/admin/; correct sources-dist.json
+### [E402] Types of adapter in latest repository and in [io-package.json](https://github.com/arteck/ioBroker.xsense/blob/master/io-package.json) are different "iot-systems" !== "utility"
+- ioBroker.xsense [arteck/ioBroker.xsense](https://github.com/arteck/ioBroker.xsense)
+
+### [E405] Icon must be in the following path: https://raw.githubusercontent.com/christianh17/ioBroker.bydhvs/master/admin/; correct sources-dist.json
+- ioBroker.bydhvs [christianH17/ioBroker.bydhvs](https://github.com/christianH17/ioBroker.bydhvs)
 - ioBroker.dreame [TA2k/ioBroker.dreame](https://github.com/TA2k/ioBroker.dreame)
 - ioBroker.letrika_comgw [AWhiteKnight/ioBroker.letrika_comgw](https://github.com/AWhiteKnight/ioBroker.letrika_comgw)
 - ioBroker.moma [AWhiteKnight/ioBroker.moma](https://github.com/AWhiteKnight/ioBroker.moma)
 - ioBroker.nextcloudtalk [Rello/ioBroker.nextcloudtalk](https://github.com/Rello/ioBroker.nextcloudtalk)
+- ioBroker.xsense [arteck/ioBroker.xsense](https://github.com/arteck/ioBroker.xsense)
 
-### [E407] Meta URL must be equal to https://raw.githubusercontent.com/TA2k/ioBroker.dreame/main/io-package.json; correct sources-dist.json
+### [E407] Meta URL must be equal to https://raw.githubusercontent.com/christianh17/ioBroker.bydhvs/master/io-package.json; correct sources-dist.json
+- ioBroker.bydhvs [christianH17/ioBroker.bydhvs](https://github.com/christianH17/ioBroker.bydhvs)
 - ioBroker.dreame [TA2k/ioBroker.dreame](https://github.com/TA2k/ioBroker.dreame)
 - ioBroker.letrika_comgw [AWhiteKnight/ioBroker.letrika_comgw](https://github.com/AWhiteKnight/ioBroker.letrika_comgw)
 - ioBroker.moma [AWhiteKnight/ioBroker.moma](https://github.com/AWhiteKnight/ioBroker.moma)
+- ioBroker.xsense [arteck/ioBroker.xsense](https://github.com/arteck/ioBroker.xsense)
 
 ### [E421] Adapter name should use "-" instead of "_"
 - ioBroker.ecoflow_catshape [CatShape/ioBroker.ecoflow_catshape](https://github.com/CatShape/ioBroker.ecoflow_catshape)
@@ -3166,11 +3184,13 @@
 - ioBroker.pioneer_sc_vsx [okeck1982/ioBroker.pioneer_sc_vsx](https://github.com/okeck1982/ioBroker.pioneer_sc_vsx)
 - ioBroker.rtl_433 [phillipssc/ioBroker.rtl_433](https://github.com/phillipssc/ioBroker.rtl_433)
 
-### [E426] Icon must be in the following path: https://raw.githubusercontent.com/AWhiteKnight/ioBroker.letrika_comgw/devel/admin/; correct sources-dist-stable.json
+### [E426] Icon must be in the following path: https://raw.githubusercontent.com/christianh17/ioBroker.bydhvs/master/admin/; correct sources-dist-stable.json
+- ioBroker.bydhvs [christianH17/ioBroker.bydhvs](https://github.com/christianH17/ioBroker.bydhvs)
 - ioBroker.letrika_comgw [AWhiteKnight/ioBroker.letrika_comgw](https://github.com/AWhiteKnight/ioBroker.letrika_comgw)
 - ioBroker.moma [AWhiteKnight/ioBroker.moma](https://github.com/AWhiteKnight/ioBroker.moma)
 
-### [E428] Meta URL must be equal to https://raw.githubusercontent.com/AWhiteKnight/ioBroker.letrika_comgw/devel/io-package.json; correct sources-dist-stable.json
+### [E428] Meta URL must be equal to https://raw.githubusercontent.com/christianh17/ioBroker.bydhvs/master/io-package.json; correct sources-dist-stable.json
+- ioBroker.bydhvs [christianH17/ioBroker.bydhvs](https://github.com/christianH17/ioBroker.bydhvs)
 - ioBroker.letrika_comgw [AWhiteKnight/ioBroker.letrika_comgw](https://github.com/AWhiteKnight/ioBroker.letrika_comgw)
 - ioBroker.moma [AWhiteKnight/ioBroker.moma](https://github.com/AWhiteKnight/ioBroker.moma)
 
@@ -3228,9 +3248,9 @@
 - ioBroker.evcc [Newan/ioBroker.evcc](https://github.com/Newan/ioBroker.evcc)
 - ioBroker.fiat [TA2k/ioBroker.fiat](https://github.com/TA2k/ioBroker.fiat)
 - ioBroker.fitbit-fitness [Chris-656/ioBroker.fitbit-fitness](https://github.com/Chris-656/ioBroker.fitbit-fitness)
-- ioBroker.flexcharts [MyHomeMyData/ioBroker.flexcharts](https://github.com/MyHomeMyData/ioBroker.flexcharts)
 - ioBroker.ford [TA2k/ioBroker.ford](https://github.com/TA2k/ioBroker.ford)
 - ioBroker.froeling [TA2k/ioBroker.froeling](https://github.com/TA2k/ioBroker.froeling)
+- ioBroker.fronius [iobroker-community-adapters/ioBroker.fronius](https://github.com/iobroker-community-adapters/ioBroker.fronius)
 - ioBroker.fronius-wattpilot [tim2zg/ioBroker.fronius-wattpilot](https://github.com/tim2zg/ioBroker.fronius-wattpilot)
 - ioBroker.garmin [TA2k/ioBroker.garmin](https://github.com/TA2k/ioBroker.garmin)
 - ioBroker.govee-local [boergegrunicke/ioBroker.govee-local](https://github.com/boergegrunicke/ioBroker.govee-local)
@@ -3242,6 +3262,7 @@
 - ioBroker.hekr [TA2k/ioBroker.hekr](https://github.com/TA2k/ioBroker.hekr)
 - ioBroker.helios [iobroker-community-adapters/ioBroker.helios](https://github.com/iobroker-community-adapters/ioBroker.helios)
 - ioBroker.hikvision-alarmserver [iobroker-community-adapters/ioBroker.hikvision-alarmserver](https://github.com/iobroker-community-adapters/ioBroker.hikvision-alarmserver)
+- ioBroker.hilink [bondrogeen/ioBroker.hilink](https://github.com/bondrogeen/ioBroker.hilink)
 - ioBroker.homenet [TA2k/ioBroker.homenet](https://github.com/TA2k/ioBroker.homenet)
 - ioBroker.hoover [TA2k/ioBroker.hoover](https://github.com/TA2k/ioBroker.hoover)
 - ioBroker.hue-sync-box [xXBJXx/ioBroker.hue-sync-box](https://github.com/xXBJXx/ioBroker.hue-sync-box)
@@ -3288,7 +3309,6 @@
 - ioBroker.solaredge [iobroker-community-adapters/ioBroker.solaredge](https://github.com/iobroker-community-adapters/ioBroker.solaredge)
 - ioBroker.sonnen-charger [ChrisWbb/ioBroker.sonnen-charger](https://github.com/ChrisWbb/ioBroker.sonnen-charger)
 - ioBroker.tapo [TA2k/ioBroker.tapo](https://github.com/TA2k/ioBroker.tapo)
-- ioBroker.telegram-menu [MiRo1310/ioBroker.telegram-menu](https://github.com/MiRo1310/ioBroker.telegram-menu)
 - ioBroker.tesla-motors [iobroker-community-adapters/ioBroker.tesla-motors](https://github.com/iobroker-community-adapters/ioBroker.tesla-motors)
 - ioBroker.tesla-wallconnector3 [nobl/ioBroker.tesla-wallconnector3](https://github.com/nobl/ioBroker.tesla-wallconnector3)
 - ioBroker.toyota [TA2k/ioBroker.toyota](https://github.com/TA2k/ioBroker.toyota)
@@ -3313,6 +3333,8 @@
 - ioBroker.wireguard [Grizzelbee/ioBroker.wireguard](https://github.com/Grizzelbee/ioBroker.wireguard)
 - ioBroker.withings [TA2k/ioBroker.withings](https://github.com/TA2k/ioBroker.withings)
 - ioBroker.wlanthermo-nano [DrozmotiX/ioBroker.wlanthermo-nano](https://github.com/DrozmotiX/ioBroker.wlanthermo-nano)
+- ioBroker.wled [DrozmotiX/ioBroker.wled](https://github.com/DrozmotiX/ioBroker.wled)
+- ioBroker.xsense [arteck/ioBroker.xsense](https://github.com/arteck/ioBroker.xsense)
 - ioBroker.yahoo-stock-market [Newan/ioBroker.yahoo-stock-market](https://github.com/Newan/ioBroker.yahoo-stock-market)
 - ioBroker.zehnder-cloud [TA2k/ioBroker.zehnder-cloud](https://github.com/TA2k/ioBroker.zehnder-cloud)
 - ioBroker.zigbee2mqtt [arteck/ioBroker.zigbee2mqtt](https://github.com/arteck/ioBroker.zigbee2mqtt)
@@ -3325,7 +3347,6 @@
 - ioBroker.alarm [misanorot/ioBroker.alarm](https://github.com/misanorot/ioBroker.alarm)
 - ioBroker.alpha-ess [Gaspode69/ioBroker.alpha-ess](https://github.com/Gaspode69/ioBroker.alpha-ess)
 - ioBroker.asterisk [schmupu/ioBroker.asterisk](https://github.com/schmupu/ioBroker.asterisk)
-- ioBroker.bambulab [DrozmotiX/ioBroker.bambulab](https://github.com/DrozmotiX/ioBroker.bambulab)
 - ioBroker.bascloud [bascloud/ioBroker.bascloud](https://github.com/bascloud/ioBroker.bascloud)
 - ioBroker.batrium-bms [bembelstemmer/ioBroker.batrium-bms](https://github.com/bembelstemmer/ioBroker.batrium-bms)
 - ioBroker.boschindego [iobroker-community-adapters/ioBroker.boschindego](https://github.com/iobroker-community-adapters/ioBroker.boschindego)
@@ -3343,32 +3364,33 @@
 - ioBroker.drops-weather [iobroker-community-adapters/ioBroker.drops-weather](https://github.com/iobroker-community-adapters/ioBroker.drops-weather)
 - ioBroker.ds18b20 [crycode-de/ioBroker.ds18b20](https://github.com/crycode-de/ioBroker.ds18b20)
 - ioBroker.ecoflow [Newan/ioBroker.ecoflow](https://github.com/Newan/ioBroker.ecoflow)
+- ioBroker.ecoflow-mqtt [foxthefox/ioBroker.ecoflow-mqtt](https://github.com/foxthefox/ioBroker.ecoflow-mqtt)
 - ioBroker.emporia [Chris-656/ioBroker.emporia](https://github.com/Chris-656/ioBroker.emporia)
 - ioBroker.energy-tracker [energy-tracker/ioBroker.energy-tracker](https://github.com/energy-tracker/ioBroker.energy-tracker)
 - ioBroker.envertech-pv [iobroker-community-adapters/ioBroker.envertech-pv](https://github.com/iobroker-community-adapters/ioBroker.envertech-pv)
+- ioBroker.espresense [ticaki/ioBroker.espresense](https://github.com/ticaki/ioBroker.espresense)
 - ioBroker.eusec [bropat/ioBroker.eusec](https://github.com/bropat/ioBroker.eusec)
 - ioBroker.fb-checkpresence [afuerhoff/ioBroker.fb-checkpresence](https://github.com/afuerhoff/ioBroker.fb-checkpresence)
 - ioBroker.fenecon [sg-app/ioBroker.fenecon](https://github.com/sg-app/ioBroker.fenecon)
-- ioBroker.flexcharts [MyHomeMyData/ioBroker.flexcharts](https://github.com/MyHomeMyData/ioBroker.flexcharts)
 - ioBroker.frigate [iobroker-community-adapters/ioBroker.frigate](https://github.com/iobroker-community-adapters/ioBroker.frigate)
+- ioBroker.fronius [iobroker-community-adapters/ioBroker.fronius](https://github.com/iobroker-community-adapters/ioBroker.fronius)
 - ioBroker.fronius-solarweb [TA2k/ioBroker.fronius-solarweb](https://github.com/TA2k/ioBroker.fronius-solarweb)
 - ioBroker.fyta [muffin142/ioBroker.fyta](https://github.com/muffin142/ioBroker.fyta)
 - ioBroker.garmin [TA2k/ioBroker.garmin](https://github.com/TA2k/ioBroker.garmin)
 - ioBroker.google-spreadsheet [ThomasPohl/ioBroker.google-spreadsheet](https://github.com/ThomasPohl/ioBroker.google-spreadsheet)
 - ioBroker.govee-local [boergegrunicke/ioBroker.govee-local](https://github.com/boergegrunicke/ioBroker.govee-local)
 - ioBroker.gree-hvac [XHunter74/ioBroker.gree-hvac](https://github.com/XHunter74/ioBroker.gree-hvac)
+- ioBroker.hilink [bondrogeen/ioBroker.hilink](https://github.com/bondrogeen/ioBroker.hilink)
 - ioBroker.hm-rpc [ioBroker/ioBroker.hm-rpc](https://github.com/ioBroker/ioBroker.hm-rpc)
 - ioBroker.homeconnect [iobroker-community-adapters/ioBroker.homeconnect](https://github.com/iobroker-community-adapters/ioBroker.homeconnect)
 - ioBroker.homenet [TA2k/ioBroker.homenet](https://github.com/TA2k/ioBroker.homenet)
 - ioBroker.hydrawise [SentiQ/ioBroker.hydrawise](https://github.com/SentiQ/ioBroker.hydrawise)
-- ioBroker.ical [iobroker-community-adapters/ioBroker.ical](https://github.com/iobroker-community-adapters/ioBroker.ical)
 - ioBroker.ico-cloud [iobroker-community-adapters/ioBroker.ico-cloud](https://github.com/iobroker-community-adapters/ioBroker.ico-cloud)
 - ioBroker.imap [Lucky-ESA/ioBroker.imap](https://github.com/Lucky-ESA/ioBroker.imap)
 - ioBroker.innoxel [matthsc/ioBroker.innoxel](https://github.com/matthsc/ioBroker.innoxel)
 - ioBroker.iopooleco [mule1972/ioBroker.iopooleco](https://github.com/mule1972/ioBroker.iopooleco)
 - ioBroker.jablotron [DEV2DEV-DE/ioBroker.jablotron](https://github.com/DEV2DEV-DE/ioBroker.jablotron)
 - ioBroker.jeelink [foxthefox/ioBroker.jeelink](https://github.com/foxthefox/ioBroker.jeelink)
-- ioBroker.kecontact [iobroker-community-adapters/ioBroker.kecontact](https://github.com/iobroker-community-adapters/ioBroker.kecontact)
 - ioBroker.lg-thinq [TA2k/ioBroker.lg-thinq](https://github.com/TA2k/ioBroker.lg-thinq)
 - ioBroker.lgtv [iobroker-community-adapters/ioBroker.lgtv](https://github.com/iobroker-community-adapters/ioBroker.lgtv)
 - ioBroker.lightcontrol [Schmakus/ioBroker.lightcontrol](https://github.com/Schmakus/ioBroker.lightcontrol)
@@ -3383,6 +3405,7 @@
 - ioBroker.mihome-cloud [TA2k/ioBroker.mihome-cloud](https://github.com/TA2k/ioBroker.mihome-cloud)
 - ioBroker.mqtt [ioBroker/ioBroker.mqtt](https://github.com/ioBroker/ioBroker.mqtt)
 - ioBroker.mqtt-client [iobroker-community-adapters/ioBroker.mqtt-client](https://github.com/iobroker-community-adapters/ioBroker.mqtt-client)
+- ioBroker.musiccast [foxthefox/ioBroker.musiccast](https://github.com/foxthefox/ioBroker.musiccast)
 - ioBroker.mydlink [iobroker-community-adapters/ioBroker.mydlink](https://github.com/iobroker-community-adapters/ioBroker.mydlink)
 - ioBroker.myenergi [iobroker-community-adapters/ioBroker.myenergi](https://github.com/iobroker-community-adapters/ioBroker.myenergi)
 - ioBroker.mytime [oweitman/ioBroker.mytime](https://github.com/oweitman/ioBroker.mytime)
@@ -3391,6 +3414,7 @@
 - ioBroker.node-red [ioBroker/ioBroker.node-red](https://github.com/ioBroker/ioBroker.node-red)
 - ioBroker.notificationforandroidtv [DNAngelX/ioBroker.notificationforandroidtv](https://github.com/DNAngelX/ioBroker.notificationforandroidtv)
 - ioBroker.nsclient [mcm4iob/ioBroker.nsclient](https://github.com/mcm4iob/ioBroker.nsclient)
+- ioBroker.odl [crycode-de/ioBroker.odl](https://github.com/crycode-de/ioBroker.odl)
 - ioBroker.onvif [iobroker-community-adapters/ioBroker.onvif](https://github.com/iobroker-community-adapters/ioBroker.onvif)
 - ioBroker.opendtu [iobroker-community-adapters/ioBroker.opendtu](https://github.com/iobroker-community-adapters/ioBroker.opendtu)
 - ioBroker.openligadb [oweitman/ioBroker.openligadb](https://github.com/oweitman/ioBroker.openligadb)
@@ -3401,7 +3425,6 @@
 - ioBroker.ping [ioBroker/ioBroker.ping](https://github.com/ioBroker/ioBroker.ping)
 - ioBroker.pjlink [Bannsaenger/ioBroker.pjlink](https://github.com/Bannsaenger/ioBroker.pjlink)
 - ioBroker.playstation [Lucky-ESA/ioBroker.playstation](https://github.com/Lucky-ESA/ioBroker.playstation)
-- ioBroker.plenticore-g3 [FernetMenta/ioBroker.plenticore-g3](https://github.com/FernetMenta/ioBroker.plenticore-g3)
 - ioBroker.pushover [ioBroker/ioBroker.pushover](https://github.com/ioBroker/ioBroker.pushover)
 - ioBroker.pylontech [PLCHome/ioBroker.pylontech](https://github.com/PLCHome/ioBroker.pylontech)
 - ioBroker.rainbird [iobroker-community-adapters/ioBroker.rainbird](https://github.com/iobroker-community-adapters/ioBroker.rainbird)
@@ -3420,20 +3443,16 @@
 - ioBroker.skiinfo [oweitman/ioBroker.skiinfo](https://github.com/oweitman/ioBroker.skiinfo)
 - ioBroker.solaredge [iobroker-community-adapters/ioBroker.solaredge](https://github.com/iobroker-community-adapters/ioBroker.solaredge)
 - ioBroker.solarmanpv [raschy/ioBroker.solarmanpv](https://github.com/raschy/ioBroker.solarmanpv)
-- ioBroker.solarviewdatareader [afuerhoff/ioBroker.solarviewdatareader](https://github.com/afuerhoff/ioBroker.solarviewdatareader)
 - ioBroker.sonnen-charger [ChrisWbb/ioBroker.sonnen-charger](https://github.com/ChrisWbb/ioBroker.sonnen-charger)
 - ioBroker.squeezeboxrpc [oweitman/ioBroker.squeezeboxrpc](https://github.com/oweitman/ioBroker.squeezeboxrpc)
 - ioBroker.statistics [iobroker-community-adapters/ioBroker.statistics](https://github.com/iobroker-community-adapters/ioBroker.statistics)
 - ioBroker.steam [bloop16/ioBroker.steam](https://github.com/bloop16/ioBroker.steam)
-- ioBroker.sun2000 [bolliy/ioBroker.sun2000](https://github.com/bolliy/ioBroker.sun2000)
 - ioBroker.sun2000-modbus [daolis/ioBroker.sun2000-modbus](https://github.com/daolis/ioBroker.sun2000-modbus)
 - ioBroker.ta-blnet [weberk/ioBroker.ta-blnet](https://github.com/weberk/ioBroker.ta-blnet)
 - ioBroker.tapo [TA2k/ioBroker.tapo](https://github.com/TA2k/ioBroker.tapo)
 - ioBroker.tedee [TA2k/ioBroker.tedee](https://github.com/TA2k/ioBroker.tedee)
-- ioBroker.telegram-menu [MiRo1310/ioBroker.telegram-menu](https://github.com/MiRo1310/ioBroker.telegram-menu)
 - ioBroker.tesla-wallconnector3 [nobl/ioBroker.tesla-wallconnector3](https://github.com/nobl/ioBroker.tesla-wallconnector3)
 - ioBroker.teslafi [hombach/ioBroker.teslafi](https://github.com/hombach/ioBroker.teslafi)
-- ioBroker.tibberlink [hombach/ioBroker.tibberlink](https://github.com/hombach/ioBroker.tibberlink)
 - ioBroker.tvprogram [oweitman/ioBroker.tvprogram](https://github.com/oweitman/ioBroker.tvprogram)
 - ioBroker.unifi-protect [iobroker-community-adapters/ioBroker.unifi-protect](https://github.com/iobroker-community-adapters/ioBroker.unifi-protect)
 - ioBroker.valloxmv [hacki11/ioBroker.valloxmv](https://github.com/hacki11/ioBroker.valloxmv)
@@ -3442,11 +3461,13 @@
 - ioBroker.viessmann [misanorot/ioBroker.viessmann](https://github.com/misanorot/ioBroker.viessmann)
 - ioBroker.vis-2-widgets-ovarious [oweitman/ioBroker.vis-2-widgets-ovarious](https://github.com/oweitman/ioBroker.vis-2-widgets-ovarious)
 - ioBroker.vis-jsontemplate [oweitman/ioBroker.vis-jsontemplate](https://github.com/oweitman/ioBroker.vis-jsontemplate)
+- ioBroker.vis-mapwidgets [oweitman/ioBroker.vis-mapwidgets](https://github.com/oweitman/ioBroker.vis-mapwidgets)
 - ioBroker.vofo-speedtest [iobroker-community-adapters/ioBroker.vofo-speedtest](https://github.com/iobroker-community-adapters/ioBroker.vofo-speedtest)
 - ioBroker.volumio [a-i-ks/ioBroker.volumio](https://github.com/a-i-ks/ioBroker.volumio)
 - ioBroker.waterkotte-easycon [theknut/ioBroker.waterkotte-easycon](https://github.com/theknut/ioBroker.waterkotte-easycon)
+- ioBroker.weather-warnings [ticaki/ioBroker.weather-warnings](https://github.com/ticaki/ioBroker.weather-warnings)
 - ioBroker.webcal [dirkhe/ioBroker.webcal](https://github.com/dirkhe/ioBroker.webcal)
-- ioBroker.worx [iobroker-community-adapters/ioBroker.worx](https://github.com/iobroker-community-adapters/ioBroker.worx)
+- ioBroker.xsense [arteck/ioBroker.xsense](https://github.com/arteck/ioBroker.xsense)
 - ioBroker.yahoo-stock-market [Newan/ioBroker.yahoo-stock-market](https://github.com/Newan/ioBroker.yahoo-stock-market)
 - ioBroker.zendure-solarflow [nograx/ioBroker.zendure-solarflow](https://github.com/nograx/ioBroker.zendure-solarflow)
 - ioBroker.zigbee2mqtt [arteck/ioBroker.zigbee2mqtt](https://github.com/arteck/ioBroker.zigbee2mqtt)
@@ -3487,6 +3508,9 @@
 
 ### [E504] setInterval found in "build/main.js", but no clearInterval detected
 - ioBroker.yahoo-stock-market [Newan/ioBroker.yahoo-stock-market](https://github.com/Newan/ioBroker.yahoo-stock-market)
+
+### [E506] Word "countdowns" is not translated to russian in [admin/words.js](https://github.com/iobroker-community-adapters/ioBroker.countdown/blob/master/admin/words.js). You can use https://translator.iobroker.in/ for translations
+- ioBroker.countdown [iobroker-community-adapters/ioBroker.countdown](https://github.com/iobroker-community-adapters/ioBroker.countdown)
 
 ### [E506] Word "TimeoutDesc" is not translated to russian in [admin/words.js](https://github.com/iobroker-community-adapters/ioBroker.emby/blob/master/admin/words.js). You can use https://translator.iobroker.in/ for translations
 - ioBroker.emby [iobroker-community-adapters/ioBroker.emby](https://github.com/iobroker-community-adapters/ioBroker.emby)
@@ -3571,9 +3595,6 @@
 ### [E507] missing size attributes [xs,sm,md,lg,xl] for staticText at admin/jsonConfig.json/items/_serial/_serial
 - ioBroker.ekey [ioBroker/ioBroker.ekey](https://github.com/ioBroker/ioBroker.ekey)
 
-### [E507] missing size attributes [xs,sm,md,lg,xl] for staticText at admin/jsonConfig.json5/items/ESPHomeDashboard/introLine-2
-- ioBroker.esphome [DrozmotiX/ioBroker.esphome](https://github.com/DrozmotiX/ioBroker.esphome)
-
 ### [E507] missing size attributes [xl] for text at admin/jsonConfig.json/items/mainTab/username
 - ioBroker.eusec [bropat/ioBroker.eusec](https://github.com/bropat/ioBroker.eusec)
 
@@ -3625,9 +3646,6 @@
 ### [E507] missing size attributes [xs,sm,md,lg,xl] for text at admin/jsonConfig.json/items/apiKey
 - ioBroker.hydrawise [SentiQ/ioBroker.hydrawise](https://github.com/SentiQ/ioBroker.hydrawise)
 
-### [E507] missing size attributes [xs,xl] for checkbox at admin/jsonConfig.json/items/_options/exactMatchInEventname
-- ioBroker.ical [iobroker-community-adapters/ioBroker.ical](https://github.com/iobroker-community-adapters/ioBroker.ical)
-
 ### [E507] missing size attributes [xs,xl] for table at admin/jsonConfig.json/items/_options/tableLocation
 - ioBroker.iceroad [iobroker-community-adapters/ioBroker.iceroad](https://github.com/iobroker-community-adapters/ioBroker.iceroad)
 
@@ -3672,9 +3690,6 @@
 
 ### [E507] missing size attributes [xs,md,lg,xl] for text at admin/jsonConfig.json/items/user
 - ioBroker.midea [TA2k/ioBroker.midea](https://github.com/TA2k/ioBroker.midea)
-
-### [E507] missing size attributes [xs,xl] for staticText at admin/jsonConfig.json/items/mainTab/infoMessageWebSocket
-- ioBroker.mqtt [ioBroker/ioBroker.mqtt](https://github.com/ioBroker/ioBroker.mqtt)
 
 ### [E507] missing size attributes [xl] for number at admin/jsonConfig.json/items/mainTab/port
 - ioBroker.n8n [ioBroker/ioBroker.n8n](https://github.com/ioBroker/ioBroker.n8n)
@@ -3862,7 +3877,6 @@
 - ioBroker.domiqbase [crosenbe/ioBroker.domiqbase](https://github.com/crosenbe/ioBroker.domiqbase)
 - ioBroker.doorbird [iobroker-community-adapters/ioBroker.doorbird](https://github.com/iobroker-community-adapters/ioBroker.doorbird)
 - ioBroker.ekey [ioBroker/ioBroker.ekey](https://github.com/ioBroker/ioBroker.ekey)
-- ioBroker.esphome [DrozmotiX/ioBroker.esphome](https://github.com/DrozmotiX/ioBroker.esphome)
 - ioBroker.eusec [bropat/ioBroker.eusec](https://github.com/bropat/ioBroker.eusec)
 - ioBroker.garmin [TA2k/ioBroker.garmin](https://github.com/TA2k/ioBroker.garmin)
 - ioBroker.gira-iot [klein0r/ioBroker.gira-iot](https://github.com/klein0r/ioBroker.gira-iot)
@@ -3870,7 +3884,6 @@
 - ioBroker.hikvision-alarmserver [iobroker-community-adapters/ioBroker.hikvision-alarmserver](https://github.com/iobroker-community-adapters/ioBroker.hikvision-alarmserver)
 - ioBroker.hm-rpc [ioBroker/ioBroker.hm-rpc](https://github.com/ioBroker/ioBroker.hm-rpc)
 - ioBroker.hoymiles-wifi [MicHi07i/ioBroker.hoymiles-wifi](https://github.com/MicHi07i/ioBroker.hoymiles-wifi)
-- ioBroker.ical [iobroker-community-adapters/ioBroker.ical](https://github.com/iobroker-community-adapters/ioBroker.ical)
 - ioBroker.iceroad [iobroker-community-adapters/ioBroker.iceroad](https://github.com/iobroker-community-adapters/ioBroker.iceroad)
 - ioBroker.influxdb [ioBroker/ioBroker.influxdb](https://github.com/ioBroker/ioBroker.influxdb)
 - ioBroker.iwg-vpn [iwg-vpn/ioBroker.iwg-vpn](https://github.com/iwg-vpn/ioBroker.iwg-vpn)
@@ -4046,7 +4059,7 @@
 ### [E557] missing size attributes [xs,sm,md,lg,xl] for staticText at admin/jsonConfig.json/items/_serial/_serial
 - ioBroker.ekey [ioBroker/ioBroker.ekey](https://github.com/ioBroker/ioBroker.ekey)
 
-### [E557] missing size attributes [xs,sm,md,lg,xl] for staticText at admin/jsonConfig.json5/items/ESPHomeDashboard/introLine-2
+### [E557] missing size attributes [xs,sm,md,lg,xl] for staticText at admin/jsonConfig.json5/items/ESPHomeDashboard/headerESPHomeDashboard-details-4
 - ioBroker.esphome [DrozmotiX/ioBroker.esphome](https://github.com/DrozmotiX/ioBroker.esphome)
 
 ### [E557] missing size attributes [xl] for text at admin/jsonConfig.json/items/mainTab/username
@@ -4066,6 +4079,9 @@
 
 ### [E557] missing size attributes [xs,md,lg,xl] for number at admin/jsonConfig.json/items/mainTab/port
 - ioBroker.hikvision-alarmserver [iobroker-community-adapters/ioBroker.hikvision-alarmserver](https://github.com/iobroker-community-adapters/ioBroker.hikvision-alarmserver)
+
+### [E557] missing size attributes [xs,sm,md,lg,xl] for text at admin/jsonConfig.json/items/ip
+- ioBroker.hilink [bondrogeen/ioBroker.hilink](https://github.com/bondrogeen/ioBroker.hilink)
 
 ### [E557] missing size attributes [xs,xl] for text at admin/jsonConfig.json/items/dbTab/storeDir
 - ioBroker.history [ioBroker/ioBroker.history](https://github.com/ioBroker/ioBroker.history)
@@ -4088,9 +4104,6 @@
 
 ### [E557] missing size attributes [xs,sm,md,lg,xl] for text at admin/jsonConfig.json/items/apiKey
 - ioBroker.hydrawise [SentiQ/ioBroker.hydrawise](https://github.com/SentiQ/ioBroker.hydrawise)
-
-### [E557] missing size attributes [xs,xl] for checkbox at admin/jsonConfig.json/items/_options/exactMatchInEventname
-- ioBroker.ical [iobroker-community-adapters/ioBroker.ical](https://github.com/iobroker-community-adapters/ioBroker.ical)
 
 ### [E557] missing size attributes [xs,xl] for table at admin/jsonConfig.json/items/_options/tableLocation
 - ioBroker.iceroad [iobroker-community-adapters/ioBroker.iceroad](https://github.com/iobroker-community-adapters/ioBroker.iceroad)
@@ -4118,9 +4131,6 @@
 
 ### [E557] missing size attributes [xs,md,lg,xl] for text at admin/jsonConfig.json/items/user
 - ioBroker.midea [TA2k/ioBroker.midea](https://github.com/TA2k/ioBroker.midea)
-
-### [E557] missing size attributes [xs,xl] for staticText at admin/jsonConfig.json/items/mainTab/infoMessageWebSocket
-- ioBroker.mqtt [ioBroker/ioBroker.mqtt](https://github.com/ioBroker/ioBroker.mqtt)
 
 ### [E557] missing size attributes [xl] for number at admin/jsonConfig.json/items/mainTab/port
 - ioBroker.n8n [ioBroker/ioBroker.n8n](https://github.com/ioBroker/ioBroker.n8n)
@@ -4288,7 +4298,6 @@
 - ioBroker.hikvision-alarmserver [iobroker-community-adapters/ioBroker.hikvision-alarmserver](https://github.com/iobroker-community-adapters/ioBroker.hikvision-alarmserver)
 - ioBroker.history [ioBroker/ioBroker.history](https://github.com/ioBroker/ioBroker.history)
 - ioBroker.hm-rpc [ioBroker/ioBroker.hm-rpc](https://github.com/ioBroker/ioBroker.hm-rpc)
-- ioBroker.ical [iobroker-community-adapters/ioBroker.ical](https://github.com/iobroker-community-adapters/ioBroker.ical)
 - ioBroker.iceroad [iobroker-community-adapters/ioBroker.iceroad](https://github.com/iobroker-community-adapters/ioBroker.iceroad)
 - ioBroker.influxdb [ioBroker/ioBroker.influxdb](https://github.com/ioBroker/ioBroker.influxdb)
 - ioBroker.javascript [ioBroker/ioBroker.javascript](https://github.com/ioBroker/ioBroker.javascript)
@@ -4873,6 +4882,7 @@
 - ioBroker.security-alert [Homemade-Disaster/ioBroker.security-alert](https://github.com/Homemade-Disaster/ioBroker.security-alert)
 - ioBroker.vis-google-fonts [ioBroker/ioBroker.vis-google-fonts](https://github.com/ioBroker/ioBroker.vis-google-fonts)
 - ioBroker.vis-keyboard [ioBroker/ioBroker.vis-keyboard](https://github.com/ioBroker/ioBroker.vis-keyboard)
+- ioBroker.vis-mapwidgets [oweitman/ioBroker.vis-mapwidgets](https://github.com/oweitman/ioBroker.vis-mapwidgets)
 - ioBroker.vis-material-webfont [om2804/ioBroker.vis-material-webfont](https://github.com/om2804/ioBroker.vis-material-webfont)
 - ioBroker.vis-players [iobroker-community-adapters/ioBroker.vis-players](https://github.com/iobroker-community-adapters/ioBroker.vis-players)
 - ioBroker.xs1 [iobroker-community-adapters/ioBroker.xs1](https://github.com/iobroker-community-adapters/ioBroker.xs1)
@@ -4885,6 +4895,7 @@
 - ioBroker.connector-local-control [ConnectorGit/ioBroker.connector-local-control](https://github.com/ConnectorGit/ioBroker.connector-local-control)
 - ioBroker.corrently [ioBroker/ioBroker.corrently](https://github.com/ioBroker/ioBroker.corrently)
 - ioBroker.cubinote [mweberit/ioBroker.cubinote](https://github.com/mweberit/ioBroker.cubinote)
+- ioBroker.docker-manager [ioBroker/ioBroker.docker-manager](https://github.com/ioBroker/ioBroker.docker-manager)
 - ioBroker.energy-schedule [energychain/ioBroker.energy-schedule](https://github.com/energychain/ioBroker.energy-schedule)
 - ioBroker.fritzbox [iobroker-community-adapters/ioBroker.fritzbox](https://github.com/iobroker-community-adapters/ioBroker.fritzbox)
 - ioBroker.garmin [TA2k/ioBroker.garmin](https://github.com/TA2k/ioBroker.garmin)
@@ -4924,6 +4935,7 @@
 - ioBroker.terminal [ioBroker/ioBroker.terminal](https://github.com/ioBroker/ioBroker.terminal)
 - ioBroker.trivum [TheBam1990/ioBroker.trivum](https://github.com/TheBam1990/ioBroker.trivum)
 - ioBroker.vis-2-widgets-sweethome3d [ioBroker/ioBroker.vis-2-widgets-sweethome3d](https://github.com/ioBroker/ioBroker.vis-2-widgets-sweethome3d)
+- ioBroker.vis-mapwidgets [oweitman/ioBroker.vis-mapwidgets](https://github.com/oweitman/ioBroker.vis-mapwidgets)
 - ioBroker.vis-material-webfont [om2804/ioBroker.vis-material-webfont](https://github.com/om2804/ioBroker.vis-material-webfont)
 - ioBroker.vis-players [iobroker-community-adapters/ioBroker.vis-players](https://github.com/iobroker-community-adapters/ioBroker.vis-players)
 - ioBroker.vr200 [Eisbaeeer/ioBroker.vr200](https://github.com/Eisbaeeer/ioBroker.vr200)
@@ -5061,9 +5073,6 @@
 
 ### [E804] Please process issue [[#447] "Compatibility check and testing for node.js 24"](https://github.com/iobroker-community-adapters/ioBroker.mqtt-client/issues/447)
 - ioBroker.mqtt-client [iobroker-community-adapters/ioBroker.mqtt-client](https://github.com/iobroker-community-adapters/ioBroker.mqtt-client)
-
-### [E804] Please process issue [[#491] "Compatibility check and testing for Responsive Design (jsonConfig)"](https://github.com/ioBroker/ioBroker.mqtt/issues/491)
-- ioBroker.mqtt [ioBroker/ioBroker.mqtt](https://github.com/ioBroker/ioBroker.mqtt)
 
 ### [E804] Please process issue [[#318] "Compatibility check and testing for Responsive Design (materialize)"](https://github.com/sebilm/ioBroker.nibeuplink/issues/318)
 - ioBroker.nibeuplink [sebilm/ioBroker.nibeuplink](https://github.com/sebilm/ioBroker.nibeuplink)
@@ -5208,6 +5217,7 @@
 
 ### [E952] neither files section at [package.json](https://github.com/Eisbaeeer/ioBroker.alpha2/blob/master/package.json) nor file .npmignore found. npm package will contain unwanted files.
 - ioBroker.alpha2 [Eisbaeeer/ioBroker.alpha2](https://github.com/Eisbaeeer/ioBroker.alpha2)
+- ioBroker.fritzdect [foxthefox/ioBroker.fritzdect](https://github.com/foxthefox/ioBroker.fritzdect)
 - ioBroker.googleauth [Vertumnus/ioBroker.googleauth](https://github.com/Vertumnus/ioBroker.googleauth)
 - ioBroker.gruenbeck [TA2k/ioBroker.gruenbeck](https://github.com/TA2k/ioBroker.gruenbeck)
 - ioBroker.hp-ilo [SebastianSchultz/ioBroker.hp-ilo](https://github.com/SebastianSchultz/ioBroker.hp-ilo)
@@ -5260,6 +5270,7 @@
 - ioBroker.ai-assistant [ToGe3688/ioBroker.ai-assistant](https://github.com/ToGe3688/ioBroker.ai-assistant)
 - ioBroker.ai-toolbox [ToGe3688/ioBroker.ai-toolbox](https://github.com/ToGe3688/ioBroker.ai-toolbox)
 - ioBroker.air-q [CorantGmbH/ioBroker.air-q](https://github.com/CorantGmbH/ioBroker.air-q)
+- ioBroker.asuswrt [mcdhrts/ioBroker.asuswrt](https://github.com/mcdhrts/ioBroker.asuswrt)
 - ioBroker.awattar [sirjojo69/ioBroker.awattar](https://github.com/sirjojo69/ioBroker.awattar)
 - ioBroker.bascloud [bascloud/ioBroker.bascloud](https://github.com/bascloud/ioBroker.bascloud)
 - ioBroker.batrium-bms [bembelstemmer/ioBroker.batrium-bms](https://github.com/bembelstemmer/ioBroker.batrium-bms)
@@ -5323,7 +5334,6 @@
 - ioBroker.hue [iobroker-community-adapters/ioBroker.hue](https://github.com/iobroker-community-adapters/ioBroker.hue)
 - ioBroker.huum-sauna [Chris-656/ioBroker.huum-sauna](https://github.com/Chris-656/ioBroker.huum-sauna)
 - ioBroker.hydrawise [SentiQ/ioBroker.hydrawise](https://github.com/SentiQ/ioBroker.hydrawise)
-- ioBroker.ical [iobroker-community-adapters/ioBroker.ical](https://github.com/iobroker-community-adapters/ioBroker.ical)
 - ioBroker.iceroad [iobroker-community-adapters/ioBroker.iceroad](https://github.com/iobroker-community-adapters/ioBroker.iceroad)
 - ioBroker.ikettle2 [Jey-Cee/ioBroker.ikettle2](https://github.com/Jey-Cee/ioBroker.ikettle2)
 - ioBroker.imap [Lucky-ESA/ioBroker.imap](https://github.com/Lucky-ESA/ioBroker.imap)
@@ -5346,6 +5356,7 @@
 - ioBroker.meater [Standarduser/ioBroker.meater](https://github.com/Standarduser/ioBroker.meater)
 - ioBroker.mempool-space [Hans-Wurst-21/ioBroker.mempool-space](https://github.com/Hans-Wurst-21/ioBroker.mempool-space)
 - ioBroker.mercury [iobroker-community-adapters/ioBroker.mercury](https://github.com/iobroker-community-adapters/ioBroker.mercury)
+- ioBroker.meross [Apollon77/ioBroker.meross](https://github.com/Apollon77/ioBroker.meross)
 - ioBroker.mhi-wfrac [hacki11/ioBroker.mhi-wfrac](https://github.com/hacki11/ioBroker.mhi-wfrac)
 - ioBroker.miele [iobroker-community-adapters/ioBroker.miele](https://github.com/iobroker-community-adapters/ioBroker.miele)
 - ioBroker.mihome-plug [iobroker-community-adapters/ioBroker.mihome-plug](https://github.com/iobroker-community-adapters/ioBroker.mihome-plug)
@@ -5492,7 +5503,6 @@
 - ioBroker.ai-assistant [ToGe3688/ioBroker.ai-assistant](https://github.com/ToGe3688/ioBroker.ai-assistant)
 - ioBroker.ai-toolbox [ToGe3688/ioBroker.ai-toolbox](https://github.com/ToGe3688/ioBroker.ai-toolbox)
 - ioBroker.air-q [CorantGmbH/ioBroker.air-q](https://github.com/CorantGmbH/ioBroker.air-q)
-- ioBroker.alexa-timer-vis [MiRo1310/ioBroker.alexa-timer-vis](https://github.com/MiRo1310/ioBroker.alexa-timer-vis)
 - ioBroker.alexa2 [Apollon77/ioBroker.alexa2](https://github.com/Apollon77/ioBroker.alexa2)
 - ioBroker.alpha-ess [Gaspode69/ioBroker.alpha-ess](https://github.com/Gaspode69/ioBroker.alpha-ess)
 - ioBroker.amtronwallbox [rg-engineering/ioBroker.amtronwallbox](https://github.com/rg-engineering/ioBroker.amtronwallbox)
@@ -5504,7 +5514,6 @@
 - ioBroker.bluelink [Newan/ioBroker.bluelink](https://github.com/Newan/ioBroker.bluelink)
 - ioBroker.bosch-ebike [TA2k/ioBroker.bosch-ebike](https://github.com/TA2k/ioBroker.bosch-ebike)
 - ioBroker.boschindego [iobroker-community-adapters/ioBroker.boschindego](https://github.com/iobroker-community-adapters/ioBroker.boschindego)
-- ioBroker.bydhvs [christianH17/ioBroker.bydhvs](https://github.com/christianH17/ioBroker.bydhvs)
 - ioBroker.cameras [ioBroker/ioBroker.cameras](https://github.com/ioBroker/ioBroker.cameras)
 - ioBroker.canbus [crycode-de/ioBroker.canbus](https://github.com/crycode-de/ioBroker.canbus)
 - ioBroker.chromecast [iobroker-community-adapters/ioBroker.chromecast](https://github.com/iobroker-community-adapters/ioBroker.chromecast)
@@ -5536,7 +5545,6 @@
 - ioBroker.fenecon [sg-app/ioBroker.fenecon](https://github.com/sg-app/ioBroker.fenecon)
 - ioBroker.fritzdect [foxthefox/ioBroker.fritzdect](https://github.com/foxthefox/ioBroker.fritzdect)
 - ioBroker.fronius-solarweb [TA2k/ioBroker.fronius-solarweb](https://github.com/TA2k/ioBroker.fronius-solarweb)
-- ioBroker.fronius-wattpilot [tim2zg/ioBroker.fronius-wattpilot](https://github.com/tim2zg/ioBroker.fronius-wattpilot)
 - ioBroker.fullybrowser [arteck/ioBroker.fullybrowser](https://github.com/arteck/ioBroker.fullybrowser)
 - ioBroker.fyta [muffin142/ioBroker.fyta](https://github.com/muffin142/ioBroker.fyta)
 - ioBroker.garmin [TA2k/ioBroker.garmin](https://github.com/TA2k/ioBroker.garmin)
@@ -5545,7 +5553,6 @@
 - ioBroker.gree-hvac [XHunter74/ioBroker.gree-hvac](https://github.com/XHunter74/ioBroker.gree-hvac)
 - ioBroker.gruenbeck [TA2k/ioBroker.gruenbeck](https://github.com/TA2k/ioBroker.gruenbeck)
 - ioBroker.gsmsms [iobroker-community-adapters/ioBroker.gsmsms](https://github.com/iobroker-community-adapters/ioBroker.gsmsms)
-- ioBroker.heatingcontrol [rg-engineering/ioBroker.heatingcontrol](https://github.com/rg-engineering/ioBroker.heatingcontrol)
 - ioBroker.heos [withstu/ioBroker.heos](https://github.com/withstu/ioBroker.heos)
 - ioBroker.hiob [moba15/ioBroker.hiob](https://github.com/moba15/ioBroker.hiob)
 - ioBroker.hm-rpc [ioBroker/ioBroker.hm-rpc](https://github.com/ioBroker/ioBroker.hm-rpc)
@@ -5555,7 +5562,6 @@
 - ioBroker.hs100 [arteck/ioBroker.hs100](https://github.com/arteck/ioBroker.hs100)
 - ioBroker.huum-sauna [Chris-656/ioBroker.huum-sauna](https://github.com/Chris-656/ioBroker.huum-sauna)
 - ioBroker.hydrawise [SentiQ/ioBroker.hydrawise](https://github.com/SentiQ/ioBroker.hydrawise)
-- ioBroker.ical [iobroker-community-adapters/ioBroker.ical](https://github.com/iobroker-community-adapters/ioBroker.ical)
 - ioBroker.ikettle2 [Jey-Cee/ioBroker.ikettle2](https://github.com/Jey-Cee/ioBroker.ikettle2)
 - ioBroker.imap [Lucky-ESA/ioBroker.imap](https://github.com/Lucky-ESA/ioBroker.imap)
 - ioBroker.innoxel [matthsc/ioBroker.innoxel](https://github.com/matthsc/ioBroker.innoxel)
@@ -5636,7 +5642,6 @@
 - ioBroker.smartthings [TA2k/ioBroker.smartthings](https://github.com/TA2k/ioBroker.smartthings)
 - ioBroker.socketio [ioBroker/ioBroker.socketio](https://github.com/ioBroker/ioBroker.socketio)
 - ioBroker.solarlog [iobroker-community-adapters/ioBroker.solarlog](https://github.com/iobroker-community-adapters/ioBroker.solarlog)
-- ioBroker.solarviewdatareader [afuerhoff/ioBroker.solarviewdatareader](https://github.com/afuerhoff/ioBroker.solarviewdatareader)
 - ioBroker.sonnen-charger [ChrisWbb/ioBroker.sonnen-charger](https://github.com/ChrisWbb/ioBroker.sonnen-charger)
 - ioBroker.spotify-premium [iobroker-community-adapters/ioBroker.spotify-premium](https://github.com/iobroker-community-adapters/ioBroker.spotify-premium)
 - ioBroker.sprinklecontrol [Dirk-Peter-md/ioBroker.sprinklecontrol](https://github.com/Dirk-Peter-md/ioBroker.sprinklecontrol)
@@ -5679,16 +5684,15 @@
 - ioBroker.yahka [jensweigele/ioBroker.yahka](https://github.com/jensweigele/ioBroker.yahka)
 - ioBroker.yeelight-2 [iobroker-community-adapters/ioBroker.yeelight-2](https://github.com/iobroker-community-adapters/ioBroker.yeelight-2)
 - ioBroker.zendure-solarflow [nograx/ioBroker.zendure-solarflow](https://github.com/nograx/ioBroker.zendure-solarflow)
-- ioBroker.zigbee [ioBroker/ioBroker.zigbee](https://github.com/ioBroker/ioBroker.zigbee)
-- ioBroker.zigbee2mqtt [arteck/ioBroker.zigbee2mqtt](https://github.com/arteck/ioBroker.zigbee2mqtt)
 
 ### [W034] @iobroker/adapter-core 3.3.1 specified. 3.3.2 is recommended. Please consider updating dependencies at [package.json](https://github.com/ronny130286/ioBroker.ankersolix2/blob/master/package.json)
 - ioBroker.ankersolix2 [ronny130286/ioBroker.ankersolix2](https://github.com/ronny130286/ioBroker.ankersolix2)
-- ioBroker.asuswrt [mcdhrts/ioBroker.asuswrt](https://github.com/mcdhrts/ioBroker.asuswrt)
 - ioBroker.daswetter [rg-engineering/ioBroker.daswetter](https://github.com/rg-engineering/ioBroker.daswetter)
+- ioBroker.docker-manager [ioBroker/ioBroker.docker-manager](https://github.com/ioBroker/ioBroker.docker-manager)
 - ioBroker.dreame [TA2k/ioBroker.dreame](https://github.com/TA2k/ioBroker.dreame)
 - ioBroker.echarts [ioBroker/ioBroker.echarts](https://github.com/ioBroker/ioBroker.echarts)
-- ioBroker.flexcharts [MyHomeMyData/ioBroker.flexcharts](https://github.com/MyHomeMyData/ioBroker.flexcharts)
+- ioBroker.fronius-wattpilot [tim2zg/ioBroker.fronius-wattpilot](https://github.com/tim2zg/ioBroker.fronius-wattpilot)
+- ioBroker.heatingcontrol [rg-engineering/ioBroker.heatingcontrol](https://github.com/rg-engineering/ioBroker.heatingcontrol)
 - ioBroker.matter [ioBroker/ioBroker.matter](https://github.com/ioBroker/ioBroker.matter)
 - ioBroker.milight [foxthefox/ioBroker.milight](https://github.com/foxthefox/ioBroker.milight)
 - ioBroker.mytime [oweitman/ioBroker.mytime](https://github.com/oweitman/ioBroker.mytime)
@@ -5775,15 +5779,14 @@
 - ioBroker.ai-toolbox [ToGe3688/ioBroker.ai-toolbox](https://github.com/ToGe3688/ioBroker.ai-toolbox)
 - ioBroker.amtronwallbox [rg-engineering/ioBroker.amtronwallbox](https://github.com/rg-engineering/ioBroker.amtronwallbox)
 - ioBroker.ankersolix2 [ronny130286/ioBroker.ankersolix2](https://github.com/ronny130286/ioBroker.ankersolix2)
-- ioBroker.asuswrt [mcdhrts/ioBroker.asuswrt](https://github.com/mcdhrts/ioBroker.asuswrt)
 - ioBroker.batrium-bms [bembelstemmer/ioBroker.batrium-bms](https://github.com/bembelstemmer/ioBroker.batrium-bms)
 - ioBroker.bluelink [Newan/ioBroker.bluelink](https://github.com/Newan/ioBroker.bluelink)
 - ioBroker.bsblan [hacki11/ioBroker.bsblan](https://github.com/hacki11/ioBroker.bsblan)
-- ioBroker.bydhvs [christianH17/ioBroker.bydhvs](https://github.com/christianH17/ioBroker.bydhvs)
 - ioBroker.canbus [crycode-de/ioBroker.canbus](https://github.com/crycode-de/ioBroker.canbus)
 - ioBroker.cloud [ioBroker/ioBroker.cloud](https://github.com/ioBroker/ioBroker.cloud)
 - ioBroker.cloudflare [Marco15453/ioBroker.cloudflare](https://github.com/Marco15453/ioBroker.cloudflare)
 - ioBroker.daswetter [rg-engineering/ioBroker.daswetter](https://github.com/rg-engineering/ioBroker.daswetter)
+- ioBroker.docker-manager [ioBroker/ioBroker.docker-manager](https://github.com/ioBroker/ioBroker.docker-manager)
 - ioBroker.doorbird [iobroker-community-adapters/ioBroker.doorbird](https://github.com/iobroker-community-adapters/ioBroker.doorbird)
 - ioBroker.dreame [TA2k/ioBroker.dreame](https://github.com/TA2k/ioBroker.dreame)
 - ioBroker.e3dc-rscp [git-kick/ioBroker.e3dc-rscp](https://github.com/git-kick/ioBroker.e3dc-rscp)
@@ -5883,37 +5886,8 @@
 - ioBroker.deyeidc [raschy/ioBroker.deyeidc](https://github.com/raschy/ioBroker.deyeidc)
 - ioBroker.govee-local [boergegrunicke/ioBroker.govee-local](https://github.com/boergegrunicke/ioBroker.govee-local)
 - ioBroker.matrix-org [oelison/ioBroker.matrix-org](https://github.com/oelison/ioBroker.matrix-org)
-- ioBroker.plenticore-g3 [FernetMenta/ioBroker.plenticore-g3](https://github.com/FernetMenta/ioBroker.plenticore-g3)
 - ioBroker.renacidc [raschy/ioBroker.renacidc](https://github.com/raschy/ioBroker.renacidc)
 - ioBroker.solarmanpv [raschy/ioBroker.solarmanpv](https://github.com/raschy/ioBroker.solarmanpv)
-
-### [W037] @iobroker/eslint-config 2.0.2 specified. 2.0.3 is recommended. Please consider updating devDependencies at [package.json](https://github.com/MiRo1310/ioBroker.alexa-timer-vis/blob/master/package.json)
-- ioBroker.alexa-timer-vis [MiRo1310/ioBroker.alexa-timer-vis](https://github.com/MiRo1310/ioBroker.alexa-timer-vis)
-- ioBroker.birthdays [klein0r/ioBroker.birthdays](https://github.com/klein0r/ioBroker.birthdays)
-- ioBroker.countdown [iobroker-community-adapters/ioBroker.countdown](https://github.com/iobroker-community-adapters/ioBroker.countdown)
-- ioBroker.drops-weather [iobroker-community-adapters/ioBroker.drops-weather](https://github.com/iobroker-community-adapters/ioBroker.drops-weather)
-- ioBroker.eventlist [ioBroker/ioBroker.eventlist](https://github.com/ioBroker/ioBroker.eventlist)
-- ioBroker.hmip [iobroker-community-adapters/ioBroker.hmip](https://github.com/iobroker-community-adapters/ioBroker.hmip)
-- ioBroker.imap [Lucky-ESA/ioBroker.imap](https://github.com/Lucky-ESA/ioBroker.imap)
-- ioBroker.lcn [ioBroker/ioBroker.lcn](https://github.com/ioBroker/ioBroker.lcn)
-- ioBroker.maxxi-charge [blabond/ioBroker.maxxi-charge](https://github.com/blabond/ioBroker.maxxi-charge)
-- ioBroker.meteoalarm [iobroker-community-adapters/ioBroker.meteoalarm](https://github.com/iobroker-community-adapters/ioBroker.meteoalarm)
-- ioBroker.mihome-vacuum [iobroker-community-adapters/ioBroker.mihome-vacuum](https://github.com/iobroker-community-adapters/ioBroker.mihome-vacuum)
-- ioBroker.netatmo-crawler [iobroker-community-adapters/ioBroker.netatmo-crawler](https://github.com/iobroker-community-adapters/ioBroker.netatmo-crawler)
-- ioBroker.opcua [ioBroker/ioBroker.opcua](https://github.com/ioBroker/ioBroker.opcua)
-- ioBroker.openknx [iobroker-community-adapters/ioBroker.openknx](https://github.com/iobroker-community-adapters/ioBroker.openknx)
-- ioBroker.parser [ioBroker/ioBroker.parser](https://github.com/ioBroker/ioBroker.parser)
-- ioBroker.pi-hole2 [oweitman/ioBroker.pi-hole2](https://github.com/oweitman/ioBroker.pi-hole2)
-- ioBroker.places [iobroker-community-adapters/ioBroker.places](https://github.com/iobroker-community-adapters/ioBroker.places)
-- ioBroker.plex [iobroker-community-adapters/ioBroker.plex](https://github.com/iobroker-community-adapters/ioBroker.plex)
-- ioBroker.scenes [ioBroker/ioBroker.scenes](https://github.com/ioBroker/ioBroker.scenes)
-- ioBroker.smartloadmanager [quorle/ioBroker.smartloadmanager](https://github.com/quorle/ioBroker.smartloadmanager)
-- ioBroker.solarviewdatareader [afuerhoff/ioBroker.solarviewdatareader](https://github.com/afuerhoff/ioBroker.solarviewdatareader)
-- ioBroker.srm [iobroker-community-adapters/ioBroker.srm](https://github.com/iobroker-community-adapters/ioBroker.srm)
-- ioBroker.tagesschau [ticaki/ioBroker.tagesschau](https://github.com/ticaki/ioBroker.tagesschau)
-- ioBroker.telegram [iobroker-community-adapters/ioBroker.telegram](https://github.com/iobroker-community-adapters/ioBroker.telegram)
-- ioBroker.trashschedule [klein0r/ioBroker.trashschedule](https://github.com/klein0r/ioBroker.trashschedule)
-- ioBroker.viessmann [misanorot/ioBroker.viessmann](https://github.com/misanorot/ioBroker.viessmann)
 
 ### [W037] @iobroker/eslint-config 2.0.2 specified. 2.1.0 is recommended. Please consider updating devDependencies at [package.json](https://github.com/Gaspode69/ioBroker.alpha-ess/blob/master/package.json)
 - ioBroker.alpha-ess [Gaspode69/ioBroker.alpha-ess](https://github.com/Gaspode69/ioBroker.alpha-ess)
@@ -5921,6 +5895,7 @@
 - ioBroker.javascript [ioBroker/ioBroker.javascript](https://github.com/ioBroker/ioBroker.javascript)
 - ioBroker.mywallbox [SKB-CGN/ioBroker.mywallbox](https://github.com/SKB-CGN/ioBroker.mywallbox)
 - ioBroker.pvforecast [iobroker-community-adapters/ioBroker.pvforecast](https://github.com/iobroker-community-adapters/ioBroker.pvforecast)
+- ioBroker.sayit [ioBroker/ioBroker.sayit](https://github.com/ioBroker/ioBroker.sayit)
 - ioBroker.scheduler [ioBroker/ioBroker.scheduler](https://github.com/ioBroker/ioBroker.scheduler)
 - ioBroker.spotify-premium [iobroker-community-adapters/ioBroker.spotify-premium](https://github.com/iobroker-community-adapters/ioBroker.spotify-premium)
 - ioBroker.valuetrackerovertime [Omega236/ioBroker.valuetrackerovertime](https://github.com/Omega236/ioBroker.valuetrackerovertime)
@@ -5955,6 +5930,7 @@
 - ioBroker.helios [iobroker-community-adapters/ioBroker.helios](https://github.com/iobroker-community-adapters/ioBroker.helios)
 - ioBroker.hid-community [iobroker-community-adapters/ioBroker.hid-community](https://github.com/iobroker-community-adapters/ioBroker.hid-community)
 - ioBroker.hikvision-alarmserver [iobroker-community-adapters/ioBroker.hikvision-alarmserver](https://github.com/iobroker-community-adapters/ioBroker.hikvision-alarmserver)
+- ioBroker.hilink [bondrogeen/ioBroker.hilink](https://github.com/bondrogeen/ioBroker.hilink)
 - ioBroker.history [ioBroker/ioBroker.history](https://github.com/ioBroker/ioBroker.history)
 - ioBroker.hm-rega [ioBroker/ioBroker.hm-rega](https://github.com/ioBroker/ioBroker.hm-rega)
 - ioBroker.homepilot [iobroker-community-adapters/ioBroker.homepilot](https://github.com/iobroker-community-adapters/ioBroker.homepilot)
@@ -6028,12 +6004,37 @@
 
 ### [W037] @iobroker/testing 4.1.3 specified. 5.0.4 is recommended. Please consider updating devDependencies at [package.json](https://github.com/iobroker-community-adapters/ioBroker.beckhoff/blob/master/package.json)
 - ioBroker.beckhoff [iobroker-community-adapters/ioBroker.beckhoff](https://github.com/iobroker-community-adapters/ioBroker.beckhoff)
-- ioBroker.hilink [bondrogeen/ioBroker.hilink](https://github.com/bondrogeen/ioBroker.hilink)
 - ioBroker.keenergy [jb-io/ioBroker.keenergy](https://github.com/jb-io/ioBroker.keenergy)
 - ioBroker.nodedmx [Bordman-ger/ioBroker.nodedmx](https://github.com/Bordman-ger/ioBroker.nodedmx)
 - ioBroker.rmb-bhkw [satchafunkilus/ioBroker.rmb-bhkw](https://github.com/satchafunkilus/ioBroker.rmb-bhkw)
 - ioBroker.sma-ev-charger [zapccu/ioBroker.sma-ev-charger](https://github.com/zapccu/ioBroker.sma-ev-charger)
 - ioBroker.soliscloud [Trixx34/ioBroker.soliscloud](https://github.com/Trixx34/ioBroker.soliscloud)
+
+### [W037] @iobroker/eslint-config 2.0.2 specified. 2.0.3 is recommended. Please consider updating devDependencies at [package.json](https://github.com/klein0r/ioBroker.birthdays/blob/master/package.json)
+- ioBroker.birthdays [klein0r/ioBroker.birthdays](https://github.com/klein0r/ioBroker.birthdays)
+- ioBroker.countdown [iobroker-community-adapters/ioBroker.countdown](https://github.com/iobroker-community-adapters/ioBroker.countdown)
+- ioBroker.drops-weather [iobroker-community-adapters/ioBroker.drops-weather](https://github.com/iobroker-community-adapters/ioBroker.drops-weather)
+- ioBroker.eventlist [ioBroker/ioBroker.eventlist](https://github.com/ioBroker/ioBroker.eventlist)
+- ioBroker.hmip [iobroker-community-adapters/ioBroker.hmip](https://github.com/iobroker-community-adapters/ioBroker.hmip)
+- ioBroker.imap [Lucky-ESA/ioBroker.imap](https://github.com/Lucky-ESA/ioBroker.imap)
+- ioBroker.lcn [ioBroker/ioBroker.lcn](https://github.com/ioBroker/ioBroker.lcn)
+- ioBroker.maxxi-charge [blabond/ioBroker.maxxi-charge](https://github.com/blabond/ioBroker.maxxi-charge)
+- ioBroker.meteoalarm [iobroker-community-adapters/ioBroker.meteoalarm](https://github.com/iobroker-community-adapters/ioBroker.meteoalarm)
+- ioBroker.mihome-vacuum [iobroker-community-adapters/ioBroker.mihome-vacuum](https://github.com/iobroker-community-adapters/ioBroker.mihome-vacuum)
+- ioBroker.netatmo-crawler [iobroker-community-adapters/ioBroker.netatmo-crawler](https://github.com/iobroker-community-adapters/ioBroker.netatmo-crawler)
+- ioBroker.opcua [ioBroker/ioBroker.opcua](https://github.com/ioBroker/ioBroker.opcua)
+- ioBroker.openknx [iobroker-community-adapters/ioBroker.openknx](https://github.com/iobroker-community-adapters/ioBroker.openknx)
+- ioBroker.parser [ioBroker/ioBroker.parser](https://github.com/ioBroker/ioBroker.parser)
+- ioBroker.pi-hole2 [oweitman/ioBroker.pi-hole2](https://github.com/oweitman/ioBroker.pi-hole2)
+- ioBroker.places [iobroker-community-adapters/ioBroker.places](https://github.com/iobroker-community-adapters/ioBroker.places)
+- ioBroker.plex [iobroker-community-adapters/ioBroker.plex](https://github.com/iobroker-community-adapters/ioBroker.plex)
+- ioBroker.scenes [ioBroker/ioBroker.scenes](https://github.com/ioBroker/ioBroker.scenes)
+- ioBroker.smartloadmanager [quorle/ioBroker.smartloadmanager](https://github.com/quorle/ioBroker.smartloadmanager)
+- ioBroker.srm [iobroker-community-adapters/ioBroker.srm](https://github.com/iobroker-community-adapters/ioBroker.srm)
+- ioBroker.tagesschau [ticaki/ioBroker.tagesschau](https://github.com/ticaki/ioBroker.tagesschau)
+- ioBroker.telegram [iobroker-community-adapters/ioBroker.telegram](https://github.com/iobroker-community-adapters/ioBroker.telegram)
+- ioBroker.trashschedule [klein0r/ioBroker.trashschedule](https://github.com/klein0r/ioBroker.trashschedule)
+- ioBroker.viessmann [misanorot/ioBroker.viessmann](https://github.com/misanorot/ioBroker.viessmann)
 
 ### [W037] @iobroker/testing 5.0.3 specified. 5.0.4 is recommended. Please consider updating devDependencies at [package.json](https://github.com/Hans-Wurst-21/ioBroker.bitaxe/blob/master/package.json)
 - ioBroker.bitaxe [Hans-Wurst-21/ioBroker.bitaxe](https://github.com/Hans-Wurst-21/ioBroker.bitaxe)
@@ -6493,6 +6494,7 @@
 - ioBroker.vis-history [ioBroker/ioBroker.vis-history](https://github.com/ioBroker/ioBroker.vis-history)
 - ioBroker.vis-keyboard [ioBroker/ioBroker.vis-keyboard](https://github.com/ioBroker/ioBroker.vis-keyboard)
 - ioBroker.vis-lcars [ioBroker/ioBroker.vis-lcars](https://github.com/ioBroker/ioBroker.vis-lcars)
+- ioBroker.vis-mapwidgets [oweitman/ioBroker.vis-mapwidgets](https://github.com/oweitman/ioBroker.vis-mapwidgets)
 - ioBroker.vis-metro [ioBroker/ioBroker.vis-metro](https://github.com/ioBroker/ioBroker.vis-metro)
 - ioBroker.vis-plumb [ioBroker/ioBroker.vis-plumb](https://github.com/ioBroker/ioBroker.vis-plumb)
 - ioBroker.vis-rgraph [ioBroker/ioBroker.vis-rgraph](https://github.com/ioBroker/ioBroker.vis-rgraph)
@@ -6504,7 +6506,6 @@
 - ioBroker.bosesoundtouch [iobroker-community-adapters/ioBroker.bosesoundtouch](https://github.com/iobroker-community-adapters/ioBroker.bosesoundtouch)
 - ioBroker.bsblan [hacki11/ioBroker.bsblan](https://github.com/hacki11/ioBroker.bsblan)
 - ioBroker.deconz [Jey-Cee/ioBroker.deconz](https://github.com/Jey-Cee/ioBroker.deconz)
-- ioBroker.discovergy [DrozmotiX/ioBroker.discovergy](https://github.com/DrozmotiX/ioBroker.discovergy)
 - ioBroker.emby [iobroker-community-adapters/ioBroker.emby](https://github.com/iobroker-community-adapters/ioBroker.emby)
 - ioBroker.emporia [Chris-656/ioBroker.emporia](https://github.com/Chris-656/ioBroker.emporia)
 - ioBroker.energymanager [unltdnetworx/ioBroker.energymanager](https://github.com/unltdnetworx/ioBroker.energymanager)
@@ -6925,7 +6926,6 @@
 - ioBroker.alpha2 [Eisbaeeer/ioBroker.alpha2](https://github.com/Eisbaeeer/ioBroker.alpha2)
 - ioBroker.anelhut [dan1-de/ioBroker.anelhut](https://github.com/dan1-de/ioBroker.anelhut)
 - ioBroker.asuswrt [mcdhrts/ioBroker.asuswrt](https://github.com/mcdhrts/ioBroker.asuswrt)
-- ioBroker.bambulab [DrozmotiX/ioBroker.bambulab](https://github.com/DrozmotiX/ioBroker.bambulab)
 - ioBroker.bsblan [hacki11/ioBroker.bsblan](https://github.com/hacki11/ioBroker.bsblan)
 - ioBroker.calendar [WLAN-Kabel/ioBroker.calendar](https://github.com/WLAN-Kabel/ioBroker.calendar)
 - ioBroker.contact [WLAN-Kabel/ioBroker.contact](https://github.com/WLAN-Kabel/ioBroker.contact)
@@ -6934,6 +6934,8 @@
 - ioBroker.divera247 [TKnpl/ioBroker.divera247](https://github.com/TKnpl/ioBroker.divera247)
 - ioBroker.ecoflow-mqtt [foxthefox/ioBroker.ecoflow-mqtt](https://github.com/foxthefox/ioBroker.ecoflow-mqtt)
 - ioBroker.elero-usb-transmitter [marc2016/ioBroker.elero-usb-transmitter](https://github.com/marc2016/ioBroker.elero-usb-transmitter)
+- ioBroker.esphome [DrozmotiX/ioBroker.esphome](https://github.com/DrozmotiX/ioBroker.esphome)
+- ioBroker.fritzdect [foxthefox/ioBroker.fritzdect](https://github.com/foxthefox/ioBroker.fritzdect)
 - ioBroker.g-homa [AlCalzone/ioBroker.g-homa](https://github.com/AlCalzone/ioBroker.g-homa)
 - ioBroker.hombot [AlGu1/ioBroker.hombot](https://github.com/AlGu1/ioBroker.hombot)
 - ioBroker.homee [Apollon77/ioBroker.homee](https://github.com/Apollon77/ioBroker.homee)
@@ -6979,7 +6981,6 @@
 - ioBroker.weishaupt-wem [TA2k/ioBroker.weishaupt-wem](https://github.com/TA2k/ioBroker.weishaupt-wem)
 - ioBroker.windows-control [Mic-M/ioBroker.windows-control](https://github.com/Mic-M/ioBroker.windows-control)
 - ioBroker.yahka [jensweigele/ioBroker.yahka](https://github.com/jensweigele/ioBroker.yahka)
-- ioBroker.zigbee [ioBroker/ioBroker.zigbee](https://github.com/ioBroker/ioBroker.zigbee)
 - ioBroker.zoe2 [fungus75/ioBroker.zoe2](https://github.com/fungus75/ioBroker.zoe2)
 
 ### [W134] Missing suggested translation into uk of "common.desc" in [io-package.json](https://github.com/ioBroker/ioBroker.artnet/blob/master/io-package.json).
@@ -7290,7 +7291,6 @@
 - ioBroker.anelhut [dan1-de/ioBroker.anelhut](https://github.com/dan1-de/ioBroker.anelhut)
 - ioBroker.apsystems-ecu [npeter/ioBroker.apsystems-ecu](https://github.com/npeter/ioBroker.apsystems-ecu)
 - ioBroker.artnet [ioBroker/ioBroker.artnet](https://github.com/ioBroker/ioBroker.artnet)
-- ioBroker.asuswrt [mcdhrts/ioBroker.asuswrt](https://github.com/mcdhrts/ioBroker.asuswrt)
 - ioBroker.atlas-scientific-ezo-i2c [Buzze11/ioBroker.atlas-scientific-ezo-i2c](https://github.com/Buzze11/ioBroker.atlas-scientific-ezo-i2c)
 - ioBroker.b-control-em [ioBroker/ioBroker.b-control-em](https://github.com/ioBroker/ioBroker.b-control-em)
 - ioBroker.bestway [TA2k/ioBroker.bestway](https://github.com/TA2k/ioBroker.bestway)
@@ -7796,12 +7796,12 @@
 ### [W156] js-controller 5.0.19 listed as dependency but 6.0.11 is recommended. Please consider updating dependency at [io-package.json](https://github.com/iobroker-community-adapters/ioBroker.acme/blob/master/io-package.json).
 - ioBroker.acme [iobroker-community-adapters/ioBroker.acme](https://github.com/iobroker-community-adapters/ioBroker.acme)
 - ioBroker.air-q [CorantGmbH/ioBroker.air-q](https://github.com/CorantGmbH/ioBroker.air-q)
-- ioBroker.alexa-timer-vis [MiRo1310/ioBroker.alexa-timer-vis](https://github.com/MiRo1310/ioBroker.alexa-timer-vis)
 - ioBroker.alias-manager [iobroker-community-adapters/ioBroker.alias-manager](https://github.com/iobroker-community-adapters/ioBroker.alias-manager)
 - ioBroker.alpha-ess [Gaspode69/ioBroker.alpha-ess](https://github.com/Gaspode69/ioBroker.alpha-ess)
 - ioBroker.amtronwallbox [rg-engineering/ioBroker.amtronwallbox](https://github.com/rg-engineering/ioBroker.amtronwallbox)
 - ioBroker.apcups [XHunter74/ioBroker.apcups](https://github.com/XHunter74/ioBroker.apcups)
 - ioBroker.asterisk [schmupu/ioBroker.asterisk](https://github.com/schmupu/ioBroker.asterisk)
+- ioBroker.asuswrt [mcdhrts/ioBroker.asuswrt](https://github.com/mcdhrts/ioBroker.asuswrt)
 - ioBroker.awattar [sirjojo69/ioBroker.awattar](https://github.com/sirjojo69/ioBroker.awattar)
 - ioBroker.bascloud [bascloud/ioBroker.bascloud](https://github.com/bascloud/ioBroker.bascloud)
 - ioBroker.batrium-bms [bembelstemmer/ioBroker.batrium-bms](https://github.com/bembelstemmer/ioBroker.batrium-bms)
@@ -7847,7 +7847,6 @@
 - ioBroker.fb-checkpresence [afuerhoff/ioBroker.fb-checkpresence](https://github.com/afuerhoff/ioBroker.fb-checkpresence)
 - ioBroker.feiertage [iobroker-community-adapters/ioBroker.feiertage](https://github.com/iobroker-community-adapters/ioBroker.feiertage)
 - ioBroker.fenecon [sg-app/ioBroker.fenecon](https://github.com/sg-app/ioBroker.fenecon)
-- ioBroker.flexcharts [MyHomeMyData/ioBroker.flexcharts](https://github.com/MyHomeMyData/ioBroker.flexcharts)
 - ioBroker.followthesun [HGlab01/ioBroker.followthesun](https://github.com/HGlab01/ioBroker.followthesun)
 - ioBroker.foobar2000 [iobroker-community-adapters/ioBroker.foobar2000](https://github.com/iobroker-community-adapters/ioBroker.foobar2000)
 - ioBroker.frigate [iobroker-community-adapters/ioBroker.frigate](https://github.com/iobroker-community-adapters/ioBroker.frigate)
@@ -7877,7 +7876,6 @@
 - ioBroker.hs100 [arteck/ioBroker.hs100](https://github.com/arteck/ioBroker.hs100)
 - ioBroker.huum-sauna [Chris-656/ioBroker.huum-sauna](https://github.com/Chris-656/ioBroker.huum-sauna)
 - ioBroker.hydrawise [SentiQ/ioBroker.hydrawise](https://github.com/SentiQ/ioBroker.hydrawise)
-- ioBroker.ical [iobroker-community-adapters/ioBroker.ical](https://github.com/iobroker-community-adapters/ioBroker.ical)
 - ioBroker.ikettle2 [Jey-Cee/ioBroker.ikettle2](https://github.com/Jey-Cee/ioBroker.ikettle2)
 - ioBroker.intex [TA2k/ioBroker.intex](https://github.com/TA2k/ioBroker.intex)
 - ioBroker.iot [ioBroker/ioBroker.iot](https://github.com/ioBroker/ioBroker.iot)
@@ -7982,8 +7980,6 @@
 - ioBroker.tahoma [Excodibur/ioBroker.tahoma](https://github.com/Excodibur/ioBroker.tahoma)
 - ioBroker.tankerkoenig [iobroker-community-adapters/ioBroker.tankerkoenig](https://github.com/iobroker-community-adapters/ioBroker.tankerkoenig)
 - ioBroker.tesla-wallconnector3 [nobl/ioBroker.tesla-wallconnector3](https://github.com/nobl/ioBroker.tesla-wallconnector3)
-- ioBroker.tinyMQTTbroker [HGlab01/ioBroker.tinymqttbroker](https://github.com/HGlab01/ioBroker.tinymqttbroker)
-- ioBroker.tinymqttbroker [HGlab01/ioBroker.tinymqttbroker](https://github.com/HGlab01/ioBroker.tinymqttbroker)
 - ioBroker.tr-064 [iobroker-community-adapters/ioBroker.tr-064](https://github.com/iobroker-community-adapters/ioBroker.tr-064)
 - ioBroker.traccar [arteck/ioBroker.traccar](https://github.com/arteck/ioBroker.traccar)
 - ioBroker.tractive-gps [iobroker-community-adapters/ioBroker.tractive-gps](https://github.com/iobroker-community-adapters/ioBroker.tractive-gps)
@@ -8889,7 +8885,6 @@
 - ioBroker.megadd [ausHaus/ioBroker.megadd](https://github.com/ausHaus/ioBroker.megadd)
 - ioBroker.megaesp [ausHaus/ioBroker.megaesp](https://github.com/ausHaus/ioBroker.megaesp)
 - ioBroker.mercedesme [TA2k/ioBroker.mercedesme](https://github.com/TA2k/ioBroker.mercedesme)
-- ioBroker.meross [Apollon77/ioBroker.meross](https://github.com/Apollon77/ioBroker.meross)
 - ioBroker.message-queue [MK-2001/ioBroker.message-queue](https://github.com/MK-2001/ioBroker.message-queue)
 - ioBroker.micronova [TA2k/ioBroker.micronova](https://github.com/TA2k/ioBroker.micronova)
 - ioBroker.midea [TA2k/ioBroker.midea](https://github.com/TA2k/ioBroker.midea)
@@ -9055,7 +9050,6 @@
 - ioBroker.anelhut [dan1-de/ioBroker.anelhut](https://github.com/dan1-de/ioBroker.anelhut)
 - ioBroker.apsystems-ecu [npeter/ioBroker.apsystems-ecu](https://github.com/npeter/ioBroker.apsystems-ecu)
 - ioBroker.artnet [ioBroker/ioBroker.artnet](https://github.com/ioBroker/ioBroker.artnet)
-- ioBroker.asuswrt [mcdhrts/ioBroker.asuswrt](https://github.com/mcdhrts/ioBroker.asuswrt)
 - ioBroker.atlas-scientific-ezo-i2c [Buzze11/ioBroker.atlas-scientific-ezo-i2c](https://github.com/Buzze11/ioBroker.atlas-scientific-ezo-i2c)
 - ioBroker.b-control-em [ioBroker/ioBroker.b-control-em](https://github.com/ioBroker/ioBroker.b-control-em)
 - ioBroker.benchmark [foxriver76/ioBroker.benchmark](https://github.com/foxriver76/ioBroker.benchmark)
@@ -9270,6 +9264,7 @@
 - ioBroker.vis-keyboard [ioBroker/ioBroker.vis-keyboard](https://github.com/ioBroker/ioBroker.vis-keyboard)
 - ioBroker.vis-lcars [ioBroker/ioBroker.vis-lcars](https://github.com/ioBroker/ioBroker.vis-lcars)
 - ioBroker.vis-map [ioBroker/ioBroker.vis-map](https://github.com/ioBroker/ioBroker.vis-map)
+- ioBroker.vis-mapwidgets [oweitman/ioBroker.vis-mapwidgets](https://github.com/oweitman/ioBroker.vis-mapwidgets)
 - ioBroker.vis-material-advanced [iobroker-community-adapters/ioBroker.vis-material-advanced](https://github.com/iobroker-community-adapters/ioBroker.vis-material-advanced)
 - ioBroker.vis-material-webfont [om2804/ioBroker.vis-material-webfont](https://github.com/om2804/ioBroker.vis-material-webfont)
 - ioBroker.vis-materialdesign [Scrounger/ioBroker.vis-materialdesign](https://github.com/Scrounger/ioBroker.vis-materialdesign)
@@ -9471,7 +9466,411 @@
 - ioBroker.pvforecast [iobroker-community-adapters/ioBroker.pvforecast](https://github.com/iobroker-community-adapters/ioBroker.pvforecast)
 - ioBroker.tankerkoenig [iobroker-community-adapters/ioBroker.tankerkoenig](https://github.com/iobroker-community-adapters/ioBroker.tankerkoenig)
 - ioBroker.teslafi [hombach/ioBroker.teslafi](https://github.com/hombach/ioBroker.teslafi)
-- ioBroker.tibberlink [hombach/ioBroker.tibberlink](https://github.com/hombach/ioBroker.tibberlink)
+- ioBroker.xsense [arteck/ioBroker.xsense](https://github.com/arteck/ioBroker.xsense)
+
+### [W205] [io-package.json](https://github.com/om2804/ioBroker.adb/blob/master/io-package.json) schema validation error: Missing required property "tier" in /common
+- ioBroker.adb [om2804/ioBroker.adb](https://github.com/om2804/ioBroker.adb)
+- ioBroker.aio [Newan/ioBroker.aio](https://github.com/Newan/ioBroker.aio)
+- ioBroker.airconwithme [weggetor/ioBroker.airconwithme](https://github.com/weggetor/ioBroker.airconwithme)
+- ioBroker.airzone [SilentPhoenix11/ioBroker.airzone](https://github.com/SilentPhoenix11/ioBroker.airzone)
+- ioBroker.amazon-dash [PArns/ioBroker.amazon-dash](https://github.com/PArns/ioBroker.amazon-dash)
+- ioBroker.anelhut [dan1-de/ioBroker.anelhut](https://github.com/dan1-de/ioBroker.anelhut)
+- ioBroker.atlas-scientific-ezo-i2c [Buzze11/ioBroker.atlas-scientific-ezo-i2c](https://github.com/Buzze11/ioBroker.atlas-scientific-ezo-i2c)
+- ioBroker.b-control-em [ioBroker/ioBroker.b-control-em](https://github.com/ioBroker/ioBroker.b-control-em)
+- ioBroker.bestway [TA2k/ioBroker.bestway](https://github.com/TA2k/ioBroker.bestway)
+- ioBroker.ble [AlCalzone/ioBroker.ble](https://github.com/AlCalzone/ioBroker.ble)
+- ioBroker.bosch-ebike [TA2k/ioBroker.bosch-ebike](https://github.com/TA2k/ioBroker.bosch-ebike)
+- ioBroker.botslab360 [TA2k/ioBroker.botslab360](https://github.com/TA2k/ioBroker.botslab360)
+- ioBroker.bring [foxriver76/ioBroker.bring](https://github.com/foxriver76/ioBroker.bring)
+- ioBroker.bwt [TA2k/ioBroker.bwt](https://github.com/TA2k/ioBroker.bwt)
+- ioBroker.bydbatt [arteck/ioBroker.bydbatt](https://github.com/arteck/ioBroker.bydbatt)
+- ioBroker.contact [WLAN-Kabel/ioBroker.contact](https://github.com/WLAN-Kabel/ioBroker.contact)
+- ioBroker.corrently [ioBroker/ioBroker.corrently](https://github.com/ioBroker/ioBroker.corrently)
+- ioBroker.ecoflow [Newan/ioBroker.ecoflow](https://github.com/Newan/ioBroker.ecoflow)
+- ioBroker.energymanager [unltdnetworx/ioBroker.energymanager](https://github.com/unltdnetworx/ioBroker.energymanager)
+- ioBroker.enocean [Jey-Cee/ioBroker.enocean](https://github.com/Jey-Cee/ioBroker.enocean)
+- ioBroker.fiat [TA2k/ioBroker.fiat](https://github.com/TA2k/ioBroker.fiat)
+- ioBroker.fitbit-fitness [Chris-656/ioBroker.fitbit-fitness](https://github.com/Chris-656/ioBroker.fitbit-fitness)
+- ioBroker.ford [TA2k/ioBroker.ford](https://github.com/TA2k/ioBroker.ford)
+- ioBroker.froeling [TA2k/ioBroker.froeling](https://github.com/TA2k/ioBroker.froeling)
+- ioBroker.fronius-solarweb [TA2k/ioBroker.fronius-solarweb](https://github.com/TA2k/ioBroker.fronius-solarweb)
+- ioBroker.fronius-wattpilot [tim2zg/ioBroker.fronius-wattpilot](https://github.com/tim2zg/ioBroker.fronius-wattpilot)
+- ioBroker.garmin [TA2k/ioBroker.garmin](https://github.com/TA2k/ioBroker.garmin)
+- ioBroker.googleauth [Vertumnus/ioBroker.googleauth](https://github.com/Vertumnus/ioBroker.googleauth)
+- ioBroker.gruenbeck [TA2k/ioBroker.gruenbeck](https://github.com/TA2k/ioBroker.gruenbeck)
+- ioBroker.hass-mqtt [smarthomefans/ioBroker.hass-mqtt](https://github.com/smarthomefans/ioBroker.hass-mqtt)
+- ioBroker.hausbus_de [hausbus/ioBroker.hausbus_de](https://github.com/hausbus/ioBroker.hausbus_de)
+- ioBroker.heizoel [TA2k/ioBroker.heizoel](https://github.com/TA2k/ioBroker.heizoel)
+- ioBroker.hekr [TA2k/ioBroker.hekr](https://github.com/TA2k/ioBroker.hekr)
+- ioBroker.hilink [bondrogeen/ioBroker.hilink](https://github.com/bondrogeen/ioBroker.hilink)
+- ioBroker.hombot [AlGu1/ioBroker.hombot](https://github.com/AlGu1/ioBroker.hombot)
+- ioBroker.homekit-controller [Apollon77/ioBroker.homekit-controller](https://github.com/Apollon77/ioBroker.homekit-controller)
+- ioBroker.homenet [TA2k/ioBroker.homenet](https://github.com/TA2k/ioBroker.homenet)
+- ioBroker.huum-sauna [Chris-656/ioBroker.huum-sauna](https://github.com/Chris-656/ioBroker.huum-sauna)
+- ioBroker.i2c [UncleSamSwiss/ioBroker.i2c](https://github.com/UncleSamSwiss/ioBroker.i2c)
+- ioBroker.icons-freepic [iobroker-community-adapters/ioBroker.icons-freepic](https://github.com/iobroker-community-adapters/ioBroker.icons-freepic)
+- ioBroker.icons-smarthome [iobroker-community-adapters/ioBroker.icons-smarthome](https://github.com/iobroker-community-adapters/ioBroker.icons-smarthome)
+- ioBroker.imow [TA2k/ioBroker.imow](https://github.com/TA2k/ioBroker.imow)
+- ioBroker.iopooleco [mule1972/ioBroker.iopooleco](https://github.com/mule1972/ioBroker.iopooleco)
+- ioBroker.judoisoft [arteck/ioBroker.judoisoft](https://github.com/arteck/ioBroker.judoisoft)
+- ioBroker.knmi-weather [DrozmotiX/ioBroker.knmi-weather](https://github.com/DrozmotiX/ioBroker.knmi-weather)
+- ioBroker.legrand-ecocompteur [iobroker-community-adapters/ioBroker.legrand-ecocompteur](https://github.com/iobroker-community-adapters/ioBroker.legrand-ecocompteur)
+- ioBroker.letrika_comgw [AWhiteKnight/ioBroker.letrika_comgw](https://github.com/AWhiteKnight/ioBroker.letrika_comgw)
+- ioBroker.libre [TA2k/ioBroker.libre](https://github.com/TA2k/ioBroker.libre)
+- ioBroker.link [ioBroker/ioBroker.link](https://github.com/ioBroker/ioBroker.link)
+- ioBroker.link2home [TA2k/ioBroker.link2home](https://github.com/TA2k/ioBroker.link2home)
+- ioBroker.linux-control [Scrounger/ioBroker.linux-control](https://github.com/Scrounger/ioBroker.linux-control)
+- ioBroker.loqed [foxriver76/ioBroker.loqed](https://github.com/foxriver76/ioBroker.loqed)
+- ioBroker.maveo [TA2k/ioBroker.maveo](https://github.com/TA2k/ioBroker.maveo)
+- ioBroker.mercedesme [TA2k/ioBroker.mercedesme](https://github.com/TA2k/ioBroker.mercedesme)
+- ioBroker.message-queue [MK-2001/ioBroker.message-queue](https://github.com/MK-2001/ioBroker.message-queue)
+- ioBroker.micronova [TA2k/ioBroker.micronova](https://github.com/TA2k/ioBroker.micronova)
+- ioBroker.mihome-airpurifier [JoJ123/ioBroker.mihome-airpurifier](https://github.com/JoJ123/ioBroker.mihome-airpurifier)
+- ioBroker.mihome-cloud [TA2k/ioBroker.mihome-cloud](https://github.com/TA2k/ioBroker.mihome-cloud)
+- ioBroker.miio [smarthomefans/ioBroker.miio](https://github.com/smarthomefans/ioBroker.miio)
+- ioBroker.milight [foxthefox/ioBroker.milight](https://github.com/foxthefox/ioBroker.milight)
+- ioBroker.milight-smart-light [Steiger04/ioBroker.milight-smart-light](https://github.com/Steiger04/ioBroker.milight-smart-light)
+- ioBroker.moma [AWhiteKnight/ioBroker.moma](https://github.com/AWhiteKnight/ioBroker.moma)
+- ioBroker.myenergi [iobroker-community-adapters/ioBroker.myenergi](https://github.com/iobroker-community-adapters/ioBroker.myenergi)
+- ioBroker.nanoleaf-lightpanels [daniel-2k/ioBroker.nanoleaf-lightpanels](https://github.com/daniel-2k/ioBroker.nanoleaf-lightpanels)
+- ioBroker.netro [realhawker/ioBroker.netro](https://github.com/realhawker/ioBroker.netro)
+- ioBroker.nina [TA2k/ioBroker.nina](https://github.com/TA2k/ioBroker.nina)
+- ioBroker.niu [TA2k/ioBroker.niu](https://github.com/TA2k/ioBroker.niu)
+- ioBroker.ocpp [foxriver76/ioBroker.ocpp](https://github.com/foxriver76/ioBroker.ocpp)
+- ioBroker.oekofen-json [chaozmc/ioBroker.oekofen-json](https://github.com/chaozmc/ioBroker.oekofen-json)
+- ioBroker.omron-fins [TheBam1990/ioBroker.omron-fins](https://github.com/TheBam1990/ioBroker.omron-fins)
+- ioBroker.opentherm [DrozmotiX/ioBroker.opentherm](https://github.com/DrozmotiX/ioBroker.opentherm)
+- ioBroker.palazzetti [inapsis/ioBroker.palazzetti](https://github.com/inapsis/ioBroker.palazzetti)
+- ioBroker.parcel [TA2k/ioBroker.parcel](https://github.com/TA2k/ioBroker.parcel)
+- ioBroker.philips-tv [AlCalzone/ioBroker.philips-tv](https://github.com/AlCalzone/ioBroker.philips-tv)
+- ioBroker.pi-hole [unltdnetworx/ioBroker.pi-hole](https://github.com/unltdnetworx/ioBroker.pi-hole)
+- ioBroker.pid [mcm4iob/ioBroker.pid](https://github.com/mcm4iob/ioBroker.pid)
+- ioBroker.porsche [TA2k/ioBroker.porsche](https://github.com/TA2k/ioBroker.porsche)
+- ioBroker.powerfox2 [Ax-LED/ioBroker.powerfox2](https://github.com/Ax-LED/ioBroker.powerfox2)
+- ioBroker.radiohead [crycode-de/ioBroker.radiohead](https://github.com/crycode-de/ioBroker.radiohead)
+- ioBroker.renault [TA2k/ioBroker.renault](https://github.com/TA2k/ioBroker.renault)
+- ioBroker.seko [TA2k/ioBroker.seko](https://github.com/TA2k/ioBroker.seko)
+- ioBroker.sensebox [AlCalzone/ioBroker.sensebox](https://github.com/AlCalzone/ioBroker.sensebox)
+- ioBroker.signal-cmb [derAlff/ioBroker.signal-cmb](https://github.com/derAlff/ioBroker.signal-cmb)
+- ioBroker.smart-eq [TA2k/ioBroker.smart-eq](https://github.com/TA2k/ioBroker.smart-eq)
+- ioBroker.smartcontrol [iobroker-community-adapters/ioBroker.smartcontrol](https://github.com/iobroker-community-adapters/ioBroker.smartcontrol)
+- ioBroker.smartthings [TA2k/ioBroker.smartthings](https://github.com/TA2k/ioBroker.smartthings)
+- ioBroker.snips [unltdnetworx/ioBroker.snips](https://github.com/unltdnetworx/ioBroker.snips)
+- ioBroker.sonus [ioBroker/ioBroker.sonus](https://github.com/ioBroker/ioBroker.sonus)
+- ioBroker.speedport [hacki11/ioBroker.speedport](https://github.com/hacki11/ioBroker.speedport)
+- ioBroker.stiebel-isg [unltdnetworx/ioBroker.stiebel-isg](https://github.com/unltdnetworx/ioBroker.stiebel-isg)
+- ioBroker.stockmarket [waoler/ioBroker.stockmarket](https://github.com/waoler/ioBroker.stockmarket)
+- ioBroker.sun2000-modbus [daolis/ioBroker.sun2000-modbus](https://github.com/daolis/ioBroker.sun2000-modbus)
+- ioBroker.tapo [TA2k/ioBroker.tapo](https://github.com/TA2k/ioBroker.tapo)
+- ioBroker.tesla-motors [iobroker-community-adapters/ioBroker.tesla-motors](https://github.com/iobroker-community-adapters/ioBroker.tesla-motors)
+- ioBroker.time-switch [walli545/ioBroker.time-switch](https://github.com/walli545/ioBroker.time-switch)
+- ioBroker.tino [bowao/ioBroker.tino](https://github.com/bowao/ioBroker.tino)
+- ioBroker.tinyrx4 [bowao/ioBroker.tinyrx4](https://github.com/bowao/ioBroker.tinyrx4)
+- ioBroker.toyota [TA2k/ioBroker.toyota](https://github.com/TA2k/ioBroker.toyota)
+- ioBroker.tradfri [AlCalzone/ioBroker.tradfri](https://github.com/AlCalzone/ioBroker.tradfri)
+- ioBroker.trivum [TheBam1990/ioBroker.trivum](https://github.com/TheBam1990/ioBroker.trivum)
+- ioBroker.tunnelbroker-endpoint-updater [PowerPan/ioBroker.tunnelbroker-endpoint-updater](https://github.com/PowerPan/ioBroker.tunnelbroker-endpoint-updater)
+- ioBroker.vaillant [TA2k/ioBroker.vaillant](https://github.com/TA2k/ioBroker.vaillant)
+- ioBroker.velux [TA2k/ioBroker.velux](https://github.com/TA2k/ioBroker.velux)
+- ioBroker.vesync [TA2k/ioBroker.vesync](https://github.com/TA2k/ioBroker.vesync)
+- ioBroker.viessmannapi [TA2k/ioBroker.viessmannapi](https://github.com/TA2k/ioBroker.viessmannapi)
+- ioBroker.vis-2-widgets-sweethome3d [ioBroker/ioBroker.vis-2-widgets-sweethome3d](https://github.com/ioBroker/ioBroker.vis-2-widgets-sweethome3d)
+- ioBroker.vis-colorpicker [ioBroker/ioBroker.vis-colorpicker](https://github.com/ioBroker/ioBroker.vis-colorpicker)
+- ioBroker.vis-google-fonts [ioBroker/ioBroker.vis-google-fonts](https://github.com/ioBroker/ioBroker.vis-google-fonts)
+- ioBroker.vis-material [iobroker-community-adapters/ioBroker.vis-material](https://github.com/iobroker-community-adapters/ioBroker.vis-material)
+- ioBroker.volvo [TA2k/ioBroker.volvo](https://github.com/TA2k/ioBroker.volvo)
+- ioBroker.wallpanel [xXBJXx/ioBroker.wallpanel](https://github.com/xXBJXx/ioBroker.wallpanel)
+- ioBroker.warp [pottio/ioBroker.warp](https://github.com/pottio/ioBroker.warp)
+- ioBroker.web-speedy [DrozmotiX/ioBroker.web-speedy](https://github.com/DrozmotiX/ioBroker.web-speedy)
+- ioBroker.weblogin [Vertumnus/ioBroker.weblogin](https://github.com/Vertumnus/ioBroker.weblogin)
+- ioBroker.webuntis [Newan/ioBroker.webuntis](https://github.com/Newan/ioBroker.webuntis)
+- ioBroker.weishaupt-wem [TA2k/ioBroker.weishaupt-wem](https://github.com/TA2k/ioBroker.weishaupt-wem)
+- ioBroker.wiffi-wz [t4qjXH8N/ioBroker.wiffi-wz](https://github.com/t4qjXH8N/ioBroker.wiffi-wz)
+- ioBroker.windows-control [Mic-M/ioBroker.windows-control](https://github.com/Mic-M/ioBroker.windows-control)
+- ioBroker.withings [TA2k/ioBroker.withings](https://github.com/TA2k/ioBroker.withings)
+- ioBroker.wmswebcontrol [TA2k/ioBroker.wmswebcontrol](https://github.com/TA2k/ioBroker.wmswebcontrol)
+- ioBroker.xbox [foxriver76/ioBroker.xbox](https://github.com/foxriver76/ioBroker.xbox)
+- ioBroker.xiaomi-gateway3 [lasthead0/ioBroker.xiaomi-gateway3](https://github.com/lasthead0/ioBroker.xiaomi-gateway3)
+- ioBroker.yahoo-stock-market [Newan/ioBroker.yahoo-stock-market](https://github.com/Newan/ioBroker.yahoo-stock-market)
+- ioBroker.zehnder-cloud [TA2k/ioBroker.zehnder-cloud](https://github.com/TA2k/ioBroker.zehnder-cloud)
+- ioBroker.zoe2 [fungus75/ioBroker.zoe2](https://github.com/fungus75/ioBroker.zoe2)
+- ioBroker.zwave2 [AlCalzone/ioBroker.zwave2](https://github.com/AlCalzone/ioBroker.zwave2)
+
+### [W205] [io-package.json](https://github.com/misanorot/ioBroker.alarm/blob/master/io-package.json) schema validation error: Unknown property "protectedNative" in /common
+- ioBroker.alarm [misanorot/ioBroker.alarm](https://github.com/misanorot/ioBroker.alarm)
+
+### [W205] [io-package.json](https://github.com/iobroker-community-adapters/ioBroker.alias-manager/blob/master/io-package.json) schema validation error: Unknown property "highlight" in /common
+- ioBroker.alias-manager [iobroker-community-adapters/ioBroker.alias-manager](https://github.com/iobroker-community-adapters/ioBroker.alias-manager)
+- ioBroker.webui [iobroker-community-adapters/ioBroker.webui](https://github.com/iobroker-community-adapters/ioBroker.webui)
+
+### [W205] [io-package.json](https://github.com/Eisbaeeer/ioBroker.alpha2/blob/master/io-package.json) schema validation error: Property "/common/news/1.0.2/en" should be string
+- ioBroker.alpha2 [Eisbaeeer/ioBroker.alpha2](https://github.com/Eisbaeeer/ioBroker.alpha2)
+
+### [W205] [io-package.json](https://github.com/ioBroker/ioBroker.artnet/blob/master/io-package.json) schema validation error: Missing required property "titleLang" in /common
+- ioBroker.artnet [ioBroker/ioBroker.artnet](https://github.com/ioBroker/ioBroker.artnet)
+- ioBroker.g-homa [AlCalzone/ioBroker.g-homa](https://github.com/AlCalzone/ioBroker.g-homa)
+- ioBroker.lightify [soef/ioBroker.lightify](https://github.com/soef/ioBroker.lightify)
+- ioBroker.pimatic [ioBroker/ioBroker.pimatic](https://github.com/ioBroker/ioBroker.pimatic)
+- ioBroker.rflink [ioBroker/ioBroker.rflink](https://github.com/ioBroker/ioBroker.rflink)
+- ioBroker.vr200 [Eisbaeeer/ioBroker.vr200](https://github.com/Eisbaeeer/ioBroker.vr200)
+- ioBroker.zont [kirovilya/ioBroker.zont](https://github.com/kirovilya/ioBroker.zont)
+
+### [W205] [io-package.json](https://github.com/mcdhrts/ioBroker.asuswrt/blob/master/io-package.json) schema validation error: Property "/common/platform" should be one of: Javascript/Node.js
+- ioBroker.asuswrt [mcdhrts/ioBroker.asuswrt](https://github.com/mcdhrts/ioBroker.asuswrt)
+- ioBroker.epson_ecotank_et_2750 [iobroker-community-adapters/ioBroker.epson_ecotank_et_2750](https://github.com/iobroker-community-adapters/ioBroker.epson_ecotank_et_2750)
+- ioBroker.maxcube [ioBroker/ioBroker.maxcube](https://github.com/ioBroker/ioBroker.maxcube)
+- ioBroker.maxcul [ioBroker/ioBroker.maxcul](https://github.com/ioBroker/ioBroker.maxcul)
+- ioBroker.opi [iobroker-community-adapters/ioBroker.opi](https://github.com/iobroker-community-adapters/ioBroker.opi)
+
+### [W205] [io-package.json](https://github.com/sirjojo69/ioBroker.awattar/blob/master/io-package.json) schema validation error: Unknown property "url" in /common/licenseInformation
+- ioBroker.awattar [sirjojo69/ioBroker.awattar](https://github.com/sirjojo69/ioBroker.awattar)
+
+### [W205] [io-package.json](https://github.com/iobroker-community-adapters/ioBroker.broadlink2/blob/master/io-package.json) schema validation error: Unknown property "config" in root
+- ioBroker.broadlink2 [iobroker-community-adapters/ioBroker.broadlink2](https://github.com/iobroker-community-adapters/ioBroker.broadlink2)
+
+### [W205] [io-package.json](https://github.com/christianh17/ioBroker.bydhvs/blob/master/io-package.json) schema validation error: Property "/common/messages/0/linkText" should be object
+- ioBroker.bydhvs [christianH17/ioBroker.bydhvs](https://github.com/christianH17/ioBroker.bydhvs)
+
+### [W205] [io-package.json](https://github.com/WLAN-Kabel/ioBroker.calendar/blob/master/io-package.json) schema validation error: Unknown property "localLink" in /common
+- ioBroker.calendar [WLAN-Kabel/ioBroker.calendar](https://github.com/WLAN-Kabel/ioBroker.calendar)
+- ioBroker.dwd [ioBroker/ioBroker.dwd](https://github.com/ioBroker/ioBroker.dwd)
+- ioBroker.eventlist [ioBroker/ioBroker.eventlist](https://github.com/ioBroker/ioBroker.eventlist)
+- ioBroker.fhem [iobroker-community-adapters/ioBroker.fhem](https://github.com/iobroker-community-adapters/ioBroker.fhem)
+- ioBroker.flot [ioBroker/ioBroker.flot](https://github.com/ioBroker/ioBroker.flot)
+- ioBroker.habpanel [iobroker-community-adapters/ioBroker.habpanel](https://github.com/iobroker-community-adapters/ioBroker.habpanel)
+- ioBroker.hass [ioBroker/ioBroker.hass](https://github.com/ioBroker/ioBroker.hass)
+- ioBroker.icons-addictive-flavour-png [ioBroker/ioBroker.icons-addictive-flavour-png](https://github.com/ioBroker/ioBroker.icons-addictive-flavour-png)
+- ioBroker.icons-fatcow-hosting [ioBroker/ioBroker.icons-fatcow-hosting](https://github.com/ioBroker/ioBroker.icons-fatcow-hosting)
+- ioBroker.icons-icons8 [ioBroker/ioBroker.icons-icons8](https://github.com/ioBroker/ioBroker.icons-icons8)
+- ioBroker.icons-material-png [ioBroker/ioBroker.icons-material-png](https://github.com/ioBroker/ioBroker.icons-material-png)
+- ioBroker.icons-material-svg [ioBroker/ioBroker.icons-material-svg](https://github.com/ioBroker/ioBroker.icons-material-svg)
+- ioBroker.icons-mfd-png [ioBroker/ioBroker.icons-mfd-png](https://github.com/ioBroker/ioBroker.icons-mfd-png)
+- ioBroker.icons-mfd-svg [ioBroker/ioBroker.icons-mfd-svg](https://github.com/ioBroker/ioBroker.icons-mfd-svg)
+- ioBroker.icons-open-icon-library-png [ioBroker/ioBroker.icons-open-icon-library-png](https://github.com/ioBroker/ioBroker.icons-open-icon-library-png)
+- ioBroker.icons-ultimate-png [ioBroker/ioBroker.icons-ultimate-png](https://github.com/ioBroker/ioBroker.icons-ultimate-png)
+- ioBroker.kodi [iobroker-community-adapters/ioBroker.kodi](https://github.com/iobroker-community-adapters/ioBroker.kodi)
+- ioBroker.mclighting [iobroker-community-adapters/ioBroker.mclighting](https://github.com/iobroker-community-adapters/ioBroker.mclighting)
+- ioBroker.megad [ioBroker/ioBroker.megad](https://github.com/ioBroker/ioBroker.megad)
+- ioBroker.minuvis [minukodu/ioBroker.minuvis](https://github.com/minukodu/ioBroker.minuvis)
+- ioBroker.mobile [ioBroker/ioBroker.mobile](https://github.com/ioBroker/ioBroker.mobile)
+- ioBroker.openhab [iobroker-community-adapters/ioBroker.openhab](https://github.com/iobroker-community-adapters/ioBroker.openhab)
+- ioBroker.rickshaw [ioBroker/ioBroker.rickshaw](https://github.com/ioBroker/ioBroker.rickshaw)
+- ioBroker.terminal [ioBroker/ioBroker.terminal](https://github.com/ioBroker/ioBroker.terminal)
+- ioBroker.text2command [ioBroker/ioBroker.text2command](https://github.com/ioBroker/ioBroker.text2command)
+- ioBroker.tileboard [ioBroker/ioBroker.tileboard](https://github.com/ioBroker/ioBroker.tileboard)
+- ioBroker.tr-064 [iobroker-community-adapters/ioBroker.tr-064](https://github.com/iobroker-community-adapters/ioBroker.tr-064)
+- ioBroker.unifi [iobroker-community-adapters/ioBroker.unifi](https://github.com/iobroker-community-adapters/ioBroker.unifi)
+- ioBroker.vis-3dmodel [Excodibur/ioBroker.vis-3dmodel](https://github.com/Excodibur/ioBroker.vis-3dmodel)
+- ioBroker.vis-bars [ioBroker/ioBroker.vis-bars](https://github.com/ioBroker/ioBroker.vis-bars)
+- ioBroker.vis-canvas-gauges [ioBroker/ioBroker.vis-canvas-gauges](https://github.com/ioBroker/ioBroker.vis-canvas-gauges)
+- ioBroker.vis-fancyswitch [ioBroker/ioBroker.vis-fancyswitch](https://github.com/ioBroker/ioBroker.vis-fancyswitch)
+- ioBroker.vis-history [ioBroker/ioBroker.vis-history](https://github.com/ioBroker/ioBroker.vis-history)
+- ioBroker.vis-jqui-mfd [ioBroker/ioBroker.vis-jqui-mfd](https://github.com/ioBroker/ioBroker.vis-jqui-mfd)
+- ioBroker.vis-keyboard [ioBroker/ioBroker.vis-keyboard](https://github.com/ioBroker/ioBroker.vis-keyboard)
+- ioBroker.vis-lcars [ioBroker/ioBroker.vis-lcars](https://github.com/ioBroker/ioBroker.vis-lcars)
+- ioBroker.vis-material-advanced [iobroker-community-adapters/ioBroker.vis-material-advanced](https://github.com/iobroker-community-adapters/ioBroker.vis-material-advanced)
+- ioBroker.vis-material-webfont [om2804/ioBroker.vis-material-webfont](https://github.com/om2804/ioBroker.vis-material-webfont)
+- ioBroker.vis-materialdesign [Scrounger/ioBroker.vis-materialdesign](https://github.com/Scrounger/ioBroker.vis-materialdesign)
+- ioBroker.vis-metro [ioBroker/ioBroker.vis-metro](https://github.com/ioBroker/ioBroker.vis-metro)
+- ioBroker.vis-players [iobroker-community-adapters/ioBroker.vis-players](https://github.com/iobroker-community-adapters/ioBroker.vis-players)
+- ioBroker.vis-plumb [ioBroker/ioBroker.vis-plumb](https://github.com/ioBroker/ioBroker.vis-plumb)
+- ioBroker.vis-rgraph [ioBroker/ioBroker.vis-rgraph](https://github.com/ioBroker/ioBroker.vis-rgraph)
+- ioBroker.vis-timeandweather [ioBroker/ioBroker.vis-timeandweather](https://github.com/ioBroker/ioBroker.vis-timeandweather)
+
+### [W205] [io-package.json](https://github.com/ioBroker/ioBroker.consumption/blob/master/io-package.json) schema validation error: Property "/common/license" should be one of: X11, HPND-export2-US, OpenPBS-2.3, OSL-3.0, Rdisc, LPD-document, BSD-3-Clause-LBNL, AFL-1.1, HP-1989, CC-BY-ND-4.0, RSA-MD, HPND-sell-variant, threeparttable, AMPAS, ngrep, mplus, MIT-Festival, HDF5, Artistic-1.0-Perl, BSD-4-Clause-UC, SAX-PD, APSL-1.1, AGPL-1.0-or-later, ANTLR-PD, Zimbra-1.3, GLWTPL, Minpack, OSL-2.1, PolyForm-Small-Business-1.0.0, DOC, Cronyx, LPPL-1.3c, SGI-OpenGL, libtiff, OpenVision, TrustedQSL, Sun-PPP, Entessa, AFL-2.0, Sleepycat, Latex2e, FDK-AAC, CECILL-C, ODC-By-1.0, Bitstream-Charter, UMich-Merit, CC-BY-NC-2.5, diffmark, BlueOak-1.0.0, Info-ZIP, CC-BY-NC-ND-4.0, JSON, Sendmail-8.23, SGI-B-1.0, RPL-1.1, ISC, FSFUL, Multics, 3D-Slicer-1.0, Libpng, LPPL-1.0, NGPL, Clips, CC-BY-4.0, GFDL-1.1-or-later, GPL-1.0-or-later, GFDL-1.3-invariants-only, Sun-PPP-2000, Glide, Furuseth, GFDL-1.3-no-invariants-or-later, any-OSI, LGPL-2.0-or-later, ADSL, Noweb, Linux-man-pages-1-para, CC-BY-SA-3.0, TAPR-OHL-1.0, SMLNJ, OFL-1.1-RFN, SL, Afmparse, CC-SA-1.0, APSL-1.0, Hippocratic-2.1, UPL-1.0, CC-BY-NC-SA-4.0, xzoom, SchemeReport, Boehm-GC, xinetd, CC-BY-NC-ND-3.0, CECILL-2.1, SSLeay-standalone, CATOSL-1.1, NIST-PD, GPL-2.0-or-later, CECILL-1.1, GFDL-1.2-no-invariants-only, mpich2, JasPer-2.0, RPSL-1.0, OLDAP-1.4, TU-Berlin-1.0, CC-BY-3.0-AT, BSD-3-Clause-No-Nuclear-License, Xdebug-1.03, SISSL, Apache-1.1, HPND-DEC, Unlicense-libtelnet, Condor-1.1, Unicode-TOU, OML, QPL-1.0-INRIA-2004, CC-BY-ND-1.0, PolyForm-Noncommercial-1.0.0, man2html, OLFL-1.3, copyleft-next-0.3.0, LGPLLR, CDDL-1.1, Xfig, CC-BY-2.5-AU, APL-1.0, OpenSSL-standalone, OGDL-Taiwan-1.0, BSL-1.0, generic-xts, PHP-3.0, LAL-1.2, DRL-1.1, LPL-1.0, Leptonica, CNRI-Jython, DL-DE-ZERO-2.0, Cube, w3m, TGPPL-1.0, HPND-UC-export-US, EFL-1.0, NRL, CPAL-1.0, NCSA, CC-BY-SA-2.1-JP, PPL, GPL-1.0-only, ASWF-Digital-Assets-1.1, NCL, App-s2p, BitTorrent-1.0, HPND-merchantability-variant, EPICS, BSD-3-Clause-Attribution, curl, NLPL, Apache-2.0, BSD-Protection, DEC-3-Clause, MakeIndex, RSCPL, bcrypt-Solar-Designer, OGL-UK-1.0, OLDAP-2.1, HPND-export-US-modify, MIT-0, MPL-2.0-no-copyleft-exception, CERN-OHL-S-2.0, TMate, CMU-Mach, OSL-2.0, UnixCrypt, Plexus, MulanPSL-2.0, OSET-PL-2.1, DocBook-Schema, CC-BY-NC-ND-3.0-DE, IPA, LGPL-2.1-or-later, zlib-acknowledgement, Zed, Fair, AGPL-3.0-only, GFDL-1.2-invariants-only, Spencer-86, AMDPLPA, NPOSL-3.0, SWL, CC-BY-SA-2.0-UK, Brian-Gladman-2-Clause, CC-BY-NC-SA-2.0, CERN-OHL-P-2.0, OFL-1.0-RFN, Linux-man-pages-copyleft-var, OFL-1.1-no-RFN, BSD-3-Clause-flex, Intel-ACPI, CFITSIO, Bitstream-Vera, HPND, HPND-UC, PSF-2.0, xkeyboard-config-Zinoviev, mpi-permissive, TORQUE-1.1, CC-BY-NC-ND-2.5, cve-tou, Artistic-2.0, ANTLR-PD-fallback, CERN-OHL-W-2.0, Spencer-99, PHP-3.01, SugarCRM-1.1.3, GFDL-1.3-only, SNIA, HPND-sell-variant-MIT-disclaimer, libpng-2.0, BSD-4-Clause, HPND-Intel, LiLiQ-R-1.1, any-OSI-perl-modules, Aspell-RU, LiLiQ-P-1.1, HPND-INRIA-IMAG, BUSL-1.1, Parity-7.0.0, TTYP0, LOOP, LiLiQ-Rplus-1.1, BSD-3-Clause-No-Nuclear-License-2014, BSD-3-Clause-Sun, Parity-6.0.0, IBM-pibs, bzip2-1.0.6, GFDL-1.2-no-invariants-or-later, FSFULLRWD, Game-Programming-Gems, gnuplot, X11-swapped, NLOD-1.0, CPOL-1.02, OAR, Abstyles, SISSL-1.2, Unicode-DFS-2015, Graphics-Gems, CC-BY-SA-4.0, Dotseqn, RHeCos-1.1, BSD-3-Clause-Clear, CC-BY-SA-2.0, GFDL-1.2-invariants-or-later, EUDatagrid, libselinux-1.0, FreeImage, APSL-1.2, Sendmail, SHL-0.5, Ubuntu-font-1.0, BSD-4-Clause-Shortened, GCR-docs, GFDL-1.1-invariants-only, ZPL-2.1, CC-PDDC, OCLC-2.0, OpenSSL, MS-RL, BSD-3-Clause-acpica, TCP-wrappers, CC-BY-NC-SA-3.0-DE, LPPL-1.3a, OLDAP-1.2, HP-1986, hdparm, PADL, OPL-UK-3.0, BSD-1-Clause, MIT-CMU, Mup, ICU, xpp, Artistic-1.0-cl8, CC-BY-2.5, XSkat, YPL-1.0, W3C-20150513, SGI-B-1.1, LGPL-2.1-only, CUA-OPL-1.0, Eurosym, FSFULLRSD, CC-BY-NC-SA-2.0-FR, X11-distribute-modifications-variant, MPEG-SSG, MIT-Modern-Variant, CAL-1.0, HPND-doc-sell, Naumen, Unicode-3.0, Unicode-DFS-2016, HIDAPI, Baekmuk, Kazlib, HPND-MIT-disclaimer, OLDAP-2.2.2, AdaCore-doc, 0BSD, ISC-Veillard, CERN-OHL-1.2, dvipdfm, MulanPSL-1.0, JPL-image, FSFULLR, CryptoSwift, CC-BY-NC-3.0-DE, BitTorrent-1.1, EPL-2.0, Vim, Inner-Net-2.0, LGPL-2.0-only, Zimbra-1.4, Cornell-Lossless-JPEG, Knuth-CTAN, OLDAP-1.1, CC-BY-NC-ND-2.0, Borceux, DSDP, Unlicense, ECL-2.0, HPND-Pbmplus, ASWF-Digital-Assets-1.0, HPND-sell-MIT-disclaimer-xserver, SPL-1.0, AFL-3.0, OLDAP-2.6, BSD-Advertising-Acknowledgement, SAX-PD-2.0, Crossword, swrule, LZMA-SDK-9.11-to-9.20, MIPS, CNRI-Python, UCAR, InnoSetup, MIT-Wu, CC-BY-NC-SA-2.0-DE, HPND-sell-variant-MIT-disclaimer-rev, CC-BY-NC-SA-3.0, GL2PS, Martin-Birgmeier, xlock, etalab-2.0, OLDAP-2.8, W3C-19980720, CC-BY-3.0-US, CPL-1.0, OFFIS, CC0-1.0, CECILL-2.0, OCCT-PL, NPL-1.0, magaz, Soundex, SOFA, Frameworx-1.0, check-cvs, OLDAP-2.2.1, Apache-1.0, URT-RLE, mailprio, OLDAP-2.4, BSD-Source-beginning-file, CC-BY-SA-1.0, CDL-1.0, OLDAP-1.3, HPND-Netrek, Artistic-1.0, checkmk, Saxpath, CMU-Mach-nodoc, NCGL-UK-2.0, EUPL-1.1, CC-BY-ND-2.5, SunPro, Elastic-2.0, ODbL-1.0, CERN-OHL-1.1, IEC-Code-Components-EULA, OGL-UK-2.0, Caldera-no-preamble, libutil-David-Nugent, ThirdEye, MIT-open-group, EUPL-1.0, NICTA-1.0, CDDL-1.0, MIT-feh, CC-BY-3.0-IGO, OLDAP-2.3, RPL-1.5, OPUBL-1.0, AGPL-1.0-only, TOSL, FTL, WTFPL, Intel, Barr, Zlib, BSD-Systemics-W3Works, psfrag, AAL, CECILL-B, NTIA-PD, CC-BY-NC-1.0, libpng-1.6.35, BSD-2-Clause, NASA-1.3, Mackerras-3-Clause-acknowledgment, BSD-4.3RENO, Pixar, CC-BY-3.0-NL, AMD-newlib, MIT-Click, AML-glslang, MIT-advertising, CC-BY-2.0, CC-BY-NC-ND-1.0, OLDAP-2.5, Zend-2.0, HPND-Fenneberg-Livingston, DRL-1.0, NIST-Software, CrystalStacker, BSD-Source-Code, Spencer-94, SimPL-2.0, OSL-1.1, CDLA-Permissive-1.0, metamail, GFDL-1.1-only, CC-BY-ND-3.0, CC-BY-3.0-DE, HPND-export-US, NBPL-1.0, GPL-2.0-only, NAIST-2003, SSH-OpenSSH, Nokia, gtkbook, Boehm-GC-without-fee, GPL-3.0-or-later, CECILL-1.0, AGPL-3.0-or-later, Xnet, NOSL, ImageMagick, MITNFA, APAFML, Jam, FBM, BSD-2-Clause-Darwin, HTMLTIDY, W3C, AFL-1.2, YPL-1.1, iMatix, Caldera, SCEA, O-UDA-1.0, LPPL-1.2, HPND-export-US-acknowledgement, GFDL-1.2-or-later, McPhee-slideshow, Ruby, Kastrup, Adobe-Glyph, CC-BY-SA-3.0-AT, DocBook-Stylesheet, Aladdin, MIT-testregex, BSD-3-Clause-Modification, BSD-3-Clause-No-Military-License, Adobe-Display-PostScript, psutils, LGPL-3.0-or-later, LZMA-SDK-9.22, Bahyph, BSD-Attribution-HPND-disclaimer, Motosoto, MIT-Khronos-old, Ruby-pty, CC-BY-NC-SA-1.0, Artistic-dist, IJG, Linux-OpenIB, ulem, MIT, GFDL-1.3-no-invariants-only, Symlinks, NPL-1.1, Giftware, CDLA-Permissive-2.0, LAL-1.3, Widget-Workshop, Latex2e-translated-notice, Gutmann, COIL-1.0, Watcom-1.0, HPND-Kevlin-Henney, fwlw, DL-DE-BY-2.0, Interbase-1.0, OGTSL, BSD-Inferno-Nettverk, BSD-2-Clause-Views, ssh-keyscan, GFDL-1.1-invariants-or-later, Mackerras-3-Clause, TPL-1.0, ErlPL-1.1, LPPL-1.1, BSD-2-Clause-first-lines, OGL-Canada-2.0, D-FSL-1.0, SMAIL-GPL, CC-PDM-1.0, CDLA-Sharing-1.0, GD, GFDL-1.3-invariants-or-later, Zeeff, Imlib2, CC-BY-NC-2.0, Adobe-Utopia, ZPL-2.0, Beerware, SUL-1.0, EPL-1.0, CC-BY-1.0, CC-BY-NC-4.0, FSFAP, VSL-1.0, lsof, Wsuipa, Unlicense-libwhirlpool, NTP-0, BSD-3-Clause, APSL-2.0, CAL-1.0-Combined-Work-Exception, OGL-UK-3.0, CC-BY-SA-3.0-IGO, SGP4, SSH-short, OLDAP-2.7, VOSTROM, CC-BY-3.0, CC-BY-NC-ND-3.0-IGO, dtoa, SMPPL, MIT-enna, Catharon, SHL-0.51, copyleft-next-0.3.1, BSD-2-Clause-Patent, FSL-1.1-ALv2, Python-2.0.1, CC-BY-ND-2.0, MTLL, OFL-1.0, Qhull, IPL-1.0, Linux-man-pages-copyleft-2-para, softSurfer, snprintf, GFDL-1.2-only, EUPL-1.2, ZPL-1.1, TTWL, MPL-2.0, HPND-doc, BSD-Systemics, DocBook-DTD, EFL-2.0, HaskellReport, BSD-3-Clause-No-Nuclear-Warranty, Newsletr, OFL-1.1, GFDL-1.1-no-invariants-only, CC-BY-ND-3.0-DE, UCL-1.0, OGC-1.0, eGenix, OPL-1.0, Xerox, NIST-PD-fallback, SGI-B-2.0, TermReadKey, Sendmail-Open-Source-1.1, NTP, HPND-Markus-Kuhn, BSD-2-Clause-pkgconf-disclaimer, TCL, NetCDF, wwl, Python-2.0, FSFAP-no-warranty-disclaimer, python-ldap, CC-BY-SA-2.5, GPL-3.0-only, GFDL-1.3-or-later, LGPL-3.0-only, Glulxe, CC-BY-NC-SA-3.0-IGO, BSD-3-Clause-Open-MPI, FSL-1.1-MIT, Linux-man-pages-copyleft, ECL-1.0, jove, BSD-3-Clause-HP, AML, FreeBSD-DOC, XFree86-1.1, CC-BY-3.0-AU, Arphic-1999, OSL-1.0, OFL-1.0-no-RFN, OLDAP-2.0.1, JPNIC, LPL-1.02, OLDAP-2.0, Adobe-2006, CC-BY-NC-SA-2.5, C-UDA-1.0, Lucida-Bitmap-Fonts, Ferguson-Twofish, MMIXware, SSPL-1.0, MPL-1.0, TPDL, OLDAP-2.2, gSOAP-1.3b, TU-Berlin-2.0, pkgconf, CC-BY-NC-SA-2.0-UK, DocBook-XML, CNRI-Python-GPL-Compatible, MS-LPL, Brian-Gladman-3-Clause, radvd, MPL-1.1, blessing, HPND-sell-regexpr, AFL-2.1, CC-BY-SA-3.0-DE, PDDL-1.0, BSD-4.3TAHOE, CC-BY-NC-3.0, NLOD-2.0, GFDL-1.1-no-invariants-or-later, ClArtistic, pnmstitch, MirOS, QPL-1.0, IJG-short, Community-Spec-1.0, NCBI-PD, PostgreSQL, MS-PL
+- ioBroker.consumption [ioBroker/ioBroker.consumption](https://github.com/ioBroker/ioBroker.consumption)
+- ioBroker.icons-eclipse-smarthome-classic [iobroker-community-adapters/ioBroker.icons-eclipse-smarthome-classic](https://github.com/iobroker-community-adapters/ioBroker.icons-eclipse-smarthome-classic)
+
+### [W205] [io-package.json](https://github.com/DrozmotiX/ioBroker.coronavirus-statistics/blob/master/io-package.json) schema validation error: Unknown property "contributors" in /common
+- ioBroker.coronavirus-statistics [DrozmotiX/ioBroker.coronavirus-statistics](https://github.com/DrozmotiX/ioBroker.coronavirus-statistics)
+- ioBroker.multicast [DrozmotiX/ioBroker.multicast](https://github.com/DrozmotiX/ioBroker.multicast)
+- ioBroker.myvbus [iobroker-community-adapters/ioBroker.myvbus](https://github.com/iobroker-community-adapters/ioBroker.myvbus)
+- ioBroker.sourceanalytix [DrozmotiX/ioBroker.sourceanalytix](https://github.com/DrozmotiX/ioBroker.sourceanalytix)
+- ioBroker.wlanthermo-nano [DrozmotiX/ioBroker.wlanthermo-nano](https://github.com/DrozmotiX/ioBroker.wlanthermo-nano)
+
+### [W205] [io-package.json](https://github.com/ioBroker/ioBroker.cul/blob/master/io-package.json) schema validation error: Missing required property "licenseInformation" in /common
+- ioBroker.cul [ioBroker/ioBroker.cul](https://github.com/ioBroker/ioBroker.cul)
+- ioBroker.device-reminder [xenon-s/ioBroker.device-reminder](https://github.com/xenon-s/ioBroker.device-reminder)
+- ioBroker.digitalstrom [ioBroker/ioBroker.digitalstrom](https://github.com/ioBroker/ioBroker.digitalstrom)
+- ioBroker.emporia [Chris-656/ioBroker.emporia](https://github.com/Chris-656/ioBroker.emporia)
+- ioBroker.haassohn [marvingrieger/ioBroker.haassohn](https://github.com/marvingrieger/ioBroker.haassohn)
+- ioBroker.ham [ioBroker/ioBroker.ham](https://github.com/ioBroker/ioBroker.ham)
+- ioBroker.ham-wemo [ioBroker/ioBroker.ham-wemo](https://github.com/ioBroker/ioBroker.ham-wemo)
+- ioBroker.hue-sync-box [xXBJXx/ioBroker.hue-sync-box](https://github.com/xXBJXx/ioBroker.hue-sync-box)
+- ioBroker.loxone [UncleSamSwiss/ioBroker.loxone](https://github.com/UncleSamSwiss/ioBroker.loxone)
+- ioBroker.luxtronik2 [UncleSamSwiss/ioBroker.luxtronik2](https://github.com/UncleSamSwiss/ioBroker.luxtronik2)
+- ioBroker.mihome [ioBroker/ioBroker.mihome](https://github.com/ioBroker/ioBroker.mihome)
+- ioBroker.mysensors [ioBroker/ioBroker.mysensors](https://github.com/ioBroker/ioBroker.mysensors)
+- ioBroker.notificationforandroidtv [DNAngelX/ioBroker.notificationforandroidtv](https://github.com/DNAngelX/ioBroker.notificationforandroidtv)
+- ioBroker.onkyo [ioBroker/ioBroker.onkyo](https://github.com/ioBroker/ioBroker.onkyo)
+- ioBroker.ph803w [Apollon77/ioBroker.ph803w](https://github.com/Apollon77/ioBroker.ph803w)
+- ioBroker.proxy [ioBroker/ioBroker.proxy](https://github.com/ioBroker/ioBroker.proxy)
+- ioBroker.rfxcom [ioBroker/ioBroker.rfxcom](https://github.com/ioBroker/ioBroker.rfxcom)
+- ioBroker.signifylights [disaster123/ioBroker.signifylights](https://github.com/disaster123/ioBroker.signifylights)
+- ioBroker.sonos [ioBroker/ioBroker.sonos](https://github.com/ioBroker/ioBroker.sonos)
+- ioBroker.tahoma [Excodibur/ioBroker.tahoma](https://github.com/Excodibur/ioBroker.tahoma)
+- ioBroker.tvspielfilm [iobroker-community-adapters/ioBroker.tvspielfilm](https://github.com/iobroker-community-adapters/ioBroker.tvspielfilm)
+- ioBroker.wolf [ioBroker/ioBroker.wolf](https://github.com/ioBroker/ioBroker.wolf)
+- ioBroker.xterm [ioBroker/ioBroker.xterm](https://github.com/ioBroker/ioBroker.xterm)
+- ioBroker.yamaha [iobroker-community-adapters/ioBroker.yamaha](https://github.com/iobroker-community-adapters/ioBroker.yamaha)
+- ioBroker.yr [ioBroker/ioBroker.yr](https://github.com/ioBroker/ioBroker.yr)
+
+### [W205] [io-package.json](https://github.com/Apollon77/ioBroker.daikin/blob/master/io-package.json) schema validation error: Unknown property "jsonConfig" in /common
+- ioBroker.daikin [Apollon77/ioBroker.daikin](https://github.com/Apollon77/ioBroker.daikin)
+- ioBroker.followthesun [HGlab01/ioBroker.followthesun](https://github.com/HGlab01/ioBroker.followthesun)
+- ioBroker.gsmsms [iobroker-community-adapters/ioBroker.gsmsms](https://github.com/iobroker-community-adapters/ioBroker.gsmsms)
+- ioBroker.netatmo-energy [Homemade-Disaster/ioBroker.netatmo-energy](https://github.com/Homemade-Disaster/ioBroker.netatmo-energy)
+- ioBroker.schwoerer-ventcube [Excodibur/ioBroker.schwoerer-ventcube](https://github.com/Excodibur/ioBroker.schwoerer-ventcube)
+- ioBroker.synology [iobroker-community-adapters/ioBroker.synology](https://github.com/iobroker-community-adapters/ioBroker.synology)
+- ioBroker.tado [DrozmotiX/ioBroker.tado](https://github.com/DrozmotiX/ioBroker.tado)
+- ioBroker.tinker [simatec/ioBroker.tinker](https://github.com/simatec/ioBroker.tinker)
+- ioBroker.uv-protect [simatec/ioBroker.uv-protect](https://github.com/simatec/ioBroker.uv-protect)
+
+### [W205] [io-package.json](https://github.com/ioBroker/ioBroker.discovery/blob/master/io-package.json) schema validation error: Unknown property "_objects" in root
+- ioBroker.discovery [ioBroker/ioBroker.discovery](https://github.com/ioBroker/ioBroker.discovery)
+
+### [W205] [io-package.json](https://github.com/TKnpl/ioBroker.divera247/blob/master/io-package.json) schema validation error: Unknown property "author" in /common
+- ioBroker.divera247 [TKnpl/ioBroker.divera247](https://github.com/TKnpl/ioBroker.divera247)
+
+### [W205] [io-package.json](https://github.com/ioBroker/ioBroker.docker-manager/blob/master/io-package.json) schema validation error: Property "/common/adminTab/name" should be object
+- ioBroker.docker-manager [ioBroker/ioBroker.docker-manager](https://github.com/ioBroker/ioBroker.docker-manager)
+- ioBroker.fullcalendar [ioBroker/ioBroker.fullcalendar](https://github.com/ioBroker/ioBroker.fullcalendar)
+- ioBroker.matter [ioBroker/ioBroker.matter](https://github.com/ioBroker/ioBroker.matter)
+
+### [W205] [io-package.json](https://github.com/Bettman66/ioBroker.doorio/blob/master/io-package.json) schema validation error: Missing required property "en" in /common/docs
+- ioBroker.doorio [Bettman66/ioBroker.doorio](https://github.com/Bettman66/ioBroker.doorio)
+- ioBroker.fritzdect [foxthefox/ioBroker.fritzdect](https://github.com/foxthefox/ioBroker.fritzdect)
+- ioBroker.wiobrowser [Bettman66/ioBroker.wiobrowser](https://github.com/Bettman66/ioBroker.wiobrowser)
+- ioBroker.yeelight-2 [iobroker-community-adapters/ioBroker.yeelight-2](https://github.com/iobroker-community-adapters/ioBroker.yeelight-2)
+
+### [W205] [io-package.json](https://github.com/Newan/ioBroker.easee/blob/master/io-package.json) schema validation error: Unknown property "globalDependencies" in root
+- ioBroker.easee [Newan/ioBroker.easee](https://github.com/Newan/ioBroker.easee)
+
+### [W205] [io-package.json](https://github.com/mrbungle64/ioBroker.ecovacs-deebot/blob/master/io-package.json) schema validation error: Unknown property "license" in root
+- ioBroker.ecovacs-deebot [mrbungle64/ioBroker.ecovacs-deebot](https://github.com/mrbungle64/ioBroker.ecovacs-deebot)
+
+### [W205] [io-package.json](https://github.com/ioBroker/ioBroker.ekey/blob/master/io-package.json) schema validation error: Unknown property "subscribe" in /common
+- ioBroker.ekey [ioBroker/ioBroker.ekey](https://github.com/ioBroker/ioBroker.ekey)
+- ioBroker.geofency [ioBroker/ioBroker.geofency](https://github.com/ioBroker/ioBroker.geofency)
+- ioBroker.history [ioBroker/ioBroker.history](https://github.com/ioBroker/ioBroker.history)
+- ioBroker.homee [Apollon77/ioBroker.homee](https://github.com/Apollon77/ioBroker.homee)
+- ioBroker.iceroad [iobroker-community-adapters/ioBroker.iceroad](https://github.com/iobroker-community-adapters/ioBroker.iceroad)
+- ioBroker.influxdb [ioBroker/ioBroker.influxdb](https://github.com/ioBroker/ioBroker.influxdb)
+- ioBroker.innogy-smarthome [PArns/ioBroker.innogy-smarthome](https://github.com/PArns/ioBroker.innogy-smarthome)
+- ioBroker.iqontrol [iobroker-community-adapters/ioBroker.iqontrol](https://github.com/iobroker-community-adapters/ioBroker.iqontrol)
+- ioBroker.jarvis [Zefau/ioBroker.jarvis](https://github.com/Zefau/ioBroker.jarvis)
+- ioBroker.lgtv11 [SebastianSchultz/ioBroker.lgtv11](https://github.com/SebastianSchultz/ioBroker.lgtv11)
+- ioBroker.linkeddevices [Scrounger/ioBroker.linkeddevices](https://github.com/Scrounger/ioBroker.linkeddevices)
+- ioBroker.mbus [Apollon77/ioBroker.mbus](https://github.com/Apollon77/ioBroker.mbus)
+- ioBroker.nuki-extended [iobroker-community-adapters/ioBroker.nuki-extended](https://github.com/iobroker-community-adapters/ioBroker.nuki-extended)
+- ioBroker.nut [Apollon77/ioBroker.nut](https://github.com/Apollon77/ioBroker.nut)
+- ioBroker.oppoplayer [volkerrichert/ioBroker.oppoplayer](https://github.com/volkerrichert/ioBroker.oppoplayer)
+- ioBroker.phantomjs [ioBroker/ioBroker.phantomjs](https://github.com/ioBroker/ioBroker.phantomjs)
+- ioBroker.pushsafer [ioBroker/ioBroker.pushsafer](https://github.com/ioBroker/ioBroker.pushsafer)
+- ioBroker.roadtraffic [iobroker-community-adapters/ioBroker.roadtraffic](https://github.com/iobroker-community-adapters/ioBroker.roadtraffic)
+- ioBroker.roomba [iobroker-community-adapters/ioBroker.roomba](https://github.com/iobroker-community-adapters/ioBroker.roomba)
+- ioBroker.siegenia [Apollon77/ioBroker.siegenia](https://github.com/Apollon77/ioBroker.siegenia)
+- ioBroker.smartmeter [Apollon77/ioBroker.smartmeter](https://github.com/Apollon77/ioBroker.smartmeter)
+- ioBroker.sql [ioBroker/ioBroker.sql](https://github.com/ioBroker/ioBroker.sql)
+- ioBroker.systeminfo [iobroker-community-adapters/ioBroker.systeminfo](https://github.com/iobroker-community-adapters/ioBroker.systeminfo)
+
+### [W205] [io-package.json](https://github.com/marc2016/ioBroker.elero-usb-transmitter/blob/master/io-package.json) schema validation error: Unknown property "messagebox" in root
+- ioBroker.elero-usb-transmitter [marc2016/ioBroker.elero-usb-transmitter](https://github.com/marc2016/ioBroker.elero-usb-transmitter)
+
+### [W205] [io-package.json](https://github.com/iobroker-community-adapters/ioBroker.email/blob/master/io-package.json) schema validation error: Unknown property "protectedNative1" in root
+- ioBroker.email [iobroker-community-adapters/ioBroker.email](https://github.com/iobroker-community-adapters/ioBroker.email)
+
+### [W205] [io-package.json](https://github.com/SKB-CGN/ioBroker.energiefluss-erweitert/blob/master/io-package.json) schema validation error: Unknown property "messages" in root
+- ioBroker.energiefluss-erweitert [SKB-CGN/ioBroker.energiefluss-erweitert](https://github.com/SKB-CGN/ioBroker.energiefluss-erweitert)
+- ioBroker.growatt [PLCHome/ioBroker.growatt](https://github.com/PLCHome/ioBroker.growatt)
+- ioBroker.midea [TA2k/ioBroker.midea](https://github.com/TA2k/ioBroker.midea)
+- ioBroker.mihome-vacuum [iobroker-community-adapters/ioBroker.mihome-vacuum](https://github.com/iobroker-community-adapters/ioBroker.mihome-vacuum)
+- ioBroker.onvif [iobroker-community-adapters/ioBroker.onvif](https://github.com/iobroker-community-adapters/ioBroker.onvif)
+- ioBroker.vw-connect [TA2k/ioBroker.vw-connect](https://github.com/TA2k/ioBroker.vw-connect)
+
+### [W205] [io-package.json](https://github.com/iobroker-community-adapters/ioBroker.epson_stylus_px830/blob/master/io-package.json) schema validation error: Unknown property "config" in /common
+- ioBroker.epson_stylus_px830 [iobroker-community-adapters/ioBroker.epson_stylus_px830](https://github.com/iobroker-community-adapters/ioBroker.epson_stylus_px830)
+- ioBroker.homepilot [iobroker-community-adapters/ioBroker.homepilot](https://github.com/iobroker-community-adapters/ioBroker.homepilot)
+- ioBroker.mihome-plug [iobroker-community-adapters/ioBroker.mihome-plug](https://github.com/iobroker-community-adapters/ioBroker.mihome-plug)
+- ioBroker.todoist2 [rde-master/ioBroker.todoist2](https://github.com/rde-master/ioBroker.todoist2)
+
+### [W205] [io-package.json](https://github.com/ThomasPohl/ioBroker.gotify/blob/master/io-package.json) schema validation error: Unknown property "role" in /common
+- ioBroker.gotify [ThomasPohl/ioBroker.gotify](https://github.com/ThomasPohl/ioBroker.gotify)
+
+### [W205] [io-package.json](https://github.com/stemaker/ioBroker.hdg-bavaria/blob/master/io-package.json) schema validation error: Unknown property "installedFrom" in /common
+- ioBroker.hdg-bavaria [stemaker/ioBroker.hdg-bavaria](https://github.com/stemaker/ioBroker.hdg-bavaria)
+- ioBroker.hp-ilo [SebastianSchultz/ioBroker.hp-ilo](https://github.com/SebastianSchultz/ioBroker.hp-ilo)
+- ioBroker.mystrom [TA2k/ioBroker.mystrom](https://github.com/TA2k/ioBroker.mystrom)
+
+### [W205] [io-package.json](https://github.com/iobroker-community-adapters/ioBroker.hid-community/blob/master/io-package.json) schema validation error: Unknown property "mappings" in root
+- ioBroker.hid-community [iobroker-community-adapters/ioBroker.hid-community](https://github.com/iobroker-community-adapters/ioBroker.hid-community)
+
+### [W205] [io-package.json](https://github.com/TA2k/ioBroker.hoover/blob/master/io-package.json) schema validation error: Unknown property "enabled" in /common/adminUI
+- ioBroker.hoover [TA2k/ioBroker.hoover](https://github.com/TA2k/ioBroker.hoover)
+
+### [W205] [io-package.json](https://github.com/arteck/ioBroker.hs100/blob/master/io-package.json) schema validation error: Unknown property "stopBeforeUpdate" in root
+- ioBroker.hs100 [arteck/ioBroker.hs100](https://github.com/arteck/ioBroker.hs100)
+
+### [W205] [io-package.json](https://github.com/felixganzer/ioBroker.hyperion_ng/blob/master/io-package.json) schema validation error: Property "/common/supportStopInstance" should be boolean
+- ioBroker.hyperion_ng [felixganzer/ioBroker.hyperion_ng](https://github.com/felixganzer/ioBroker.hyperion_ng)
+
+### [W205] [io-package.json](https://github.com/maxtox/ioBroker.intesishome/blob/master/io-package.json) schema validation error: Property "/common/title" should be string
+- ioBroker.intesishome [maxtox/ioBroker.intesishome](https://github.com/maxtox/ioBroker.intesishome)
+
+### [W205] [io-package.json](https://github.com/ioBroker/ioBroker.material/blob/master/io-package.json) schema validation error: Property "/common/welcomeScreen" should be array
+- ioBroker.material [ioBroker/ioBroker.material](https://github.com/ioBroker/ioBroker.material)
+
+### [W205] [io-package.json](https://github.com/StrathCole/ioBroker.myq/blob/master/io-package.json) schema validation error: Unknown property "connection-type" in /common
+- ioBroker.myq [StrathCole/ioBroker.myq](https://github.com/StrathCole/ioBroker.myq)
+
+### [W205] [io-package.json](https://github.com/SKB-CGN/ioBroker.mywallbox/blob/master/io-package.json) schema validation error: Property "/common/adminUI/tab" should be string
+- ioBroker.mywallbox [SKB-CGN/ioBroker.mywallbox](https://github.com/SKB-CGN/ioBroker.mywallbox)
+
+### [W205] [io-package.json](https://github.com/Rello/ioBroker.nextcloudtalk/blob/master/io-package.json) schema validation error: Unknown property "admin" in /common
+- ioBroker.nextcloudtalk [Rello/ioBroker.nextcloudtalk](https://github.com/Rello/ioBroker.nextcloudtalk)
+
+### [W205] [io-package.json](https://github.com/paveltsytovich/ioBroker.noolitef/blob/master/io-package.json) schema validation error: Unknown property "message" in /common
+- ioBroker.noolitef [paveltsytovich/ioBroker.noolitef](https://github.com/paveltsytovich/ioBroker.noolitef)
+
+### [W205] [io-package.json](https://github.com/eisbaeeer/ioBroker.piface/blob/master/io-package.json) schema validation error: Property "/common/desc" should be object
+- ioBroker.piface [eisbaeeer/ioBroker.piface](https://github.com/eisbaeeer/ioBroker.piface)
+- ioBroker.plexconnect [eisbaeeer/ioBroker.plexconnect](https://github.com/eisbaeeer/ioBroker.plexconnect)
+
+### [W205] [io-package.json](https://github.com/StrathCole/ioBroker.plenticore/blob/master/io-package.json) schema validation error: Property "/common/dependencies" should be array
+- ioBroker.plenticore [StrathCole/ioBroker.plenticore](https://github.com/StrathCole/ioBroker.plenticore)
+
+### [W205] [io-package.json](https://github.com/Steiger04/ioBroker.radar-trap/blob/master/io-package.json) schema validation error: Unknown property "jsonCustom" in /common
+- ioBroker.radar-trap [Steiger04/ioBroker.radar-trap](https://github.com/Steiger04/ioBroker.radar-trap)
+
+### [W205] [io-package.json](https://github.com/oweitman/ioBroker.rssfeed/blob/master/io-package.json) schema validation error: Property "/common/visWidgets/rssfeed/components" must NOT have fewer than 1 items
+- ioBroker.rssfeed [oweitman/ioBroker.rssfeed](https://github.com/oweitman/ioBroker.rssfeed)
+
+### [W205] [io-package.json](https://github.com/nobl/ioBroker.senec/blob/master/io-package.json) schema validation error: Unknown property "nativeEncrypted" in root
+- ioBroker.senec [nobl/ioBroker.senec](https://github.com/nobl/ioBroker.senec)
+
+### [W205] [io-package.json](https://github.com/arteck/ioBroker.seq/blob/master/io-package.json) schema validation error: Unknown property "adminUI" in root
+- ioBroker.seq [arteck/ioBroker.seq](https://github.com/arteck/ioBroker.seq)
+
+### [W205] [io-package.json](https://github.com/simatec/ioBroker.shuttercontrol/blob/master/io-package.json) schema validation error: Unknown property "sendTo" in /common/adminTab
+- ioBroker.shuttercontrol [simatec/ioBroker.shuttercontrol](https://github.com/simatec/ioBroker.shuttercontrol)
+
+### [W205] [io-package.json](https://github.com/iobroker-community-adapters/ioBroker.snmp/blob/master/io-package.json) schema validation error: Property "/common/stopBeforeUpdate" should be boolean
+- ioBroker.snmp [iobroker-community-adapters/ioBroker.snmp](https://github.com/iobroker-community-adapters/ioBroker.snmp)
+
+### [W205] [io-package.json](https://github.com/iobroker-community-adapters/ioBroker.tractive-gps/blob/master/io-package.json) schema validation error: Unknown property "plugins" in root
+- ioBroker.tractive-gps [iobroker-community-adapters/ioBroker.tractive-gps](https://github.com/iobroker-community-adapters/ioBroker.tractive-gps)
+
+### [W205] [io-package.json](https://github.com/inventwo/ioBroker.vis-2-widgets-icontwo/blob/master/io-package.json) schema validation error: Property "/common/visWidgets" must NOT have fewer than 1 properties
+- ioBroker.vis-2-widgets-icontwo [inventwo/ioBroker.vis-2-widgets-icontwo](https://github.com/inventwo/ioBroker.vis-2-widgets-icontwo)
+
+### [W205] [io-package.json](https://github.com/Steiger04/ioBroker.vis-2-widgets-radar-trap/blob/master/io-package.json) schema validation error: Property "/common/visWidgets/ignoreInVersions" should be object
+- ioBroker.vis-2-widgets-radar-trap [Steiger04/ioBroker.vis-2-widgets-radar-trap](https://github.com/Steiger04/ioBroker.vis-2-widgets-radar-trap)
+
+### [W205] [io-package.json](https://github.com/ioBroker/ioBroker.vis/blob/master/io-package.json) schema validation error: Property "/common/welcomeScreenPro" should be array
+- ioBroker.vis [ioBroker/ioBroker.vis](https://github.com/ioBroker/ioBroker.vis)
+
+### [W205] [io-package.json](https://github.com/iobroker-community-adapters/ioBroker.xs1/blob/master/io-package.json) schema validation error: Property "/common/dataSource" should be one of: none, poll, push, assumption
+- ioBroker.xs1 [iobroker-community-adapters/ioBroker.xs1](https://github.com/iobroker-community-adapters/ioBroker.xs1)
 
 ### [W252] Version of [package.json](https://github.com/OlliMartin/ioBroker.acaad/blob/master/package.json) (0.0.2-3) doesn't match latest version on [NPM](https://www.npmjs.com/package/iobroker.acaad) (0.0.0-preview)
 - ioBroker.acaad [OlliMartin/ioBroker.acaad](https://github.com/OlliMartin/ioBroker.acaad)
@@ -9505,6 +9904,9 @@
 
 ### [W252] Version of [package.json](https://github.com/TA2k/ioBroker.ford/blob/master/package.json) (1.0.5) doesn't match latest version on [NPM](https://www.npmjs.com/package/iobroker.ford) (1.0.4)
 - ioBroker.ford [TA2k/ioBroker.ford](https://github.com/TA2k/ioBroker.ford)
+
+### [W252] Version of [package.json](https://github.com/foxthefox/ioBroker.fritzdect/blob/master/package.json) (2.6.3) doesn't match latest version on [NPM](https://www.npmjs.com/package/iobroker.fritzdect) (2.6.2)
+- ioBroker.fritzdect [foxthefox/ioBroker.fritzdect](https://github.com/foxthefox/ioBroker.fritzdect)
 
 ### [W252] Version of [package.json](https://github.com/FossyTom/ioBroker.goodwe/blob/master/package.json) (1.0.4) doesn't match latest version on [NPM](https://www.npmjs.com/package/iobroker.goodwe) (1.0.2)
 - ioBroker.goodwe [FossyTom/ioBroker.goodwe](https://github.com/FossyTom/ioBroker.goodwe)
@@ -9544,6 +9946,9 @@
 
 ### [W252] Version of [package.json](https://github.com/Scrounger/ioBroker.linux-control/blob/master/package.json) (1.1.6) doesn't match latest version on [NPM](https://www.npmjs.com/package/iobroker.linux-control) (1.1.5)
 - ioBroker.linux-control [Scrounger/ioBroker.linux-control](https://github.com/Scrounger/ioBroker.linux-control)
+
+### [W252] Version of [package.json](https://github.com/BenAhrdt/ioBroker.lorawan/blob/master/package.json) (1.17.1) doesn't match latest version on [NPM](https://www.npmjs.com/package/iobroker.lorawan) (1.17.0)
+- ioBroker.lorawan [BenAhrdt/ioBroker.lorawan](https://github.com/BenAhrdt/ioBroker.lorawan)
 
 ### [W252] Version of [package.json](https://github.com/ioBroker/ioBroker.lovelace/blob/master/package.json) (5.0.1) doesn't match latest version on [NPM](https://www.npmjs.com/package/iobroker.lovelace) (5.0.0)
 - ioBroker.lovelace [ioBroker/ioBroker.lovelace](https://github.com/ioBroker/ioBroker.lovelace)
@@ -9632,9 +10037,6 @@
 ### [W252] Version of [package.json](https://github.com/ice987987/ioBroker.wiserbyfeller/blob/master/package.json) (0.1.0-beta.14) doesn't match latest version on [NPM](https://www.npmjs.com/package/iobroker.wiserbyfeller) (0.0.4)
 - ioBroker.wiserbyfeller [ice987987/ioBroker.wiserbyfeller](https://github.com/ice987987/ioBroker.wiserbyfeller)
 
-### [W252] Version of [package.json](https://github.com/ioBroker/ioBroker.zigbee/blob/master/package.json) (3.1.1) doesn't match latest version on [NPM](https://www.npmjs.com/package/iobroker.zigbee) (3.0.5)
-- ioBroker.zigbee [ioBroker/ioBroker.zigbee](https://github.com/ioBroker/ioBroker.zigbee)
-
 ### [W252] Version of [package.json](https://github.com/fungus75/ioBroker.zoe2/blob/master/package.json) (0.2.12) doesn't match latest version on [NPM](https://www.npmjs.com/package/iobroker.zoe2) (0.2.10)
 - ioBroker.zoe2 [fungus75/ioBroker.zoe2](https://github.com/fungus75/ioBroker.zoe2)
 
@@ -9661,6 +10063,9 @@
 
 ### [W401] Cannot find "cubinote" in latest repository
 - ioBroker.cubinote [mweberit/ioBroker.cubinote](https://github.com/mweberit/ioBroker.cubinote)
+
+### [W401] Cannot find "docker-manager" in latest repository
+- ioBroker.docker-manager [ioBroker/ioBroker.docker-manager](https://github.com/ioBroker/ioBroker.docker-manager)
 
 ### [W401] Cannot find "domiqbase" in latest repository
 - ioBroker.domiqbase [crosenbe/ioBroker.domiqbase](https://github.com/crosenbe/ioBroker.domiqbase)
@@ -9691,6 +10096,9 @@
 
 ### [W401] Cannot find "hagelschutz" in latest repository
 - ioBroker.hagelschutz [ice987987/ioBroker.hagelschutz](https://github.com/ice987987/ioBroker.hagelschutz)
+
+### [W401] Cannot find "hilink" in latest repository
+- ioBroker.hilink [bondrogeen/ioBroker.hilink](https://github.com/bondrogeen/ioBroker.hilink)
 
 ### [W401] Cannot find "homepilot20" in latest repository
 - ioBroker.homepilot20 [homecineplexx/ioBroker.homepilot20](https://github.com/homecineplexx/ioBroker.homepilot20)
@@ -9830,6 +10238,9 @@
 ### [W401] Cannot find "vis-jsontemplate" in latest repository
 - ioBroker.vis-jsontemplate [oweitman/ioBroker.vis-jsontemplate](https://github.com/oweitman/ioBroker.vis-jsontemplate)
 
+### [W401] Cannot find "vis-mapwidgets" in latest repository
+- ioBroker.vis-mapwidgets [oweitman/ioBroker.vis-mapwidgets](https://github.com/oweitman/ioBroker.vis-mapwidgets)
+
 ### [W401] Cannot find "waste-collection-erding" in latest repository
 - ioBroker.waste-collection-erding [Sickboy78/ioBroker.waste-collection-erding](https://github.com/Sickboy78/ioBroker.waste-collection-erding)
 
@@ -9855,13 +10266,11 @@
 - ioBroker.airconwithme [weggetor/ioBroker.airconwithme](https://github.com/weggetor/ioBroker.airconwithme)
 - ioBroker.alias-manager [iobroker-community-adapters/ioBroker.alias-manager](https://github.com/iobroker-community-adapters/ioBroker.alias-manager)
 - ioBroker.anelhut [dan1-de/ioBroker.anelhut](https://github.com/dan1-de/ioBroker.anelhut)
-- ioBroker.artnet-recorder [Bannsaenger/ioBroker.artnet-recorder](https://github.com/Bannsaenger/ioBroker.artnet-recorder)
 - ioBroker.atlas-scientific-ezo-i2c [Buzze11/ioBroker.atlas-scientific-ezo-i2c](https://github.com/Buzze11/ioBroker.atlas-scientific-ezo-i2c)
 - ioBroker.awattar [sirjojo69/ioBroker.awattar](https://github.com/sirjojo69/ioBroker.awattar)
 - ioBroker.blebox [ka-vaNu/ioBroker.blebox](https://github.com/ka-vaNu/ioBroker.blebox)
 - ioBroker.coronavirus-statistics [DrozmotiX/ioBroker.coronavirus-statistics](https://github.com/DrozmotiX/ioBroker.coronavirus-statistics)
 - ioBroker.device-reminder [xenon-s/ioBroker.device-reminder](https://github.com/xenon-s/ioBroker.device-reminder)
-- ioBroker.discovergy [DrozmotiX/ioBroker.discovergy](https://github.com/DrozmotiX/ioBroker.discovergy)
 - ioBroker.divera247 [TKnpl/ioBroker.divera247](https://github.com/TKnpl/ioBroker.divera247)
 - ioBroker.doorio [Bettman66/ioBroker.doorio](https://github.com/Bettman66/ioBroker.doorio)
 - ioBroker.echarts [ioBroker/ioBroker.echarts](https://github.com/ioBroker/ioBroker.echarts)
@@ -9901,6 +10310,7 @@
 - ioBroker.pi-hole [unltdnetworx/ioBroker.pi-hole](https://github.com/unltdnetworx/ioBroker.pi-hole)
 - ioBroker.pixelit [pixelit-project/ioBroker.pixelit](https://github.com/pixelit-project/ioBroker.pixelit)
 - ioBroker.pollenflug [iobroker-community-adapters/ioBroker.pollenflug](https://github.com/iobroker-community-adapters/ioBroker.pollenflug)
+- ioBroker.radar-trap [Steiger04/ioBroker.radar-trap](https://github.com/Steiger04/ioBroker.radar-trap)
 - ioBroker.sainlogic [phifogg/ioBroker.sainlogic](https://github.com/phifogg/ioBroker.sainlogic)
 - ioBroker.seq [arteck/ioBroker.seq](https://github.com/arteck/ioBroker.seq)
 - ioBroker.sma-em [iobroker-community-adapters/ioBroker.sma-em](https://github.com/iobroker-community-adapters/ioBroker.sma-em)
@@ -9910,23 +10320,23 @@
 - ioBroker.tankerkoenig [iobroker-community-adapters/ioBroker.tankerkoenig](https://github.com/iobroker-community-adapters/ioBroker.tankerkoenig)
 - ioBroker.time-switch [walli545/ioBroker.time-switch](https://github.com/walli545/ioBroker.time-switch)
 - ioBroker.traccar [arteck/ioBroker.traccar](https://github.com/arteck/ioBroker.traccar)
+- ioBroker.trivum [TheBam1990/ioBroker.trivum](https://github.com/TheBam1990/ioBroker.trivum)
 - ioBroker.twinkly [patrickbs96/ioBroker.twinkly](https://github.com/patrickbs96/ioBroker.twinkly)
 - ioBroker.unifi [iobroker-community-adapters/ioBroker.unifi](https://github.com/iobroker-community-adapters/ioBroker.unifi)
 - ioBroker.valuetrackerovertime [Omega236/ioBroker.valuetrackerovertime](https://github.com/Omega236/ioBroker.valuetrackerovertime)
 - ioBroker.vedirect [DrozmotiX/ioBroker.vedirect](https://github.com/DrozmotiX/ioBroker.vedirect)
 - ioBroker.vis-material-advanced [iobroker-community-adapters/ioBroker.vis-material-advanced](https://github.com/iobroker-community-adapters/ioBroker.vis-material-advanced)
-- ioBroker.vivitek [Bannsaenger/ioBroker.vivitek](https://github.com/Bannsaenger/ioBroker.vivitek)
 - ioBroker.volvo [TA2k/ioBroker.volvo](https://github.com/TA2k/ioBroker.volvo)
 - ioBroker.vw-connect [TA2k/ioBroker.vw-connect](https://github.com/TA2k/ioBroker.vw-connect)
 - ioBroker.weatherflow_udp [woessmich/ioBroker.weatherflow_udp](https://github.com/woessmich/ioBroker.weatherflow_udp)
 - ioBroker.web-speedy [DrozmotiX/ioBroker.web-speedy](https://github.com/DrozmotiX/ioBroker.web-speedy)
 - ioBroker.weishaupt-wem [TA2k/ioBroker.weishaupt-wem](https://github.com/TA2k/ioBroker.weishaupt-wem)
 - ioBroker.wiobrowser [Bettman66/ioBroker.wiobrowser](https://github.com/Bettman66/ioBroker.wiobrowser)
-- ioBroker.wled [DrozmotiX/ioBroker.wled](https://github.com/DrozmotiX/ioBroker.wled)
 - ioBroker.wmswebcontrol [TA2k/ioBroker.wmswebcontrol](https://github.com/TA2k/ioBroker.wmswebcontrol)
-- ioBroker.x-touch [Bannsaenger/ioBroker.x-touch](https://github.com/Bannsaenger/ioBroker.x-touch)
+- ioBroker.xs1 [iobroker-community-adapters/ioBroker.xs1](https://github.com/iobroker-community-adapters/ioBroker.xs1)
 - ioBroker.xterm [ioBroker/ioBroker.xterm](https://github.com/ioBroker/ioBroker.xterm)
 - ioBroker.yahka [jensweigele/ioBroker.yahka](https://github.com/jensweigele/ioBroker.yahka)
+- ioBroker.zigbee [ioBroker/ioBroker.zigbee](https://github.com/ioBroker/ioBroker.zigbee)
 - ioBroker.zwave2 [AlCalzone/ioBroker.zwave2](https://github.com/AlCalzone/ioBroker.zwave2)
 
 ### [W440] Missing schema definition for "io-package.json" in .vscode/settings.json. Add: {"fileMatch": ["io-package.json"], "url": "https://raw.githubusercontent.com/ioBroker/ioBroker.js-controller/master/schemas/io-package.json"}
@@ -9942,6 +10352,9 @@
 - ioBroker.bosch-ebike [TA2k/ioBroker.bosch-ebike](https://github.com/TA2k/ioBroker.bosch-ebike)
 - ioBroker.brightsky [ticaki/ioBroker.brightsky](https://github.com/ticaki/ioBroker.brightsky)
 - ioBroker.bwt [TA2k/ioBroker.bwt](https://github.com/TA2k/ioBroker.bwt)
+- ioBroker.canbus [crycode-de/ioBroker.canbus](https://github.com/crycode-de/ioBroker.canbus)
+- ioBroker.discovergy [DrozmotiX/ioBroker.discovergy](https://github.com/DrozmotiX/ioBroker.discovergy)
+- ioBroker.e3dc-rscp [git-kick/ioBroker.e3dc-rscp](https://github.com/git-kick/ioBroker.e3dc-rscp)
 - ioBroker.elgato-key-light [iobroker-community-adapters/ioBroker.elgato-key-light](https://github.com/iobroker-community-adapters/ioBroker.elgato-key-light)
 - ioBroker.evcc [Newan/ioBroker.evcc](https://github.com/Newan/ioBroker.evcc)
 - ioBroker.fiat [TA2k/ioBroker.fiat](https://github.com/TA2k/ioBroker.fiat)
@@ -9971,9 +10384,9 @@
 - ioBroker.nissan [TA2k/ioBroker.nissan](https://github.com/TA2k/ioBroker.nissan)
 - ioBroker.niu [TA2k/ioBroker.niu](https://github.com/TA2k/ioBroker.niu)
 - ioBroker.oekofen-json [chaozmc/ioBroker.oekofen-json](https://github.com/chaozmc/ioBroker.oekofen-json)
-- ioBroker.operating-hours [BenAhrdt/ioBroker.operating-hours](https://github.com/BenAhrdt/ioBroker.operating-hours)
 - ioBroker.parcel [TA2k/ioBroker.parcel](https://github.com/TA2k/ioBroker.parcel)
 - ioBroker.philips-tv [AlCalzone/ioBroker.philips-tv](https://github.com/AlCalzone/ioBroker.philips-tv)
+- ioBroker.pirate-weather [ticaki/ioBroker.pirate-weather](https://github.com/ticaki/ioBroker.pirate-weather)
 - ioBroker.porsche [TA2k/ioBroker.porsche](https://github.com/TA2k/ioBroker.porsche)
 - ioBroker.powerfox2 [Ax-LED/ioBroker.powerfox2](https://github.com/Ax-LED/ioBroker.powerfox2)
 - ioBroker.puppeteer [foxriver76/ioBroker.puppeteer](https://github.com/foxriver76/ioBroker.puppeteer)
@@ -9985,6 +10398,7 @@
 - ioBroker.slideshow [gaudes/ioBroker.slideshow](https://github.com/gaudes/ioBroker.slideshow)
 - ioBroker.smart-eq [TA2k/ioBroker.smart-eq](https://github.com/TA2k/ioBroker.smart-eq)
 - ioBroker.smartthings [TA2k/ioBroker.smartthings](https://github.com/TA2k/ioBroker.smartthings)
+- ioBroker.tagesschau [ticaki/ioBroker.tagesschau](https://github.com/ticaki/ioBroker.tagesschau)
 - ioBroker.tesla-motors [iobroker-community-adapters/ioBroker.tesla-motors](https://github.com/iobroker-community-adapters/ioBroker.tesla-motors)
 - ioBroker.toyota [TA2k/ioBroker.toyota](https://github.com/TA2k/ioBroker.toyota)
 - ioBroker.tractive-gps [iobroker-community-adapters/ioBroker.tractive-gps](https://github.com/iobroker-community-adapters/ioBroker.tractive-gps)
@@ -10002,11 +10416,12 @@
 - ioBroker.wireguard [Grizzelbee/ioBroker.wireguard](https://github.com/Grizzelbee/ioBroker.wireguard)
 - ioBroker.withings [TA2k/ioBroker.withings](https://github.com/TA2k/ioBroker.withings)
 - ioBroker.wlanthermo-nano [DrozmotiX/ioBroker.wlanthermo-nano](https://github.com/DrozmotiX/ioBroker.wlanthermo-nano)
+- ioBroker.wled [DrozmotiX/ioBroker.wled](https://github.com/DrozmotiX/ioBroker.wled)
 - ioBroker.zehnder-cloud [TA2k/ioBroker.zehnder-cloud](https://github.com/TA2k/ioBroker.zehnder-cloud)
 
 ### [W444] Missing schema definition for JSON5 config files in .vscode/settings.json. Adapt: {"fileMatch": ["admin/jsonConfig.json","admin/jsonCustom.json","admin/jsonTab.json","admin/jsonConfig.json5","admin/jsonCustom.json5","admin/jsonTab.json5"], "url": "https://raw.githubusercontent.com/ioBroker/ioBroker.admin/master/packages/jsonConfig/schemas/jsonConfig.json"}
+- ioBroker.e3dc-rscp [git-kick/ioBroker.e3dc-rscp](https://github.com/git-kick/ioBroker.e3dc-rscp)
 - ioBroker.nissan [TA2k/ioBroker.nissan](https://github.com/TA2k/ioBroker.nissan)
-- ioBroker.sun2000 [bolliy/ioBroker.sun2000](https://github.com/bolliy/ioBroker.sun2000)
 - ioBroker.teslafi [hombach/ioBroker.teslafi](https://github.com/hombach/ioBroker.teslafi)
 
 ### [W504] setInterval found in "broadlink2.js", but no clearInterval detected
@@ -10151,7 +10566,6 @@
 - ioBroker.anelhut [dan1-de/ioBroker.anelhut](https://github.com/dan1-de/ioBroker.anelhut)
 - ioBroker.apsystems-ecu [npeter/ioBroker.apsystems-ecu](https://github.com/npeter/ioBroker.apsystems-ecu)
 - ioBroker.artnet [ioBroker/ioBroker.artnet](https://github.com/ioBroker/ioBroker.artnet)
-- ioBroker.asuswrt [mcdhrts/ioBroker.asuswrt](https://github.com/mcdhrts/ioBroker.asuswrt)
 - ioBroker.awattar [sirjojo69/ioBroker.awattar](https://github.com/sirjojo69/ioBroker.awattar)
 - ioBroker.benchmark [foxriver76/ioBroker.benchmark](https://github.com/foxriver76/ioBroker.benchmark)
 - ioBroker.bring [foxriver76/ioBroker.bring](https://github.com/foxriver76/ioBroker.bring)
@@ -10348,7 +10762,6 @@
 - ioBroker.tahoma [Excodibur/ioBroker.tahoma](https://github.com/Excodibur/ioBroker.tahoma)
 - ioBroker.weblogin [Vertumnus/ioBroker.weblogin](https://github.com/Vertumnus/ioBroker.weblogin)
 - ioBroker.webui [iobroker-community-adapters/ioBroker.webui](https://github.com/iobroker-community-adapters/ioBroker.webui)
-- ioBroker.zigbee [ioBroker/ioBroker.zigbee](https://github.com/ioBroker/ioBroker.zigbee)
 - ioBroker.zont [kirovilya/ioBroker.zont](https://github.com/kirovilya/ioBroker.zont)
 
 ### [W522] Why did you decide not to use i18n support?
@@ -10379,6 +10792,59 @@
 - ioBroker.sonoff [ioBroker/ioBroker.sonoff](https://github.com/ioBroker/ioBroker.sonoff)
 - ioBroker.twinkly [patrickbs96/ioBroker.twinkly](https://github.com/patrickbs96/ioBroker.twinkly)
 - ioBroker.vis-justgage [iobroker-community-adapters/ioBroker.vis-justgage](https://github.com/iobroker-community-adapters/ioBroker.vis-justgage)
+
+### [W533] method "deleteState()" is deprecated and will be removed with future js-controller version. Please use "set/deleteObject()" instead.
+- ioBroker.bosesoundtouch [iobroker-community-adapters/ioBroker.bosesoundtouch](https://github.com/iobroker-community-adapters/ioBroker.bosesoundtouch)
+- ioBroker.botvac [iobroker-community-adapters/ioBroker.botvac](https://github.com/iobroker-community-adapters/ioBroker.botvac)
+- ioBroker.broadlink2 [iobroker-community-adapters/ioBroker.broadlink2](https://github.com/iobroker-community-adapters/ioBroker.broadlink2)
+- ioBroker.chromecast [iobroker-community-adapters/ioBroker.chromecast](https://github.com/iobroker-community-adapters/ioBroker.chromecast)
+- ioBroker.harmony [iobroker-community-adapters/ioBroker.harmony](https://github.com/iobroker-community-adapters/ioBroker.harmony)
+- ioBroker.nanoleaf-lightpanels [daniel-2k/ioBroker.nanoleaf-lightpanels](https://github.com/daniel-2k/ioBroker.nanoleaf-lightpanels)
+- ioBroker.owfs [ioBroker/ioBroker.owfs](https://github.com/ioBroker/ioBroker.owfs)
+- ioBroker.sonoff [ioBroker/ioBroker.sonoff](https://github.com/ioBroker/ioBroker.sonoff)
+- ioBroker.xs1 [iobroker-community-adapters/ioBroker.xs1](https://github.com/iobroker-community-adapters/ioBroker.xs1)
+- ioBroker.zigbee [ioBroker/ioBroker.zigbee](https://github.com/ioBroker/ioBroker.zigbee)
+
+### [W533] method "createDevice()" is deprecated and will be removed with future js-controller version. Please use "set/deleteObject()" instead.
+- ioBroker.digitalstrom [ioBroker/ioBroker.digitalstrom](https://github.com/ioBroker/ioBroker.digitalstrom)
+- ioBroker.sonos [ioBroker/ioBroker.sonos](https://github.com/ioBroker/ioBroker.sonos)
+- ioBroker.tvprogram [oweitman/ioBroker.tvprogram](https://github.com/oweitman/ioBroker.tvprogram)
+- ioBroker.wifilight [iobroker-community-adapters/ioBroker.wifilight](https://github.com/iobroker-community-adapters/ioBroker.wifilight)
+- ioBroker.wlanthermo-nano [DrozmotiX/ioBroker.wlanthermo-nano](https://github.com/DrozmotiX/ioBroker.wlanthermo-nano)
+- ioBroker.yahka [jensweigele/ioBroker.yahka](https://github.com/jensweigele/ioBroker.yahka)
+- ioBroker.zoneminder [iobroker-community-adapters/ioBroker.zoneminder](https://github.com/iobroker-community-adapters/ioBroker.zoneminder)
+
+### [W533] method "createState()" is deprecated and will be removed with future js-controller version. Please use "set/deleteObject()" instead.
+- ioBroker.elero-usb-transmitter [marc2016/ioBroker.elero-usb-transmitter](https://github.com/marc2016/ioBroker.elero-usb-transmitter)
+- ioBroker.go-e [MK-2001/ioBroker.go-e](https://github.com/MK-2001/ioBroker.go-e)
+- ioBroker.hass-mqtt [smarthomefans/ioBroker.hass-mqtt](https://github.com/smarthomefans/ioBroker.hass-mqtt)
+- ioBroker.hp-ilo [SebastianSchultz/ioBroker.hp-ilo](https://github.com/SebastianSchultz/ioBroker.hp-ilo)
+- ioBroker.mytime [oweitman/ioBroker.mytime](https://github.com/oweitman/ioBroker.mytime)
+- ioBroker.openligadb [oweitman/ioBroker.openligadb](https://github.com/oweitman/ioBroker.openligadb)
+- ioBroker.panasonic-comfort-cloud [marc2016/ioBroker.panasonic-comfort-cloud](https://github.com/marc2016/ioBroker.panasonic-comfort-cloud)
+- ioBroker.pi-hole2 [oweitman/ioBroker.pi-hole2](https://github.com/oweitman/ioBroker.pi-hole2)
+- ioBroker.rssfeed [oweitman/ioBroker.rssfeed](https://github.com/oweitman/ioBroker.rssfeed)
+- ioBroker.skiinfo [oweitman/ioBroker.skiinfo](https://github.com/oweitman/ioBroker.skiinfo)
+- ioBroker.squeezeboxrpc [oweitman/ioBroker.squeezeboxrpc](https://github.com/oweitman/ioBroker.squeezeboxrpc)
+- ioBroker.tesla-motors [iobroker-community-adapters/ioBroker.tesla-motors](https://github.com/iobroker-community-adapters/ioBroker.tesla-motors)
+
+### [W533] method "deleteDevice()" is deprecated and will be removed with future js-controller version. Please use "set/deleteObject()" instead.
+- ioBroker.fakeroku [iobroker-community-adapters/ioBroker.fakeroku](https://github.com/iobroker-community-adapters/ioBroker.fakeroku)
+- ioBroker.hm-rpc [ioBroker/ioBroker.hm-rpc](https://github.com/ioBroker/ioBroker.hm-rpc)
+
+### [W533] method "deleteChannel()" is deprecated and will be removed with future js-controller version. Please use "set/deleteObject()" instead.
+- ioBroker.fhem [iobroker-community-adapters/ioBroker.fhem](https://github.com/iobroker-community-adapters/ioBroker.fhem)
+- ioBroker.lightify [soef/ioBroker.lightify](https://github.com/soef/ioBroker.lightify)
+- ioBroker.noolitef [paveltsytovich/ioBroker.noolitef](https://github.com/paveltsytovich/ioBroker.noolitef)
+- ioBroker.tradfri [AlCalzone/ioBroker.tradfri](https://github.com/AlCalzone/ioBroker.tradfri)
+- ioBroker.wiffi-wz [t4qjXH8N/ioBroker.wiffi-wz](https://github.com/t4qjXH8N/ioBroker.wiffi-wz)
+- ioBroker.wolf [ioBroker/ioBroker.wolf](https://github.com/ioBroker/ioBroker.wolf)
+
+### [W533] method "createChannel()" is deprecated and will be removed with future js-controller version. Please use "set/deleteObject()" instead.
+- ioBroker.jablotron [DEV2DEV-DE/ioBroker.jablotron](https://github.com/DEV2DEV-DE/ioBroker.jablotron)
+- ioBroker.mihome-vacuum [iobroker-community-adapters/ioBroker.mihome-vacuum](https://github.com/iobroker-community-adapters/ioBroker.mihome-vacuum)
+- ioBroker.opentherm [DrozmotiX/ioBroker.opentherm](https://github.com/DrozmotiX/ioBroker.opentherm)
+- ioBroker.webcal [dirkhe/ioBroker.webcal](https://github.com/dirkhe/ioBroker.webcal)
 
 ### [W558] attribute "xs" for number should specify a value of "12" at admin/jsonConfig.json/items/oAIntervalRealtime
 - ioBroker.alpha-ess [Gaspode69/ioBroker.alpha-ess](https://github.com/Gaspode69/ioBroker.alpha-ess)
@@ -10414,6 +10880,7 @@
 - ioBroker.alarmcontrol [spayrosam/ioBroker.alarmcontrol](https://github.com/spayrosam/ioBroker.alarmcontrol)
 - ioBroker.apsystems-ecu [npeter/ioBroker.apsystems-ecu](https://github.com/npeter/ioBroker.apsystems-ecu)
 - ioBroker.cubinote [mweberit/ioBroker.cubinote](https://github.com/mweberit/ioBroker.cubinote)
+- ioBroker.docker-manager [ioBroker/ioBroker.docker-manager](https://github.com/ioBroker/ioBroker.docker-manager)
 - ioBroker.domiqbase [crosenbe/ioBroker.domiqbase](https://github.com/crosenbe/ioBroker.domiqbase)
 - ioBroker.ecoflow_catshape [CatShape/ioBroker.ecoflow_catshape](https://github.com/CatShape/ioBroker.ecoflow_catshape)
 - ioBroker.jarvis-extensions [mcuiobroker/ioBroker.jarvis-extensions](https://github.com/mcuiobroker/ioBroker.jarvis-extensions)
@@ -10425,6 +10892,7 @@
 - ioBroker.ollama [bloop16/ioBroker.ollama](https://github.com/bloop16/ioBroker.ollama)
 - ioBroker.security-alert [Homemade-Disaster/ioBroker.security-alert](https://github.com/Homemade-Disaster/ioBroker.security-alert)
 - ioBroker.syrconnectapp [TA2k/ioBroker.syrconnectapp](https://github.com/TA2k/ioBroker.syrconnectapp)
+- ioBroker.vis-mapwidgets [oweitman/ioBroker.vis-mapwidgets](https://github.com/oweitman/ioBroker.vis-mapwidgets)
 
 ### [W804] Please process issue [[#19] "Migration to ESLint 9 and @iobroker/eslint-config"](https://github.com/om2804/ioBroker.adb/issues/19)
 - ioBroker.adb [om2804/ioBroker.adb](https://github.com/om2804/ioBroker.adb)
@@ -10461,11 +10929,9 @@
 
 ### [W804] Please process issue [[#44] "Migration to ESLint 9 and @iobroker/eslint-config"](https://github.com/Eisbaeeer/ioBroker.alpha2/issues/44)
 - ioBroker.alpha2 [Eisbaeeer/ioBroker.alpha2](https://github.com/Eisbaeeer/ioBroker.alpha2)
-- ioBroker.asuswrt [mcdhrts/ioBroker.asuswrt](https://github.com/mcdhrts/ioBroker.asuswrt)
 
 ### [W804] Please process issue [[#107] "Migration to ESLint 9 and @iobroker/eslint-config"](https://github.com/PArns/ioBroker.amazon-dash/issues/107)
 - ioBroker.amazon-dash [PArns/ioBroker.amazon-dash](https://github.com/PArns/ioBroker.amazon-dash)
-- ioBroker.flexcharts [MyHomeMyData/ioBroker.flexcharts](https://github.com/MyHomeMyData/ioBroker.flexcharts)
 
 ### [W804] Please process issue [[#100] "Migration to ESLint 9 and @iobroker/eslint-config"](https://github.com/XHunter74/ioBroker.apcups/issues/100)
 - ioBroker.apcups [XHunter74/ioBroker.apcups](https://github.com/XHunter74/ioBroker.apcups)
@@ -10542,7 +11008,6 @@
 ### [W804] Please process issue [[#384] "Migration to ESLint 9 and @iobroker/eslint-config"](https://github.com/iobroker-community-adapters/ioBroker.broadlink2/issues/384)
 - ioBroker.broadlink2 [iobroker-community-adapters/ioBroker.broadlink2](https://github.com/iobroker-community-adapters/ioBroker.broadlink2)
 - ioBroker.meross [Apollon77/ioBroker.meross](https://github.com/Apollon77/ioBroker.meross)
-- ioBroker.sayit [ioBroker/ioBroker.sayit](https://github.com/ioBroker/ioBroker.sayit)
 
 ### [W804] Please process issue [[#694] "Migration to ESLint 9 and @iobroker/eslint-config"](https://github.com/holomekc/ioBroker.bshb/issues/694)
 - ioBroker.bshb [holomekc/ioBroker.bshb](https://github.com/holomekc/ioBroker.bshb)
@@ -10627,6 +11092,9 @@
 - ioBroker.megadd [ausHaus/ioBroker.megadd](https://github.com/ausHaus/ioBroker.megadd)
 - ioBroker.ocpp [foxriver76/ioBroker.ocpp](https://github.com/foxriver76/ioBroker.ocpp)
 - ioBroker.piface [eisbaeeer/ioBroker.piface](https://github.com/eisbaeeer/ioBroker.piface)
+
+### [W804] Please process issue [[#10] "IMPORTANT: adjust testingmatrix or add os: property at io.package.json"](https://github.com/ioBroker/ioBroker.docker-manager/issues/10)
+- ioBroker.docker-manager [ioBroker/ioBroker.docker-manager](https://github.com/ioBroker/ioBroker.docker-manager)
 
 ### [W804] Please process issue [[#274] "Migration to ESLint 9 and @iobroker/eslint-config"](https://github.com/Bettman66/ioBroker.doorio/issues/274)
 - ioBroker.doorio [Bettman66/ioBroker.doorio](https://github.com/Bettman66/ioBroker.doorio)
@@ -10890,9 +11358,6 @@
 
 ### [W804] Please process issue [[#784] "Migration to ESLint 9 and @iobroker/eslint-config"](https://github.com/UncleSamSwiss/ioBroker.i2c/issues/784)
 - ioBroker.i2c [UncleSamSwiss/ioBroker.i2c](https://github.com/UncleSamSwiss/ioBroker.i2c)
-
-### [W804] Please process issue [[#711] "Migration to ESLint 9 and @iobroker/eslint-config"](https://github.com/iobroker-community-adapters/ioBroker.ical/issues/711)
-- ioBroker.ical [iobroker-community-adapters/ioBroker.ical](https://github.com/iobroker-community-adapters/ioBroker.ical)
 
 ### [W804] Please process issue [[#220] "Migration to ESLint 9 and @iobroker/eslint-config"](https://github.com/iobroker-community-adapters/ioBroker.iceroad/issues/220)
 - ioBroker.iceroad [iobroker-community-adapters/ioBroker.iceroad](https://github.com/iobroker-community-adapters/ioBroker.iceroad)
@@ -11199,6 +11664,9 @@
 ### [W804] Please process issue [[#175] "Migration to ESLint 9 and @iobroker/eslint-config"](https://github.com/iobroker-community-adapters/ioBroker.sanext/issues/175)
 - ioBroker.sanext [iobroker-community-adapters/ioBroker.sanext](https://github.com/iobroker-community-adapters/ioBroker.sanext)
 
+### [W804] Please process issue [[#397] "IMPORTANT: Please fix testing inconsitency"](https://github.com/ioBroker/ioBroker.sayit/issues/397)
+- ioBroker.sayit [ioBroker/ioBroker.sayit](https://github.com/ioBroker/ioBroker.sayit)
+
 ### [W804] Please process issue [[#405] "IMPORTANT: Please fix testing - engines clause does not match test matrix"](https://github.com/ioBroker/ioBroker.scenes/issues/405)
 - ioBroker.scenes [ioBroker/ioBroker.scenes](https://github.com/ioBroker/ioBroker.scenes)
 
@@ -11402,12 +11870,6 @@
 ### [W804] Please process issue [[#354] "Migration to ESLint 9 and @iobroker/eslint-config"](https://github.com/ioBroker/ioBroker.yr/issues/354)
 - ioBroker.yr [ioBroker/ioBroker.yr](https://github.com/ioBroker/ioBroker.yr)
 
-### [W804] Please process issue [[#2542] "Migration to ESLint 9 and @iobroker/eslint-config"](https://github.com/ioBroker/ioBroker.zigbee/issues/2542)
-- ioBroker.zigbee [ioBroker/ioBroker.zigbee](https://github.com/ioBroker/ioBroker.zigbee)
-
-### [W804] Please process issue [[#498] "Migration to ESLint 9 and @iobroker/eslint-config"](https://github.com/arteck/ioBroker.zigbee2mqtt/issues/498)
-- ioBroker.zigbee2mqtt [arteck/ioBroker.zigbee2mqtt](https://github.com/arteck/ioBroker.zigbee2mqtt)
-
 ### [W804] Please process issue [[#1070] "Migration to ESLint 9 and @iobroker/eslint-config"](https://github.com/AlCalzone/ioBroker.zwave2/issues/1070)
 - ioBroker.zwave2 [AlCalzone/ioBroker.zwave2](https://github.com/AlCalzone/ioBroker.zwave2)
 
@@ -11454,7 +11916,6 @@
 - ioBroker.anelhut [dan1-de/ioBroker.anelhut](https://github.com/dan1-de/ioBroker.anelhut)
 - ioBroker.apsystems-ecu [npeter/ioBroker.apsystems-ecu](https://github.com/npeter/ioBroker.apsystems-ecu)
 - ioBroker.artnet [ioBroker/ioBroker.artnet](https://github.com/ioBroker/ioBroker.artnet)
-- ioBroker.asuswrt [mcdhrts/ioBroker.asuswrt](https://github.com/mcdhrts/ioBroker.asuswrt)
 - ioBroker.awattar [sirjojo69/ioBroker.awattar](https://github.com/sirjojo69/ioBroker.awattar)
 - ioBroker.b-control-em [ioBroker/ioBroker.b-control-em](https://github.com/ioBroker/ioBroker.b-control-em)
 - ioBroker.benq [iobroker-community-adapters/ioBroker.benq](https://github.com/iobroker-community-adapters/ioBroker.benq)
@@ -11748,7 +12209,7 @@
 ### [S047] dependency should not require a specific version. Use "~1.2.3" or "^1.2.3" syntax. Please update "peer-ssdp:0.0.5"
 - ioBroker.yamaha [iobroker-community-adapters/ioBroker.yamaha](https://github.com/iobroker-community-adapters/ioBroker.yamaha)
 
-### [S047] dependency should not require a specific version. Use "~1.2.3" or "^1.2.3" syntax. Please update "zigbee-herdsman:4.4.1"
+### [S047] dependency should not require a specific version. Use "~1.2.3" or "^1.2.3" syntax. Please update "zigbee-herdsman:6.1.1"
 - ioBroker.zigbee [ioBroker/ioBroker.zigbee](https://github.com/ioBroker/ioBroker.zigbee)
 
 ### [S047] dependency should not require a specific version. Use "~1.2.3" or "^1.2.3" syntax. Please update "@zwave-js/shared:10.22.3"
@@ -11765,6 +12226,7 @@
 - ioBroker.cameras [ioBroker/ioBroker.cameras](https://github.com/ioBroker/ioBroker.cameras)
 - ioBroker.clage-dsx [TheBam1990/ioBroker.clage-dsx](https://github.com/TheBam1990/ioBroker.clage-dsx)
 - ioBroker.discovergy [DrozmotiX/ioBroker.discovergy](https://github.com/DrozmotiX/ioBroker.discovergy)
+- ioBroker.docker-manager [ioBroker/ioBroker.docker-manager](https://github.com/ioBroker/ioBroker.docker-manager)
 - ioBroker.echarts [ioBroker/ioBroker.echarts](https://github.com/ioBroker/ioBroker.echarts)
 - ioBroker.eventlist [ioBroker/ioBroker.eventlist](https://github.com/ioBroker/ioBroker.eventlist)
 - ioBroker.followthesun [HGlab01/ioBroker.followthesun](https://github.com/HGlab01/ioBroker.followthesun)
@@ -11880,7 +12342,6 @@
 - ioBroker.fiat [TA2k/ioBroker.fiat](https://github.com/TA2k/ioBroker.fiat)
 - ioBroker.firetv [iobroker-community-adapters/ioBroker.firetv](https://github.com/iobroker-community-adapters/ioBroker.firetv)
 - ioBroker.fitbit-fitness [Chris-656/ioBroker.fitbit-fitness](https://github.com/Chris-656/ioBroker.fitbit-fitness)
-- ioBroker.flexcharts [MyHomeMyData/ioBroker.flexcharts](https://github.com/MyHomeMyData/ioBroker.flexcharts)
 - ioBroker.foobar2000 [iobroker-community-adapters/ioBroker.foobar2000](https://github.com/iobroker-community-adapters/ioBroker.foobar2000)
 - ioBroker.ford [TA2k/ioBroker.ford](https://github.com/TA2k/ioBroker.ford)
 - ioBroker.frigate [iobroker-community-adapters/ioBroker.frigate](https://github.com/iobroker-community-adapters/ioBroker.frigate)
@@ -11933,7 +12394,6 @@
 - ioBroker.hydrawise [SentiQ/ioBroker.hydrawise](https://github.com/SentiQ/ioBroker.hydrawise)
 - ioBroker.hyperion_ng [felixganzer/ioBroker.hyperion_ng](https://github.com/felixganzer/ioBroker.hyperion_ng)
 - ioBroker.i2c [UncleSamSwiss/ioBroker.i2c](https://github.com/UncleSamSwiss/ioBroker.i2c)
-- ioBroker.ical [iobroker-community-adapters/ioBroker.ical](https://github.com/iobroker-community-adapters/ioBroker.ical)
 - ioBroker.iceroad [iobroker-community-adapters/ioBroker.iceroad](https://github.com/iobroker-community-adapters/ioBroker.iceroad)
 - ioBroker.ikettle2 [Jey-Cee/ioBroker.ikettle2](https://github.com/Jey-Cee/ioBroker.ikettle2)
 - ioBroker.imow [TA2k/ioBroker.imow](https://github.com/TA2k/ioBroker.imow)
@@ -12245,19 +12705,20 @@
 - ioBroker.web-speedy [DrozmotiX/ioBroker.web-speedy](https://github.com/DrozmotiX/ioBroker.web-speedy)
 - ioBroker.webui [iobroker-community-adapters/ioBroker.webui](https://github.com/iobroker-community-adapters/ioBroker.webui)
 
-### [S184] "common.singleton" detected for non onlyWWW adapter. Is this really desired?
-- ioBroker.echarts [ioBroker/ioBroker.echarts](https://github.com/ioBroker/ioBroker.echarts)
-- ioBroker.elgato-key-light [iobroker-community-adapters/ioBroker.elgato-key-light](https://github.com/iobroker-community-adapters/ioBroker.elgato-key-light)
-- ioBroker.tractive-gps [iobroker-community-adapters/ioBroker.tractive-gps](https://github.com/iobroker-community-adapters/ioBroker.tractive-gps)
-- ioBroker.vis-inventwo [inventwo/ioBroker.vis-inventwo](https://github.com/inventwo/ioBroker.vis-inventwo)
-
 ### [S184] "common.singletonHost" detected for non onlyWWW adapter. Is this really desired?
+- ioBroker.docker-manager [ioBroker/ioBroker.docker-manager](https://github.com/ioBroker/ioBroker.docker-manager)
 - ioBroker.fakeroku [iobroker-community-adapters/ioBroker.fakeroku](https://github.com/iobroker-community-adapters/ioBroker.fakeroku)
 - ioBroker.fullybrowser [arteck/ioBroker.fullybrowser](https://github.com/arteck/ioBroker.fullybrowser)
 - ioBroker.kisshome-research [ioBroker/ioBroker.kisshome-research](https://github.com/ioBroker/ioBroker.kisshome-research)
 - ioBroker.matter [ioBroker/ioBroker.matter](https://github.com/ioBroker/ioBroker.matter)
 - ioBroker.radar-trap [Steiger04/ioBroker.radar-trap](https://github.com/Steiger04/ioBroker.radar-trap)
 - ioBroker.refoss [Refoss/ioBroker.refoss](https://github.com/Refoss/ioBroker.refoss)
+
+### [S184] "common.singleton" detected for non onlyWWW adapter. Is this really desired?
+- ioBroker.echarts [ioBroker/ioBroker.echarts](https://github.com/ioBroker/ioBroker.echarts)
+- ioBroker.elgato-key-light [iobroker-community-adapters/ioBroker.elgato-key-light](https://github.com/iobroker-community-adapters/ioBroker.elgato-key-light)
+- ioBroker.tractive-gps [iobroker-community-adapters/ioBroker.tractive-gps](https://github.com/iobroker-community-adapters/ioBroker.tractive-gps)
+- ioBroker.vis-inventwo [inventwo/ioBroker.vis-inventwo](https://github.com/inventwo/ioBroker.vis-inventwo)
 
 ### [S191] admin dependency (>=7.4.10) at [io-package.json](https://github.com/ioBroker/ioBroker.devices/blob/master/io-package.json) is not required as 'common.adminUI' specifies that no UI exists. Feel free to remove.
 - ioBroker.devices [ioBroker/ioBroker.devices](https://github.com/ioBroker/ioBroker.devices)
@@ -12408,6 +12869,7 @@
 - ioBroker.devices [ioBroker/ioBroker.devices](https://github.com/ioBroker/ioBroker.devices)
 - ioBroker.digitalstrom [ioBroker/ioBroker.digitalstrom](https://github.com/ioBroker/ioBroker.digitalstrom)
 - ioBroker.discovery [ioBroker/ioBroker.discovery](https://github.com/ioBroker/ioBroker.discovery)
+- ioBroker.docker-manager [ioBroker/ioBroker.docker-manager](https://github.com/ioBroker/ioBroker.docker-manager)
 - ioBroker.dwd [ioBroker/ioBroker.dwd](https://github.com/ioBroker/ioBroker.dwd)
 - ioBroker.dysonairpurifier [Grizzelbee/ioBroker.dysonairpurifier](https://github.com/Grizzelbee/ioBroker.dysonairpurifier)
 - ioBroker.easee [Newan/ioBroker.easee](https://github.com/Newan/ioBroker.easee)
@@ -12432,6 +12894,7 @@
 - ioBroker.flot [ioBroker/ioBroker.flot](https://github.com/ioBroker/ioBroker.flot)
 - ioBroker.foobar2000 [iobroker-community-adapters/ioBroker.foobar2000](https://github.com/iobroker-community-adapters/ioBroker.foobar2000)
 - ioBroker.fritzbox [iobroker-community-adapters/ioBroker.fritzbox](https://github.com/iobroker-community-adapters/ioBroker.fritzbox)
+- ioBroker.fullcalendar [ioBroker/ioBroker.fullcalendar](https://github.com/ioBroker/ioBroker.fullcalendar)
 - ioBroker.fullybrowser [arteck/ioBroker.fullybrowser](https://github.com/arteck/ioBroker.fullybrowser)
 - ioBroker.g-homa [AlCalzone/ioBroker.g-homa](https://github.com/AlCalzone/ioBroker.g-homa)
 - ioBroker.geofency [ioBroker/ioBroker.geofency](https://github.com/ioBroker/ioBroker.geofency)
@@ -12691,7 +13154,6 @@
 - ioBroker.yamaha [iobroker-community-adapters/ioBroker.yamaha](https://github.com/iobroker-community-adapters/ioBroker.yamaha)
 - ioBroker.yeelight-2 [iobroker-community-adapters/ioBroker.yeelight-2](https://github.com/iobroker-community-adapters/ioBroker.yeelight-2)
 - ioBroker.yr [ioBroker/ioBroker.yr](https://github.com/ioBroker/ioBroker.yr)
-- ioBroker.zigbee [ioBroker/ioBroker.zigbee](https://github.com/ioBroker/ioBroker.zigbee)
 - ioBroker.zoe2 [fungus75/ioBroker.zoe2](https://github.com/fungus75/ioBroker.zoe2)
 - ioBroker.zoneminder [iobroker-community-adapters/ioBroker.zoneminder](https://github.com/iobroker-community-adapters/ioBroker.zoneminder)
 - ioBroker.zont [kirovilya/ioBroker.zont](https://github.com/kirovilya/ioBroker.zont)
@@ -13008,6 +13470,7 @@
 - ioBroker.corrently [ioBroker/ioBroker.corrently](https://github.com/ioBroker/ioBroker.corrently)
 - ioBroker.cul [ioBroker/ioBroker.cul](https://github.com/ioBroker/ioBroker.cul)
 - ioBroker.devices [ioBroker/ioBroker.devices](https://github.com/ioBroker/ioBroker.devices)
+- ioBroker.docker-manager [ioBroker/ioBroker.docker-manager](https://github.com/ioBroker/ioBroker.docker-manager)
 - ioBroker.dwd [ioBroker/ioBroker.dwd](https://github.com/ioBroker/ioBroker.dwd)
 - ioBroker.ecoflow_catshape [CatShape/ioBroker.ecoflow_catshape](https://github.com/CatShape/ioBroker.ecoflow_catshape)
 - ioBroker.ekey [ioBroker/ioBroker.ekey](https://github.com/ioBroker/ioBroker.ekey)
@@ -13133,6 +13596,7 @@
 - ioBroker.daikin-cloud [Apollon77/ioBroker.daikin-cloud](https://github.com/Apollon77/ioBroker.daikin-cloud)
 - ioBroker.devices [ioBroker/ioBroker.devices](https://github.com/ioBroker/ioBroker.devices)
 - ioBroker.discovery [ioBroker/ioBroker.discovery](https://github.com/ioBroker/ioBroker.discovery)
+- ioBroker.docker-manager [ioBroker/ioBroker.docker-manager](https://github.com/ioBroker/ioBroker.docker-manager)
 - ioBroker.dwd [ioBroker/ioBroker.dwd](https://github.com/ioBroker/ioBroker.dwd)
 - ioBroker.echarts [ioBroker/ioBroker.echarts](https://github.com/ioBroker/ioBroker.echarts)
 - ioBroker.ekey [ioBroker/ioBroker.ekey](https://github.com/ioBroker/ioBroker.ekey)
@@ -13174,7 +13638,6 @@
 - ioBroker.meross [Apollon77/ioBroker.meross](https://github.com/Apollon77/ioBroker.meross)
 - ioBroker.mihome [ioBroker/ioBroker.mihome](https://github.com/ioBroker/ioBroker.mihome)
 - ioBroker.modbus [ioBroker/ioBroker.modbus](https://github.com/ioBroker/ioBroker.modbus)
-- ioBroker.mqtt [ioBroker/ioBroker.mqtt](https://github.com/ioBroker/ioBroker.mqtt)
 - ioBroker.mysensors [ioBroker/ioBroker.mysensors](https://github.com/ioBroker/ioBroker.mysensors)
 - ioBroker.n8n [ioBroker/ioBroker.n8n](https://github.com/ioBroker/ioBroker.n8n)
 - ioBroker.netatmo [PArns/ioBroker.netatmo](https://github.com/PArns/ioBroker.netatmo)
@@ -13263,6 +13726,128 @@
 - ioBroker.synology [iobroker-community-adapters/ioBroker.synology](https://github.com/iobroker-community-adapters/ioBroker.synology)
 - ioBroker.vedirect [DrozmotiX/ioBroker.vedirect](https://github.com/DrozmotiX/ioBroker.vedirect)
 
+### [S532] "lib/tools.js" found in repo but not used anywhere. Consider removing file.
+- ioBroker.alexa2 [Apollon77/ioBroker.alexa2](https://github.com/Apollon77/ioBroker.alexa2)
+- ioBroker.alias-manager [iobroker-community-adapters/ioBroker.alias-manager](https://github.com/iobroker-community-adapters/ioBroker.alias-manager)
+- ioBroker.amtronwallbox [rg-engineering/ioBroker.amtronwallbox](https://github.com/rg-engineering/ioBroker.amtronwallbox)
+- ioBroker.benq [iobroker-community-adapters/ioBroker.benq](https://github.com/iobroker-community-adapters/ioBroker.benq)
+- ioBroker.bestway [TA2k/ioBroker.bestway](https://github.com/TA2k/ioBroker.bestway)
+- ioBroker.ble [AlCalzone/ioBroker.ble](https://github.com/AlCalzone/ioBroker.ble)
+- ioBroker.bmw [TA2k/ioBroker.bmw](https://github.com/TA2k/ioBroker.bmw)
+- ioBroker.broadlink2 [iobroker-community-adapters/ioBroker.broadlink2](https://github.com/iobroker-community-adapters/ioBroker.broadlink2)
+- ioBroker.bwt [TA2k/ioBroker.bwt](https://github.com/TA2k/ioBroker.bwt)
+- ioBroker.countdown [iobroker-community-adapters/ioBroker.countdown](https://github.com/iobroker-community-adapters/ioBroker.countdown)
+- ioBroker.daikin-cloud [Apollon77/ioBroker.daikin-cloud](https://github.com/Apollon77/ioBroker.daikin-cloud)
+- ioBroker.daswetter [rg-engineering/ioBroker.daswetter](https://github.com/rg-engineering/ioBroker.daswetter)
+- ioBroker.device-reminder [xenon-s/ioBroker.device-reminder](https://github.com/xenon-s/ioBroker.device-reminder)
+- ioBroker.discovery [ioBroker/ioBroker.discovery](https://github.com/ioBroker/ioBroker.discovery)
+- ioBroker.dysonairpurifier [Grizzelbee/ioBroker.dysonairpurifier](https://github.com/Grizzelbee/ioBroker.dysonairpurifier)
+- ioBroker.e3dc-rscp [git-kick/ioBroker.e3dc-rscp](https://github.com/git-kick/ioBroker.e3dc-rscp)
+- ioBroker.easee [Newan/ioBroker.easee](https://github.com/Newan/ioBroker.easee)
+- ioBroker.ebus [rg-engineering/ioBroker.ebus](https://github.com/rg-engineering/ioBroker.ebus)
+- ioBroker.ecovacs-deebot [mrbungle64/ioBroker.ecovacs-deebot](https://github.com/mrbungle64/ioBroker.ecovacs-deebot)
+- ioBroker.ems-esp [tp1de/ioBroker.ems-esp](https://github.com/tp1de/ioBroker.ems-esp)
+- ioBroker.energiefluss [SKB-CGN/ioBroker.energiefluss](https://github.com/SKB-CGN/ioBroker.energiefluss)
+- ioBroker.epson_ecotank_et_2750 [iobroker-community-adapters/ioBroker.epson_ecotank_et_2750](https://github.com/iobroker-community-adapters/ioBroker.epson_ecotank_et_2750)
+- ioBroker.fahrplan [gaudes/ioBroker.fahrplan](https://github.com/gaudes/ioBroker.fahrplan)
+- ioBroker.fiat [TA2k/ioBroker.fiat](https://github.com/TA2k/ioBroker.fiat)
+- ioBroker.foobar2000 [iobroker-community-adapters/ioBroker.foobar2000](https://github.com/iobroker-community-adapters/ioBroker.foobar2000)
+- ioBroker.ford [TA2k/ioBroker.ford](https://github.com/TA2k/ioBroker.ford)
+- ioBroker.fritzdect [foxthefox/ioBroker.fritzdect](https://github.com/foxthefox/ioBroker.fritzdect)
+- ioBroker.froeling [TA2k/ioBroker.froeling](https://github.com/TA2k/ioBroker.froeling)
+- ioBroker.fronius-solarweb [TA2k/ioBroker.fronius-solarweb](https://github.com/TA2k/ioBroker.fronius-solarweb)
+- ioBroker.go-e [MK-2001/ioBroker.go-e](https://github.com/MK-2001/ioBroker.go-e)
+- ioBroker.gruenbeck [TA2k/ioBroker.gruenbeck](https://github.com/TA2k/ioBroker.gruenbeck)
+- ioBroker.gsmsms [iobroker-community-adapters/ioBroker.gsmsms](https://github.com/iobroker-community-adapters/ioBroker.gsmsms)
+- ioBroker.haier [iobroker-community-adapters/ioBroker.haier](https://github.com/iobroker-community-adapters/ioBroker.haier)
+- ioBroker.heatingcontrol [rg-engineering/ioBroker.heatingcontrol](https://github.com/rg-engineering/ioBroker.heatingcontrol)
+- ioBroker.heos [withstu/ioBroker.heos](https://github.com/withstu/ioBroker.heos)
+- ioBroker.hoover [TA2k/ioBroker.hoover](https://github.com/TA2k/ioBroker.hoover)
+- ioBroker.hs100 [arteck/ioBroker.hs100](https://github.com/arteck/ioBroker.hs100)
+- ioBroker.imow [TA2k/ioBroker.imow](https://github.com/TA2k/ioBroker.imow)
+- ioBroker.iqontrol [iobroker-community-adapters/ioBroker.iqontrol](https://github.com/iobroker-community-adapters/ioBroker.iqontrol)
+- ioBroker.jarvis [Zefau/ioBroker.jarvis](https://github.com/Zefau/ioBroker.jarvis)
+- ioBroker.jeelink [foxthefox/ioBroker.jeelink](https://github.com/foxthefox/ioBroker.jeelink)
+- ioBroker.lg-ess-home [Morluktom/ioBroker.lg-ess-home](https://github.com/Morluktom/ioBroker.lg-ess-home)
+- ioBroker.libre [TA2k/ioBroker.libre](https://github.com/TA2k/ioBroker.libre)
+- ioBroker.lifx [foxthefox/ioBroker.lifx](https://github.com/foxthefox/ioBroker.lifx)
+- ioBroker.lightcontrol [Schmakus/ioBroker.lightcontrol](https://github.com/Schmakus/ioBroker.lightcontrol)
+- ioBroker.linkeddevices [Scrounger/ioBroker.linkeddevices](https://github.com/Scrounger/ioBroker.linkeddevices)
+- ioBroker.linktap [Smart-Gang/ioBroker.linktap](https://github.com/Smart-Gang/ioBroker.linktap)
+- ioBroker.linux-control [Scrounger/ioBroker.linux-control](https://github.com/Scrounger/ioBroker.linux-control)
+- ioBroker.mbus [Apollon77/ioBroker.mbus](https://github.com/Apollon77/ioBroker.mbus)
+- ioBroker.melcloud [Black-Thunder/ioBroker.melcloud](https://github.com/Black-Thunder/ioBroker.melcloud)
+- ioBroker.mercedesme [TA2k/ioBroker.mercedesme](https://github.com/TA2k/ioBroker.mercedesme)
+- ioBroker.mercury [iobroker-community-adapters/ioBroker.mercury](https://github.com/iobroker-community-adapters/ioBroker.mercury)
+- ioBroker.meteoalarm [iobroker-community-adapters/ioBroker.meteoalarm](https://github.com/iobroker-community-adapters/ioBroker.meteoalarm)
+- ioBroker.midea [TA2k/ioBroker.midea](https://github.com/TA2k/ioBroker.midea)
+- ioBroker.mielecloudservice [Grizzelbee/ioBroker.mielecloudservice](https://github.com/Grizzelbee/ioBroker.mielecloudservice)
+- ioBroker.mikrotik [iobroker-community-adapters/ioBroker.mikrotik](https://github.com/iobroker-community-adapters/ioBroker.mikrotik)
+- ioBroker.minuaru [minukodu/ioBroker.minuaru](https://github.com/minukodu/ioBroker.minuaru)
+- ioBroker.mpd [iobroker-community-adapters/ioBroker.mpd](https://github.com/iobroker-community-adapters/ioBroker.mpd)
+- ioBroker.musiccast [foxthefox/ioBroker.musiccast](https://github.com/foxthefox/ioBroker.musiccast)
+- ioBroker.mystrom [TA2k/ioBroker.mystrom](https://github.com/TA2k/ioBroker.mystrom)
+- ioBroker.netatmo-energy [Homemade-Disaster/ioBroker.netatmo-energy](https://github.com/Homemade-Disaster/ioBroker.netatmo-energy)
+- ioBroker.nina [TA2k/ioBroker.nina](https://github.com/TA2k/ioBroker.nina)
+- ioBroker.nissan [TA2k/ioBroker.nissan](https://github.com/TA2k/ioBroker.nissan)
+- ioBroker.niu [TA2k/ioBroker.niu](https://github.com/TA2k/ioBroker.niu)
+- ioBroker.nut [Apollon77/ioBroker.nut](https://github.com/Apollon77/ioBroker.nut)
+- ioBroker.oilfox [iobroker-community-adapters/ioBroker.oilfox](https://github.com/iobroker-community-adapters/ioBroker.oilfox)
+- ioBroker.openligadb [oweitman/ioBroker.openligadb](https://github.com/oweitman/ioBroker.openligadb)
+- ioBroker.opi [iobroker-community-adapters/ioBroker.opi](https://github.com/iobroker-community-adapters/ioBroker.opi)
+- ioBroker.panasonic-viera [iobroker-community-adapters/ioBroker.panasonic-viera](https://github.com/iobroker-community-adapters/ioBroker.panasonic-viera)
+- ioBroker.parcel [TA2k/ioBroker.parcel](https://github.com/TA2k/ioBroker.parcel)
+- ioBroker.pi-hole [unltdnetworx/ioBroker.pi-hole](https://github.com/unltdnetworx/ioBroker.pi-hole)
+- ioBroker.pixelit [pixelit-project/ioBroker.pixelit](https://github.com/pixelit-project/ioBroker.pixelit)
+- ioBroker.plex [iobroker-community-adapters/ioBroker.plex](https://github.com/iobroker-community-adapters/ioBroker.plex)
+- ioBroker.pollenflug [iobroker-community-adapters/ioBroker.pollenflug](https://github.com/iobroker-community-adapters/ioBroker.pollenflug)
+- ioBroker.porsche [TA2k/ioBroker.porsche](https://github.com/TA2k/ioBroker.porsche)
+- ioBroker.powerfox2 [Ax-LED/ioBroker.powerfox2](https://github.com/Ax-LED/ioBroker.powerfox2)
+- ioBroker.pvoutputorg [rg-engineering/ioBroker.pvoutputorg](https://github.com/rg-engineering/ioBroker.pvoutputorg)
+- ioBroker.rct [aruttkamp/ioBroker.rct](https://github.com/aruttkamp/ioBroker.rct)
+- ioBroker.renault [TA2k/ioBroker.renault](https://github.com/TA2k/ioBroker.renault)
+- ioBroker.resol [Grizzelbee/ioBroker.resol](https://github.com/Grizzelbee/ioBroker.resol)
+- ioBroker.robonect [Grizzelbee/ioBroker.robonect](https://github.com/Grizzelbee/ioBroker.robonect)
+- ioBroker.sainlogic [phifogg/ioBroker.sainlogic](https://github.com/phifogg/ioBroker.sainlogic)
+- ioBroker.sanext [iobroker-community-adapters/ioBroker.sanext](https://github.com/iobroker-community-adapters/ioBroker.sanext)
+- ioBroker.sbfspot [rg-engineering/ioBroker.sbfspot](https://github.com/rg-engineering/ioBroker.sbfspot)
+- ioBroker.selverf [Rintrium/ioBroker.selverf](https://github.com/Rintrium/ioBroker.selverf)
+- ioBroker.semp [rg-engineering/ioBroker.semp](https://github.com/rg-engineering/ioBroker.semp)
+- ioBroker.senec [nobl/ioBroker.senec](https://github.com/nobl/ioBroker.senec)
+- ioBroker.seq [arteck/ioBroker.seq](https://github.com/arteck/ioBroker.seq)
+- ioBroker.smart-eq [TA2k/ioBroker.smart-eq](https://github.com/TA2k/ioBroker.smart-eq)
+- ioBroker.smartgarden [jpgorganizer/ioBroker.smartgarden](https://github.com/jpgorganizer/ioBroker.smartgarden)
+- ioBroker.smartmeter [Apollon77/ioBroker.smartmeter](https://github.com/Apollon77/ioBroker.smartmeter)
+- ioBroker.smartthings [TA2k/ioBroker.smartthings](https://github.com/TA2k/ioBroker.smartthings)
+- ioBroker.solax [simatec/ioBroker.solax](https://github.com/simatec/ioBroker.solax)
+- ioBroker.sony-bravia [iobroker-community-adapters/ioBroker.sony-bravia](https://github.com/iobroker-community-adapters/ioBroker.sony-bravia)
+- ioBroker.spotify-premium [iobroker-community-adapters/ioBroker.spotify-premium](https://github.com/iobroker-community-adapters/ioBroker.spotify-premium)
+- ioBroker.starline [iobroker-community-adapters/ioBroker.starline](https://github.com/iobroker-community-adapters/ioBroker.starline)
+- ioBroker.tahoma [Excodibur/ioBroker.tahoma](https://github.com/Excodibur/ioBroker.tahoma)
+- ioBroker.tesla-motors [iobroker-community-adapters/ioBroker.tesla-motors](https://github.com/iobroker-community-adapters/ioBroker.tesla-motors)
+- ioBroker.toyota [TA2k/ioBroker.toyota](https://github.com/TA2k/ioBroker.toyota)
+- ioBroker.traccar [arteck/ioBroker.traccar](https://github.com/arteck/ioBroker.traccar)
+- ioBroker.tvprogram [oweitman/ioBroker.tvprogram](https://github.com/oweitman/ioBroker.tvprogram)
+- ioBroker.upnp [Jey-Cee/ioBroker.upnp](https://github.com/Jey-Cee/ioBroker.upnp)
+- ioBroker.vaillant [TA2k/ioBroker.vaillant](https://github.com/TA2k/ioBroker.vaillant)
+- ioBroker.valuetrackerovertime [Omega236/ioBroker.valuetrackerovertime](https://github.com/Omega236/ioBroker.valuetrackerovertime)
+- ioBroker.vds2465-server [Hirsch-DE/ioBroker.vds2465-server](https://github.com/Hirsch-DE/ioBroker.vds2465-server)
+- ioBroker.velux [TA2k/ioBroker.velux](https://github.com/TA2k/ioBroker.velux)
+- ioBroker.viessmannapi [TA2k/ioBroker.viessmannapi](https://github.com/TA2k/ioBroker.viessmannapi)
+- ioBroker.virtualpowermeter [Omega236/ioBroker.virtualpowermeter](https://github.com/Omega236/ioBroker.virtualpowermeter)
+- ioBroker.vis-2-widgets-weather-and-heating [rg-engineering/ioBroker.vis-2-widgets-weather-and-heating](https://github.com/rg-engineering/ioBroker.vis-2-widgets-weather-and-heating)
+- ioBroker.vis-icontwo [inventwo/ioBroker.vis-icontwo](https://github.com/inventwo/ioBroker.vis-icontwo)
+- ioBroker.vis-weather [rg-engineering/ioBroker.vis-weather](https://github.com/rg-engineering/ioBroker.vis-weather)
+- ioBroker.vofo-speedtest [iobroker-community-adapters/ioBroker.vofo-speedtest](https://github.com/iobroker-community-adapters/ioBroker.vofo-speedtest)
+- ioBroker.volvo [TA2k/ioBroker.volvo](https://github.com/TA2k/ioBroker.volvo)
+- ioBroker.vw-connect [TA2k/ioBroker.vw-connect](https://github.com/TA2k/ioBroker.vw-connect)
+- ioBroker.wireguard [Grizzelbee/ioBroker.wireguard](https://github.com/Grizzelbee/ioBroker.wireguard)
+- ioBroker.withings [TA2k/ioBroker.withings](https://github.com/TA2k/ioBroker.withings)
+- ioBroker.wled [DrozmotiX/ioBroker.wled](https://github.com/DrozmotiX/ioBroker.wled)
+- ioBroker.wmswebcontrol [TA2k/ioBroker.wmswebcontrol](https://github.com/TA2k/ioBroker.wmswebcontrol)
+- ioBroker.wolf-smartset [iobroker-community-adapters/ioBroker.wolf-smartset](https://github.com/iobroker-community-adapters/ioBroker.wolf-smartset)
+- ioBroker.yeelight-2 [iobroker-community-adapters/ioBroker.yeelight-2](https://github.com/iobroker-community-adapters/ioBroker.yeelight-2)
+
 ### [S906] .commitinfo file should be excluded by .gitignore, consider adding it to .gitignore
 - ioBroker.accuweather [iobroker-community-adapters/ioBroker.accuweather](https://github.com/iobroker-community-adapters/ioBroker.accuweather)
 - ioBroker.acme [iobroker-community-adapters/ioBroker.acme](https://github.com/iobroker-community-adapters/ioBroker.acme)
@@ -13277,7 +13862,6 @@
 - ioBroker.airzone [SilentPhoenix11/ioBroker.airzone](https://github.com/SilentPhoenix11/ioBroker.airzone)
 - ioBroker.alarm [misanorot/ioBroker.alarm](https://github.com/misanorot/ioBroker.alarm)
 - ioBroker.alexa-shoppinglist [MiRo1310/ioBroker.alexa-shoppinglist](https://github.com/MiRo1310/ioBroker.alexa-shoppinglist)
-- ioBroker.alexa-timer-vis [MiRo1310/ioBroker.alexa-timer-vis](https://github.com/MiRo1310/ioBroker.alexa-timer-vis)
 - ioBroker.alexa2 [Apollon77/ioBroker.alexa2](https://github.com/Apollon77/ioBroker.alexa2)
 - ioBroker.alias-manager [iobroker-community-adapters/ioBroker.alias-manager](https://github.com/iobroker-community-adapters/ioBroker.alias-manager)
 - ioBroker.alpha-ess [Gaspode69/ioBroker.alpha-ess](https://github.com/Gaspode69/ioBroker.alpha-ess)
@@ -13288,7 +13872,6 @@
 - ioBroker.ankersolix2 [ronny130286/ioBroker.ankersolix2](https://github.com/ronny130286/ioBroker.ankersolix2)
 - ioBroker.apcups [XHunter74/ioBroker.apcups](https://github.com/XHunter74/ioBroker.apcups)
 - ioBroker.artnet [ioBroker/ioBroker.artnet](https://github.com/ioBroker/ioBroker.artnet)
-- ioBroker.artnet-recorder [Bannsaenger/ioBroker.artnet-recorder](https://github.com/Bannsaenger/ioBroker.artnet-recorder)
 - ioBroker.asterisk [schmupu/ioBroker.asterisk](https://github.com/schmupu/ioBroker.asterisk)
 - ioBroker.asuswrt [mcdhrts/ioBroker.asuswrt](https://github.com/mcdhrts/ioBroker.asuswrt)
 - ioBroker.atlas-scientific-ezo-i2c [Buzze11/ioBroker.atlas-scientific-ezo-i2c](https://github.com/Buzze11/ioBroker.atlas-scientific-ezo-i2c)
@@ -13296,7 +13879,6 @@
 - ioBroker.awtrix-light [klein0r/ioBroker.awtrix-light](https://github.com/klein0r/ioBroker.awtrix-light)
 - ioBroker.b-control-em [ioBroker/ioBroker.b-control-em](https://github.com/ioBroker/ioBroker.b-control-em)
 - ioBroker.backitup [simatec/ioBroker.backitup](https://github.com/simatec/ioBroker.backitup)
-- ioBroker.bambulab [DrozmotiX/ioBroker.bambulab](https://github.com/DrozmotiX/ioBroker.bambulab)
 - ioBroker.bascloud [bascloud/ioBroker.bascloud](https://github.com/bascloud/ioBroker.bascloud)
 - ioBroker.batrium-bms [bembelstemmer/ioBroker.batrium-bms](https://github.com/bembelstemmer/ioBroker.batrium-bms)
 - ioBroker.bayernluft [iobroker-community-adapters/ioBroker.bayernluft](https://github.com/iobroker-community-adapters/ioBroker.bayernluft)
@@ -13350,9 +13932,9 @@
 - ioBroker.deyeidc [raschy/ioBroker.deyeidc](https://github.com/raschy/ioBroker.deyeidc)
 - ioBroker.digitalstrom [ioBroker/ioBroker.digitalstrom](https://github.com/ioBroker/ioBroker.digitalstrom)
 - ioBroker.discord [crycode-de/ioBroker.discord](https://github.com/crycode-de/ioBroker.discord)
-- ioBroker.discovergy [DrozmotiX/ioBroker.discovergy](https://github.com/DrozmotiX/ioBroker.discovergy)
 - ioBroker.discovery [ioBroker/ioBroker.discovery](https://github.com/ioBroker/ioBroker.discovery)
 - ioBroker.divera247 [TKnpl/ioBroker.divera247](https://github.com/TKnpl/ioBroker.divera247)
+- ioBroker.docker-manager [ioBroker/ioBroker.docker-manager](https://github.com/ioBroker/ioBroker.docker-manager)
 - ioBroker.doorbird [iobroker-community-adapters/ioBroker.doorbird](https://github.com/iobroker-community-adapters/ioBroker.doorbird)
 - ioBroker.doorio [Bettman66/ioBroker.doorio](https://github.com/Bettman66/ioBroker.doorio)
 - ioBroker.dreame [TA2k/ioBroker.dreame](https://github.com/TA2k/ioBroker.dreame)
@@ -13386,7 +13968,6 @@
 - ioBroker.envertech-pv [iobroker-community-adapters/ioBroker.envertech-pv](https://github.com/iobroker-community-adapters/ioBroker.envertech-pv)
 - ioBroker.epson_ecotank_et_2750 [iobroker-community-adapters/ioBroker.epson_ecotank_et_2750](https://github.com/iobroker-community-adapters/ioBroker.epson_ecotank_et_2750)
 - ioBroker.epson_stylus_px830 [iobroker-community-adapters/ioBroker.epson_stylus_px830](https://github.com/iobroker-community-adapters/ioBroker.epson_stylus_px830)
-- ioBroker.esphome [DrozmotiX/ioBroker.esphome](https://github.com/DrozmotiX/ioBroker.esphome)
 - ioBroker.espresense [ticaki/ioBroker.espresense](https://github.com/ticaki/ioBroker.espresense)
 - ioBroker.eusec [bropat/ioBroker.eusec](https://github.com/bropat/ioBroker.eusec)
 - ioBroker.evcc [Newan/ioBroker.evcc](https://github.com/Newan/ioBroker.evcc)
@@ -13414,6 +13995,7 @@
 - ioBroker.fronius-solarweb [TA2k/ioBroker.fronius-solarweb](https://github.com/TA2k/ioBroker.fronius-solarweb)
 - ioBroker.fronius-wattpilot [tim2zg/ioBroker.fronius-wattpilot](https://github.com/tim2zg/ioBroker.fronius-wattpilot)
 - ioBroker.frontier_silicon [iobroker-community-adapters/ioBroker.frontier_silicon](https://github.com/iobroker-community-adapters/ioBroker.frontier_silicon)
+- ioBroker.fullcalendar [ioBroker/ioBroker.fullcalendar](https://github.com/ioBroker/ioBroker.fullcalendar)
 - ioBroker.fullybrowser [arteck/ioBroker.fullybrowser](https://github.com/arteck/ioBroker.fullybrowser)
 - ioBroker.fyta [muffin142/ioBroker.fyta](https://github.com/muffin142/ioBroker.fyta)
 - ioBroker.g-homa [AlCalzone/ioBroker.g-homa](https://github.com/AlCalzone/ioBroker.g-homa)
@@ -13448,6 +14030,7 @@
 - ioBroker.heytech [Jey-Cee/ioBroker.heytech](https://github.com/Jey-Cee/ioBroker.heytech)
 - ioBroker.hid-community [iobroker-community-adapters/ioBroker.hid-community](https://github.com/iobroker-community-adapters/ioBroker.hid-community)
 - ioBroker.hikvision-alarmserver [iobroker-community-adapters/ioBroker.hikvision-alarmserver](https://github.com/iobroker-community-adapters/ioBroker.hikvision-alarmserver)
+- ioBroker.hilink [bondrogeen/ioBroker.hilink](https://github.com/bondrogeen/ioBroker.hilink)
 - ioBroker.hiob [moba15/ioBroker.hiob](https://github.com/moba15/ioBroker.hiob)
 - ioBroker.history [ioBroker/ioBroker.history](https://github.com/ioBroker/ioBroker.history)
 - ioBroker.hm-rega [ioBroker/ioBroker.hm-rega](https://github.com/ioBroker/ioBroker.hm-rega)
@@ -13467,7 +14050,6 @@
 - ioBroker.hydrawise [SentiQ/ioBroker.hydrawise](https://github.com/SentiQ/ioBroker.hydrawise)
 - ioBroker.hyperion_ng [felixganzer/ioBroker.hyperion_ng](https://github.com/felixganzer/ioBroker.hyperion_ng)
 - ioBroker.i2c [UncleSamSwiss/ioBroker.i2c](https://github.com/UncleSamSwiss/ioBroker.i2c)
-- ioBroker.ical [iobroker-community-adapters/ioBroker.ical](https://github.com/iobroker-community-adapters/ioBroker.ical)
 - ioBroker.iceroad [iobroker-community-adapters/ioBroker.iceroad](https://github.com/iobroker-community-adapters/ioBroker.iceroad)
 - ioBroker.ico-cloud [iobroker-community-adapters/ioBroker.ico-cloud](https://github.com/iobroker-community-adapters/ioBroker.ico-cloud)
 - ioBroker.icons-addictive-flavour-png [ioBroker/ioBroker.icons-addictive-flavour-png](https://github.com/ioBroker/ioBroker.icons-addictive-flavour-png)
@@ -13498,7 +14080,6 @@
 - ioBroker.javascript [ioBroker/ioBroker.javascript](https://github.com/ioBroker/ioBroker.javascript)
 - ioBroker.jeelink [foxthefox/ioBroker.jeelink](https://github.com/foxthefox/ioBroker.jeelink)
 - ioBroker.judoisoft [arteck/ioBroker.judoisoft](https://github.com/arteck/ioBroker.judoisoft)
-- ioBroker.kecontact [iobroker-community-adapters/ioBroker.kecontact](https://github.com/iobroker-community-adapters/ioBroker.kecontact)
 - ioBroker.klf200 [MiSchroe/ioBroker.klf200](https://github.com/MiSchroe/ioBroker.klf200)
 - ioBroker.knmi-weather [DrozmotiX/ioBroker.knmi-weather](https://github.com/DrozmotiX/ioBroker.knmi-weather)
 - ioBroker.knx [ioBroker/ioBroker.knx](https://github.com/ioBroker/ioBroker.knx)
@@ -13619,7 +14200,6 @@
 - ioBroker.opensmartcity [ioBroker/ioBroker.opensmartcity](https://github.com/ioBroker/ioBroker.opensmartcity)
 - ioBroker.opentherm [DrozmotiX/ioBroker.opentherm](https://github.com/DrozmotiX/ioBroker.opentherm)
 - ioBroker.openweathermap [ioBroker/ioBroker.openweathermap](https://github.com/ioBroker/ioBroker.openweathermap)
-- ioBroker.operating-hours [BenAhrdt/ioBroker.operating-hours](https://github.com/BenAhrdt/ioBroker.operating-hours)
 - ioBroker.opi [iobroker-community-adapters/ioBroker.opi](https://github.com/iobroker-community-adapters/ioBroker.opi)
 - ioBroker.oppoplayer [volkerrichert/ioBroker.oppoplayer](https://github.com/volkerrichert/ioBroker.oppoplayer)
 - ioBroker.owfs [ioBroker/ioBroker.owfs](https://github.com/ioBroker/ioBroker.owfs)
@@ -13648,7 +14228,6 @@
 - ioBroker.places [iobroker-community-adapters/ioBroker.places](https://github.com/iobroker-community-adapters/ioBroker.places)
 - ioBroker.playstation [Lucky-ESA/ioBroker.playstation](https://github.com/Lucky-ESA/ioBroker.playstation)
 - ioBroker.plenticore [StrathCole/ioBroker.plenticore](https://github.com/StrathCole/ioBroker.plenticore)
-- ioBroker.plenticore-g3 [FernetMenta/ioBroker.plenticore-g3](https://github.com/FernetMenta/ioBroker.plenticore-g3)
 - ioBroker.plex [iobroker-community-adapters/ioBroker.plex](https://github.com/iobroker-community-adapters/ioBroker.plex)
 - ioBroker.plexconnect [eisbaeeer/ioBroker.plexconnect](https://github.com/eisbaeeer/ioBroker.plexconnect)
 - ioBroker.pollenflug [iobroker-community-adapters/ioBroker.pollenflug](https://github.com/iobroker-community-adapters/ioBroker.pollenflug)
@@ -13728,7 +14307,6 @@
 - ioBroker.solaredge [iobroker-community-adapters/ioBroker.solaredge](https://github.com/iobroker-community-adapters/ioBroker.solaredge)
 - ioBroker.solarlog [iobroker-community-adapters/ioBroker.solarlog](https://github.com/iobroker-community-adapters/ioBroker.solarlog)
 - ioBroker.solarmanpv [raschy/ioBroker.solarmanpv](https://github.com/raschy/ioBroker.solarmanpv)
-- ioBroker.solarviewdatareader [afuerhoff/ioBroker.solarviewdatareader](https://github.com/afuerhoff/ioBroker.solarviewdatareader)
 - ioBroker.solarwetter [iobroker-community-adapters/ioBroker.solarwetter](https://github.com/iobroker-community-adapters/ioBroker.solarwetter)
 - ioBroker.solax [simatec/ioBroker.solax](https://github.com/simatec/ioBroker.solax)
 - ioBroker.sonnen [foxriver76/ioBroker.sonnen](https://github.com/foxriver76/ioBroker.sonnen)
@@ -13749,7 +14327,6 @@
 - ioBroker.steam [bloop16/ioBroker.steam](https://github.com/bloop16/ioBroker.steam)
 - ioBroker.stiebel-isg [unltdnetworx/ioBroker.stiebel-isg](https://github.com/unltdnetworx/ioBroker.stiebel-isg)
 - ioBroker.stockmarket [waoler/ioBroker.stockmarket](https://github.com/waoler/ioBroker.stockmarket)
-- ioBroker.sun2000 [bolliy/ioBroker.sun2000](https://github.com/bolliy/ioBroker.sun2000)
 - ioBroker.sun2000-modbus [daolis/ioBroker.sun2000-modbus](https://github.com/daolis/ioBroker.sun2000-modbus)
 - ioBroker.sureflap [Sickboy78/ioBroker.sureflap](https://github.com/Sickboy78/ioBroker.sureflap)
 - ioBroker.swiss-weather-api [baerengraben/ioBroker.swiss-weather-api](https://github.com/baerengraben/ioBroker.swiss-weather-api)
@@ -13763,13 +14340,11 @@
 - ioBroker.tapo [TA2k/ioBroker.tapo](https://github.com/TA2k/ioBroker.tapo)
 - ioBroker.tedee [TA2k/ioBroker.tedee](https://github.com/TA2k/ioBroker.tedee)
 - ioBroker.telegram [iobroker-community-adapters/ioBroker.telegram](https://github.com/iobroker-community-adapters/ioBroker.telegram)
-- ioBroker.telegram-menu [MiRo1310/ioBroker.telegram-menu](https://github.com/MiRo1310/ioBroker.telegram-menu)
 - ioBroker.terminal [ioBroker/ioBroker.terminal](https://github.com/ioBroker/ioBroker.terminal)
 - ioBroker.tesla-motors [iobroker-community-adapters/ioBroker.tesla-motors](https://github.com/iobroker-community-adapters/ioBroker.tesla-motors)
 - ioBroker.tesla-wallconnector3 [nobl/ioBroker.tesla-wallconnector3](https://github.com/nobl/ioBroker.tesla-wallconnector3)
 - ioBroker.teslafi [hombach/ioBroker.teslafi](https://github.com/hombach/ioBroker.teslafi)
 - ioBroker.text2command [ioBroker/ioBroker.text2command](https://github.com/ioBroker/ioBroker.text2command)
-- ioBroker.tibberlink [hombach/ioBroker.tibberlink](https://github.com/hombach/ioBroker.tibberlink)
 - ioBroker.tileboard [ioBroker/ioBroker.tileboard](https://github.com/ioBroker/ioBroker.tileboard)
 - ioBroker.time-switch [walli545/ioBroker.time-switch](https://github.com/walli545/ioBroker.time-switch)
 - ioBroker.tinker [simatec/ioBroker.tinker](https://github.com/simatec/ioBroker.tinker)
@@ -13781,6 +14356,7 @@
 - ioBroker.traccar [arteck/ioBroker.traccar](https://github.com/arteck/ioBroker.traccar)
 - ioBroker.tractive-gps [iobroker-community-adapters/ioBroker.tractive-gps](https://github.com/iobroker-community-adapters/ioBroker.tractive-gps)
 - ioBroker.trashschedule [klein0r/ioBroker.trashschedule](https://github.com/klein0r/ioBroker.trashschedule)
+- ioBroker.trivum [TheBam1990/ioBroker.trivum](https://github.com/TheBam1990/ioBroker.trivum)
 - ioBroker.tronity [tronity/ioBroker.tronity](https://github.com/tronity/ioBroker.tronity)
 - ioBroker.tunnelbroker-endpoint-updater [PowerPan/ioBroker.tunnelbroker-endpoint-updater](https://github.com/PowerPan/ioBroker.tunnelbroker-endpoint-updater)
 - ioBroker.tuya [Apollon77/ioBroker.tuya](https://github.com/Apollon77/ioBroker.tuya)
@@ -13832,6 +14408,7 @@
 - ioBroker.vis-keyboard [ioBroker/ioBroker.vis-keyboard](https://github.com/ioBroker/ioBroker.vis-keyboard)
 - ioBroker.vis-lcars [ioBroker/ioBroker.vis-lcars](https://github.com/ioBroker/ioBroker.vis-lcars)
 - ioBroker.vis-map [ioBroker/ioBroker.vis-map](https://github.com/ioBroker/ioBroker.vis-map)
+- ioBroker.vis-mapwidgets [oweitman/ioBroker.vis-mapwidgets](https://github.com/oweitman/ioBroker.vis-mapwidgets)
 - ioBroker.vis-material [iobroker-community-adapters/ioBroker.vis-material](https://github.com/iobroker-community-adapters/ioBroker.vis-material)
 - ioBroker.vis-material-advanced [iobroker-community-adapters/ioBroker.vis-material-advanced](https://github.com/iobroker-community-adapters/ioBroker.vis-material-advanced)
 - ioBroker.vis-material-webfont [om2804/ioBroker.vis-material-webfont](https://github.com/om2804/ioBroker.vis-material-webfont)
@@ -13841,7 +14418,6 @@
 - ioBroker.vis-rgraph [ioBroker/ioBroker.vis-rgraph](https://github.com/ioBroker/ioBroker.vis-rgraph)
 - ioBroker.vis-timeandweather [ioBroker/ioBroker.vis-timeandweather](https://github.com/ioBroker/ioBroker.vis-timeandweather)
 - ioBroker.vis-weather [rg-engineering/ioBroker.vis-weather](https://github.com/rg-engineering/ioBroker.vis-weather)
-- ioBroker.vivitek [Bannsaenger/ioBroker.vivitek](https://github.com/Bannsaenger/ioBroker.vivitek)
 - ioBroker.vofo-speedtest [iobroker-community-adapters/ioBroker.vofo-speedtest](https://github.com/iobroker-community-adapters/ioBroker.vofo-speedtest)
 - ioBroker.voltoplus [Jey-Cee/ioBroker.voltoplus](https://github.com/Jey-Cee/ioBroker.voltoplus)
 - ioBroker.volumio [a-i-ks/ioBroker.volumio](https://github.com/a-i-ks/ioBroker.volumio)
@@ -13873,16 +14449,14 @@
 - ioBroker.wireless-settings [ioBroker/ioBroker.wireless-settings](https://github.com/ioBroker/ioBroker.wireless-settings)
 - ioBroker.withings [TA2k/ioBroker.withings](https://github.com/TA2k/ioBroker.withings)
 - ioBroker.wlanthermo-nano [DrozmotiX/ioBroker.wlanthermo-nano](https://github.com/DrozmotiX/ioBroker.wlanthermo-nano)
-- ioBroker.wled [DrozmotiX/ioBroker.wled](https://github.com/DrozmotiX/ioBroker.wled)
 - ioBroker.wmswebcontrol [TA2k/ioBroker.wmswebcontrol](https://github.com/TA2k/ioBroker.wmswebcontrol)
 - ioBroker.wolf [ioBroker/ioBroker.wolf](https://github.com/ioBroker/ioBroker.wolf)
 - ioBroker.wolf-smartset [iobroker-community-adapters/ioBroker.wolf-smartset](https://github.com/iobroker-community-adapters/ioBroker.wolf-smartset)
-- ioBroker.worx [iobroker-community-adapters/ioBroker.worx](https://github.com/iobroker-community-adapters/ioBroker.worx)
 - ioBroker.ws [ioBroker/ioBroker.ws](https://github.com/ioBroker/ioBroker.ws)
-- ioBroker.x-touch [Bannsaenger/ioBroker.x-touch](https://github.com/Bannsaenger/ioBroker.x-touch)
 - ioBroker.xbox [foxriver76/ioBroker.xbox](https://github.com/foxriver76/ioBroker.xbox)
 - ioBroker.xiaomi-gateway3 [lasthead0/ioBroker.xiaomi-gateway3](https://github.com/lasthead0/ioBroker.xiaomi-gateway3)
 - ioBroker.xs1 [iobroker-community-adapters/ioBroker.xs1](https://github.com/iobroker-community-adapters/ioBroker.xs1)
+- ioBroker.xsense [arteck/ioBroker.xsense](https://github.com/arteck/ioBroker.xsense)
 - ioBroker.xterm [ioBroker/ioBroker.xterm](https://github.com/ioBroker/ioBroker.xterm)
 - ioBroker.yahka [jensweigele/ioBroker.yahka](https://github.com/jensweigele/ioBroker.yahka)
 - ioBroker.yahoo-stock-market [Newan/ioBroker.yahoo-stock-market](https://github.com/Newan/ioBroker.yahoo-stock-market)
@@ -13892,7 +14466,6 @@
 - ioBroker.yr [ioBroker/ioBroker.yr](https://github.com/ioBroker/ioBroker.yr)
 - ioBroker.zehnder-cloud [TA2k/ioBroker.zehnder-cloud](https://github.com/TA2k/ioBroker.zehnder-cloud)
 - ioBroker.zendure-solarflow [nograx/ioBroker.zendure-solarflow](https://github.com/nograx/ioBroker.zendure-solarflow)
-- ioBroker.zigbee [ioBroker/ioBroker.zigbee](https://github.com/ioBroker/ioBroker.zigbee)
 - ioBroker.zigbee2mqtt [arteck/ioBroker.zigbee2mqtt](https://github.com/arteck/ioBroker.zigbee2mqtt)
 - ioBroker.zoe2 [fungus75/ioBroker.zoe2](https://github.com/fungus75/ioBroker.zoe2)
 - ioBroker.zoneminder [iobroker-community-adapters/ioBroker.zoneminder](https://github.com/iobroker-community-adapters/ioBroker.zoneminder)
