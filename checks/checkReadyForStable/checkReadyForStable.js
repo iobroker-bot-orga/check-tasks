@@ -1,7 +1,7 @@
 'use strict';
 const { parseArgs } = require('node:util');
 
-//const { sleep } = require('../../lib/commonTools');
+const { sleep } = require('../../lib/commonTools');
 const { getAllIssues, getAllLabels, addComment, createIssue, closeIssue } = require('../../lib/githubTools');
 const { getLatestRepoLive, getStableRepoFile, getStableRepoLive, getStatistics } = require('../../lib/iobrokerTools');
 //const { exit } = require('node:process');
@@ -15,6 +15,7 @@ const TITLE_UPDATE = '🚀 Consider updating stable version in repo';
 const ONE_DAY = 3600000 * 24;
 
 const opts = {
+    nocheck: false,
     debug: false,
     dry: false,
     recreate: false,
@@ -26,67 +27,25 @@ function debug(text) {
     }
 }
 
-//# async function getMasterStableAsTextFile() {
-//#     return await downloadFile(
-//#         'https://raw.githubusercontent.com/ioBroker/ioBroker.repositories/master/sources-dist-stable.json',
-//#     );
-//# }
-
-//# function getstatistics() {
-//#     return getUrl('https://www.iobroker.net/data/statistics.json');
-//# }
-
-// function triggerRepoCheck(adapter) {
-//     const url = `${adapter.owner}/ioBroker.${adapter.adapter}`;
-//     console.log(`trigger rep checker for ${url}`);
-//     // curl -L -X POST -H "Accept: application/vnd.github+json" -H "Authorization: Bearer ghp_xxxxxxxx" https://api.github.com/repos/iobroker-bot-orga/check-tasks/dispatches -d "{\"event_type\": \"check-repository\", \"client_payload\": {\"url\": \"mcm1957/iobroker.weblate-test\"}}"
-//     return axios
-//         .post(
-//             `https://api.github.com/repos/iobroker-bot-orga/check-tasks/dispatches`,
-//             { event_type: 'check-repository', client_payload: { url: url } },
-//             {
-//                 headers: {
-//                     Authorization: `bearer ${process.env.IOBBOT_GITHUB_TOKEN}`,
-//                     Accept: 'application/vnd.github+json',
-//                     'user-agent': 'Action script',
-//                 },
-//             },
-//         )
-//         .then(response => response.data)
-//         .catch(e => console.error(e));
-// }
-
-//# function addComment(owner, adapter, id, body) {
-//#     return axios
-//#         .post(
-//#             `https://api.github.com/repos/${owner}/ioBroker.${adapter}/issues/${id}/comments`,
-//#             { body },
-//#             {
-//#                 headers: {
-//#                     Authorization: process.env.OWN_GITHUB_TOKEN ? `token ${process.env.OWN_GITHUB_TOKEN}` : 'none',
-//#                     'user-agent': 'Action script',
-//#                 },
-//#             },
-//#         )
-//#         .then(response => response.data);
-//# }
-
-//# function closeIssue(owner, adapter, id) {
-//#     return axios
-//#         .patch(
-//#             `https://api.github.com/repos/${owner}/ioBroker.${adapter}/issues/${id}`,
-//#             {
-//#                 state: 'close',
-//#             },
-//#             {
-//#                 headers: {
-//#                     Authorization: process.env.OWN_GITHUB_TOKEN ? `token ${process.env.OWN_GITHUB_TOKEN}` : 'none',
-//#                     'user-agent': 'Action script',
-//#                 },
-//#             },
-//#         )
-//#         .then(response => response.data);
-//# }
+function triggerRepoCheck(adapter) {
+    const url = `${adapter.owner}/ioBroker.${adapter.adapter}`;
+    console.log(`trigger rep checker for ${url}`);
+    // curl -L -X POST -H "Accept: application/vnd.github+json" -H "Authorization: Bearer ghp_xxxxxxxx" https://api.github.com/repos/iobroker-bot-orga/check-tasks/dispatches -d "{\"event_type\": \"check-repository\", \"client_payload\": {\"url\": \"mcm1957/iobroker.weblate-test\"}}"
+    return axios
+        .post(
+            `https://api.github.com/repos/iobroker-bot-orga/check-tasks/dispatches`,
+            { event_type: 'check-repository', client_payload: { url: url } },
+            {
+                headers: {
+                    Authorization: `bearer ${process.env.IOBBOT_GITHUB_TOKEN}`,
+                    Accept: 'application/vnd.github+json',
+                    'user-agent': 'Action script',
+                },
+            },
+        )
+        .then(response => response.data)
+        .catch(e => console.error(e));
+}
 
 async function checkIssues(latest, stable, statistics, result) {
     for (const adapter in latest) {
@@ -650,6 +609,9 @@ async function main() {
         dry: {
             type: 'boolean',
         },
+        nocheck: {
+            type: 'boolean',
+        },
         recreate: {
             type: 'boolean',
         },
@@ -662,6 +624,7 @@ async function main() {
     opts.createIssue = values['create-issue'];
     opts.debug = values['debug'];
     opts.dry = values['dry'];
+    opts.nocheck = values['nocheck'];
     opts.recreate = values['recreate'];
 
     if (positionals.length) {
@@ -689,6 +652,15 @@ async function main() {
 
     console.log(`\n[INFO]creating new issues...`);
     await createIssues(latest, master, result);
+
+    if (!opts.nocheck) {
+        console.log(`\n[INFO]trigger repository checks...`);
+        for (const adapter of result) {
+            await triggerRepoCheck(adapter);
+            console.log('waiting 60s ...');
+            await sleep(60000); // limit to 1 call per minute
+        }
+    }
 
     console.log('[INFO] processing completed');
 }
