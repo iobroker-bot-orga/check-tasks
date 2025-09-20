@@ -27,8 +27,8 @@ function debug(text) {
     }
 }
 
-function triggerRepoCheck(adapter) {
-    const url = `${adapter.owner}/ioBroker.${adapter.adapter}`;
+function triggerRepoCheck(owner, adapter) {
+    const url = `${owner}/ioBroker.${adapter}`;
     console.log(`trigger rep checker for ${url}`);
     // curl -L -X POST -H "Accept: application/vnd.github+json" -H "Authorization: Bearer ghp_xxxxxxxx" https://api.github.com/repos/iobroker-bot-orga/check-tasks/dispatches -d "{\"event_type\": \"check-repository\", \"client_payload\": {\"url\": \"mcm1957/iobroker.weblate-test\"}}"
     return axios
@@ -656,7 +656,7 @@ async function main() {
     if (!opts.nocheck) {
         console.log(`\n[INFO]trigger repository checks...`);
         for (const adapter in result) {
-            await triggerRepoCheck(adapter);
+            await triggerRepoCheck(result[adapter].owner, result[adapter].adapter);
             console.log('waiting 60s ...');
             await sleep(60000); // limit to 1 call per minute
         }
