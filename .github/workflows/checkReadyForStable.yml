@@ -7,10 +7,10 @@ on:
         type: string
         required: false
 
-  schedule:
-    # * is a special character in YAML, so you have to quote this string
-    # every day
-    - cron:  '33 3 * * *'
+#  schedule:
+#    # * is a special character in YAML, so you have to quote this string
+#    # every day
+#    - cron:  '33 3 * * *'
   
 jobs:
   ready-for-stable:
