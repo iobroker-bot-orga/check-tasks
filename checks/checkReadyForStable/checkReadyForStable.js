@@ -17,6 +17,7 @@ const ONE_DAY = 3600000 * 24;
 const opts = {
     debug: false,
     dry: false,
+    recreate: false,
 };
 
 function debug(text) {
@@ -147,7 +148,7 @@ async function checkIssues(latest, stable, statistics, result) {
                         issue.to = matches[1];
                     } else {
                         matches = issue.title.match(
-                            /^Consider updateíng stable version in repo from (\d+\.\d+\.\d+) to (\d+\.\d+\.\d+)/,
+                            /^Consider updating stable version in repo from (\d+\.\d+\.\d+) to (\d+\.\d+\.\d+)/,
                         );
                         if (matches && matches.length) {
                             issue.from = matches[1];
@@ -155,7 +156,8 @@ async function checkIssues(latest, stable, statistics, result) {
                         } else {
                             console.log(`    ###############    WARNING    ################`);
                             console.log(`    cannot parse issue title please check manually`);
-                            return;
+                            console.log(`    >${issue.title}<`);
+                            continue;
                         }
                     }
 
@@ -257,6 +259,49 @@ async function checkIssues(latest, stable, statistics, result) {
                             console.log(e.toString());
                         }
                     }
+                }
+            }
+        }
+    }
+}
+
+async function cleanIssues(latest) {
+    for (const adapter in latest) {
+        if (!adapter.startsWith('_')) {
+            console.log(`checking ${adapter} ...\n`);
+            debug(`    ${latest[adapter].meta}\n`);
+            const parts = latest[adapter].meta.split('/');
+            const owner = parts[3];
+            let issues = await getAllIssues(owner, `ioBroker.${adapter}`);
+            issues = issues.filter(
+                i => i.state === 'open' && (i.title.startsWith(TITLE_ADD) || i.title.startsWith(TITLE_UPDATE)),
+            );
+            for (const issue of issues) {
+                const issueId = issue.number;
+                console.log(`\n${adapter}: [ https://www.github.com/${owner}/iobroker.${adapter} ]`);
+                console.log(`  Issue ${issueId} will be closed`);
+                const comment = `This issue will be closed due to recreate request.\n\n@mcm1957 for evidence`;
+                try {
+                    if (!opts.dry) {
+                        await addComment(owner, `ioBroker.${adapter}`, issueId, comment);
+                        console.log(`    comment added to ${issueId}`);
+                    } else {
+                        console.log(`[DRY] would add comment to ${issueId}`);
+                    }
+                } catch (e) {
+                    console.log(`error adding comment to ${issueId}`);
+                    console.log(e.toString());
+                }
+                try {
+                    if (!opts.dry) {
+                        await closeIssue(owner, `ioBroker.${adapter}`, issueId);
+                        console.log(`    issue ${issueId} closed`);
+                    } else {
+                        console.log(`[DRY] would close ${issueId}`);
+                    }
+                } catch (e) {
+                    console.log(`error closing issue ${issueId}`);
+                    console.log(e.toString());
                 }
             }
         }
@@ -605,6 +650,9 @@ async function main() {
         dry: {
             type: 'boolean',
         },
+        recreate: {
+            type: 'boolean',
+        },
     };
 
     const { values, positionals } = parseArgs({ options, strict: true, allowPositionals: true });
@@ -614,6 +662,7 @@ async function main() {
     opts.createIssue = values['create-issue'];
     opts.debug = values['debug'];
     opts.dry = values['dry'];
+    opts.recreate = values['recreate'];
 
     if (positionals.length) {
         console.log('[ERROR] no parameters supported');
@@ -626,6 +675,11 @@ async function main() {
     const stable = await getStableRepoLive();
     const statistics = await getStatistics();
     const master = await getStableRepoFile();
+
+    if (opts.recreate) {
+        console.log(`\n[INFO]removing old issues...`);
+        await cleanIssues(latest);
+    }
 
     console.log(`\n[INFO]evaluate releases...`);
     const result = await evaluateReleases(latest, stable, statistics);
