@@ -7,7 +7,7 @@
     "json5": "^2.2.3"
   },
   "devDependencies": {
-    "@iobroker/eslint-config": "^2.1.0"
+    "@iobroker/eslint-config": "^2.2.0"
   },
   "files": [
     "index.js",
