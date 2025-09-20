@@ -6,7 +6,7 @@ const { getAllIssues, getAllLabels, addComment, createIssue, closeIssue } = requ
 const { getLatestRepoLive, getStableRepoFile, getStableRepoLive, getStatistics } = require('../../lib/iobrokerTools');
 //const { exit } = require('node:process');
 
-// const axios = require('axios');
+const axios = require('axios');
 const semver = require('semver');
 
 const TITLE_ADD = '🚀 Please add adapter to stable repository - ';
