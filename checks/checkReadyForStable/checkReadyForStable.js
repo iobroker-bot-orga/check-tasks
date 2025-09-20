@@ -655,7 +655,7 @@ async function main() {
 
     if (!opts.nocheck) {
         console.log(`\n[INFO]trigger repository checks...`);
-        for (const adapter of result) {
+        for (const adapter in result) {
             await triggerRepoCheck(adapter);
             console.log('waiting 60s ...');
             await sleep(60000); // limit to 1 call per minute
