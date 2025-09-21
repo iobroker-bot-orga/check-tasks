@@ -126,7 +126,7 @@ async function checkIssues(latest, stable, statistics, result) {
                             `This issue seems to be outdated.\n\n` +
                             `This issue suggests to update the stable version of this adapter to ${issue.to} but the current ` +
                             `stable version is already ${stable[adapter].version}.\n\n` +
-                            `So this issue should be closed.\n\n` +
+                            `So this issue will be closed.\n\n` +
                             `@mcm1957 for evidence`;
                         try {
                             if (!opts.dry) {
@@ -193,7 +193,7 @@ async function checkIssues(latest, stable, statistics, result) {
                             `This issue seems to be outdated.\n\n` +
                             `This issue suggests to update the stable version of this adapter to ${issue.to} but this request is no longer valid. ` +
                             `Current latest release is ${latest[adapter].version}.\n\n` +
-                            `So this issue will be closed and replaced by an updated one.\n\n` +
+                            `So this issue will be closed. A new issue will be created when ${latest[adapter].version} is ready for stable.\n\n` +
                             `@mcm1957 for evidence`;
                         try {
                             if (!opts.dry) {
