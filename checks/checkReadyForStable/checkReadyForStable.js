@@ -101,13 +101,13 @@ async function checkIssues(latest, stable, statistics, result) {
                     console.log(`    ${issue.title} detected`);
                     // const TITLE_ADD = 'Please add adapter to stable repository -';
                     // const TITLE_UPDATE = 'Consider updating stable version in repo';
-                    let matches = issue.title.match(/^Please add adapter to stable repository - (\d+\.\d+\.\d+)/);
+                    let matches = issue.title.match(/^🚀 Please add adapter to stable repository - (\d+\.\d+\.\d+)/);
                     if (matches && matches.length) {
                         issue.from = '0.0.0';
                         issue.to = matches[1];
                     } else {
                         matches = issue.title.match(
-                            /^Consider updating stable version in repo from (\d+\.\d+\.\d+) to (\d+\.\d+\.\d+)/,
+                            /^🚀 Consider updating stable version in repo from (\d+\.\d+\.\d+) to (\d+\.\d+\.\d+)/,
                         );
                         if (matches && matches.length) {
                             issue.from = matches[1];
