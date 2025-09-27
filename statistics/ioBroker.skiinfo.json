@@ -1,1 +1,1 @@
-{"533":{"issue":"[W533] method \"createState()\" is deprecated and will be removed with future js-controller version. Please use \"set/deleteObject()\" instead.","adapter":"oweitman/ioBroker.skiinfo","timestamp":"Sat, 27 Sep 2025 23:05:35 GMT"}}
+{"533":{"issue":"[W533] method \"createState()\" is deprecated and will be removed with future js-controller version. Please use \"set/deleteObject()\" instead.","adapter":"oweitman/ioBroker.skiinfo","timestamp":"Sat, 27 Sep 2025 23:44:53 GMT"}}
