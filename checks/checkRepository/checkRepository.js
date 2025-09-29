@@ -191,7 +191,7 @@ async function createStatistics(data, issueTable) {
 
     const statistics = {};
     for (let issue of Object.keys(issueTable).sort()) {
-        const m = issue.match(/\[[EWS](\d\d\d)\]/);
+        const m = issue.match(/\[[EWS](\d\d\d\d)\]/);
         if (m) {
             debug(`register issue ${m[1]}`);
             const num = m[1];
@@ -281,7 +281,7 @@ async function prepareIssue(data, issueTable, oldIssueId) {
         if (opts.cleanup && (issueTable[issue].state === '?' || issueTable[issue].state === 'D')) {
             continue;
         }
-        if (issue.match(/\[(E\d\d\d)\]/)) {
+        if (issue.match(/\[(E\d\d\d\d)\]/)) {
             if (!errorsFound) {
                 lines.push('**ERRORS:**');
                 errorsFound = true;
@@ -299,7 +299,7 @@ async function prepareIssue(data, issueTable, oldIssueId) {
         if (opts.cleanup && (issueTable[issue].state === '?' || issueTable[issue].state === 'D')) {
             continue;
         }
-        if (issue.match(/\[(W\d\d\d)\]/)) {
+        if (issue.match(/\[(W\d\d\d\d)\]/)) {
             if (!warningsFound) {
                 lines.push('**WARNINGS:**');
                 warningsFound = true;
@@ -317,7 +317,7 @@ async function prepareIssue(data, issueTable, oldIssueId) {
         if (opts.cleanup && (issueTable[issue].state === '?' || issueTable[issue].state === 'D')) {
             continue;
         }
-        if (issue.match(/\[(S\d\d\d)\]/)) {
+        if (issue.match(/\[(S\d\d\d\d)\]/)) {
             if (!suggestionsFound) {
                 lines.push('**SUGGESTIONS:**');
                 suggestionsFound = true;
@@ -549,7 +549,7 @@ async function parseOldIssues(issueTable, owner, repo, id) {
 
     const lines = issue.body.replace(/(\r)/gm, '').split('\n');
     lines.forEach(line => {
-        let m = line.match(/^-\s\[(.)\].+(\[[EWS]\d\d\d\].*)$/);
+        let m = line.match(/^-\s\[(.)\].+(\[[EWS]\d\d\d\d\].*)$/);
         if (m) {
             issueTable[m[2]] = {};
             issueTable[m[2]].state = m[1] === ' ' ? '?' : 'D';
@@ -632,10 +632,10 @@ function checkFatalError(data) {
     if (data.context && data.context.errors && data.context.errors.length) {
         data.context.errors.forEach(err => {
             debug(`checking ${err}`);
-            if (err.startsWith('[E000]')) {
+            if (err.startsWith('[E0000]')) {
                 flag = true;
             }
-            if (err.startsWith('[E999]')) {
+            if (err.startsWith('[E9999]')) {
                 flag = true;
             }
         });
