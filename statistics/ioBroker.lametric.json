@@ -1,1 +1,1 @@
-{"906":{"issue":"[S906] .commitinfo file should be excluded by .gitignore, consider adding it to .gitignore","adapter":"klein0r/ioBroker.lametric","timestamp":"Mon, 29 Sep 2025 05:44:08 GMT"}}
+{"9006":{"issue":"[S9006] .commitinfo file should be excluded by .gitignore, please add a line with text \".commitinfo\" to .gitignore","adapter":"klein0r/ioBroker.lametric","timestamp":"Tue, 30 Sep 2025 05:41:29 GMT"}}
