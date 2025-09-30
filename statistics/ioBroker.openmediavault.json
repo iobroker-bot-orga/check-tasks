@@ -1,1 +1,1 @@
-{"401":{"issue":"[W401] Cannot find \"openmediavault\" in latest repository","adapter":"Scrounger/ioBroker.openmediavault","timestamp":"Fri, 12 Sep 2025 09:14:38 GMT"}}
+{"4001":{"issue":"[W4001] Cannot find \"openmediavault\" in latest repository","adapter":"Scrounger/ioBroker.openmediavault","timestamp":"Tue, 30 Sep 2025 07:58:37 GMT"},"9006":{"issue":"[S9006] .commitinfo file should be excluded by .gitignore, please add a line with text \".commitinfo\" to .gitignore","adapter":"Scrounger/ioBroker.openmediavault","timestamp":"Tue, 30 Sep 2025 07:58:37 GMT"}}
