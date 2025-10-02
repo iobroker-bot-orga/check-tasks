@@ -1,1 +1,1 @@
-{}
+{"6009":{"issue":"[W6009] Multiple copyright lines found in [README.md](https://github.com/BenAhrdt/ioBroker.lorawan/blob/master/README.md) but line(s) 1 missing trailing spaces. Add two spaces at end of each copyright line (except last) for proper formatting.","adapter":"BenAhrdt/ioBroker.lorawan","timestamp":"Thu, 02 Oct 2025 16:22:38 GMT"}}
