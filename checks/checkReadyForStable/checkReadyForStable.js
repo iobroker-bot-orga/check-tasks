@@ -312,8 +312,8 @@ async function createIssues(latest, stableFile, result) {
 
                 body += '\n';
                 body += '@copilot\n';
-                body += `Before trying to update the version at repositories, please fix all errors and warnings reported by adapterchecker for repository ${res.owner}/ioBroker.${res.adapter}.\n`;
-                body += `Do not create any PR at iobroker/iobroker.repositories unless you have verified that there are not errors or warnings reported by adapterchecker for repository ${res.owner}/ioBroker.${res.adapter}\n`;
+                body += `Before trying to update the version at ioBroker.repositories, please fix all errors and warnings reported by adapterchecker for repository ${res.owner}/ioBroker.${res.adapter}.\n`;
+                body += `Do not create any PR at iobroker/iobroker.repositories unless you have verified that there are no errors or warnings reported by adapterchecker for repository ${res.owner}/ioBroker.${res.adapter}\n`;
 
                 body += '\n';
                 body +=
@@ -336,8 +336,8 @@ async function createIssues(latest, stableFile, result) {
 
                 body += '\n';
                 body += '@copilot\n';
-                body += `Before trying to update the version at repositories, please fix all errors and warnings reported by adapterchecker for repository ${res.owner}/ioBroker.${res.adapter}.\n`;
-                body += `Do not create any PR at iobroker/iobroker.repositories unless you have verified that there are not errors or warnings reported by adapterchecker for repository ${res.owner}/ioBroker.${res.adapter}\n`;
+                body += `Before trying to update the version at ioBroker.repositories, please fix all errors and warnings reported by adapterchecker for repository ${res.owner}/ioBroker.${res.adapter}.\n`;
+                body += `Do not create any PR at iobroker/iobroker.repositories unless you have verified that there are no errors or warnings reported by adapterchecker for repository ${res.owner}/ioBroker.${res.adapter}\n`;
 
                 body += '\n';
                 body +=
