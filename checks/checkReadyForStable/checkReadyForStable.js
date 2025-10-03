@@ -333,7 +333,7 @@ async function createIssues(latest, stableFile, result) {
                 } else {
                     body += `Click to [edit](https://github.com/ioBroker/ioBroker.repositories/edit/master/sources-dist-stable.json)\n`;
                 }
-                
+
                 body += '\n';
                 body += '@copilot\n';
                 body += `Before trying to update the version at repositories, please fix all errors and warnings reported by adapterchecker for repository ${res.owner}/ioBroker.${res.adapter}.\n`;
