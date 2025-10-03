@@ -308,8 +308,12 @@ async function createIssues(latest, stableFile, result) {
                 body += `**Version**: stable=**${res.stable.version}** (${res.stable.old} days old) => latest=**${res.latest.version}** (${res.latest.old} days old)\n`;
                 body += `**Installs**: stable=**${res.stable.installs}** (${res.stable.percent}%), latest=**${res.latest.installs}** (${res.latest.percent}%), total=**${res.installs}**\n\n`;
                 body += `Click to use [developer portal](https://www.iobroker.dev/adapter/${res.owner}/ioBroker.${res.adapter}/releases)\n`;
-
                 body += `Click to [edit](https://github.com/ioBroker/ioBroker.repositories/edit/master/sources-dist-stable.json)\n`;
+
+                body += '\n';
+                body += '@copilot\n';
+                body += `Before trying to update the version at repositories, please fix all errors and warnings reported by adapterchecker for repository ${res.owner}/ioBroker.${res.adapter}.\n`;
+                body += `Do not create any PR at iobroker/iobroker.repositories unless you have verified that there are not errors or warnings reported by adapterchecker for repository ${res.owner}/ioBroker.${res.adapter}\n`;
 
                 body += '\n';
                 body +=
@@ -329,6 +333,12 @@ async function createIssues(latest, stableFile, result) {
                 } else {
                     body += `Click to [edit](https://github.com/ioBroker/ioBroker.repositories/edit/master/sources-dist-stable.json)\n`;
                 }
+                
+                body += '\n';
+                body += '@copilot\n';
+                body += `Before trying to update the version at repositories, please fix all errors and warnings reported by adapterchecker for repository ${res.owner}/ioBroker.${res.adapter}.\n`;
+                body += `Do not create any PR at iobroker/iobroker.repositories unless you have verified that there are not errors or warnings reported by adapterchecker for repository ${res.owner}/ioBroker.${res.adapter}\n`;
+
                 body += '\n';
                 body +=
                     '**Do not close this issue manually as a new issue will be created if condition for update still exists.**\n';
