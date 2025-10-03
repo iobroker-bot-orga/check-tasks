@@ -313,6 +313,8 @@ async function createIssues(latest, stableFile, result) {
                 body += '\n';
                 body += '@copilot\n';
                 body += `Before trying to update the version at ioBroker.repositories, please fix all errors and warnings reported by adapterchecker for repository ${res.owner}/ioBroker.${res.adapter}.\n`;
+                body += `You can run the repochecker using this command "npx @iobroker/repochecker ${res.owner}/ioBroker.${res.adapter}". Note that specifying the adaptername explicitly is mandatory.`;
+                body += `Running any local tests or running any workflows cannot replace the checks provided by repositorychecker`;
                 body += `Do not create any PR at iobroker/iobroker.repositories unless you have verified that there are no errors or warnings reported by adapterchecker for repository ${res.owner}/ioBroker.${res.adapter}\n`;
 
                 body += '\n';
@@ -336,7 +338,9 @@ async function createIssues(latest, stableFile, result) {
 
                 body += '\n';
                 body += '@copilot\n';
-                body += `Before trying to update the version at ioBroker.repositories, please fix all errors and warnings reported by adapterchecker for repository ${res.owner}/ioBroker.${res.adapter}.\n`;
+                body += `Before trying to update the version at ioBroker.repositories, please fix all errors and warnings reported by repochecker for repository ${res.owner}/ioBroker.${res.adapter}.\n`;
+                body += `You can run the repochecker using this command "npx @iobroker/repochecker ${res.owner}/ioBroker.${res.adapter}". Note that specifying the adaptername explicitly is mandatory.`;
+                body += `Running any local tests or running any workflows cannot replace the checks provided by repositorychecker`;
                 body += `Do not create any PR at iobroker/iobroker.repositories unless you have verified that there are no errors or warnings reported by adapterchecker for repository ${res.owner}/ioBroker.${res.adapter}\n`;
 
                 body += '\n';
