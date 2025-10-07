@@ -1,1 +1,1 @@
-{"9006":{"issue":"[S9006] .commitinfo file should be excluded by .gitignore, please add a line with text \".commitinfo\" to .gitignore","adapter":"MyHomeMyData/ioBroker.e3oncan","timestamp":"Fri, 03 Oct 2025 18:19:34 GMT"},"0063":{"issue":"[W0063] \"sinon-chai\" are included in \"@iobroker/testing\". Remove from devDependencies at [package.json](https://github.com/MyHomeMyData/ioBroker.e3oncan/blob/master/package.json)","adapter":"MyHomeMyData/ioBroker.e3oncan","timestamp":"Fri, 03 Oct 2025 18:19:34 GMT"}}
+{}
