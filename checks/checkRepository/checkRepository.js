@@ -340,7 +340,7 @@ async function prepareIssue(data, issueTable, oldIssueId) {
             `**Errors** reported by repository checker should be fixed as soon as possible - at least with next minor release. ` +
                 `Some of them require a new release to be considered as fixed. ` +
                 `**Please note that errors reported by checker might be considered as blocking point for future updates at stable repository.**` +
-                `Priority bugfixes will **not be blocked** by existing errors as long as tests pass.`;
+                `Priority bugfixes will **not be blocked** by existing errors as long as tests pass.`,
         );
     }
     if (warningsFound) {
