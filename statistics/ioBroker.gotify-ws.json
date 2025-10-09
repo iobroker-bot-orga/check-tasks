@@ -1,1 +1,1 @@
-{"0064":{"issue":"[S0064] @iobroker/adapter-dev 1.4.0 specified. Newer version 1.5.0 exists.","adapter":"simatec/ioBroker.gotify-ws","timestamp":"Thu, 02 Oct 2025 15:29:18 GMT"},"0037":{"issue":"[W0037] @iobroker/eslint-config 2.1.0 specified. 2.2.0 (or newer) is current. Please update devDependencies at [package.json](https://github.com/simatec/ioBroker.gotify-ws/blob/master/package.json)","adapter":"simatec/ioBroker.gotify-ws","timestamp":"Thu, 02 Oct 2025 15:29:18 GMT"}}
+{}
