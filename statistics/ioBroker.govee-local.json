@@ -1,1 +1,1 @@
-{"0063":{"issue":"[W0063] \"@types/sinon-chai, sinon-chai\" are included in \"@iobroker/testing\". Remove from devDependencies at [package.json](https://github.com/boergegrunicke/ioBroker.govee-local/blob/master/package.json)","adapter":"boergegrunicke/ioBroker.govee-local","timestamp":"Sun, 05 Oct 2025 09:53:58 GMT"}}
+{}
