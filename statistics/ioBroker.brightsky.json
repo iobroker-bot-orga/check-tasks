@@ -1,1 +1,1 @@
-{"5009":{"issue":"[E5009] Cannot parse \"admin/i18n/es/translations.json\": SyntaxError: Expected ',' or '}' after property value in JSON at position 2718","adapter":"ticaki/ioBroker.brightsky","timestamp":"Thu, 09 Oct 2025 20:05:55 GMT"}}
+{"5009":{"issue":"[E5009] Cannot parse \"admin/i18n/es/translations.json\": SyntaxError: Expected ',' or '}' after property value in JSON at position 2718","adapter":"ticaki/ioBroker.brightsky","timestamp":"Thu, 16 Oct 2025 17:51:14 GMT"}}
