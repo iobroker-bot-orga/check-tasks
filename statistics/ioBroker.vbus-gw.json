@@ -1,1 +1,1 @@
-{"7003":{"issue":"[W7003] Multiple copyright lines found in LICENSE but line(s) 1 missing trailing spaces. Add two spaces at end of each copyright line (except last) for proper formatting.","adapter":"pdbjjens/ioBroker.vbus-gw","timestamp":"Fri, 17 Oct 2025 11:29:02 GMT"},"9006":{"issue":"[S9006] .commitinfo file should be excluded by .gitignore, please add a line with text \".commitinfo\" to .gitignore","adapter":"pdbjjens/ioBroker.vbus-gw","timestamp":"Fri, 17 Oct 2025 11:29:02 GMT"}}
+{}
