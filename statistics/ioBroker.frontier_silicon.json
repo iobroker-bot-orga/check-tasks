@@ -1,1 +1,1 @@
-{"4038":{"issue":"[S4038] .vscode/settings.json file missing \"json.schemas\" property. Add schema definitions for better IntelliSense support.","adapter":"iobroker-community-adapters/ioBroker.frontier_silicon","timestamp":"Mon, 20 Oct 2025 16:42:08 GMT"},"9006":{"issue":"[S9006] .commitinfo file should be excluded by .gitignore, please add a line with text \".commitinfo\" to .gitignore","adapter":"iobroker-community-adapters/ioBroker.frontier_silicon","timestamp":"Mon, 20 Oct 2025 16:42:08 GMT"}}
+{}
