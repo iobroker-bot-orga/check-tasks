@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 # Script to commit and push changes with retry logic to handle concurrent commits
 # This replaces mikeal/publish-to-github-action with better race condition handling
 # Note: We don't use 'set -e' here because we need to handle errors for retry logic
@@ -29,7 +29,7 @@ while [ ${RETRY_COUNT} -lt ${MAX_RETRIES} ]; do
     
     # Pull the latest changes first to reduce chance of conflicts
     echo "Pulling latest changes..."
-    if ! git pull --rebase origin ${BRANCH_NAME}; then
+    if ! git pull --rebase origin "${BRANCH_NAME}"; then
         echo "Warning: Pull failed, will retry..."
         RETRY_COUNT=$((RETRY_COUNT + 1))
         sleep ${RETRY_DELAY}
@@ -60,7 +60,7 @@ while [ ${RETRY_COUNT} -lt ${MAX_RETRIES} ]; do
     
     # Try to push
     echo "Pushing to origin/${BRANCH_NAME}..."
-    if git push origin ${BRANCH_NAME}; then
+    if git push origin "${BRANCH_NAME}"; then
         echo "Successfully pushed changes"
         exit 0
     else
