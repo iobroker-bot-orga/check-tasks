@@ -42,7 +42,7 @@ jobs:
           IOBBOT_GITHUB_TOKEN: ${{ secrets.IOBBOT_GITHUB_TOKEN }}
 
       - name: Push new (statistic) files
-        uses: mikeal/publish-to-github-action@master
+        run: bash scripts/commit-and-push.sh
         env:
           GITHUB_TOKEN: ${{ secrets.IOBBOT_GITHUB_TOKEN }}
           BRANCH_NAME: 'main'
