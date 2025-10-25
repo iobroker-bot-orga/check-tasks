@@ -66,7 +66,7 @@ while [ ${RETRY_COUNT} -lt ${MAX_RETRIES} ]; do
     else
         echo "Push failed, likely due to concurrent updates. Retrying..."
         RETRY_COUNT=$((RETRY_COUNT + 1))
-        # Exponential backoff
+        # Linear backoff (2s, 4s, 6s, 8s, 10s)
         sleep $((RETRY_DELAY * RETRY_COUNT))
     fi
 done
