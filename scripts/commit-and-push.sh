@@ -24,39 +24,39 @@ RETRY_DELAY=2
 
 echo "Starting commit and push process for branch: ${BRANCH_NAME}"
 
+# Check if there are any changes to commit
+if git diff --quiet && git diff --cached --quiet; then
+    echo "No changes to commit, exiting successfully"
+    exit 0
+fi
+
+# Stage all changes
+git add -A
+
+# Check again after staging
+if git diff --cached --quiet; then
+    echo "No changes to commit after staging, exiting successfully"
+    exit 0
+fi
+
+# Commit changes locally first
+timestamp=$(date -u)
+git commit -m "Automated publish: ${timestamp} ${GITHUB_SHA}" || {
+    echo "Nothing to commit"
+    exit 0
+}
+
 while [ ${RETRY_COUNT} -lt ${MAX_RETRIES} ]; do
     echo "Attempt $((RETRY_COUNT + 1)) of ${MAX_RETRIES}"
     
-    # Pull the latest changes first to reduce chance of conflicts
+    # Pull the latest changes with rebase
     echo "Pulling latest changes..."
     if ! git pull --rebase origin "${BRANCH_NAME}"; then
-        echo "Warning: Pull failed, will retry..."
+        echo "Warning: Pull with rebase failed, will retry..."
         RETRY_COUNT=$((RETRY_COUNT + 1))
-        sleep ${RETRY_DELAY}
+        sleep $((RETRY_DELAY * RETRY_COUNT))
         continue
     fi
-    
-    # Check if there are any changes to commit
-    if git diff --quiet && git diff --cached --quiet; then
-        echo "No changes to commit, exiting successfully"
-        exit 0
-    fi
-    
-    # Stage all changes
-    git add -A
-    
-    # Check again after staging
-    if git diff --cached --quiet; then
-        echo "No changes to commit after staging, exiting successfully"
-        exit 0
-    fi
-    
-    # Commit changes
-    timestamp=$(date -u)
-    git commit -m "Automated publish: ${timestamp} ${GITHUB_SHA}" || {
-        echo "Nothing to commit"
-        exit 0
-    }
     
     # Try to push
     echo "Pushing to origin/${BRANCH_NAME}..."
@@ -65,10 +65,8 @@ while [ ${RETRY_COUNT} -lt ${MAX_RETRIES} ]; do
         exit 0
     else
         echo "Push failed, likely due to concurrent updates. Retrying..."
-        # Reset the commit to try again with fresh pull
-        git reset --soft HEAD^
         RETRY_COUNT=$((RETRY_COUNT + 1))
-        # Exponential backoff
+        # Linear backoff (2s, 4s, 6s, 8s, 10s)
         sleep $((RETRY_DELAY * RETRY_COUNT))
     fi
 done
