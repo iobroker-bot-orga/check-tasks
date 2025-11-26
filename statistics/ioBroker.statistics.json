@@ -1,1 +1,1 @@
-{"5035":{"issue":"[E5035] Cannot parse YAML file \".github/workflows/test-and-release.yml\": duplicated mapping key (67:5)","adapter":"iobroker-community-adapters/ioBroker.statistics","timestamp":"Wed, 26 Nov 2025 06:44:43 GMT"}}
+{"5035":{"issue":"[E5035] Cannot parse YAML file \".github/workflows/test-and-release.yml\": duplicated mapping key (67:5)","adapter":"iobroker-community-adapters/ioBroker.statistics","timestamp":"Wed, 26 Nov 2025 08:45:30 GMT"}}
