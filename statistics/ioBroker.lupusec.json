@@ -1,1 +1,1 @@
-{"0064":{"issue":"[S0064] @iobroker/adapter-dev 1.4.0 specified. Newer version 1.5.0 exists.","adapter":"schmupu/ioBroker.lupusec","timestamp":"Fri, 28 Nov 2025 06:52:11 GMT"},"0063":{"issue":"[W0063] \"@types/sinon-chai, sinon-chai\" are included in \"@iobroker/testing\". Remove from devDependencies at [package.json](https://github.com/schmupu/ioBroker.lupusec/blob/master/package.json)","adapter":"schmupu/ioBroker.lupusec","timestamp":"Fri, 28 Nov 2025 06:52:11 GMT"}}
+{}
