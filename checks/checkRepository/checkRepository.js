@@ -230,7 +230,7 @@ async function prepareIssue(data, issueTable, oldIssueId) {
 
     try {
         const latestSVG = await common.getUrl(
-            `http://iobroker.live/badges/${adapter.replace('ioBroker.', '')}-installed.svg`,
+            `https://iobroker.live/badges/${adapter.replace('ioBroker.', '')}-installed.svg`,
         );
         data.badgeLatest = (latestSVG || '').toString().startsWith('<svg ');
     } catch (e) {
@@ -239,7 +239,7 @@ async function prepareIssue(data, issueTable, oldIssueId) {
     }
     try {
         const stableSVG = await common.getUrl(
-            `http://iobroker.live/badges/${adapter.replace('ioBroker.', '')}-stable.svg`,
+            `https://iobroker.live/badges/${adapter.replace('ioBroker.', '')}-stable.svg`,
         );
         data.badgeStable = (stableSVG || '').toString().startsWith('<svg ');
     } catch (e) {
@@ -265,10 +265,10 @@ async function prepareIssue(data, issueTable, oldIssueId) {
 
     let badges = `[![Downloads](https://img.shields.io/npm/dm/${adapter.toLowerCase()}.svg)](https://www.npmjs.com/package/${adapter.toLowerCase()}) `;
     if (data.badgeLatest) {
-        badges += `![Number of Installations (latest)](http://iobroker.live/badges/${adapter.replace('ioBroker.', '')}-installed.svg) `;
+        badges += `![Number of Installations (latest)](https://iobroker.live/badges/${adapter.replace('ioBroker.', '')}-installed.svg) `;
     }
     if (data.badgeStable) {
-        badges += `![Number of Installations (stable)](http://iobroker.live/badges/${adapter.replace('ioBroker.', '')}-stable.svg)`;
+        badges += `![Number of Installations (stable)](https://iobroker.live/badges/${adapter.replace('ioBroker.', '')}-stable.svg)`;
     }
 
     badges += ` - [![Test and Release](https://github.com/${owner}/${adapter}/actions/workflows/test-and-release.yml/badge.svg)](https://github.com/${owner}/${adapter}/actions/workflows/test-and-release.yml)`;
