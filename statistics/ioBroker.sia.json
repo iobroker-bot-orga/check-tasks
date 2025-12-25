@@ -1,1 +1,1 @@
-{"1103":{"issue":"[W1103] Encryption of array elements \"keys.password\" is not yet available","adapter":"schmupu/ioBroker.sia","timestamp":"Thu, 18 Dec 2025 23:39:15 GMT"}}
+{"1103":{"issue":"[W1103] Encryption of array elements \"keys.password\" is not yet available","adapter":"schmupu/ioBroker.sia","timestamp":"Thu, 25 Dec 2025 23:39:14 GMT"},"8004":{"issue":"[W8004] Please process PR [[#80] \"[iobroker-bot] Fix Schema Links for VSCode\"](https://github.com/schmupu/ioBroker.sia/issues/80)","adapter":"schmupu/ioBroker.sia","timestamp":"Thu, 25 Dec 2025 23:39:14 GMT"}}
