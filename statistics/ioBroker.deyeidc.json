@@ -1,1 +1,1 @@
-{"1056":{"issue":"[W1056] admin 7.6.14 listed as dependency but 7.6.17 is recommended. Please consider updating globalDependency at [io-package.json](https://github.com/raschy/ioBroker.deyeidc/blob/master/io-package.json).","adapter":"raschy/ioBroker.deyeidc","timestamp":"Thu, 29 Jan 2026 20:39:38 GMT"},"8004":{"issue":"[W8004] Please process PR [[#235] \"[iobroker-bot] Setup Auto-Merge for Dependabot PRs\"](https://github.com/raschy/ioBroker.deyeidc/issues/235)","adapter":"raschy/ioBroker.deyeidc","timestamp":"Thu, 29 Jan 2026 20:39:38 GMT"}}
+{}
