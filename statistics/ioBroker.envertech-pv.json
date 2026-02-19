@@ -1,1 +1,1 @@
-{}
+{"1032":{"issue":"[W1032] Many \"common.news\" found in [io-package.json](https://github.com/iobroker-community-adapters/ioBroker.envertech-pv/blob/master/io-package.json). Repository builder will truncate at 7 news. Please remove old news.","adapter":"iobroker-community-adapters/ioBroker.envertech-pv","timestamp":"Thu, 19 Feb 2026 21:06:24 GMT"}}
