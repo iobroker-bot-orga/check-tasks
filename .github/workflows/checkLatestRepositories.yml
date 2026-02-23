@@ -6,6 +6,11 @@ on:
 
   workflow_dispatch:
     inputs:
+      filter:
+        type: string
+        required: false
+        description: 'Filter repositories by owner/name pattern (optional). Supports wildcards: owner/*, */name, owner*/*, */*pattern*. Case-insensitive.'
+
       flags:
         type: string
         required: false
@@ -28,6 +33,19 @@ jobs:
         with:
           node-version: 20
       - run: npm i
-      - run: node checks/checkLatestRepositories/checkLatestRepositories.js ${{ github.event.inputs.flags }} 
+      - name: Trim workflow parameters
+        id: trim_params
+        run: |
+          FILTER=$(echo "${{ github.event.inputs.filter }}" | xargs)
+          FLAGS=$(echo "${{ github.event.inputs.flags }}" | xargs)
+          # Only pass --filter flag when filter is non-empty
+          if [ -n "$FILTER" ]; then
+            FILTER_ARG="--filter=$FILTER"
+          else
+            FILTER_ARG=""
+          fi
+          echo "filter_arg=$FILTER_ARG" >> $GITHUB_OUTPUT
+          echo "flags=$FLAGS" >> $GITHUB_OUTPUT
+      - run: node checks/checkLatestRepositories/checkLatestRepositories.js ${{ steps.trim_params.outputs.filter_arg }} ${{ steps.trim_params.outputs.flags }} 
         env:
           IOBBOT_GITHUB_TOKEN: ${{ secrets.IOBBOT_GITHUB_TOKEN }}
