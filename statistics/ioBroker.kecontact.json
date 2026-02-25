@@ -1,1 +1,1 @@
-{}
+{"0037":{"issue":"[W0037] @alcalzone/release-script-plugin-manual-review 4.0.0 specified. 5.1.1 (or newer) is current. Please update devDependencies at [package.json](https://github.com/iobroker-community-adapters/ioBroker.kecontact/blob/master/package.json)","adapter":"iobroker-community-adapters/ioBroker.kecontact","timestamp":"Wed, 25 Feb 2026 14:23:10 GMT"}}
