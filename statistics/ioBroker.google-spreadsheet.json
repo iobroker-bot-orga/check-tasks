@@ -1,1 +1,1 @@
-{}
+{"1056":{"issue":"[W1056] admin 7.6.17 listed as dependency but 7.6.20 is recommended. Please consider updating globalDependency at [io-package.json](https://github.com/ThomasPohl/ioBroker.google-spreadsheet/blob/master/io-package.json).","adapter":"ThomasPohl/ioBroker.google-spreadsheet","timestamp":"Thu, 26 Feb 2026 21:30:28 GMT"}}
