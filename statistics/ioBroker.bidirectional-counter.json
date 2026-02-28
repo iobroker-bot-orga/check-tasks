@@ -1,1 +1,1 @@
-{"1057":{"issue":"[E1057] admin 7.2.22 listed as dependency but 7.6.17 is required as minimum, 7.6.20 is recommended. Please update globalDependency at [io-package.json](https://github.com/BenAhrdt/ioBroker.bidirectional-counter/blob/master/io-package.json).","adapter":"BenAhrdt/ioBroker.bidirectional-counter","timestamp":"Sat, 28 Feb 2026 08:50:03 GMT"}}
+{}
