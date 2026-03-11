@@ -1,1 +1,1 @@
-{"1056":{"issue":"[W1056] admin 7.6.17 listed as dependency but 7.6.20 is recommended. Please consider updating globalDependency at [io-package.json](https://github.com/ThomasPohl/ioBroker.google-spreadsheet/blob/master/io-package.json).","adapter":"ThomasPohl/ioBroker.google-spreadsheet","timestamp":"Thu, 05 Mar 2026 21:33:32 GMT"}}
+{"8910":{"issue":"[S8910] File \"/.github/workflows/dependabot-auto-merge.yml.OLD\" was found. If it is no longer needed, consider deleting it.","adapter":"ThomasPohl/ioBroker.google-spreadsheet","timestamp":"Wed, 11 Mar 2026 19:42:42 GMT"}}
