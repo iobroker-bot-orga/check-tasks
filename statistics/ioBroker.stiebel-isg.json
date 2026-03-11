@@ -1,1 +1,1 @@
-{}
+{"3009":{"issue":"[W3009] Workflow \"/.github/workflows/test-and-release.yml\" is missing the recommended concurrency configuration:\n  concurrency:\n    group: ${{ github.ref }}\n    cancel-in-progress: true","adapter":"iobroker-community-adapters/ioBroker.stiebel-isg","timestamp":"Wed, 11 Mar 2026 11:51:56 GMT"}}
