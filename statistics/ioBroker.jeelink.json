@@ -1,1 +1,1 @@
-{"5032":{"issue":"[S5032] \"lib/tools.js\" found in repo but not used anywhere. Consider removing file.","adapter":"foxthefox/ioBroker.jeelink","timestamp":"Sat, 14 Mar 2026 22:33:31 GMT"},"0063":{"issue":"[W0063] \"mocha\" are included in \"@iobroker/testing\". Remove from devDependencies at [package.json](https://github.com/foxthefox/ioBroker.jeelink/blob/master/package.json)","adapter":"foxthefox/ioBroker.jeelink","timestamp":"Sat, 14 Mar 2026 22:33:31 GMT"}}
+{}
