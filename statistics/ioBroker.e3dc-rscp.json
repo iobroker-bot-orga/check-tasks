@@ -1,1 +1,1 @@
-{"8901":{"issue":"[S8901] Dependabot configuration file \".github/dependabot.yml\" not found. Consider adding dependabot to keep dependencies up to date.","adapter":"git-kick/ioBroker.e3dc-rscp","timestamp":"Thu, 12 Mar 2026 20:54:25 GMT"},"0036":{"issue":"[E0036] @iobroker/testing 5.1.1 specified. 5.2.2 is required as minimum,  5.2.2 (or newer) is current. Please update devDependencies at [package.json](https://github.com/git-kick/ioBroker.e3dc-rscp/blob/master/package.json)","adapter":"git-kick/ioBroker.e3dc-rscp","timestamp":"Thu, 12 Mar 2026 20:54:25 GMT"}}
+{}
