@@ -1,1 +1,1 @@
-{"3009":{"issue":"[W3009] Workflow \"/.github/workflows/test-and-release.yml\" is missing the recommended concurrency configuration:","adapter":"iobroker-community-adapters/ioBroker.myvbus","timestamp":"Thu, 19 Mar 2026 07:29:10 GMT"},"8910":{"issue":"[S8910] File \"/.github/workflows/dependabot-auto-merge.yml.OLD\" was found. If it is no longer needed, consider deleting it.","adapter":"iobroker-community-adapters/ioBroker.myvbus","timestamp":"Thu, 19 Mar 2026 07:29:10 GMT"}}
+{}
