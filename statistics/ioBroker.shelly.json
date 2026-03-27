@@ -1,1 +1,1 @@
-{}
+{"5043":{"issue":"[S5043] Package \"net\" is a built-in Node.js module. Please use \"node:net\" instead.","adapter":"iobroker-community-adapters/ioBroker.shelly","timestamp":"Fri, 27 Mar 2026 16:11:55 GMT"}}
