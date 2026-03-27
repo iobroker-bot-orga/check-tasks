@@ -1,1 +1,1 @@
-{}
+{"5043":{"issue":"[S5043] Package \"fs\" is a built-in Node.js module. Please use \"node:fs\" instead.","adapter":"iobroker-community-adapters/ioBroker.worx","timestamp":"Fri, 27 Mar 2026 16:28:59 GMT"}}
