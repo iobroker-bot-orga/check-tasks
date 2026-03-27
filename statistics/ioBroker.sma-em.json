@@ -1,1 +1,1 @@
-{}
+{"5043":{"issue":"[S5043] Package \"os\" is a built-in Node.js module. Please use \"node:os\" instead.","adapter":"iobroker-community-adapters/ioBroker.sma-em","timestamp":"Fri, 27 Mar 2026 16:11:56 GMT"}}
