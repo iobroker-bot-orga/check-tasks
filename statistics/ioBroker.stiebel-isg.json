@@ -1,1 +1,1 @@
-{}
+{"5042":{"issue":"[W5042] Package \"undici\" is used in source files but not found in dependencies of [package.json](https://github.com/iobroker-community-adapters/ioBroker.stiebel-isg/blob/master/package.json). Dependency might be missing.","adapter":"iobroker-community-adapters/ioBroker.stiebel-isg","timestamp":"Fri, 27 Mar 2026 16:18:51 GMT"},"5043":{"issue":"[S5043] Package \"querystring\" is a built-in Node.js module. Please use \"node:querystring\" instead.","adapter":"iobroker-community-adapters/ioBroker.stiebel-isg","timestamp":"Fri, 27 Mar 2026 16:18:51 GMT"}}
