@@ -2,7 +2,14 @@
 const { parseArgs } = require('node:util');
 
 const { sleep } = require('../../lib/commonTools');
-const { getAllIssues, getAllLabels, addComment, createIssue, closeIssue } = require('../../lib/githubTools');
+const {
+    getAllIssues,
+    getAllLabels,
+    addComment,
+    createIssue,
+    closeIssue,
+    updateIssue,
+} = require('../../lib/githubTools');
 const { getLatestRepoLive, getStableRepoFile, getStableRepoLive, getStatistics } = require('../../lib/iobrokerTools');
 //const { exit } = require('node:process');
 
@@ -47,7 +54,7 @@ function triggerRepoCheck(owner, adapter) {
         .catch(e => console.error(e));
 }
 
-async function checkIssues(latest, stable, statistics, result) {
+async function checkIssues(latest, stable, statistics, result, stableFile) {
     for (const adapter in latest) {
         if (!adapter.startsWith('_')) {
             console.log(`checking ${adapter} ...\n`);
@@ -76,6 +83,18 @@ async function checkIssues(latest, stable, statistics, result) {
                     console.log(`    ${issue.title} detected - issue still valid`);
                     //console.log(JSON.stringify(res));
                     result[adapter].issueId = issueId;
+                    const updatedBody = generateIssueBody(res, stableFile);
+                    try {
+                        if (!opts.dry) {
+                            await updateIssue(owner, `ioBroker.${adapter}`, issueId, { body: updatedBody });
+                            console.log(`    issue ${issueId} body updated`);
+                        } else {
+                            console.log(`[DRY] would update body of issue ${issueId}`);
+                        }
+                    } catch (e) {
+                        console.log(`error updating issue ${issueId}`);
+                        console.log(e.toString());
+                    }
                     const labels = await getAllLabels(owner, `ioBroker.${adapter}`, issueId);
                     for (let i = 0; i < labels.length; i++) {
                         if (labels[i].name.toLowerCase() === 'stale') {
@@ -267,6 +286,77 @@ async function cleanIssues(latest) {
     }
 }
 
+function generateIssueBody(res, stableFile) {
+    // find line number in stable file (for edit link)
+    let num;
+    if (stableFile) {
+        const lines = stableFile.split('\n');
+        for (let i = 0; i < lines.length; i++) {
+            const reg = new RegExp(`^\\s*"${res.adapter}":\\s{$`);
+            if (reg.test(lines[i])) {
+                num = i + 1;
+                break;
+            }
+        }
+    }
+
+    let body = '';
+
+    if (res.stable.version === '0.0.0') {
+        body += `# Think about adding version ${res.latest.version} to stable repository.\n`;
+        body += `**Version**: stable=**${res.stable.version}** (${res.stable.old} days old) => latest=**${res.latest.version}** (${res.latest.old} days old)\n`;
+        body += `**Installs**: stable=**${res.stable.installs}** (${res.stable.percent}%), latest=**${res.latest.installs}** (${res.latest.percent}%), total=**${res.installs}**\n\n`;
+        body += `Click to use [developer portal](https://www.iobroker.dev/adapter/${res.owner}/ioBroker.${res.adapter}/releases)\n`;
+        body += `Click to [edit](https://github.com/ioBroker/ioBroker.repositories/edit/master/sources-dist-stable.json)\n`;
+
+        body += '\n';
+        body += '@copilot\n';
+        body += `Before trying to update the version at ioBroker.repositories, please fix all errors and warnings reported by adapterchecker for repository ${res.owner}/ioBroker.${res.adapter}.\n`;
+        body += `You can run the repochecker using this command "npx @iobroker/repochecker ${res.owner}/ioBroker.${res.adapter}". Note that specifying the adaptername explicitly is mandatory.`;
+        body += `Running any local tests or running any workflows cannot replace the checks provided by repositorychecker`;
+        body += `Do not create any PR at iobroker/iobroker.repositories unless you have verified that there are no errors or warnings reported by adapterchecker for repository ${res.owner}/ioBroker.${res.adapter}\n`;
+
+        body += '\n';
+        body +=
+            '**Do not close this issue manually as a new issue will be created if condition for update still exists.**\n';
+        body += '\n';
+        body += `Please drop a comment if any reason exists which blocks adding adapter version ${res.latest.version} to stable at this time.\n`;
+        body += '\n\n';
+    } else {
+        body += `# Think about update stable version to ${res.latest.version}\n`;
+
+        body += `**Version**: stable=**${res.stable.version}** (${res.stable.old} days old) => latest=**${res.latest.version}** (${res.latest.old} days old)\n`;
+        body += `**Installs**: stable=**${res.stable.installs}** (${res.stable.percent}%), latest=**${res.latest.installs}** (${res.latest.percent}%), total=**${res.installs}**\n\n`;
+
+        body += `Click to use [developer portal](https://www.iobroker.dev/adapter/${res.owner}/ioBroker.${res.adapter}/releases)\n`;
+        if (num !== undefined) {
+            body += `Click to [edit](https://github.com/ioBroker/ioBroker.repositories/edit/master/sources-dist-stable.json#L${num})\n`;
+        } else {
+            body += `Click to [edit](https://github.com/ioBroker/ioBroker.repositories/edit/master/sources-dist-stable.json)\n`;
+        }
+
+        body += '\n';
+        body += '@copilot\n';
+        body += `Before trying to update the version at ioBroker.repositories, please fix all errors and warnings reported by repochecker for repository ${res.owner}/ioBroker.${res.adapter}.\n`;
+        body += `You can run the repochecker using this command "npx @iobroker/repochecker ${res.owner}/ioBroker.${res.adapter}". Note that specifying the adaptername explicitly is mandatory.`;
+        body += `Running any local tests or running any workflows cannot replace the checks provided by repositorychecker`;
+        body += `Do not create any PR at iobroker/iobroker.repositories unless you have verified that there are no errors or warnings reported by adapterchecker for repository ${res.owner}/ioBroker.${res.adapter}\n`;
+
+        body += '\n';
+        body +=
+            '**Do not close this issue manually as a new issue will be created if condition for update still exists.**\n';
+        body += '\n';
+        body += `Please drop a comment if any reason exists which blocks updating to version ${res.latest.version} at this time.\n`;
+        body += '\n\n';
+    }
+
+    body +=
+        'Note: This is an automatically generated message. Feel free to contact me (@iobroker-bot) if anything seems to be incorrect!\n';
+    body += '      @mcm1957 for evidence';
+
+    return body;
+}
+
 async function createIssues(latest, stableFile, result) {
     for (const adapter in latest) {
         if (!adapter.startsWith('_')) {
@@ -285,75 +375,7 @@ async function createIssues(latest, stableFile, result) {
 
             debug(`will create issue for adapter ${adapter}`);
 
-            //console.log (JSON.stringify(result));
-            //return;
-
-            // find line count
-            const lines = stableFile.split('\n');
-
-            // find line number
-            let num;
-            for (let i = 0; i < lines.length; i++) {
-                const reg = new RegExp(`^\\s*"${adapter}":\\s{$`);
-                if (reg.test(lines[i])) {
-                    num = i + 1;
-                    break;
-                }
-            }
-
-            let body = '';
-
-            if (res.stable.version === '0.0.0') {
-                body += `# Think about adding version ${res.latest.version} to stable repository.\n`;
-                body += `**Version**: stable=**${res.stable.version}** (${res.stable.old} days old) => latest=**${res.latest.version}** (${res.latest.old} days old)\n`;
-                body += `**Installs**: stable=**${res.stable.installs}** (${res.stable.percent}%), latest=**${res.latest.installs}** (${res.latest.percent}%), total=**${res.installs}**\n\n`;
-                body += `Click to use [developer portal](https://www.iobroker.dev/adapter/${res.owner}/ioBroker.${res.adapter}/releases)\n`;
-                body += `Click to [edit](https://github.com/ioBroker/ioBroker.repositories/edit/master/sources-dist-stable.json)\n`;
-
-                body += '\n';
-                body += '@copilot\n';
-                body += `Before trying to update the version at ioBroker.repositories, please fix all errors and warnings reported by adapterchecker for repository ${res.owner}/ioBroker.${res.adapter}.\n`;
-                body += `You can run the repochecker using this command "npx @iobroker/repochecker ${res.owner}/ioBroker.${res.adapter}". Note that specifying the adaptername explicitly is mandatory.`;
-                body += `Running any local tests or running any workflows cannot replace the checks provided by repositorychecker`;
-                body += `Do not create any PR at iobroker/iobroker.repositories unless you have verified that there are no errors or warnings reported by adapterchecker for repository ${res.owner}/ioBroker.${res.adapter}\n`;
-
-                body += '\n';
-                body +=
-                    '**Do not close this issue manually as a new issue will be created if condition for update still exists.**\n';
-                body += '\n';
-                body += `Please drop a comment if any reason exists which blocks adding adapter version ${res.latest.version} to stable at this time.\n`;
-                body += '\n\n';
-            } else {
-                body += `# Think about update stable version to ${res.latest.version}\n`;
-
-                body += `**Version**: stable=**${res.stable.version}** (${res.stable.old} days old) => latest=**${res.latest.version}** (${res.latest.old} days old)\n`;
-                body += `**Installs**: stable=**${res.stable.installs}** (${res.stable.percent}%), latest=**${res.latest.installs}** (${res.latest.percent}%), total=**${res.installs}**\n\n`;
-
-                body += `Click to use [developer portal](https://www.iobroker.dev/adapter/${res.owner}/ioBroker.${res.adapter}/releases)\n`;
-                if (num !== undefined) {
-                    body += `Click to [edit](https://github.com/ioBroker/ioBroker.repositories/edit/master/sources-dist-stable.json#L${num})\n`;
-                } else {
-                    body += `Click to [edit](https://github.com/ioBroker/ioBroker.repositories/edit/master/sources-dist-stable.json)\n`;
-                }
-
-                body += '\n';
-                body += '@copilot\n';
-                body += `Before trying to update the version at ioBroker.repositories, please fix all errors and warnings reported by repochecker for repository ${res.owner}/ioBroker.${res.adapter}.\n`;
-                body += `You can run the repochecker using this command "npx @iobroker/repochecker ${res.owner}/ioBroker.${res.adapter}". Note that specifying the adaptername explicitly is mandatory.`;
-                body += `Running any local tests or running any workflows cannot replace the checks provided by repositorychecker`;
-                body += `Do not create any PR at iobroker/iobroker.repositories unless you have verified that there are no errors or warnings reported by adapterchecker for repository ${res.owner}/ioBroker.${res.adapter}\n`;
-
-                body += '\n';
-                body +=
-                    '**Do not close this issue manually as a new issue will be created if condition for update still exists.**\n';
-                body += '\n';
-                body += `Please drop a comment if any reason exists which blocks updating to version ${res.latest.version} at this time.\n`;
-                body += '\n\n';
-            }
-
-            body +=
-                'Note: This is an automatically generated message. Feel free to contact me (@iobroker-bot) if anything seems to be incorrect!\n';
-            body += '      @mcm1957 for evidence';
+            const body = generateIssueBody(res, stableFile);
 
             console.log(
                 `CREATE ISSUE for ioBroker.${adapter} [ https://www.github.com/${res.owner}/ioBroker.${res.adapter} ]:`,
@@ -662,7 +684,7 @@ async function main() {
     const result = await evaluateReleases(latest, stable, statistics);
 
     console.log(`\n[INFO]checking issues...`);
-    await checkIssues(latest, stable, statistics, result);
+    await checkIssues(latest, stable, statistics, result, master);
 
     console.log(`\n[INFO]creating new issues...`);
     await createIssues(latest, master, result);
