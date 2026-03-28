@@ -60,7 +60,7 @@ async function checkIssues(latest, stable, statistics, result) {
                 i => i.state === 'open' && (i.title.startsWith(TITLE_ADD) || i.title.startsWith(TITLE_UPDATE)),
             );
             for (const issue of issues) {
-                const issueId = issues[0].number;
+                const issueId = issue.number;
                 console.log(`\n${adapter}: [ https://www.github.com/${owner}/iobroker.${adapter} ]`);
                 //const res = result.filter(r => r.adapter === adapter);
                 const res = result[adapter];
@@ -101,7 +101,7 @@ async function checkIssues(latest, stable, statistics, result) {
                     console.log(`    ${issue.title} detected`);
                     // const TITLE_ADD = 'Please add adapter to stable repository -';
                     // const TITLE_UPDATE = 'Consider updating stable version in repo';
-                    let matches = issue.title.match(/^🚀 Please add adapter to stable repository - (\d+\.\d+\.\d+)/);
+                    let matches = issue.title.match(/^🚀 Please add adapter to stable repository - +(\d+\.\d+\.\d+)/);
                     if (matches && matches.length) {
                         issue.from = '0.0.0';
                         issue.to = matches[1];
