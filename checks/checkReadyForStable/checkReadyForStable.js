@@ -141,7 +141,7 @@ async function checkIssues(latest, stable, statistics, result) {
                         }
                         try {
                             if (!opts.dry) {
-                                await closeIssue(owner, `ioBroker.${adapter}`, issueId);
+                                await closeIssue(owner, `ioBroker.${adapter}`, issueId, 'not_planned');
                                 console.log(`    issue ${issueId} closed`);
                             } else {
                                 console.log(`[DRY] would close ${issueId}`);
@@ -176,7 +176,7 @@ async function checkIssues(latest, stable, statistics, result) {
                         }
                         try {
                             if (!opts.dry) {
-                                await closeIssue(owner, `ioBroker.${adapter}`, issueId);
+                                await closeIssue(owner, `ioBroker.${adapter}`, issueId, 'not_planned');
                                 console.log(`    issue ${issueId} closed`);
                             } else {
                                 console.log(`[DRY] would close ${issueId}`);
@@ -208,7 +208,7 @@ async function checkIssues(latest, stable, statistics, result) {
                         }
                         try {
                             if (!opts.dry) {
-                                await closeIssue(owner, `ioBroker.${adapter}`, issueId);
+                                await closeIssue(owner, `ioBroker.${adapter}`, issueId, 'not_planned');
                                 console.log(`    issue ${issueId} closed`);
                             } else {
                                 console.log(`[DRY] would close ${issueId}`);
@@ -253,7 +253,7 @@ async function cleanIssues(latest) {
                 }
                 try {
                     if (!opts.dry) {
-                        await closeIssue(owner, `ioBroker.${adapter}`, issueId);
+                        await closeIssue(owner, `ioBroker.${adapter}`, issueId, 'not_planned');
                         console.log(`    issue ${issueId} closed`);
                     } else {
                         console.log(`[DRY] would close ${issueId}`);
