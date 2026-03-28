@@ -354,6 +354,13 @@ function generateIssueBody(res, stableFile) {
         'Note: This is an automatically generated message. Feel free to contact me (@iobroker-bot) if anything seems to be incorrect!\n';
     body += '      @mcm1957 for evidence';
 
+    const now = new Date();
+    const pad = n => String(n).padStart(2, '0');
+    const timestamp =
+        `${pad(now.getUTCDate())}.${pad(now.getUTCMonth() + 1)}.${now.getUTCFullYear()} ` +
+        `${pad(now.getUTCHours())}:${pad(now.getUTCMinutes())}:${pad(now.getUTCSeconds())}`;
+    body += `\n\nlast modified ${timestamp}`;
+
     return body;
 }
 
