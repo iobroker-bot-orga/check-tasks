@@ -5,7 +5,9 @@ const { sleep } = require('../../lib/commonTools');
 const {
     getAllIssues,
     getAllLabels,
+    getAllComments,
     addComment,
+    deleteComment,
     createIssue,
     closeIssue,
     updateIssue,
@@ -20,6 +22,15 @@ const TITLE_ADD = '🚀 Please add adapter to stable repository - ';
 const TITLE_UPDATE = '🚀 Consider updating stable version in repo';
 
 const ONE_DAY = 3600000 * 24;
+const ONE_WEEK = 7 * ONE_DAY;
+const TWO_WEEKS = 14 * ONE_DAY;
+const TWO_MONTHS = 60 * ONE_DAY;
+
+const IOBROKER_BOT_NAME = 'iobroker-bot';
+const REMINDER_FIRST_TEXT =
+    'This is just a kind reminder. Is there any reason to delay processing this issue any longer?';
+const REMINDER_FOLLOWUP_TEXT =
+    'This is just another reminder. Is there any reason to delay processing this issue any longer?';
 
 const opts = {
     nocheck: false,
@@ -82,37 +93,153 @@ async function checkIssues(latest, stable, statistics, result, stableFile) {
                 if (issue.title === newTitle) {
                     console.log(`    ${issue.title} detected - issue still valid`);
                     //console.log(JSON.stringify(res));
-                    result[adapter].issueId = issueId;
-                    const updatedBody = generateIssueBody(res, stableFile);
-                    try {
-                        if (!opts.dry) {
-                            await updateIssue(owner, `ioBroker.${adapter}`, issueId, { body: updatedBody });
-                            console.log(`    issue ${issueId} body updated`);
-                        } else {
-                            console.log(`[DRY] would update body of issue ${issueId}`);
+
+                    const now = new Date();
+                    const issueCreatedAt = new Date(issue.created_at);
+                    const issueAgeMs = now.getTime() - issueCreatedAt.getTime();
+
+                    if (issueAgeMs > TWO_MONTHS) {
+                        // Issue is older than 2 months - close it and let createIssues recreate
+                        console.log(
+                            `    issue ${issueId} is older than 2 months, closing and replacing with new issue`,
+                        );
+                        const comment =
+                            `This issue is outdated (older than 2 months) and will be replaced by a new issue.\n\n` +
+                            `@mcm1957 for evidence`;
+                        try {
+                            if (!opts.dry) {
+                                await addComment(owner, `ioBroker.${adapter}`, issueId, comment);
+                                console.log(`    outdated comment added to ${issueId}`);
+                            } else {
+                                console.log(`[DRY] would add outdated comment to ${issueId}`);
+                            }
+                        } catch (e) {
+                            console.log(`error adding comment to ${issueId}`);
+                            console.log(e.toString());
                         }
-                    } catch (e) {
-                        console.log(`error updating issue ${issueId}`);
-                        console.log(e.toString());
-                    }
-                    const labels = await getAllLabels(owner, `ioBroker.${adapter}`, issueId);
-                    for (let i = 0; i < labels.length; i++) {
-                        if (labels[i].name.toLowerCase() === 'stale') {
-                            console.log(`    issue marked as stale, will try to refresh`);
-                            const comment =
-                                `This issue seems to be still valid. So it should not be flagged stale.\n` +
-                                `Please consider processing the issue\n` +
-                                `@mcm1957 for evidence`;
-                            try {
-                                if (!opts.dry) {
-                                    await addComment(owner, `ioBroker.${adapter}`, issueId, comment);
-                                    console.log(`    comment added to ${issueId}`);
-                                } else {
-                                    console.log(`[DRY] would add comment to ${issueId}`);
+                        try {
+                            if (!opts.dry) {
+                                await closeIssue(owner, `ioBroker.${adapter}`, issueId);
+                                console.log(`    issue ${issueId} closed`);
+                            } else {
+                                console.log(`[DRY] would close issue ${issueId}`);
+                            }
+                        } catch (e) {
+                            console.log(`error closing issue ${issueId}`);
+                            console.log(e.toString());
+                        }
+                        // Clear issueId so createIssues will create a new one, and store replacement reference
+                        result[adapter].issueId = null;
+                        result[adapter].replacesIssueId = issueId;
+                        result[adapter].replacesIssueUrl =
+                            `https://github.com/${owner}/ioBroker.${adapter}/issues/${issueId}`;
+                    } else {
+                        result[adapter].issueId = issueId;
+                        const updatedBody = generateIssueBody(res, stableFile);
+                        try {
+                            if (!opts.dry) {
+                                await updateIssue(owner, `ioBroker.${adapter}`, issueId, { body: updatedBody });
+                                console.log(`    issue ${issueId} body updated`);
+                            } else {
+                                console.log(`[DRY] would update body of issue ${issueId}`);
+                            }
+                        } catch (e) {
+                            console.log(`error updating issue ${issueId}`);
+                            console.log(e.toString());
+                        }
+                        const labels = await getAllLabels(owner, `ioBroker.${adapter}`, issueId);
+                        for (let i = 0; i < labels.length; i++) {
+                            if (labels[i].name.toLowerCase() === 'stale') {
+                                console.log(`    issue marked as stale, will try to refresh`);
+                                const comment =
+                                    `This issue seems to be still valid. So it should not be flagged stale.\n` +
+                                    `Please consider processing the issue\n` +
+                                    `@mcm1957 for evidence`;
+                                try {
+                                    if (!opts.dry) {
+                                        await addComment(owner, `ioBroker.${adapter}`, issueId, comment);
+                                        console.log(`    comment added to ${issueId}`);
+                                    } else {
+                                        console.log(`[DRY] would add comment to ${issueId}`);
+                                    }
+                                } catch (e) {
+                                    console.log(`error adding comment to ${issueId}`);
+                                    console.log(e.toString());
                                 }
+                            }
+                        }
+
+                        if (issueAgeMs > ONE_WEEK) {
+                            let comments = [];
+                            try {
+                                comments = await getAllComments(owner, `ioBroker.${adapter}`, issueId);
+                                comments.sort((a, b) => new Date(a.created_at) - new Date(b.created_at));
                             } catch (e) {
-                                console.log(`error adding comment to ${issueId}`);
+                                console.log(`error getting comments for ${issueId}`);
                                 console.log(e.toString());
+                            }
+
+                            const reminderComments = comments.filter(
+                                c =>
+                                    c.user.login === IOBROKER_BOT_NAME &&
+                                    (c.body.includes(REMINDER_FIRST_TEXT) || c.body.includes(REMINDER_FOLLOWUP_TEXT)),
+                            );
+
+                            const lastComment = comments.length > 0 ? comments[comments.length - 1] : null;
+                            const lastCommentDate = lastComment ? new Date(lastComment.created_at) : issueCreatedAt;
+                            const lastCommentAgeMs = now.getTime() - lastCommentDate.getTime();
+
+                            if (reminderComments.length === 0) {
+                                // No reminder yet - add "kind reminder"
+                                console.log(`    issue ${issueId} is older than 1 week, adding kind reminder`);
+                                try {
+                                    if (!opts.dry) {
+                                        await addComment(owner, `ioBroker.${adapter}`, issueId, REMINDER_FIRST_TEXT);
+                                        console.log(`    kind reminder added to ${issueId}`);
+                                    } else {
+                                        console.log(`[DRY] would add kind reminder to ${issueId}`);
+                                    }
+                                } catch (e) {
+                                    console.log(`error adding reminder to ${issueId}`);
+                                    console.log(e.toString());
+                                }
+                            } else if (lastCommentAgeMs > TWO_WEEKS) {
+                                // Last comment is older than 2 weeks - add "another reminder"
+                                // If the last comment is already a reminder, delete old reminders first
+                                if (
+                                    lastComment &&
+                                    lastComment.user.login === IOBROKER_BOT_NAME &&
+                                    (lastComment.body.includes(REMINDER_FIRST_TEXT) ||
+                                        lastComment.body.includes(REMINDER_FOLLOWUP_TEXT))
+                                ) {
+                                    for (const rc of reminderComments) {
+                                        try {
+                                            if (!opts.dry) {
+                                                await deleteComment(owner, `ioBroker.${adapter}`, rc.id);
+                                                console.log(`    reminder comment ${rc.id} deleted`);
+                                            } else {
+                                                console.log(`[DRY] would delete reminder comment ${rc.id}`);
+                                            }
+                                        } catch (e) {
+                                            console.log(`error deleting comment ${rc.id}`);
+                                            console.log(e.toString());
+                                        }
+                                    }
+                                }
+                                console.log(
+                                    `    last comment on ${issueId} is older than 2 weeks, adding another reminder`,
+                                );
+                                try {
+                                    if (!opts.dry) {
+                                        await addComment(owner, `ioBroker.${adapter}`, issueId, REMINDER_FOLLOWUP_TEXT);
+                                        console.log(`    another reminder added to ${issueId}`);
+                                    } else {
+                                        console.log(`[DRY] would add another reminder to ${issueId}`);
+                                    }
+                                } catch (e) {
+                                    console.log(`error adding reminder to ${issueId}`);
+                                    console.log(e.toString());
+                                }
                             }
                         }
                     }
@@ -286,7 +413,7 @@ async function cleanIssues(latest) {
     }
 }
 
-function generateIssueBody(res, stableFile) {
+function generateIssueBody(res, stableFile, replacesIssueId, replacesIssueUrl) {
     // find line number in stable file (for edit link)
     let num;
     if (stableFile) {
@@ -354,6 +481,10 @@ function generateIssueBody(res, stableFile) {
         'Note: This is an automatically generated message. Feel free to contact me (@iobroker-bot) if anything seems to be incorrect!\n';
     body += '      @mcm1957 for evidence';
 
+    if (replacesIssueId && replacesIssueUrl) {
+        body += `\n\nThis issue replaces the outdated issue [#${replacesIssueId}](${replacesIssueUrl}).`;
+    }
+
     const now = new Date();
     const pad = n => String(n).padStart(2, '0');
     const timestamp =
@@ -382,7 +513,7 @@ async function createIssues(latest, stableFile, result) {
 
             debug(`will create issue for adapter ${adapter}`);
 
-            const body = generateIssueBody(res, stableFile);
+            const body = generateIssueBody(res, stableFile, res.replacesIssueId, res.replacesIssueUrl);
 
             console.log(
                 `CREATE ISSUE for ioBroker.${adapter} [ https://www.github.com/${res.owner}/ioBroker.${res.adapter} ]:`,
