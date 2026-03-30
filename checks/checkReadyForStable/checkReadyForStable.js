@@ -26,7 +26,7 @@ const ONE_WEEK = 7 * ONE_DAY;
 const TWO_WEEKS = 14 * ONE_DAY;
 const TWO_MONTHS = 60 * ONE_DAY;
 
-const IOBROKER_BOT_NAME = 'iobroker-bot';
+const IOBROKER_BOT_NAME = 'ioBroker-Bot';
 const REMINDER_FIRST_TEXT =
     'This is just a kind reminder. Is there any reason to delay processing this issue any longer?';
 const REMINDER_FOLLOWUP_TEXT =
