@@ -1,1 +1,1 @@
-{"3009":{"issue":"[W3009] Workflow \"/.github/workflows/test-and-release.yml\" is missing recommended concurrency configuration. See \"https://github.com/ioBroker/ioBroker.example/blob/e7db900495bb3c2b89dc35d863dda4ccf33f5def/JavaScript/.github/workflows/test-and-release.yml#L17\" for details.","adapter":"jpawlowski/ioBroker.residents","timestamp":"Thu, 02 Apr 2026 20:48:45 GMT"}}
+{}
