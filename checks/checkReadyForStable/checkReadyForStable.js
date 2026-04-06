@@ -535,7 +535,6 @@ async function createIssues(latest, stableFile, result) {
                     });
                     console.log(`new issue has been created - pausing for 1 minute now`);
                     await sleep(60000); // limit to 1 call per minute
-
                 } else {
                     console.log(`[DRY] would create new issue`);
                 }
