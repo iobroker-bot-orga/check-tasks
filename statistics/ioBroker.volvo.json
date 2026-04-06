@@ -1,1 +1,1 @@
-{"1074":{"issue":"[W1074] Potential sensitive data \"vccapikey\" not listed at \"encryptedNative\" in [io-package.json](https://github.com/TA2k/ioBroker.volvo/blob/master/io-package.json)","adapter":"TA2k/ioBroker.volvo","timestamp":"Fri, 03 Apr 2026 20:32:52 GMT"}}
+{"1074":{"issue":"[W1074] Potential sensitive data \"vccapikey\" not listed at \"encryptedNative\" in [io-package.json](https://github.com/TA2k/ioBroker.volvo/blob/master/io-package.json)","adapter":"TA2k/ioBroker.volvo","timestamp":"Mon, 06 Apr 2026 08:21:23 GMT"}}
