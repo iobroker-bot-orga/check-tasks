@@ -1,1 +1,1 @@
-{}
+{"0036":{"issue":"[E0036] @iobroker/testing 5.1.1 specified. 5.2.2 is required as minimum,  5.2.2 (or newer) is current. Please update devDependencies at [package.json](https://github.com/Uwe1958/ioBroker.bluesound/blob/master/package.json)","adapter":"Uwe1958/ioBroker.bluesound","timestamp":"Tue, 07 Apr 2026 13:19:59 GMT"}}
