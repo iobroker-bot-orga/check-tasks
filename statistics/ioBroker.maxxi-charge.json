@@ -1,1 +1,1 @@
-{"5048":{"issue":"[W5048] \".prettierrc.json\" is most likely obsolete when using \"@iobroker/eslint-config\". Please remove it.","adapter":"blabond/ioBroker.maxxi-charge","timestamp":"Fri, 17 Apr 2026 10:17:10 GMT"}}
+{"4036":{"issue":"[S4036] Consider adding .vscode/settings.json file with JSON schema definitions for better development experience with Visual Studio Code.","adapter":"blabond/ioBroker.maxxi-charge","timestamp":"Sat, 18 Apr 2026 07:40:14 GMT"}}
