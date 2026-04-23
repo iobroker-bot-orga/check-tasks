@@ -1,1 +1,1 @@
-{"5043":{"issue":"[S5043] Package \"net\" is a built-in Node.js module. Please use \"node:net\" instead.","adapter":"raschy/ioBroker.deyeidc","timestamp":"Thu, 16 Apr 2026 20:58:23 GMT"},"8004":{"issue":"[W8004] Please process PR [[#245] \"[iobroker-bot] Update Node.js versions in test-and-release workflow\"](https://github.com/raschy/ioBroker.deyeidc/issues/245)","adapter":"raschy/ioBroker.deyeidc","timestamp":"Thu, 16 Apr 2026 20:58:23 GMT"}}
+{}
