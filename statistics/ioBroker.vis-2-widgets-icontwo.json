@@ -1,1 +1,1 @@
-{"3010":{"issue":"[S3010] Workflow \"test-and-release.yml\": job \"check-and-lint\" is missing. Consider adding it.","adapter":"inventwo/ioBroker.vis-2-widgets-icontwo","timestamp":"Fri, 17 Apr 2026 01:16:04 GMT"}}
+{"3010":{"issue":"[S3010] Workflow \"test-and-release.yml\": job \"check-and-lint\" is missing. Consider adding it.","adapter":"inventwo/ioBroker.vis-2-widgets-icontwo","timestamp":"Fri, 24 Apr 2026 01:39:46 GMT"}}
