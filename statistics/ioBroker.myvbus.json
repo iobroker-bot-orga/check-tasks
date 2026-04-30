@@ -1,1 +1,1 @@
-{"5047":{"issue":"[W5047] \"admin/style.css\" is most likely outdated since jsonConfig is used. Please consider removing it.","adapter":"iobroker-community-adapters/ioBroker.myvbus","timestamp":"Sun, 26 Apr 2026 08:17:05 GMT"},"8004":{"issue":"[W8004] Please process PR [[#796] \"[iobroker-bot] Update Node.js versions in test-and-release workflow\"](https://github.com/iobroker-community-adapters/ioBroker.myvbus/issues/796)","adapter":"iobroker-community-adapters/ioBroker.myvbus","timestamp":"Sun, 26 Apr 2026 08:17:05 GMT"}}
+{}
