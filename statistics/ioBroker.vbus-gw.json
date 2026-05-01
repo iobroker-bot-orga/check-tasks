@@ -1,1 +1,1 @@
-{"5043":{"issue":"[S5043] Package \"http\" is a built-in Node.js module. Please use \"node:http\" instead.","adapter":"pdbjjens/ioBroker.vbus-gw","timestamp":"Sun, 26 Apr 2026 08:17:04 GMT"},"8004":{"issue":"[W8004] Please process PR [[#155] \"[iobroker-bot] Update Node.js versions in test-and-release workflow\"](https://github.com/pdbjjens/ioBroker.vbus-gw/issues/155)","adapter":"pdbjjens/ioBroker.vbus-gw","timestamp":"Sun, 26 Apr 2026 08:17:04 GMT"}}
+{}
