@@ -1,7 +1,5 @@
 'use strict';
 const fs = require('node:fs/promises');
-const os = require('node:os');
-const path = require('node:path');
 const { parseArgs } = require('node:util');
 
 const { sleep } = require('../../lib/commonTools');
@@ -815,15 +813,26 @@ function generateSummaryReport(result) {
     let report = `# ReadyForStable Summary Report\n`;
     report += `Generated: ${timestamp}\n\n`;
 
+    const appendAdapterEntry = (item, isAddition) => {
+        const repoName = `${item.owner}/ioBroker.${item.adapter}`;
+        const repoUrl = `https://github.com/${repoName}`;
+        report += `## ${repoName} (${repoUrl})\n`;
+        if (isAddition) {
+            report += `### Think about adding version ${item.latest.version} to stable repository.\n`;
+        } else {
+            report += `### Think about update stable version to ${item.latest.version}\n`;
+        }
+        report += `**Version**: stable=**${item.stable.version}** (${item.stable.old} days old) => latest=**${item.latest.version}** (${item.latest.old} days old)\n`;
+        report += `**Installs**: stable=**${item.stable.installs}** (${item.stable.percent}%), latest=**${item.latest.installs}** (${item.latest.percent}%), total=**${item.installs}**\n\n`;
+    };
+
     report += `## Adapters to ADD to stable repository (${toAdd.length})\n\n`;
     if (toAdd.length === 0) {
         report += `*No adapters to add.*\n\n`;
     } else {
         for (const item of toAdd) {
-            report += `- **${item.owner}/ioBroker.${item.adapter}**: version ${item.latest.version}`;
-            report += ` (${item.latest.old} days old, ${item.installs} total installs)\n`;
+            appendAdapterEntry(item, true);
         }
-        report += '\n';
     }
 
     report += `## Adapters to UPDATE at stable repository (${toUpdate.length})\n\n`;
@@ -831,11 +840,8 @@ function generateSummaryReport(result) {
         report += `*No adapters to update.*\n\n`;
     } else {
         for (const item of toUpdate) {
-            report += `- **${item.owner}/ioBroker.${item.adapter}**: stable ${item.stable.version}`;
-            report += ` -> latest ${item.latest.version}`;
-            report += ` (${item.latest.old} days old, ${item.installs} total installs)\n`;
+            appendAdapterEntry(item, false);
         }
-        report += '\n';
     }
 
     report += `---\nSummary: ${toAdd.length} adapter(s) to add, ${toUpdate.length} adapter(s) to update\n`;
@@ -844,13 +850,8 @@ function generateSummaryReport(result) {
 }
 
 async function writeSummaryReport(reportText) {
-    const reportDir = await fs.mkdtemp(path.join(os.tmpdir(), 'checkReadyForStable-'));
-    const reportFile = path.join(reportDir, 'summary-report.md');
-    await fs.writeFile(reportFile, reportText, 'utf8');
-    console.log(`[INFO] Summary report written to ${reportFile}`);
-
     if (process.env.GITHUB_OUTPUT) {
-        await fs.appendFile(process.env.GITHUB_OUTPUT, `report_file=${reportFile}\n`, 'utf8');
+        await fs.appendFile(process.env.GITHUB_OUTPUT, `report_body<<EOF\n${reportText}\nEOF\n`, 'utf8');
     }
 }
 

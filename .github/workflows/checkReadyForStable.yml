@@ -68,5 +68,4 @@ jobs:
           subject: ReadyForStable Summary Report ${{ steps.report_mail_meta.outputs.subject_date }}
           to: iobroker-bot@gmx.at
           from: ioBroker Bot <iobroker-bot@gmx.at>
-          body: See attached summary report from checkReadyForStable workflow run.
-          attachments: ${{ steps.run_check_ready_for_stable.outputs.report_file }}
+          body: ${{ steps.run_check_ready_for_stable.outputs.report_body }}
