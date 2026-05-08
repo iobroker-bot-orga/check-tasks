@@ -86,7 +86,7 @@ function generateSummaryReport(result) {
 function writeSummaryReport(result) {
     const summary = generateSummaryReport(result);
 
-    console.log('\n[INFO]summary report');
+    console.log('\n[INFO] summary report');
     console.log(summary);
 
     if (process.env.GITHUB_STEP_SUMMARY) {
