@@ -45,20 +45,28 @@ jobs:
           if [ "${{ github.event.inputs.nocheck }}" == "true" ]; then
             NOCHECK_ARG="--nocheck"
           fi
-          NOEMAIL_ARG=""
-          if [ "${{ github.event.inputs.noemail }}" == "true" ]; then
-            NOEMAIL_ARG="--noemail"
-          fi
           echo "flags=$FLAGS" >> $GITHUB_OUTPUT
           echo "nocheck_arg=$NOCHECK_ARG" >> $GITHUB_OUTPUT
-          echo "noemail_arg=$NOEMAIL_ARG" >> $GITHUB_OUTPUT
-      - run: node checks/checkReadyForStable/checkReadyForStable.js ${{ steps.trim_params.outputs.flags }} ${{ steps.trim_params.outputs.nocheck_arg }} ${{ steps.trim_params.outputs.noemail_arg }}
+      - name: Run checkReadyForStable
+        id: run_check_ready_for_stable
+        run: node checks/checkReadyForStable/checkReadyForStable.js ${{ steps.trim_params.outputs.flags }} ${{ steps.trim_params.outputs.nocheck_arg }}
         env:
           OWN_GITHUB_TOKEN: ${{ secrets.OWN_GITHUB_TOKEN }}
           IOBBOT_GITHUB_TOKEN: ${{ secrets.IOBBOT_GITHUB_TOKEN }}
-          REPORT_MAIL_SERVER: "mail.gmx.net"
-          REPORT_MAIL_PORT: 465
-          REPORT_MAIL_USERNAME: iobroker-bot@gmx.at
-          REPORT_MAIL_PASSWORD: ${{ secrets.IOBBOT_GMXMAIL }}
-          REPORT_MAIL_FROM: "ioBroker Bot"
-          REPORT_MAIL_TO: "iobroker-bot@gmx.at"
+      - name: Prepare report mail metadata
+        id: report_mail_meta
+        run: echo "subject_date=$(date -u +'%d.%m.%Y')" >> $GITHUB_OUTPUT
+      - name: Send summary report mail
+        if: ${{ github.event.inputs.noemail != 'true' }}
+        uses: dawidd6/action-send-mail@v6
+        with:
+          server_address: mail.gmx.net
+          server_port: 465
+          secure: true
+          username: iobroker-bot@gmx.at
+          password: ${{ secrets.IOBBOT_GMXMAIL }}
+          subject: ReadyForStable Summary Report ${{ steps.report_mail_meta.outputs.subject_date }}
+          to: iobroker-bot@gmx.at
+          from: ioBroker Bot <iobroker-bot@gmx.at>
+          body: See attached summary report from checkReadyForStable workflow run.
+          attachments: ${{ steps.run_check_ready_for_stable.outputs.report_file }}
