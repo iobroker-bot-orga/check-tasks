@@ -844,7 +844,8 @@ function generateSummaryReport(result) {
 }
 
 async function writeSummaryReport(reportText) {
-    const reportFile = path.join(os.tmpdir(), `checkReadyForStable-report-${Date.now()}.md`);
+    const reportDir = await fs.mkdtemp(path.join(os.tmpdir(), 'checkReadyForStable-'));
+    const reportFile = path.join(reportDir, 'summary-report.md');
     await fs.writeFile(reportFile, reportText, 'utf8');
     console.log(`[INFO] Summary report written to ${reportFile}`);
 

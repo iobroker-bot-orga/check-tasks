@@ -53,6 +53,9 @@ jobs:
         env:
           OWN_GITHUB_TOKEN: ${{ secrets.OWN_GITHUB_TOKEN }}
           IOBBOT_GITHUB_TOKEN: ${{ secrets.IOBBOT_GITHUB_TOKEN }}
+      - name: Prepare report mail metadata
+        id: report_mail_meta
+        run: echo "subject_date=$(date -u +'%d.%m.%Y')" >> $GITHUB_OUTPUT
       - name: Send summary report mail
         if: ${{ github.event.inputs.noemail != 'true' }}
         uses: dawidd6/action-send-mail@v6
@@ -62,7 +65,7 @@ jobs:
           secure: true
           username: iobroker-bot@gmx.at
           password: ${{ secrets.IOBBOT_GMXMAIL }}
-          subject: ReadyForStable Summary Report
+          subject: ReadyForStable Summary Report ${{ steps.report_mail_meta.outputs.subject_date }}
           to: iobroker-bot@gmx.at
           from: ioBroker Bot <iobroker-bot@gmx.at>
           body: See attached summary report from checkReadyForStable workflow run.
