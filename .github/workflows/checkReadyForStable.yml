@@ -69,3 +69,4 @@ jobs:
           to: iobroker-bot@gmx.at
           from: ioBroker Bot <iobroker-bot@gmx.at>
           body: ${{ steps.run_check_ready_for_stable.outputs.report_body }}
+          html_body: ${{ steps.run_check_ready_for_stable.outputs.html_report_body }}

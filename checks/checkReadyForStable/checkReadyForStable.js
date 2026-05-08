@@ -1,6 +1,7 @@
 'use strict';
 const fs = require('node:fs/promises');
 const { parseArgs } = require('node:util');
+const { marked } = require('marked');
 
 const { sleep } = require('../../lib/commonTools');
 const {
@@ -852,6 +853,8 @@ function generateSummaryReport(result) {
 async function writeSummaryReport(reportText) {
     if (process.env.GITHUB_OUTPUT) {
         await fs.appendFile(process.env.GITHUB_OUTPUT, `report_body<<EOF\n${reportText}\nEOF\n`, 'utf8');
+        const htmlReport = marked(reportText);
+        await fs.appendFile(process.env.GITHUB_OUTPUT, `html_report_body<<EOF\n${htmlReport}\nEOF\n`, 'utf8');
     }
 }
 
