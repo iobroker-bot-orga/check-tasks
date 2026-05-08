@@ -3,6 +3,18 @@ name: Check ready for stable
 on:
   workflow_dispatch:
     inputs:
+      nocheck:
+        type: boolean
+        required: false
+        default: false
+        description: 'Skip triggering repository checker workflows'
+
+      noemail:
+        type: boolean
+        required: false
+        default: false
+        description: 'Skip sending the summary report by email'
+
       flags:
         type: string
         required: false
@@ -25,7 +37,28 @@ jobs:
         with:
           node-version: 22
       - run: npm i
-      - run: node checks/checkReadyForStable/checkReadyForStable.js ${{ github.event.inputs.flags }} 
+      - name: Trim workflow parameters
+        id: trim_params
+        run: |
+          FLAGS=$(echo "${{ github.event.inputs.flags }}" | xargs)
+          NOCHECK_ARG=""
+          if [ "${{ github.event.inputs.nocheck }}" == "true" ]; then
+            NOCHECK_ARG="--nocheck"
+          fi
+          NOEMAIL_ARG=""
+          if [ "${{ github.event.inputs.noemail }}" == "true" ]; then
+            NOEMAIL_ARG="--noemail"
+          fi
+          echo "flags=$FLAGS" >> $GITHUB_OUTPUT
+          echo "nocheck_arg=$NOCHECK_ARG" >> $GITHUB_OUTPUT
+          echo "noemail_arg=$NOEMAIL_ARG" >> $GITHUB_OUTPUT
+      - run: node checks/checkReadyForStable/checkReadyForStable.js ${{ steps.trim_params.outputs.flags }} ${{ steps.trim_params.outputs.nocheck_arg }} ${{ steps.trim_params.outputs.noemail_arg }}
         env:
           OWN_GITHUB_TOKEN: ${{ secrets.OWN_GITHUB_TOKEN }}
           IOBBOT_GITHUB_TOKEN: ${{ secrets.IOBBOT_GITHUB_TOKEN }}
+          REPORT_MAIL_SERVER: ${{ secrets.REPORT_MAIL_SERVER }}
+          REPORT_MAIL_PORT: ${{ secrets.REPORT_MAIL_PORT }}
+          REPORT_MAIL_USERNAME: ${{ secrets.REPORT_MAIL_USERNAME }}
+          REPORT_MAIL_PASSWORD: ${{ secrets.REPORT_MAIL_PASSWORD }}
+          REPORT_MAIL_FROM: ${{ secrets.REPORT_MAIL_FROM }}
+          REPORT_MAIL_TO: ${{ secrets.REPORT_MAIL_TO }}
