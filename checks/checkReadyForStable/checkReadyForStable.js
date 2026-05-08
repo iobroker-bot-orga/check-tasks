@@ -1,5 +1,6 @@
 'use strict';
 const { parseArgs } = require('node:util');
+const fs = require('node:fs');
 
 const { sleep } = require('../../lib/commonTools');
 const {
@@ -42,6 +43,54 @@ const opts = {
 function debug(text) {
     if (opts.debug) {
         console.log(`[DEBUG] ${text}`);
+    }
+}
+
+function compareSummaryEntries(a, b) {
+    return a.owner.localeCompare(b.owner) || a.adapter.localeCompare(b.adapter);
+}
+
+function formatSummaryEntry(item) {
+    const versionText =
+        item.stable.version === '0.0.0'
+            ? `latest ${item.latest.version}`
+            : `stable ${item.stable.version} → latest ${item.latest.version}`;
+    return `- ${item.owner}/ioBroker.${item.adapter} (${versionText})`;
+}
+
+function formatSummarySection(title, items) {
+    const lines = [`## ${title}`, ''];
+    if (!items.length) {
+        lines.push('- none', '');
+        return lines.join('\n');
+    }
+
+    items.forEach(item => lines.push(formatSummaryEntry(item)));
+    lines.push('');
+    return lines.join('\n');
+}
+
+function generateSummaryReport(result) {
+    const entries = Object.values(result).sort(compareSummaryEntries);
+    const add = entries.filter(item => item.stable.version === '0.0.0');
+    const update = entries.filter(item => item.stable.version !== '0.0.0');
+
+    return [
+        '# Ready for stable summary',
+        '',
+        formatSummarySection('Adapters to add to stable repository', add),
+        formatSummarySection('Adapters to update at stable repository', update),
+    ].join('\n');
+}
+
+function writeSummaryReport(result) {
+    const summary = generateSummaryReport(result);
+
+    console.log('\n[INFO]summary report');
+    console.log(summary);
+
+    if (process.env.GITHUB_STEP_SUMMARY) {
+        fs.appendFileSync(process.env.GITHUB_STEP_SUMMARY, `${summary}\n`);
     }
 }
 
@@ -828,6 +877,8 @@ async function main() {
     console.log(`\n[INFO]creating new issues...`);
     await createIssues(latest, master, result);
 
+    writeSummaryReport(result);
+
     if (!opts.nocheck) {
         console.log(`\n[INFO]trigger repository checks...`);
         for (const adapter in result) {
@@ -840,5 +891,14 @@ async function main() {
     console.log('[INFO] processing completed');
 }
 
-process.env.OWN_GITHUB_TOKEN = process.env.IOBBOT_GITHUB_TOKEN;
-main();
+if (require.main === module) {
+    process.env.OWN_GITHUB_TOKEN = process.env.IOBBOT_GITHUB_TOKEN;
+    main();
+}
+
+module.exports = {
+    compareSummaryEntries,
+    formatSummaryEntry,
+    formatSummarySection,
+    generateSummaryReport,
+};
