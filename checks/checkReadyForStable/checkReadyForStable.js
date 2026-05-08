@@ -1,4 +1,7 @@
 'use strict';
+const fs = require('node:fs/promises');
+const os = require('node:os');
+const path = require('node:path');
 const { parseArgs } = require('node:util');
 
 const { sleep } = require('../../lib/commonTools');
@@ -16,7 +19,6 @@ const { getLatestRepoLive, getStableRepoFile, getStableRepoLive, getStatistics }
 //const { exit } = require('node:process');
 
 const axios = require('axios');
-const nodemailer = require('nodemailer');
 const semver = require('semver');
 
 const TITLE_ADD = '🚀 Please add adapter to stable repository - ';
@@ -35,7 +37,6 @@ const REMINDER_FOLLOWUP_TEXT =
 
 const opts = {
     nocheck: false,
-    noemail: false,
     debug: false,
     dry: false,
     recreate: false,
@@ -842,46 +843,13 @@ function generateSummaryReport(result) {
     return report;
 }
 
-async function sendEmailReport(reportText) {
-    const server = process.env.REPORT_MAIL_SERVER;
-    const user = process.env.REPORT_MAIL_USERNAME;
-    const pass = process.env.REPORT_MAIL_PASSWORD;
-    const from = process.env.REPORT_MAIL_FROM;
-    const to = process.env.REPORT_MAIL_TO;
+async function writeSummaryReport(reportText) {
+    const reportFile = path.join(os.tmpdir(), `checkReadyForStable-report-${Date.now()}.md`);
+    await fs.writeFile(reportFile, reportText, 'utf8');
+    console.log(`[INFO] Summary report written to ${reportFile}`);
 
-    if (!server || !user || !pass || !to) {
-        console.log(
-            '[INFO] Email not configured, skipping email report. ' +
-                'Set REPORT_MAIL_SERVER, REPORT_MAIL_USERNAME, REPORT_MAIL_PASSWORD and REPORT_MAIL_TO to enable.',
-        );
-        return;
-    }
-
-    const port = parseInt(process.env.REPORT_MAIL_PORT || '587', 10);
-
-    const transporter = nodemailer.createTransport({
-        host: server,
-        port: port,
-        secure: port === 465,
-        auth: { user, pass },
-    });
-
-    const dateStr = formatUtcTimestamp(new Date()).slice(0, 10); // DD.MM.YYYY
-
-    try {
-        if (!opts.dry) {
-            await transporter.sendMail({
-                from: from || user,
-                to,
-                subject: `ReadyForStable Summary Report ${dateStr}`,
-                text: reportText,
-            });
-            console.log('[INFO] Email report sent successfully');
-        } else {
-            console.log(`[DRY] would send email report to ${to}`);
-        }
-    } catch (e) {
-        console.error(`[ERROR] Failed to send email report: ${e}`);
+    if (process.env.GITHUB_OUTPUT) {
+        await fs.appendFile(process.env.GITHUB_OUTPUT, `report_file=${reportFile}\n`, 'utf8');
     }
 }
 
@@ -897,9 +865,6 @@ async function main() {
         nocheck: {
             type: 'boolean',
         },
-        noemail: {
-            type: 'boolean',
-        },
         recreate: {
             type: 'boolean',
         },
@@ -913,7 +878,6 @@ async function main() {
     opts.debug = values['debug'];
     opts.dry = values['dry'];
     opts.nocheck = values['nocheck'];
-    opts.noemail = values['noemail'];
     opts.recreate = values['recreate'];
 
     if (positionals.length) {
@@ -945,11 +909,7 @@ async function main() {
     console.log(`\n[INFO]generating summary report...`);
     const report = generateSummaryReport(result);
     console.log(report);
-
-    if (!opts.noemail) {
-        console.log(`\n[INFO]sending email report...`);
-        await sendEmailReport(report);
-    }
+    await writeSummaryReport(report);
 
     if (!opts.nocheck) {
         console.log(`\n[INFO]trigger repository checks...`);
