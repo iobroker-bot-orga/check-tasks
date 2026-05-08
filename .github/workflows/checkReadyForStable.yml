@@ -56,9 +56,9 @@ jobs:
         env:
           OWN_GITHUB_TOKEN: ${{ secrets.OWN_GITHUB_TOKEN }}
           IOBBOT_GITHUB_TOKEN: ${{ secrets.IOBBOT_GITHUB_TOKEN }}
-          REPORT_MAIL_SERVER: ${{ secrets.REPORT_MAIL_SERVER }}
-          REPORT_MAIL_PORT: ${{ secrets.REPORT_MAIL_PORT }}
-          REPORT_MAIL_USERNAME: ${{ secrets.REPORT_MAIL_USERNAME }}
-          REPORT_MAIL_PASSWORD: ${{ secrets.REPORT_MAIL_PASSWORD }}
-          REPORT_MAIL_FROM: ${{ secrets.REPORT_MAIL_FROM }}
-          REPORT_MAIL_TO: ${{ secrets.REPORT_MAIL_TO }}
+          REPORT_MAIL_SERVER: "mail.gmx.net"
+          REPORT_MAIL_PORT: 465
+          REPORT_MAIL_USERNAME: iobroker-bot@gmx.at
+          REPORT_MAIL_PASSWORD: ${{ secrets.IOBBOT_GMXMAIL }}
+          REPORT_MAIL_FROM: "ioBroker Bot"
+          REPORT_MAIL_TO: "iobroker-bot@gmx.at"
