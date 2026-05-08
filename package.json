@@ -4,7 +4,8 @@
   "dependencies": {
     "@iobroker/repochecker": "^5.11.1",
     "axios": "^1.16.0",
-    "json5": "^2.2.3"
+    "json5": "^2.2.3",
+    "nodemailer": "^8.0.7"
   },
   "devDependencies": {
     "@iobroker/eslint-config": "^2.3.4"

@@ -16,6 +16,7 @@ const { getLatestRepoLive, getStableRepoFile, getStableRepoLive, getStatistics }
 //const { exit } = require('node:process');
 
 const axios = require('axios');
+const nodemailer = require('nodemailer');
 const semver = require('semver');
 
 const TITLE_ADD = '🚀 Please add adapter to stable repository - ';
@@ -34,6 +35,7 @@ const REMINDER_FOLLOWUP_TEXT =
 
 const opts = {
     nocheck: false,
+    noemail: false,
     debug: false,
     dry: false,
     recreate: false,
@@ -775,6 +777,114 @@ async function evaluateReleases(latest, stable, statistics) {
 //     return 'done';
 // }
 
+function formatUtcTimestamp(date) {
+    const pad = n => String(n).padStart(2, '0');
+    return (
+        `${pad(date.getUTCDate())}.${pad(date.getUTCMonth() + 1)}.${date.getUTCFullYear()} ` +
+        `${pad(date.getUTCHours())}:${pad(date.getUTCMinutes())}:${pad(date.getUTCSeconds())} UTC`
+    );
+}
+
+function generateSummaryReport(result) {
+    const toAdd = [];
+    const toUpdate = [];
+
+    for (const adapter in result) {
+        const item = result[adapter];
+        if (item.stable.version === '0.0.0') {
+            toAdd.push(item);
+        } else {
+            toUpdate.push(item);
+        }
+    }
+
+    const sortByOwnerAndAdapter = (a, b) => {
+        const ownerCmp = a.owner.toLowerCase().localeCompare(b.owner.toLowerCase());
+        if (ownerCmp !== 0) {
+            return ownerCmp;
+        }
+        return a.adapter.toLowerCase().localeCompare(b.adapter.toLowerCase());
+    };
+
+    toAdd.sort(sortByOwnerAndAdapter);
+    toUpdate.sort(sortByOwnerAndAdapter);
+
+    const timestamp = formatUtcTimestamp(new Date());
+
+    let report = `# ReadyForStable Summary Report\n`;
+    report += `Generated: ${timestamp}\n\n`;
+
+    report += `## Adapters to ADD to stable repository (${toAdd.length})\n\n`;
+    if (toAdd.length === 0) {
+        report += `*No adapters to add.*\n\n`;
+    } else {
+        for (const item of toAdd) {
+            report += `- **${item.owner}/ioBroker.${item.adapter}**: version ${item.latest.version}`;
+            report += ` (${item.latest.old} days old, ${item.installs} total installs)\n`;
+        }
+        report += '\n';
+    }
+
+    report += `## Adapters to UPDATE at stable repository (${toUpdate.length})\n\n`;
+    if (toUpdate.length === 0) {
+        report += `*No adapters to update.*\n\n`;
+    } else {
+        for (const item of toUpdate) {
+            report += `- **${item.owner}/ioBroker.${item.adapter}**: stable ${item.stable.version}`;
+            report += ` -> latest ${item.latest.version}`;
+            report += ` (${item.latest.old} days old, ${item.installs} total installs)\n`;
+        }
+        report += '\n';
+    }
+
+    report += `---\nSummary: ${toAdd.length} adapter(s) to add, ${toUpdate.length} adapter(s) to update\n`;
+
+    return report;
+}
+
+async function sendEmailReport(reportText) {
+    const server = process.env.REPORT_MAIL_SERVER;
+    const user = process.env.REPORT_MAIL_USERNAME;
+    const pass = process.env.REPORT_MAIL_PASSWORD;
+    const from = process.env.REPORT_MAIL_FROM;
+    const to = process.env.REPORT_MAIL_TO;
+
+    if (!server || !user || !pass || !to) {
+        console.log(
+            '[INFO] Email not configured, skipping email report. ' +
+                'Set REPORT_MAIL_SERVER, REPORT_MAIL_USERNAME, REPORT_MAIL_PASSWORD and REPORT_MAIL_TO to enable.',
+        );
+        return;
+    }
+
+    const port = parseInt(process.env.REPORT_MAIL_PORT || '587', 10);
+
+    const transporter = nodemailer.createTransport({
+        host: server,
+        port: port,
+        secure: port === 465,
+        auth: { user, pass },
+    });
+
+    const dateStr = formatUtcTimestamp(new Date()).slice(0, 10); // DD.MM.YYYY
+
+    try {
+        if (!opts.dry) {
+            await transporter.sendMail({
+                from: from || user,
+                to,
+                subject: `ReadyForStable Summary Report ${dateStr}`,
+                text: reportText,
+            });
+            console.log('[INFO] Email report sent successfully');
+        } else {
+            console.log(`[DRY] would send email report to ${to}`);
+        }
+    } catch (e) {
+        console.error(`[ERROR] Failed to send email report: ${e}`);
+    }
+}
+
 async function main() {
     const options = {
         debug: {
@@ -785,6 +895,9 @@ async function main() {
             type: 'boolean',
         },
         nocheck: {
+            type: 'boolean',
+        },
+        noemail: {
             type: 'boolean',
         },
         recreate: {
@@ -800,6 +913,7 @@ async function main() {
     opts.debug = values['debug'];
     opts.dry = values['dry'];
     opts.nocheck = values['nocheck'];
+    opts.noemail = values['noemail'];
     opts.recreate = values['recreate'];
 
     if (positionals.length) {
@@ -827,6 +941,15 @@ async function main() {
 
     console.log(`\n[INFO]creating new issues...`);
     await createIssues(latest, master, result);
+
+    console.log(`\n[INFO]generating summary report...`);
+    const report = generateSummaryReport(result);
+    console.log(report);
+
+    if (!opts.noemail) {
+        console.log(`\n[INFO]sending email report...`);
+        await sendEmailReport(report);
+    }
 
     if (!opts.nocheck) {
         console.log(`\n[INFO]trigger repository checks...`);
