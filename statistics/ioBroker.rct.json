@@ -1,1 +1,1 @@
-{"1056":{"issue":"[W1056] admin 7.6.17 listed as dependency but 7.6.20 is recommended. Please consider updating globalDependency at [io-package.json](https://github.com/aruttkamp/ioBroker.rct/blob/master/io-package.json).","adapter":"aruttkamp/ioBroker.rct","timestamp":"Fri, 15 May 2026 17:40:44 GMT"},"5039":{"issue":"[W5039] \"admin/words.js\" found but not referenced anywhere. File seems to be outdated, please consider removing it.","adapter":"aruttkamp/ioBroker.rct","timestamp":"Fri, 15 May 2026 17:40:44 GMT"}}
+{}
