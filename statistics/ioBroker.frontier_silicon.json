@@ -1,1 +1,1 @@
-{}
+{"0066":{"issue":"[W0066] \"@types/node\":\"^25.0.1\" at [package.json](https://github.com/iobroker-community-adapters/ioBroker.frontier_silicon/blob/master/package.json) allows major version greater than 22. Downgrade to node.js 22.x.x to avoid wrong typing is recommended.","adapter":"iobroker-community-adapters/ioBroker.frontier_silicon","timestamp":"Wed, 20 May 2026 18:07:03 GMT"}}
