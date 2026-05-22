@@ -1,1 +1,1 @@
-{}
+{"0066":{"issue":"[W0066] \"@types/node\":\"^25.5.0\" at [package.json](https://github.com/TA2k/ioBroker.mihome-cloud/blob/master/package.json) allows major version greater than 22. Downgrade to node.js 22.x.x to avoid wrong typing is recommended.","adapter":"TA2k/ioBroker.mihome-cloud","timestamp":"Fri, 22 May 2026 10:25:15 GMT"}}
