@@ -1,1 +1,1 @@
-{}
+{"5516":{"issue":"[W5516] type mismatch for \"default\" at admin/jsonConfig.json/items/_api/api_use: component \"checkbox\" expects boolean but got string","adapter":"nobl/ioBroker.senec","timestamp":"Sun, 24 May 2026 23:54:38 GMT"},"0066":{"issue":"[W0066] \"@types/node\":\"^25.7.0\" at [package.json](https://github.com/nobl/ioBroker.senec/blob/master/package.json) allows major version greater than 22. Downgrade to node.js 22.x.x to avoid wrong typing is recommended.","adapter":"nobl/ioBroker.senec","timestamp":"Sun, 24 May 2026 23:54:38 GMT"}}
