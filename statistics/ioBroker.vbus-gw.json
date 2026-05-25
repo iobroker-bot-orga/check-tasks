@@ -1,1 +1,1 @@
-{}
+{"0066":{"issue":"[W0066] \"@types/node\":\"^25.8.0\" at [package.json](https://github.com/pdbjjens/ioBroker.vbus-gw/blob/master/package.json) allows major version greater than 22. Downgrade to node.js 22.x.x to avoid wrong typing is recommended.","adapter":"pdbjjens/ioBroker.vbus-gw","timestamp":"Mon, 25 May 2026 00:50:07 GMT"}}
