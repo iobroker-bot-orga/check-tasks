@@ -1,1 +1,1 @@
-{"1131":{"issue":"[W1131] [io-package.json](https://github.com/BenAhrdt/ioBroker.lorawan/blob/master/io-package.json): instanceObject \"info.subscribedTopics\" has unsupported common.icon attribute","adapter":"BenAhrdt/ioBroker.lorawan","timestamp":"Mon, 25 May 2026 09:38:49 GMT"}}
+{"1131":{"issue":"[W1131] [io-package.json](https://github.com/BenAhrdt/ioBroker.lorawan/blob/master/io-package.json): instanceObject \"info.subscribedTopics\" has unsupported common.icon attribute","adapter":"BenAhrdt/ioBroker.lorawan","timestamp":"Mon, 25 May 2026 09:41:11 GMT"}}
