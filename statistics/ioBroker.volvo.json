@@ -1,1 +1,1 @@
-{}
+{"0066":{"issue":"[W0066] \"@types/node\":\"^25.8.0\" at [package.json](https://github.com/TA2k/ioBroker.volvo/blob/master/package.json) allows major version greater than 22. Downgrade to node.js 22.x.x to avoid wrong typing is recommended.","adapter":"TA2k/ioBroker.volvo","timestamp":"Mon, 25 May 2026 01:18:02 GMT"}}
