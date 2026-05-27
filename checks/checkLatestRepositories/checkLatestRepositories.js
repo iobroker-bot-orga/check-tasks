@@ -245,7 +245,7 @@ async function main() {
     for (const adapter in latestRepo) {
         if (!counter) {
             console.log(`[INFO] task will be restarted, next adapter is ${adapter}`);
-            triggerRestart(adapter);
+            await triggerRestart(adapter);
             break;
         }
 
