@@ -81,13 +81,7 @@ let filterRegexes = null;
 function triggerRestart(adapter) {
     debug(`trigger latest restart from ${adapter}`);
 
-    let flags = `--from="${adapter}"`;
-    if (opts.filter) {
-        flags = `${flags} --filter="${opts.filter}"`;
-    }
-    if (opts.delay !== 30) {
-        flags = `${flags} --delay="${opts.delay}"`;
-    }
+    let flags = '';
     if (opts.cleanup) {
         flags = `${flags} --cleanup`;
     }
@@ -107,10 +101,17 @@ function triggerRestart(adapter) {
         flags = `${flags} --recreate`;
     }
 
+    const clientPayload = {
+        from: adapter,
+        filter: opts.filter,
+        delay: `${opts.delay}`,
+        flags: flags.trim(),
+    };
+
     return axios
         .post(
             `https://api.github.com/repos/iobroker-bot-orga/check-tasks/dispatches`,
-            { event_type: 'check-latest-restart', client_payload: { flags: flags } },
+            { event_type: 'check-latest-restart', client_payload: clientPayload },
             {
                 headers: {
                     Authorization: `bearer ${process.env.IOBBOT_GITHUB_TOKEN}`,
@@ -211,7 +212,21 @@ async function main() {
     opts.erroronly = values['erroronly'];
     opts.recheck = values['recheck'];
     opts.recreate = values['recreate'];
-    opts.delay = values['delay'] ? parseInt(values['delay'], 10) : 30;
+    if (!values['delay']) {
+        opts.delay = 30;
+    } else {
+        const delayValue = values['delay'].trim();
+        if (!/^\d+$/.test(delayValue)) {
+            console.log(`[WARN] Invalid delay "${values['delay']}", using minimum delay of 15 seconds`);
+            opts.delay = 15;
+        } else {
+            const parsedDelay = Number.parseInt(delayValue, 10);
+            opts.delay = Math.max(parsedDelay, 15);
+            if (opts.delay !== parsedDelay) {
+                console.log(`[WARN] Delay "${values['delay']}" is below the minimum, using 15 seconds`);
+            }
+        }
+    }
 
     if (!validateFilterPattern(opts.filter)) {
         console.log(`[ERROR] Invalid filter pattern: ${opts.filter}`);
@@ -229,7 +244,7 @@ async function main() {
     const latestRepo = await iobroker.getLatestRepoLive();
     const total = Object.keys(latestRepo).length;
     const delay = opts.delay;
-    let counter = 3 * 60 * (60 / delay); /* restart after 3h */
+    let counter = Math.floor((3 * 60 * 60) / delay); /* restart after 3h */
 
     console.log(`[INFO] delay set to ${delay} seconds`);
     console.log(`[INFO] will restart after 3h (${counter} checks)`);
@@ -243,7 +258,7 @@ async function main() {
         console.log(`--from set to "${opts.from}" - searching for first adapter to process ...`);
     }
     for (const adapter in latestRepo) {
-        if (!counter) {
+        if (counter <= 0) {
             console.log(`[INFO] task will be restarted, next adapter is ${adapter}`);
             await triggerRestart(adapter);
             break;
@@ -276,7 +291,7 @@ async function main() {
 
         triggerRepoCheck(owner, adapter);
         counter = counter - 1;
-        if (counter) {
+        if (counter > 0) {
             console.log(`will restart after ${counter} checks, sleeping (${delay}s) ...`);
         } else {
             console.log(`will restart after delay, sleeping (${delay}s) ...`);
