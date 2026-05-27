@@ -1,8 +1,8 @@
 name: Check LATEST repositories
 
 on:
-  #repository_dispatch:
-  #  types: [check-latest-repositories]
+  repository_dispatch:
+    types: [check-latest-restart]
 
   workflow_dispatch:
     inputs:
@@ -14,6 +14,17 @@ on:
       flags:
         type: string
         required: false
+
+      from:
+        type: string
+        required: false
+        description: 'Resume processing from this adapter name (optional)'
+
+      delay:
+        type: string
+        required: false
+        default: '30'
+        description: 'Delay in seconds between processing each repository (default: 30)'
 
   schedule:
     # * is a special character in YAML, so you have to quote this string
@@ -36,16 +47,26 @@ jobs:
       - name: Trim workflow parameters
         id: trim_params
         run: |
-          FILTER=$(echo "${{ github.event.inputs.filter }}" | xargs)
-          FLAGS=$(echo "${{ github.event.inputs.flags }}" | xargs)
+          # Trim all string input parameters to remove leading/trailing whitespace
+          # Handle both workflow_dispatch (inputs) and repository_dispatch (client_payload)
+          FROM=$(echo "${{ github.event.inputs.from }}${{ github.event.client_payload.from }}" | xargs)
+          FILTER=$(echo "${{ github.event.inputs.filter }}${{ github.event.client_payload.filter }}" | xargs)
+          FLAGS=$(echo "${{ github.event.inputs.flags }}${{ github.event.client_payload.flags }}" | xargs)
+          DELAY=$(echo "${{ github.event.inputs.delay }}${{ github.event.client_payload.delay }}" | xargs)
+          # Set default delay if empty
+          if [ -z "$DELAY" ]; then
+            DELAY="30"
+          fi
           # Only pass --filter flag when filter is non-empty
           if [ -n "$FILTER" ]; then
             FILTER_ARG="--filter=$FILTER"
           else
             FILTER_ARG=""
           fi
+          echo "from=$FROM" >> $GITHUB_OUTPUT
           echo "filter_arg=$FILTER_ARG" >> $GITHUB_OUTPUT
           echo "flags=$FLAGS" >> $GITHUB_OUTPUT
-      - run: node checks/checkLatestRepositories/checkLatestRepositories.js ${{ steps.trim_params.outputs.filter_arg }} ${{ steps.trim_params.outputs.flags }} 
+          echo "delay=$DELAY" >> $GITHUB_OUTPUT
+      - run: node checks/checkLatestRepositories/checkLatestRepositories.js --from="${{ steps.trim_params.outputs.from }}" --delay="${{ steps.trim_params.outputs.delay }}" ${{ steps.trim_params.outputs.filter_arg }} ${{ steps.trim_params.outputs.flags }}
         env:
           IOBBOT_GITHUB_TOKEN: ${{ secrets.IOBBOT_GITHUB_TOKEN }}
