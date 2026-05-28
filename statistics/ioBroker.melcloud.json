@@ -1,1 +1,1 @@
-{}
+{"2008":{"issue":"[S2008] Version 3.0.4 tagged as \"latest\" at npm is not signed with provenance. Trusted publishing is recommended.","adapter":"Black-Thunder/ioBroker.melcloud","timestamp":"Thu, 28 May 2026 02:15:54 GMT"},"5601":{"issue":"[S5601] i18n directory \"admin/i18n\" uses long format ({lang}/translations.json). Consider migrating to short format ({lang}.json) using \"npm run translate convert\".","adapter":"Black-Thunder/ioBroker.melcloud","timestamp":"Thu, 28 May 2026 02:15:54 GMT"}}
