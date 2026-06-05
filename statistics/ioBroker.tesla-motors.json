@@ -1,1 +1,1 @@
-{}
+{"0036":{"issue":"[E0036] @alcalzone/release-script 5.2.0 specified. 5.2.1 is required as minimum,  5.2.1 (or newer) is current. Please update devDependencies at [package.json](https://github.com/iobroker-community-adapters/ioBroker.tesla-motors/blob/master/package.json)","adapter":"iobroker-community-adapters/ioBroker.tesla-motors","timestamp":"Fri, 05 Jun 2026 01:58:54 GMT"}}
