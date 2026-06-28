@@ -58,7 +58,7 @@ jobs:
         run: echo "subject_date=$(date -u +'%d.%m.%Y')" >> $GITHUB_OUTPUT
       - name: Send summary report mail
         if: ${{ github.event.inputs.noemail != 'true' }}
-        uses: dawidd6/action-send-mail@v17
+        uses: dawidd6/action-send-mail@v18
         with:
           server_address: mail.gmx.net
           server_port: 465
