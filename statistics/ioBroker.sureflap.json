@@ -1,1 +1,1 @@
-{}
+{"3050":{"issue":"[W3050] \"test-and-release.yml\": could not retrieve log for \"check-and-lint\" job in [run #701](https://github.com/Sickboy78/ioBroker.sureflap/actions/runs/20851478517).","adapter":"Sickboy78/ioBroker.sureflap","timestamp":"Wed, 01 Jul 2026 20:21:01 GMT"},"3052":{"issue":"[W3052] \"test-and-release.yml\": could not retrieve log for job \"adapter-tests (24.x, windows-latest)\" in [run #701](https://github.com/Sickboy78/ioBroker.sureflap/actions/runs/20851478517).","adapter":"Sickboy78/ioBroker.sureflap","timestamp":"Wed, 01 Jul 2026 20:21:01 GMT"}}
