@@ -1,1 +1,1 @@
-{"0034":{"issue":"[W0034] @iobroker/adapter-core 3.3.2 specified. 3.4.1 (or newer) is current. Please update dependencies at [package.json](https://github.com/BenAhrdt/ioBroker.paperless-ngx/blob/master/package.json)","adapter":"BenAhrdt/ioBroker.paperless-ngx","timestamp":"Fri, 26 Jun 2026 05:57:39 GMT"}}
+{"1144":{"issue":"[E1144] Untranslated \"common.news\" entries detected (identical to English text): uk(0.4.4).","adapter":"BenAhrdt/ioBroker.paperless-ngx","timestamp":"Wed, 01 Jul 2026 17:56:39 GMT"}}
