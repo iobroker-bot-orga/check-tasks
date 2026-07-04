@@ -1,1 +1,1 @@
-{"5005":{"issue":"[S5005] Plain setTimeout() found in source files (testStateChange.js). Please use this.setTimeout() or adapter.setTimeout() instead.","adapter":"zechnerhubert/ioBroker.al-ko","timestamp":"Thu, 02 Jul 2026 20:49:16 GMT"}}
+{"5005":{"issue":"[S5005] Plain setTimeout() found in source files (testStateChange.js). Please use this.setTimeout() or adapter.setTimeout() instead.","adapter":"zechnerhubert/ioBroker.al-ko","timestamp":"Sat, 04 Jul 2026 14:41:05 GMT"}}
