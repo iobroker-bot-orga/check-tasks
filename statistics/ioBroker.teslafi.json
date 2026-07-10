@@ -1,1 +1,1 @@
-{"5054":{"issue":"[S5054] method \"setObject()\" should be avoided. Please use \"setObjectNotExists()\" or \"extendObject()\" instead.","adapter":"hombach/ioBroker.teslafi","timestamp":"Sun, 05 Jul 2026 08:43:10 GMT"}}
+{"5054":{"issue":"[S5054] method \"setObject()\" should be avoided. Please use \"setObjectNotExists()\" or \"extendObject()\" instead.","adapter":"hombach/ioBroker.teslafi","timestamp":"Fri, 10 Jul 2026 02:07:22 GMT"}}
