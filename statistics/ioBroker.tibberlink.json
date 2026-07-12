@@ -1,1 +1,1 @@
-{"5054":{"issue":"[S5054] method \"setObject()\" should be avoided. Please use \"setObjectNotExists()\" or \"extendObject()\" instead.","adapter":"hombach/ioBroker.tibberlink","timestamp":"Fri, 10 Jul 2026 02:08:34 GMT"}}
+{"5054":{"issue":"[S5054] method \"setObject()\" should be avoided. Please use \"setObjectNotExists()\" or \"extendObject()\" instead.","adapter":"hombach/ioBroker.tibberlink","timestamp":"Sun, 12 Jul 2026 08:17:13 GMT"}}
