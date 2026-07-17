@@ -1,1 +1,1 @@
-{"5606":{"issue":"[W5606] i18n \"admin/i18n\" seems to contain untranslated entries identical to English (>5 words). Affected languages: zh (1 key, example: cfgHelpNtpServer).","adapter":"N-b-dy/ioBroker.oxxify-fan-control","timestamp":"Tue, 14 Jul 2026 02:49:00 GMT"}}
+{"5606":{"issue":"[W5606] i18n \"admin/i18n\" seems to contain untranslated entries identical to English (>5 words). Affected languages: zh (1 key, example: cfgHelpNtpServer).","adapter":"N-b-dy/ioBroker.oxxify-fan-control","timestamp":"Fri, 17 Jul 2026 00:08:30 GMT"}}
