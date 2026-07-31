@@ -1,1 +1,1 @@
-{"5054":{"issue":"[S5054] method \"setObject()\" should be avoided. Please use \"setObjectNotExists()\" or \"extendObject()\" instead.","adapter":"Lucky-ESA/ioBroker.schedule-switcher","timestamp":"Fri, 31 Jul 2026 01:05:08 GMT"}}
+{"5054":{"issue":"[S5054] method \"setObject()\" should be avoided. Please use \"setObjectNotExists()\" or \"extendObject()\" instead.","adapter":"Lucky-ESA/ioBroker.schedule-switcher","timestamp":"Fri, 31 Jul 2026 09:33:40 GMT"}}
