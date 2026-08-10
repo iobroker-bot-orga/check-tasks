@@ -1,1 +1,1 @@
-{}
+{"9008":{"issue":"[W9008] file .gitignore is tracked but covered by .gitignore. Remove from git if generated, or remove the ignore rule if intentionally tracked.","adapter":"Uwe1958/ioBroker.bluesound","timestamp":"Mon, 10 Aug 2026 06:52:39 GMT"}}
