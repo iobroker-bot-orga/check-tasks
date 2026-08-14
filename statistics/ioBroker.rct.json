@@ -1,1 +1,1 @@
-{"9008":{"issue":"[W9008] file .vscode/launch.json is tracked but covered by .gitignore. Remove from git if generated, or remove the ignore rule if intentionally tracked.","adapter":"aruttkamp/ioBroker.rct","timestamp":"Fri, 14 Aug 2026 00:22:39 GMT"}}
+{"9008":{"issue":"[W9008] file .vscode/launch.json is tracked but covered by .gitignore. Remove from git if generated, or remove the ignore rule if intentionally tracked.","adapter":"aruttkamp/ioBroker.rct","timestamp":"Fri, 14 Aug 2026 05:56:51 GMT"}}
