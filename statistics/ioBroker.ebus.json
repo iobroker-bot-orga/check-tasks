@@ -1,1 +1,1 @@
-{"5005":{"issue":"[S5005] Plain setTimeout() found in source files (src/lib/TelnetClient.ts). Please use this.setTimeout() or adapter.setTimeout() instead.","adapter":"rg-engineering/ioBroker.ebus","timestamp":"Sat, 15 Aug 2026 06:06:12 GMT"}}
+{"5005":{"issue":"[S5005] Plain setTimeout() found in source files (src/lib/TelnetClient.ts). Please use this.setTimeout() or adapter.setTimeout() instead.","adapter":"rg-engineering/ioBroker.ebus","timestamp":"Sun, 16 Aug 2026 06:15:07 GMT"}}
