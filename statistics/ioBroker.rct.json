@@ -1,1 +1,1 @@
-{"9008":{"issue":"[W9008] file .vscode/launch.json is tracked but covered by .gitignore. Remove from git if generated, or remove the ignore rule if intentionally tracked.","adapter":"aruttkamp/ioBroker.rct","timestamp":"Fri, 14 Aug 2026 05:56:51 GMT"}}
+{"3039":{"issue":"[W3039] Could not retrieve workflow run data for \"test-and-release.yml\": Request failed with status code 502","adapter":"aruttkamp/ioBroker.rct","timestamp":"Fri, 21 Aug 2026 00:15:53 GMT"}}
