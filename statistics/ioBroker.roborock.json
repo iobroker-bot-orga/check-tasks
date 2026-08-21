@@ -1,1 +1,1 @@
-{"9008":{"issue":"[W9008] file .releaseconfig.json is tracked but covered by .gitignore. Remove from git if generated, or remove the ignore rule if intentionally tracked.","adapter":"copystring/ioBroker.roborock","timestamp":"Fri, 14 Aug 2026 00:33:53 GMT"}}
+{"9008":{"issue":"[W9008] file .releaseconfig.json is tracked but covered by .gitignore. Remove from git if generated, or remove the ignore rule if intentionally tracked.","adapter":"copystring/ioBroker.roborock","timestamp":"Fri, 21 Aug 2026 00:26:25 GMT"}}
