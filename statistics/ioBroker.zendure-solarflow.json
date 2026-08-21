@@ -1,1 +1,1 @@
-{}
+{"5049":{"issue":"[E5049] process.env is used in source files (src/services/mqtt/localMqttService.ts). process.env is incompatible with compact mode. Please use adapter configuration instead.","adapter":"nograx/ioBroker.zendure-solarflow","timestamp":"Fri, 21 Aug 2026 02:32:23 GMT"}}
