@@ -1,1 +1,1 @@
-{"1135":{"issue":"[W1135] [io-package.json](https://github.com/simatec/ioBroker.uv-protect/blob/master/io-package.json): instanceObject \"uv_warn\" role \"switch\" expects common.write=true","adapter":"simatec/ioBroker.uv-protect","timestamp":"Sat, 22 Aug 2026 18:23:18 GMT"},"5005":{"issue":"[S5005] Plain setTimeout() found in source files (main.js). Please use this.setTimeout() or adapter.setTimeout() instead.","adapter":"simatec/ioBroker.uv-protect","timestamp":"Sat, 22 Aug 2026 18:23:18 GMT"}}
+{}
