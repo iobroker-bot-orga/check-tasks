@@ -1,1 +1,1 @@
-{"3056":{"issue":"[S3056] \"test-and-release.yml\": workflow [run #1563](https://github.com/Black-Thunder/ioBroker.melcloud/actions/runs/24231253339) for current release 3.0.4 is older than 90 days; log files might no longer be available.","adapter":"Black-Thunder/ioBroker.melcloud","timestamp":"Thu, 20 Aug 2026 22:59:53 GMT"}}
+{"4033":{"issue":"[E4033] Dependency 'admin':'>=7.9.0' not available at stable repository","adapter":"Black-Thunder/ioBroker.melcloud","timestamp":"Fri, 28 Aug 2026 06:43:39 GMT"}}
