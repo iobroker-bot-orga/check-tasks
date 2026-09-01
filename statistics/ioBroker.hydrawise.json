@@ -1,1 +1,1 @@
-{"5005":{"issue":"[S5005] Plain setTimeout() found in source files (src/main.ts). Please use this.setTimeout() or adapter.setTimeout() instead.","adapter":"SentiQ/ioBroker.hydrawise","timestamp":"Tue, 01 Sep 2026 11:18:50 GMT"}}
+{"5005":{"issue":"[S5005] Plain setTimeout() found in source files (src/main.ts). Please use this.setTimeout() or adapter.setTimeout() instead.","adapter":"SentiQ/ioBroker.hydrawise","timestamp":"Tue, 01 Sep 2026 16:21:41 GMT"}}
