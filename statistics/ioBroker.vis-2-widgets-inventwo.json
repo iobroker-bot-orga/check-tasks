@@ -1,1 +1,1 @@
-{"0095":{"issue":"[W0095] \"prepublishOnly\" script is not needed in most cases when using the standard ioBroker workflow test-and-release. Usage should be reviewed.","adapter":"inventwo/ioBroker.vis-2-widgets-inventwo","timestamp":"Tue, 01 Sep 2026 18:12:16 GMT"}}
+{"0095":{"issue":"[W0095] \"prepublishOnly\" script is not needed in most cases when using the standard ioBroker workflow test-and-release. Usage should be reviewed.","adapter":"inventwo/ioBroker.vis-2-widgets-inventwo","timestamp":"Tue, 01 Sep 2026 19:52:53 GMT"}}
