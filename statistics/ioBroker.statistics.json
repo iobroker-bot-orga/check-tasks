@@ -1,1 +1,1 @@
-{}
+{"3056":{"issue":"[S3056] \"test-and-release.yml\": workflow [run #777](https://github.com/iobroker-community-adapters/ioBroker.statistics/actions/runs/26808282550) for current release 5.0.0 is older than 90 days; log files might no longer be available.","adapter":"iobroker-community-adapters/ioBroker.statistics","timestamp":"Tue, 01 Sep 2026 19:15:41 GMT"}}
