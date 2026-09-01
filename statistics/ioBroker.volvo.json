@@ -1,1 +1,1 @@
-{}
+{"3056":{"issue":"[S3056] \"test-and-release.yml\": workflow [run #145](https://github.com/TA2k/ioBroker.volvo/actions/runs/26878090935) for current release 3.0.1 is older than 90 days; log files might no longer be available.","adapter":"TA2k/ioBroker.volvo","timestamp":"Tue, 01 Sep 2026 20:15:56 GMT"}}
