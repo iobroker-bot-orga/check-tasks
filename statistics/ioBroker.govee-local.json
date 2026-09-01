@@ -1,1 +1,1 @@
-{"0064":{"issue":"[S0064] @alcalzone/release-script-plugin-license 5.2.0 specified. Newer version 5.2.2 exists.","adapter":"boergegrunicke/ioBroker.govee-local","timestamp":"Fri, 28 Aug 2026 05:28:31 GMT"}}
+{"3056":{"issue":"[S3056] \"test-and-release.yml\": workflow [run #973](https://github.com/boergegrunicke/ioBroker.govee-local/actions/runs/26808178867) for current release 0.4.7 is older than 90 days; log files might no longer be available.","adapter":"boergegrunicke/ioBroker.govee-local","timestamp":"Tue, 01 Sep 2026 15:55:29 GMT"}}
