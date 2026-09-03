@@ -1,1 +1,1 @@
-{"8917":{"issue":"[W8917] At least major versions of @types/node should not be updated by dependabot. Please add ignore block at dependabot.yml.","adapter":"simatec/ioBroker.gotify-ws","timestamp":"Tue, 01 Sep 2026 15:54:37 GMT"}}
+{"8917":{"issue":"[W8917] At least major versions of @types/node should not be updated by dependabot. Please add ignore block at dependabot.yml.","adapter":"simatec/ioBroker.gotify-ws","timestamp":"Thu, 03 Sep 2026 23:39:47 GMT"}}
