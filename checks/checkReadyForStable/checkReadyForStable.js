@@ -459,17 +459,22 @@ function generateIssueBody(res, stableFile, replacesIssueId, replacesIssueUrl) {
 
         body += `Click to use [developer portal](https://www.iobroker.dev/adapter/${res.owner}/ioBroker.${res.adapter}/releases)\n`;
         if (num !== undefined) {
-            body += `Click to [edit](https://github.com/ioBroker/ioBroker.repositories/edit/master/sources-dist-stable.json#L${num})\n`;
+            body += `Click to [edit](https://github.com/ioBroker/ioBroker.repositories/edit/master/sources-dist-stable.json#L${num}) manually directly at Github.\n`;
         } else {
-            body += `Click to [edit](https://github.com/ioBroker/ioBroker.repositories/edit/master/sources-dist-stable.json)\n`;
+            body += `Click to [edit](https://github.com/ioBroker/ioBroker.repositories/edit/master/sources-dist-stable.json) manually directly at Github.\n`;
         }
 
         body += '\n';
-        body += '@copilot\n';
-        body += `Before trying to update the version at ioBroker.repositories, please fix all errors and warnings reported by repochecker for repository ${res.owner}/ioBroker.${res.adapter}.\n`;
+        body += 'Note:\n';
+        body += `Before additing version information manually at ioBroker.repositories, please fix all errors and and review all warnings reported by repochecker for repository ${res.owner}/ioBroker.${res.adapter}.\n`;
         body += `You can run the repochecker using this command "npx @iobroker/repochecker ${res.owner}/ioBroker.${res.adapter}". Note that specifying the adaptername explicitly is mandatory.`;
-        body += `Running any local tests or running any workflows cannot replace the checks provided by repositorychecker`;
-        body += `Do not create any PR at iobroker/iobroker.repositories unless you have verified that there are no errors or warnings reported by adapterchecker for repository ${res.owner}/ioBroker.${res.adapter}\n`;
+        
+        // body += '\n';
+        // body += '@copilot\n';
+        // body += `Before trying to update the version at ioBroker.repositories, please fix all errors and warnings reported by repochecker for repository ${res.owner}/ioBroker.${res.adapter}.\n`;
+        // body += `You can run the repochecker using this command "npx @iobroker/repochecker ${res.owner}/ioBroker.${res.adapter}". Note that specifying the adaptername explicitly is mandatory.`;
+        // body += `Running any local tests or running any workflows cannot replace the checks provided by repositorychecker`;
+        // body += `Do not create any PR at iobroker/iobroker.repositories unless you have verified that there are no errors or warnings reported by adapterchecker for repository ${res.owner}/ioBroker.${res.adapter}\n`;
 
         body += '\n';
         body +=
