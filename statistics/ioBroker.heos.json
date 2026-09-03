@@ -1,1 +1,1 @@
-{"5005":{"issue":"[S5005] Plain setTimeout() found in source files (lib/heos-player.js). Please use this.setTimeout() or adapter.setTimeout() instead.","adapter":"withstu/ioBroker.heos","timestamp":"Tue, 01 Sep 2026 16:09:13 GMT"}}
+{"5005":{"issue":"[S5005] Plain setTimeout() found in source files (lib/heos-player.js). Please use this.setTimeout() or adapter.setTimeout() instead.","adapter":"withstu/ioBroker.heos","timestamp":"Thu, 03 Sep 2026 23:55:14 GMT"}}
