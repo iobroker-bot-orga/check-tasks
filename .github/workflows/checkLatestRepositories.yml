@@ -29,7 +29,7 @@ on:
   schedule:
     # * is a special character in YAML, so you have to quote this string
     # every thursday at 19:30
-    - cron:  '30 19 * * 4'
+    - cron:  '30 18 * * 4'
 
 jobs:
   check-latest-repository:
