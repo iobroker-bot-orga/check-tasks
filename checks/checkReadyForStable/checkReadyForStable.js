@@ -468,7 +468,7 @@ function generateIssueBody(res, stableFile, replacesIssueId, replacesIssueUrl) {
         body += 'Note:\n';
         body += `Before additing version information manually at ioBroker.repositories, please fix all errors and and review all warnings reported by repochecker for repository ${res.owner}/ioBroker.${res.adapter}.\n`;
         body += `You can run the repochecker using this command "npx @iobroker/repochecker ${res.owner}/ioBroker.${res.adapter}". Note that specifying the adaptername explicitly is mandatory.`;
-        
+
         // body += '\n';
         // body += '@copilot\n';
         // body += `Before trying to update the version at ioBroker.repositories, please fix all errors and warnings reported by repochecker for repository ${res.owner}/ioBroker.${res.adapter}.\n`;
