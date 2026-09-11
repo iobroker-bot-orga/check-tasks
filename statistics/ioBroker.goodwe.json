@@ -1,1 +1,1 @@
-{"3028":{"issue":"[W3028] \"test-and-release.yml\": job \"check-and-lint\" uses \"ioBroker/testing-action-check@v1\" which is below the required version \"v2\".","adapter":"typhosj/ioBroker.goodwe","timestamp":"Thu, 10 Sep 2026 22:50:56 GMT"},"0064":{"issue":"[S0064] @iobroker/testing 5.2.2 specified. Newer version 6.1.0 exists.","adapter":"typhosj/ioBroker.goodwe","timestamp":"Thu, 10 Sep 2026 22:50:56 GMT"}}
+{}
