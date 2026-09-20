@@ -53,6 +53,11 @@ jobs:
         env:
           OWN_GITHUB_TOKEN: ${{ secrets.OWN_GITHUB_TOKEN }}
           IOBBOT_GITHUB_TOKEN: ${{ secrets.IOBBOT_GITHUB_TOKEN }}
+      - name: Push repo-added cache updates
+        run: bash scripts/commit-and-push.sh
+        env:
+          GITHUB_TOKEN: ${{ secrets.IOBBOT_GITHUB_TOKEN }}
+          BRANCH_NAME: 'main'
       - name: Prepare report mail metadata
         id: report_mail_meta
         run: echo "subject_date=$(date -u +'%d.%m.%Y')" >> $GITHUB_OUTPUT
