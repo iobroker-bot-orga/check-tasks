@@ -1,5 +1,6 @@
 'use strict';
 const fs = require('node:fs/promises');
+const path = require('node:path');
 const { parseArgs } = require('node:util');
 const { marked } = require('marked');
 
@@ -13,6 +14,7 @@ const {
     createIssue,
     closeIssue,
     updateIssue,
+    getFileEntryAddedDate,
 } = require('../../lib/githubTools');
 const { getLatestRepoLive, getStableRepoFile, getStableRepoLive, getStatistics } = require('../../lib/iobrokerTools');
 //const { exit } = require('node:process');
@@ -27,6 +29,22 @@ const ONE_DAY = 3600000 * 24;
 const ONE_WEEK = 7 * ONE_DAY;
 const TWO_WEEKS = 14 * ONE_DAY;
 const TWO_MONTHS = 60 * ONE_DAY;
+
+// Repository (ioBroker.repositories) and file holding the latest repository sources.
+// The moment an adapter is accepted into the latest repository is the commit
+// which added its entry to this file.
+const REPOSITORIES_OWNER = 'ioBroker';
+const REPOSITORIES_REPO = 'ioBroker.repositories';
+const LATEST_SOURCES_FILE = 'sources-dist.json';
+
+// Adapters must have been listed in the latest repository for at least this long
+// before they are proposed for the stable repository. This is independent of the
+// npm release date, as a package may have been published to npm long before it was
+// accepted into the latest repository.
+const MIN_LATEST_REPO_AGE = 30 * ONE_DAY;
+
+// Local cache mapping adapter name => ISO date it was added to the latest repository.
+const CACHE_FILE = path.join(__dirname, 'latestRepoAdded.cache.json');
 
 const IOBROKER_BOT_NAME = 'ioBroker-Bot';
 const REMINDER_FIRST_TEXT =
@@ -552,16 +570,74 @@ async function createIssues(latest, stableFile, result) {
     }
 }
 
-async function evaluateReleases(latest, stable, statistics) {
+async function loadRepoAddedCache() {
+    try {
+        const raw = await fs.readFile(CACHE_FILE, 'utf8');
+        const cache = JSON.parse(raw);
+        console.log(`[INFO] loaded repo-added cache with ${Object.keys(cache).length} entries`);
+        return cache;
+    } catch (e) {
+        if (e.code !== 'ENOENT') {
+            console.log(`[WARNING] cannot read repo-added cache (${e}) - starting with empty cache`);
+        }
+        return {};
+    }
+}
+
+async function saveRepoAddedCache(cache) {
+    if (opts.dry) {
+        console.log(`[DRY] would save repo-added cache with ${Object.keys(cache).length} entries`);
+        return;
+    }
+    try {
+        await fs.writeFile(CACHE_FILE, `${JSON.stringify(cache, null, 4)}\n`, 'utf8');
+        console.log(`[INFO] saved repo-added cache with ${Object.keys(cache).length} entries`);
+    } catch (e) {
+        console.log(`[WARNING] cannot save repo-added cache: ${e}`);
+    }
+}
+
+// Resolve the date an adapter was added to the latest repository.
+// Uses the cache if available, otherwise processes the github history and stores
+// the result in the cache. If github processing fails, the current date is used
+// (and cached) so the adapter is treated as freshly added.
+async function resolveRepoAddedDate(adapter, cache) {
+    if (cache[adapter]) {
+        console.log(`    repo-added date for ${adapter} taken from cache: ${cache[adapter]}`);
+        return new Date(cache[adapter]);
+    }
+
+    console.log(`    repo-added date for ${adapter} not cached - processing github history`);
+    let addedIso = null;
+    try {
+        addedIso = await getFileEntryAddedDate(REPOSITORIES_OWNER, REPOSITORIES_REPO, LATEST_SOURCES_FILE, adapter);
+    } catch (e) {
+        console.log(`    [WARNING] cannot determine repo-added date for ${adapter} from github history: ${e}`);
+        addedIso = null;
+    }
+
+    if (!addedIso) {
+        addedIso = new Date().toISOString();
+        console.log(`    repo-added date for ${adapter} could not be determined - using current date ${addedIso}`);
+    } else {
+        console.log(`    repo-added date for ${adapter} determined as ${addedIso}`);
+    }
+
+    cache[adapter] = addedIso;
+    console.log(`    repo-added date for ${adapter} stored in cache: ${addedIso}`);
+    return new Date(addedIso);
+}
+
+async function evaluateReleases(latest, stable, statistics, repoAddedCache) {
     const result = {};
 
     console.log(`checking for adapters to ADD to stable repository ...`);
-    Object.keys(latest).forEach(adapter => {
+    for (const adapter of Object.keys(latest)) {
         debug(`processing ioBroker.${adapter} ...`);
         if (!adapter.startsWith('_') && !stable[adapter]) {
             if (!statistics.versions[adapter]) {
                 console.log(`\nWARNING: Adapter ${adapter} not yet provides statistics`);
-                return;
+                continue;
             }
 
             const now = new Date();
@@ -611,13 +687,31 @@ async function evaluateReleases(latest, stable, statistics) {
                 now.getTime() - latestTime.getTime() >
                 30 * ONE_DAY
             ) {
-                console.log('  + should be published');
-                result[adapter] = item;
+                // 2. and the adapter has been listed in the latest repository for more than 30 days.
+                //    A package may have been published to npm long before it was accepted into the
+                //    latest repository, so the npm release date alone is not sufficient.
+                const repoAddedTime = await resolveRepoAddedDate(adapter, repoAddedCache);
+                const repoAddedOld = Math.floor((now.getTime() - repoAddedTime.getTime()) / ONE_DAY);
+                item.repoAdded = {
+                    time: repoAddedTime,
+                    old: repoAddedOld,
+                };
+                console.log(`    Latest repo: added ${repoAddedTime.toISOString()} (${repoAddedOld} days ago)`);
+
+                if (now.getTime() - repoAddedTime.getTime() > MIN_LATEST_REPO_AGE) {
+                    console.log('  + should be published');
+                    result[adapter] = item;
+                } else {
+                    console.log(
+                        `  - ${adapter} skipped - too recently added to latest repository ` +
+                            `(${repoAddedOld} days ago, minimum ${MIN_LATEST_REPO_AGE / ONE_DAY} days required)`,
+                    );
+                }
             } else {
                 console.log('  - too young for publishing');
             }
         }
-    });
+    }
 
     console.log(`checking for adapters to UPDATE at stable repository ...`);
     Object.keys(stable).forEach(adapter => {
@@ -907,8 +1001,24 @@ async function main() {
         await cleanIssues(latest);
     }
 
+    console.log(`\n[INFO]loading repo-added cache...`);
+    const repoAddedCache = await loadRepoAddedCache();
+
     console.log(`\n[INFO]evaluate releases...`);
-    const result = await evaluateReleases(latest, stable, statistics);
+    const result = await evaluateReleases(latest, stable, statistics, repoAddedCache);
+
+    // cleanup: adapters which are registered at the stable repository no longer
+    // need a cache entry, so remove them.
+    let removedCacheEntries = 0;
+    for (const adapter of Object.keys(repoAddedCache)) {
+        if (stable[adapter]) {
+            console.log(`[INFO] removing cache entry for ${adapter} - adapter is registered at stable repository`);
+            delete repoAddedCache[adapter];
+            removedCacheEntries++;
+        }
+    }
+    console.log(`[INFO] removed ${removedCacheEntries} cache entries for adapters now at stable repository`);
+    await saveRepoAddedCache(repoAddedCache);
 
     console.log(`\n[INFO]checking issues...`);
     await checkIssues(latest, stable, statistics, result, master);
