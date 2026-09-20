@@ -23,7 +23,13 @@ on:
     # * is a special character in YAML, so you have to quote this string
     # every day
     - cron:  '30 3 * * *'
-  
+
+# Prevent parallel runs of this workflow. Concurrent runs could interfere with
+# each other (e.g. creating duplicate issues or racing on committed state).
+concurrency:
+  group: check-ready-for-stable
+  cancel-in-progress: false
+
 jobs:
   ready-for-stable:
     name: check ready for stable
