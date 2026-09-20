@@ -1017,7 +1017,7 @@ async function main() {
             removedCacheEntries++;
         }
     }
-    console.log(`[INFO] removed ${removedCacheEntries} cache entrie(s) for adapters now at stable repository`);
+    console.log(`[INFO] removed ${removedCacheEntries} cache entries for adapters now at stable repository`);
     await saveRepoAddedCache(repoAddedCache);
 
     console.log(`\n[INFO]checking issues...`);
