@@ -1,1 +1,1 @@
-{"0036":{"issue":"[E0036] @iobroker/testing 6.1.2 specified. 6.2.1 is required as minimum,  6.2.2 (or newer) is current. Please update devDependencies at [package.json](https://github.com/iobroker-community-adapters/ioBroker.myvbus/blob/master/package.json)","adapter":"iobroker-community-adapters/ioBroker.myvbus","timestamp":"Sun, 27 Sep 2026 17:01:49 GMT"}}
+{}
