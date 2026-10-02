@@ -1,1 +1,1 @@
-{}
+{"0037":{"issue":"[W0037] @iobroker/testing 6.2.1 specified. 6.2.2 (or newer) is current. Please update devDependencies at [package.json](https://github.com/afuerhoff/ioBroker.solarviewdatareader/blob/master/package.json)","adapter":"afuerhoff/ioBroker.solarviewdatareader","timestamp":"Fri, 02 Oct 2026 03:56:11 GMT"}}
