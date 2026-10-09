@@ -1,1 +1,1 @@
-{"5004":{"issue":"[S5004] Plain setInterval() found in source files (lib/tools.js). Please use this.setInterval() or adapter.setInterval() instead.","adapter":"bolliy/ioBroker.sun2000","timestamp":"Sun, 04 Oct 2026 02:49:36 GMT"}}
+{"5004":{"issue":"[S5004] Plain setInterval() found in source files (lib/tools.js). Please use this.setInterval() or adapter.setInterval() instead.","adapter":"bolliy/ioBroker.sun2000","timestamp":"Fri, 09 Oct 2026 04:52:17 GMT"}}
