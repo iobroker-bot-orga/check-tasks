@@ -1,1 +1,1 @@
-{}
+{"5010":{"issue":"[E5010] \"admin/i18n/ru/translations.json\" or \"admin/i18n/ru.json\" not found, but admin support is declared. Please add.","adapter":"Bannsaenger/ioBroker.x-touch","timestamp":"Thu, 15 Oct 2026 12:10:51 GMT"},"9006":{"issue":"[S9006] .commitinfo file should be excluded by .gitignore, please add a line with text \".commitinfo\" to .gitignore","adapter":"Bannsaenger/ioBroker.x-touch","timestamp":"Thu, 15 Oct 2026 12:10:51 GMT"}}
