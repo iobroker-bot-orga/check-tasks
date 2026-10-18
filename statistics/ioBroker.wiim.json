@@ -1,1 +1,1 @@
-{"4001":{"issue":"[W4001] Cannot find \"wiim\" in latest repository. Please ignore if PR to add adapter to repositories already exists.","adapter":"KaiIOB/ioBroker.wiim","timestamp":"Sun, 18 Oct 2026 13:16:13 GMT"}}
+{"4047":{"issue":"[S4047] Adapter \"wiim\" is not yet available in the stable repository. Please consider adding it.","adapter":"KaiIOB/ioBroker.wiim","timestamp":"Sun, 18 Oct 2026 13:51:30 GMT"}}
