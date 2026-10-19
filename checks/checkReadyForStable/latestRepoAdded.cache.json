@@ -88,7 +88,6 @@
     "vesync": "2023-01-13T23:50:38Z",
     "victron-cerbo": "2026-04-23T08:24:58Z",
     "viessmannapi": "2019-02-10T21:24:53Z",
-    "vis-2-widgets-sweethome3d": "2023-11-29T20:37:14Z",
     "vis-3dmodel": "2021-04-17T17:35:07Z",
     "vis-material-webfont": "2020-01-09T23:16:37Z",
     "vofo-speedtest": "2021-07-01T21:02:43Z",
@@ -111,5 +110,6 @@
     "vis-2-widgets-automatic-feeder": "2026-07-16T18:18:04Z",
     "xtream-monitor": "2026-09-10T19:43:48Z",
     "easee": "2021-03-25T13:18:48Z",
-    "icloud": "2026-06-18T15:26:02Z"
+    "icloud": "2026-06-18T15:26:02Z",
+    "device-reminder": "2020-11-26T21:34:52Z"
 }
