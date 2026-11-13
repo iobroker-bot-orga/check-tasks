@@ -1,1 +1,1 @@
-{"3052":{"issue":"[W3052] \"test-and-release.yml\": could not retrieve log for job \"adapter-tests (26.x, windows-latest)\" in [run #130](https://github.com/TA2k/ioBroker.tedee/actions/runs/42466955522) on branch \"main\".","adapter":"TA2k/ioBroker.tedee","timestamp":"Sun, 08 Nov 2026 09:32:46 GMT"}}
+{"0064":{"issue":"[S0064] @iobroker/testing 6.3.1 specified. Newer version 6.3.2 exists.","adapter":"TA2k/ioBroker.tedee","timestamp":"Fri, 13 Nov 2026 05:29:59 GMT"}}
