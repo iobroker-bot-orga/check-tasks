@@ -1,1 +1,1 @@
-{"5054":{"issue":"[S5054] method \"setObject()\" should be avoided. Please use \"setObjectNotExists()\" or \"extendObject()\" instead.","adapter":"iobroker-community-adapters/ioBroker.denon","timestamp":"Wed, 18 Nov 2026 11:32:17 GMT"},"8910":{"issue":"[S8910] File \"/.github/workflows/dependabot-auto-merge.yml.OLD\" was found. If it is no longer needed, consider deleting it.","adapter":"iobroker-community-adapters/ioBroker.denon","timestamp":"Wed, 18 Nov 2026 11:32:17 GMT"}}
+{}
