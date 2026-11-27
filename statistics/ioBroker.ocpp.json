@@ -1,1 +1,1 @@
-{}
+{"5604":{"issue":"[W5604] i18n \"admin/i18n\" language \"zh-cn\" is missing 5 key(s) present in English: certChained, certPrivate, certPublic, secure, secureHelp","adapter":"iobroker-community-adapters/ioBroker.ocpp","timestamp":"Fri, 27 Nov 2026 06:03:02 GMT"},"8004":{"issue":"[W8004] Please process PR [[#129] \"Translations update from ioBroker Translation System\"](https://github.com/iobroker-community-adapters/ioBroker.ocpp/issues/129)","adapter":"iobroker-community-adapters/ioBroker.ocpp","timestamp":"Fri, 27 Nov 2026 06:03:02 GMT"}}
